@@ -1,6 +1,6 @@
 {
   "ai_updates_v1.json": {
-    "sha256": "3b256282fb0f4ab81b61bb23d86ac11257d7f31d32a0bb7f55bc869a4630a122",
+    "sha256": "ac99b1039aba80414b8c619f155b67467b802c83f89e9f34121e5818497ae04f",
     "version": 45,
     "mime": "application/json",
     "tags": [
@@ -17,7 +17,7 @@
     "updated": "2026-11-11T04:24:18+00:00"
   },
   "youtube_updates_v1.json": {
-    "sha256": "0ad12af237fa6982a07f77e1e24e6205eb4da97e2d917884e15862c968f81b8b",
+    "sha256": "af514355000d21a5b5585d8f2b237cb2cd3594bc50ba78363392de32150d9cc5",
     "version": 30,
     "mime": "application/json",
     "tags": [
@@ -34,7 +34,7 @@
     "updated": "2026-11-11T01:06:58+00:00"
   },
   "live_results_v1.json": {
-    "sha256": "6684ae06f2c46578058e0a4d036e3b28041f593866fb1f583770642907904270",
+    "sha256": "035b0b4db4a7a9dec7449f1505f9577b7d0c44851b8936f5c2036991861fd9a6",
     "version": 35,
     "mime": "application/json",
     "tags": [
@@ -51,7 +51,7 @@
     "updated": "2026-11-11T04:24:09+00:00"
   },
   "contests_v1.json": {
-    "sha256": "4b657aa36acad9cf79abeaa30129fff1207725dcf996b9cc5b8764e2b5f1a416",
+    "sha256": "f3b0c660541aa37588aaeb526f6b129c30ba7a64c75aca7940756ba175088e71",
     "version": 31,
     "mime": "application/json",
     "tags": [
@@ -69,7 +69,7 @@
     "updated": "2026-11-11T04:24:19+00:00"
   },
   "live_applications_v1.json": {
-    "sha256": "469b860c0bab3863bbd0649a9355a8576d53a35b73e5a61c0bd6115551c82cc5",
+    "sha256": "161fe67e70031b257d1797b63a89b2685ad9da1094ffd9d99726993112fd429b",
     "version": 25,
     "mime": "application/json",
     "tags": [
@@ -85,7 +85,7 @@
     "updated": "2026-11-11T04:37:17+00:00"
   },
   "evening_review_v1.json": {
-    "sha256": "2b1793f1fb2d2c65d2d594d28da109f04dcc0bef2032cfe7275fd36a138d8f55",
+    "sha256": "7a46d830d5ae0bb486d7ccc181e6bf58d0ff71a550712fb70c0a57ea576dbd87",
     "version": 8,
     "mime": "application/json",
     "tags": [
@@ -104,7 +104,7 @@
     "updated": "2026-11-10T12:07:08+00:00"
   },
   "user_profile_v1.json": {
-    "sha256": "e687003d632edc74fe5aa0187570a6ed6da88f7a55604cfcd4285da0a84e6713",
+    "sha256": "18242152cbd2649746e63b7a660af311859e824a37980cf027d97855775832ee",
     "version": 14,
     "mime": "application/json",
     "tags": [],
@@ -114,7 +114,7 @@
     "updated": "2026-11-11T04:25:52+00:00"
   },
   "skill_roadmap_v1.json": {
-    "sha256": "bc32973cea9de0acc57ec5fc9da914feddc726ae568533f53e73973ba5d128ae",
+    "sha256": "d6d46f62dae0db332d72e976bc2232f29f8e1cbf776c96d958687fa5f2adce64",
     "version": 4,
     "mime": "application/json",
     "tags": [
@@ -127,7 +127,7 @@
     "updated": "2026-11-11T01:48:33+00:00"
   },
   "user_personalization_memory.json": {
-    "sha256": "6c3fa8dc2336d07a3bc77a9c74e90f8bcfdf7605268693d92ec8821dd5795784",
+    "sha256": "1d6683e679c1175e80feb36d0d7ce4b2e66c18d4895cfabd1629e3e0e6cb0f59",
     "version": 3,
     "mime": "application/json",
     "tags": [
@@ -142,5 +142,21 @@
       "All"
     ],
     "updated": "2026-11-11T01:48:33+00:00"
+  },
+  "applied_jobs_tracker_v1.json": {
+    "sha256": "0146b294b1d7e9af3e98ec1354edda3a863d2a10116bd600b3602678aacda807",
+    "version": 1
+  },
+  "cold_outreach_and_linkedin_pack_v1.json": {
+    "sha256": "1c7f379dc5734fd902b4caa440b8dd5f18b64aa9aa5a40e48fb3b743357fcc32",
+    "version": 1
+  },
+  "schedule_plan_v1.ics": {
+    "sha256": "8d104af11a20f9419e181ffab3e6a3174b7725ccdf974a85cb82d625ef218ea4",
+    "version": 1
+  },
+  "workflow_audit_log.json": {
+    "sha256": "1c3932ce64c1f62e57e1d5255c18d95847843470357e66b8bb5a69711408af21",
+    "version": 1
   }
 }

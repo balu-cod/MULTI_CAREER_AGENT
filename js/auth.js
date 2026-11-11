@@ -45,7 +45,7 @@
       var parseFailed = false;
       try { data = await r.json(); } catch (e) { parseFailed = true; data = { ok: false, error: 'Unexpected response from backend (HTTP ' + r.status + ').' }; }
       var isCanvasOffline = !!(window.__CANVAS_DEMO_MODE__ && (parseFailed || r.status === 404 || r.status === 405 || r.status === 0));
-      return { ok: !!(data && data.ok), status: r.status, network: isCanvasOffline, data: data || {} };
+      return { ok: !!(data && (data.ok === true || (r.status >= 200 && r.status < 300 && data.ok !== false))), status: r.status, network: isCanvasOffline, data: data || {} };
     } catch (e) {
       return { ok: false, network: true, data: { error: 'Cannot reach the backend at ' + backendBase() +
         '. Start it with:  python career_agent_system.py --mode serve   and open the address it prints (or fix the Backend URL in Settings).' } };
@@ -274,7 +274,7 @@
     // This grants real Gmail API access (read + send) via PKCE Authorization Code flow.
     if (cfg.configured) {
       var oauthBtn = document.createElement('a');
-      oauthBtn.href = '/api/auth/google/login';
+      oauthBtn.href = backendBase() + '/api/auth/google/login';
       oauthBtn.className = 'w-full flex items-center justify-center gap-3 py-2.5 px-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-semibold text-sm shadow-md border border-slate-200 transition no-underline';
       oauthBtn.style.textDecoration = 'none';
       oauthBtn.innerHTML =

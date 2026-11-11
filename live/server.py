@@ -814,6 +814,7 @@ def handle_oauth_get(path: str, query: dict, headers: dict, server_port: int) ->
         csec    = os.environ.get("GOOGLE_CLIENT_SECRET", "").strip()
         missing = oauth_google.missing_config()
         return {"_json": {
+            "ok":            True,
             "configured":    bool(cid and csec),
             "redirect_uri":  oauth_google.redirect_uri(_canon_base(host, server_port)),
             "gmail_scopes":  [oauth_google.SCOPE_GMAIL_R, oauth_google.SCOPE_GMAIL_S],
