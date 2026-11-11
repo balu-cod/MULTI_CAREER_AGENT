@@ -77,6 +77,24 @@ def run_pipeline(vault, log, only_agents=None, extra_ctx=None):
                 L(f"- {n} skipped (dependency failed)")
                 failed.add(n)
                 continue
+            if n in ("autoapply", "drafter"):
+                try:
+                    from . import llm_gateway
+                    if getattr(llm_gateway.INTERRUPT_ENGINE, "interrupt_mode", "auto") != "off":
+                        chk = llm_gateway.INTERRUPT_ENGINE.create_interrupt(
+                            agent_name=n,
+                            action=f"execute_{n}",
+                            payload={"run_id": ctx.get("run_id"), "pending_matches": len(ctx.get("matches", []))},
+                            reason=f"Pipeline policy checkpoint for high-impact agent '{n}'",
+                            severity="HIGH" if n == "autoapply" else "MEDIUM"
+                        )
+                        if chk.get("status") == "paused":
+                            L(f"! [LLM INTERRUPT] Paused '{n}' for human signoff (ID: {chk.get('interrupt_id')})")
+                            continue
+                        elif chk.get("decision") == "auto_approved":
+                            L(f"* [LLM GATEWAY] Auto-approved '{n}' (Confidence: {chk.get('interrupt', {}).get('confidence')}%)")
+                except Exception as _e:
+                    L(f"- [LLM INTERRUPT] Check bypassed: {_e}")
             try:
                 L(f"> {n}")
                 cls().run(ctx)

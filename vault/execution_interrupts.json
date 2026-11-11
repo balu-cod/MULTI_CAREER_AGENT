@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-11-11T11:44:56.727383",
+  "interrupt_mode": "auto",
+  "pending": [],
+  "history": [
+    {
+      "id": "int_5f1e79fd6612",
+      "agent_name": "AutoApply",
+      "action": "submit_application",
+      "payload": {
+        "job_id": "123",
+        "company": "Acme Inc"
+      },
+      "reason": "Direct submit requested",
+      "severity": "HIGH",
+      "created_at": "2026-11-11T11:44:18.689002",
+      "confidence": 85,
+      "verdict": "APPROVE",
+      "rationale": "Standard automated action within policy boundaries.",
+      "optimization": "",
+      "status": "resolved",
+      "evaluated_by": "Unknown",
+      "decision": "approve",
+      "resolved_at": "2026-11-11T11:44:56.725377",
+      "modifications": {},
+      "user_notes": ""
+    }
+  ]
+}

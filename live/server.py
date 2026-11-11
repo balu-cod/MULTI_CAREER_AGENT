@@ -8,7 +8,7 @@ from .vault import LIVE_AGENT
 from . import runtime, resume as R
 from . import user_data_backend as udb
 from . import VERSION
-from . import oauth_google, gmail_api, accounts as _accounts
+from . import oauth_google, gmail_api, accounts as _accounts, llm_gateway
 
 DAILY_NEWS_AGENTS = ["scanner", "aiupdates", "youtube", "contests", "matcher", "dailynews"]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
@@ -1515,6 +1515,44 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             "status": build_api_status(vault)
         }
 
+    # 15. POST /api/llm/switch — Switch Active LLM Provider & Model
+    if path == "/api/llm/switch":
+        prov = str(payload.get("provider") or "auto").strip()
+        mod = str(payload.get("model") or "").strip() or None
+        llm_gateway.GATEWAY_STATE["active_provider"] = prov
+        llm_gateway.GATEWAY_STATE["active_model"] = mod
+        if prov == "ollama" and mod:
+            set_secret("OLLAMA_MODEL", mod, root=ROOT)
+        elif mod:
+            set_secret("LLM_MODEL", mod, root=ROOT)
+        return {"ok": True, "active_provider": prov, "active_model": mod, "gateway": llm_gateway.get_gateway_status()}
+
+    # 16. POST /api/llm/generate — Unified Gateway Text Generation
+    if path in ("/api/llm/generate", "/api/llm/chat"):
+        prompt = str(payload.get("prompt") or payload.get("message") or "").strip()
+        prov = payload.get("provider")
+        mod = payload.get("model")
+        max_toks = int(payload.get("max_tokens") or 700)
+        res = llm_gateway.gateway_generate(prompt, provider=prov, model=mod, max_tokens=max_toks)
+        return {**res, "gateway": llm_gateway.get_gateway_status()}
+
+    # 17. POST /api/llm/interrupts/resolve — Resolve execution interrupt (approve, reject, modify)
+    if path == "/api/llm/interrupts/resolve":
+        int_id = str(payload.get("interrupt_id") or "").strip()
+        dec = str(payload.get("decision") or "approve").strip()
+        mods = payload.get("modifications")
+        notes = str(payload.get("notes") or "").strip()
+        res = llm_gateway.INTERRUPT_ENGINE.resolve_interrupt(int_id, decision=dec, modifications=mods, notes=notes)
+        return {**res, "interrupts": llm_gateway.INTERRUPT_ENGINE.list_interrupts()}
+
+    # 18. POST /api/llm/interrupts/config — Configure interrupt mode
+    if path == "/api/llm/interrupts/config":
+        mode = str(payload.get("interrupt_mode") or "auto").strip()
+        if mode in ("auto", "always_on_critical", "off"):
+            llm_gateway.INTERRUPT_ENGINE.interrupt_mode = mode
+            llm_gateway.INTERRUPT_ENGINE._save()
+        return {"ok": True, "interrupt_mode": llm_gateway.INTERRUPT_ENGINE.interrupt_mode}
+
     return {"ok": False, "error": f"Unknown endpoint: {path}"}
 
 
@@ -1599,6 +1637,30 @@ def serve(vault, host="127.0.0.1", port=8000, log=print):
                 return
             if u.path == "/api/scheduler":
                 body = json.dumps({"ok": True, "scheduler": _get_scheduler_status()}).encode("utf-8")
+                self.send_response(200)
+                self._cors()
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(body)
+                return
+            if u.path == "/api/llm/gateway":
+                body = json.dumps(llm_gateway.get_gateway_status()).encode("utf-8")
+                self.send_response(200)
+                self._cors()
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(body)
+                return
+            if u.path == "/api/llm/local-models":
+                body = json.dumps(llm_gateway.fetch_device_local_models()).encode("utf-8")
+                self.send_response(200)
+                self._cors()
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(body)
+                return
+            if u.path == "/api/llm/interrupts":
+                body = json.dumps(llm_gateway.INTERRUPT_ENGINE.list_interrupts()).encode("utf-8")
                 self.send_response(200)
                 self._cors()
                 self.send_header("Content-Type", "application/json; charset=utf-8")

@@ -1121,3 +1121,18 @@ def llm_gateway_status():
         "total_calls": LLM_GATEWAY_STATE.get("total_calls", 0),
         "providers": prov_status,
     }
+
+
+@tool
+def fetch_local_device_models():
+    """Scan local device for Ollama, LM Studio, llama.cpp, and vLLM models."""
+    from . import llm_gateway
+    return llm_gateway.fetch_device_local_models()
+
+
+@tool
+def request_execution_interrupt(agent_name, action, payload, reason, severity="MEDIUM"):
+    """Intercept an action to formulate an LLM gatekeeper evaluation or pause for human approval."""
+    from . import llm_gateway
+    return llm_gateway.INTERRUPT_ENGINE.create_interrupt(agent_name, action, payload, reason, severity)
+

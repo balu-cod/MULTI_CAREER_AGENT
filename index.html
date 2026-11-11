@@ -2363,6 +2363,28 @@ body:not(.sidebar-closed) #sidebar-backdrop {
             <div id="llm-test-feedback" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
               <strong>Active Failover Chain:</strong> Local Tunnel / Ollama ➔ OpenRouter ➔ Google Gemini ➔ Groq LPU ➔ Anthropic Claude ➔ Deterministic RAG Synthesis (0% downtime).
             </div>
+
+            <!-- LLM Execution Interrupt & Guardrail Panel -->
+            <div id="llm-interrupt-guardrail-panel" class="p-3.5 rounded-xl bg-amber-500/5 border border-amber-500/25 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+                  <span class="text-xs font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wide">LLM Execution Guardrail &amp; Interrupt Engine</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <select id="llm-interrupt-mode-select" onchange="changeLlmInterruptMode(this.value)" class="text-[11px] py-1 px-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                    <option value="auto">Mode: Auto-Arbitrate (LLM &gt;=80% passes)</option>
+                    <option value="always_on_critical">Mode: Human Signoff on Critical Actions</option>
+                    <option value="off">Mode: Off (Fully Automated)</option>
+                  </select>
+                  <button type="button" onclick="refreshLlmInterrupts()" class="text-[10px] text-blue-600 dark:text-blue-400 hover:underline">Refresh</button>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500">Monitors sensitive execution (job applications, cold emails, resume modifications). When an agent acts, the LLM intercepts, analyzes risk, and requests your signoff if needed.</p>
+              <div id="llm-interrupts-list" class="space-y-1.5 text-xs">
+                <div class="text-[11px] text-slate-400 italic">No execution interrupts pending. Agents execute safely within policy boundaries.</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -5896,16 +5918,26 @@ body:not(.sidebar-closed) #sidebar-backdrop {
         } catch (e) {}
       }
 
-      // 2. Query backend /api/llm-gateway (action: discover_local)
+      // 2. Query backend /api/llm-gateway and dedicated local model fetcher
       try {
         const base = getBackendBaseUrl();
         const epVal = document.getElementById(sourcePrefix === 'vault' ? 'vault-llm-endpoint-input' : 'llm-endpoint-input')?.value || '';
-        const resp = await fetch(base + '/api/llm-gateway', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ action: 'discover_local', custom_url: epVal })
-        });
-        if (resp.ok) {
+        const [resp, respLocal] = await Promise.all([
+          fetch(base + '/api/llm-gateway', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'discover_local', custom_url: epVal })
+          }).catch(() => null),
+          fetch(base + '/api/llm/local-models').catch(() => null)
+        ]);
+        if (respLocal && respLocal.ok) {
+          const dLocal = await respLocal.json();
+          (dLocal.models || []).forEach(m => {
+            const label = m.runtime + (m.size ? ` • ${m.size}` : '') + (m.parameter_size ? ` (${m.parameter_size})` : '');
+            addDisc(m.name, m.protocol === 'ollama_native' ? 'OLLAMA_MODEL' : 'LOCAL_LLM_URL', `${m.base_url}/api/generate`, label, 'online');
+          });
+        }
+        if (resp && resp.ok) {
           const data = await resp.json();
           ((data.local && data.local.discovered_models) || []).forEach(m => {
             addDisc(m.id, m.env_key === 'LOCAL_RAG' ? 'OLLAMA_MODEL' : m.env_key, m.endpoint, m.runtime, m.status);
@@ -6024,6 +6056,78 @@ body:not(.sidebar-closed) #sidebar-backdrop {
       showToast(`Gateway routed: ${rec.spec.name} (${modInput || rec.model})`, 'success');
     }
     window.testLlmConnection = testLlmConnection;
+
+    // =========================================================================
+    // LLM EXECUTION INTERRUPT & GUARDRAIL CONTROLLER
+    // =========================================================================
+    async function refreshLlmInterrupts() {
+      const base = getBackendBaseUrl();
+      const listEl = document.getElementById('llm-interrupts-list');
+      const selEl = document.getElementById('llm-interrupt-mode-select');
+      try {
+        const resp = await fetch(base + '/api/llm/interrupts');
+        if (resp.ok) {
+          const data = await resp.json();
+          if (selEl && data.interrupt_mode) selEl.value = data.interrupt_mode;
+          if (!listEl) return;
+          const pending = data.pending || [];
+          if (pending.length === 0) {
+            listEl.innerHTML = '<div class="text-[11px] text-slate-400 italic">No execution interrupts pending. Agents execute safely within policy boundaries.</div>';
+            return;
+          }
+          listEl.innerHTML = pending.map(item => `
+            <div class="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/30 flex flex-col gap-1.5">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-amber-800 dark:text-amber-300 uppercase text-[10px] tracking-wider">⚠️ Interrupt: ${item.agent_name} ➔ ${item.action}</span>
+                <span class="pill-shape bg-amber-500/20 text-amber-700 dark:text-amber-200 text-[10px]">Confidence: ${item.confidence}%</span>
+              </div>
+              <div class="text-[11px] text-slate-700 dark:text-slate-200"><strong>Trigger:</strong> ${item.reason}</div>
+              <div class="text-[11px] text-slate-600 dark:text-slate-300"><strong>LLM Assessment:</strong> ${item.rationale}</div>
+              ${item.optimization ? `<div class="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono bg-emerald-500/10 p-1.5 rounded">💡 Suggestion: ${item.optimization}</div>` : ''}
+              <div class="flex items-center justify-end gap-2 pt-1 border-t border-amber-500/20">
+                <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'reject')" class="px-2.5 py-1 rounded-md bg-rose-600/20 text-rose-700 dark:text-rose-300 hover:bg-rose-600/30 text-[11px] font-semibold">Reject</button>
+                <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'modify')" class="px-2.5 py-1 rounded-md bg-purple-600/20 text-purple-700 dark:text-purple-300 hover:bg-purple-600/30 text-[11px] font-semibold">LLM Optimize</button>
+                <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'approve')" class="px-2.5 py-1 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 text-[11px] font-semibold">Approve &amp; Resume</button>
+              </div>
+            </div>
+          `).join('');
+        }
+      } catch (e) {}
+    }
+    window.refreshLlmInterrupts = refreshLlmInterrupts;
+
+    async function changeLlmInterruptMode(mode) {
+      const base = getBackendBaseUrl();
+      try {
+        const resp = await fetch(base + '/api/llm/interrupts/config', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ interrupt_mode: mode })
+        });
+        if (resp.ok) {
+          showToast(`LLM Interrupt Mode updated to '${mode}'`, 'info');
+          refreshLlmInterrupts();
+        }
+      } catch (e) {}
+    }
+    window.changeLlmInterruptMode = changeLlmInterruptMode;
+
+    async function resolveExecutionInterrupt(intId, decision) {
+      const base = getBackendBaseUrl();
+      try {
+        const resp = await fetch(base + '/api/llm/interrupts/resolve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ interrupt_id: intId, decision: decision })
+        });
+        if (resp.ok) {
+          showToast(`Execution Interrupt ${decision.toUpperCase()}ED`, decision === 'reject' ? 'warning' : 'success');
+          refreshLlmInterrupts();
+        }
+      } catch (e) {}
+    }
+    window.resolveExecutionInterrupt = resolveExecutionInterrupt;
+    setTimeout(refreshLlmInterrupts, 1500);
 
     // =========================================================================
     // GOOGLE OAUTH 2.0 (PKCE S256) & GMAIL REST API CONTROLLER (v7.9.0)
