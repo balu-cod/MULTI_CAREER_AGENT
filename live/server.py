@@ -1178,31 +1178,36 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             "status": build_api_status(vault),
         }
 
-    # 6. POST /api/resume — Tailor Resume to Job Description
+    # 6. POST /api/resume — Tailor Resume to Job Description with Company Research & LLM
     if path == "/api/resume":
         job_text = str(payload.get("job") or "").strip()
         title_text = str(payload.get("title") or "").strip()
+        company_name = str(payload.get("company") or "").strip()
         p = merged_profile(vault)
         job = (
             {
                 "id": "custom",
                 "title": title_text or (job_text.splitlines()[0][:80] if job_text else "Software Engineer Intern"),
-                "company": str(payload.get("company") or ""),
+                "company": company_name,
                 "desc": job_text,
+                "url": str(payload.get("url") or "")
             }
-            if job_text
+            if (job_text or company_name)
             else None
         )
         runtime.discover()
-        data = R.build(p, job)
-        if job:
-            data["summary"] = R.llm_summary(p, data, job, runtime.TOOLS["ask_llm"]) or data["summary"]
+        if job and job.get("company"):
+            data = R.llm_tailor_resume(p, job)
+        else:
+            data = R.build(p, job)
+            if job:
+                data["summary"] = R.llm_summary(p, data, job, runtime.TOOLS["ask_llm"]) or data["summary"]
         out_dir = ROOT / "private" / "resumes"
         out_dir.mkdir(parents=True, exist_ok=True)
         stem = "custom" if job else "_base"
         info = R.render_pdf(data, out_dir / f"{stem}.pdf")
         (out_dir / f"{stem}.md").write_text(R.render_md(data), "utf-8")
-        udb.record_ledger_action("RESUME_TAILORED", "BUILD_RESUME", f"Tailored resume for {title_text or 'Software Engineer'} (ATS {data.get('ats')}%)", actor="TAILOR_AGENT")
+        udb.record_ledger_action("RESUME_TAILORED", "BUILD_RESUME", f"Tailored resume for {title_text or 'Software Engineer'} @ {company_name or 'Target'} (ATS {data.get('ats')}%)", actor="TAILOR_AGENT")
         return {
             "ok": True,
             "pdf_url": f"/private/resumes/{stem}.pdf",
@@ -1211,6 +1216,9 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             "ats": data.get("ats"),
             "missing": data.get("missing", []),
             "summary": data.get("summary", ""),
+            "company_research": data.get("company_research"),
+            "tailored_pitch": data.get("tailored_pitch"),
+            "llm_tailored": data.get("_llm_tailored", False)
         }
 
     # 7. POST /api/profile — Update Profile Artifacts
@@ -1553,6 +1561,17 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             llm_gateway.INTERRUPT_ENGINE._save()
         return {"ok": True, "interrupt_mode": llm_gateway.INTERRUPT_ENGINE.interrupt_mode}
 
+    # 19. POST /api/research-company — Deep Company Intelligence & Tailoring Dossier
+    if path == "/api/research-company":
+        company = str(payload.get("company") or "").strip()
+        title = str(payload.get("title") or "").strip()
+        desc = str(payload.get("desc") or payload.get("description") or "").strip()
+        url = str(payload.get("url") or "").strip()
+        from . import company_researcher
+        research = company_researcher.research_company(company=company, job_title=title, job_desc=desc, job_url=url)
+        udb.record_ledger_action("COMPANY_RESEARCHED", "ANALYZE_COMPANY", f"Researched {company} (Domain: {research.get('domain')})", actor="RESEARCHER_AGENT")
+        return {"ok": True, "research": research}
+
     return {"ok": False, "error": f"Unknown endpoint: {path}"}
 
 
@@ -1661,6 +1680,23 @@ def serve(vault, host="127.0.0.1", port=8000, log=print):
                 return
             if u.path == "/api/llm/interrupts":
                 body = json.dumps(llm_gateway.INTERRUPT_ENGINE.list_interrupts()).encode("utf-8")
+                self.send_response(200)
+                self._cors()
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(body)
+                return
+            if u.path == "/api/company-research":
+                from . import company_researcher
+                cdir = company_researcher.RESEARCH_CACHE_DIR
+                items = []
+                if cdir.is_dir():
+                    for f in sorted(cdir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
+                        try:
+                            items.append(json.loads(f.read_text("utf-8")))
+                        except Exception:
+                            pass
+                body = json.dumps({"ok": True, "companies": items, "count": len(items)}).encode("utf-8")
                 self.send_response(200)
                 self._cors()
                 self.send_header("Content-Type", "application/json; charset=utf-8")

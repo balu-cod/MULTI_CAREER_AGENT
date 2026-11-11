@@ -1,5 +1,257 @@
 [
   {
+    "timestamp": "2026-11-11T07:06:31+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Software Engineer Intern @ Razorpay (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T07:06:05+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Razorpay (Domain: Fintech & Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:50:44+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (20 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T06:50:40+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to jobs@anyoneai.com (Anyone Ai) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:50:34+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Mathematics Expert (LATAM & Europe) (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:49:55+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@vxiglobalsolutions.com (VXI Global Solutions) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:49:49+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for US Remote Patient Care Advocate (Customer Service) (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:49:33+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1463 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T06:47:59+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern  \u2014 Sezzle (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:47:57+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (18 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T06:47:54+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@sezzle.com (Sezzle) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:47:45+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'whats todays date...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "KODIMURTHI BHALAVARDAN"
+  },
+  {
+    "timestamp": "2026-11-11T06:47:45+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:45:17+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern  \u2014 Sezzle (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:44:49+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'hii...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T06:44:36+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:43:36+00:00",
+    "date": "2026-11-11",
+    "category": "LLM_GATEWAY",
+    "action": "CONFIGURE_PROVIDER",
+    "details": "Configured OPENROUTER_API_KEY (model: meta-llama/llama-3.3-70b-instruct:free)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T06:42:00+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:25:22+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "SCHEDULED_MORNING_DIGEST",
+    "details": "Executed morning-digest dispatch. Target: kodimurthybalu@gmail.com.",
+    "status": "SUCCESS",
+    "actor": "GMAIL_SCHEDULER"
+  },
+  {
+    "timestamp": "2026-11-11T06:23:41+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:18:02+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay (ATS 38%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:07:55+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@enterpret.com (Enterpret) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:07:48+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for [Backend, Onsite] Software Engineering Intern (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:06:25+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay (ATS 38%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:06:22+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (17 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T06:06:20+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@enterpret.com (Enterpret) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T06:06:13+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for [Backend, Onsite] Software Engineering Intern (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T06:04:29+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
     "timestamp": "2026-11-11T04:37:17+00:00",
     "date": "2026-11-11",
     "category": "GMAIL_SENT",

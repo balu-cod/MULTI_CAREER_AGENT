@@ -144,20 +144,43 @@ def apply_jobs(vault, log, submit=False, yes=False, limit=10):
         (ROOT / "private" / "shots").mkdir(parents=True, exist_ok=True)
         (ROOT / "private" / "drafts").mkdir(parents=True, exist_ok=True)
         applied_count = 0
+        from . import company_researcher
         for j in todo:
             yaml_path = aihawk_generate_yaml_resume(p, j)
             slug = re.sub(r"\W+", "_", j["id"]).strip("_")
             tailored = out_resumes / f"{slug}.pdf"
+
+            # 1. Company Research Context
+            comp_research = j.get("_company_research")
+            if not comp_research:
+                try:
+                    comp_research = company_researcher.research_company(
+                        company=j.get("company", ""),
+                        job_title=j.get("title", ""),
+                        job_desc=j.get("desc") or j.get("description") or "",
+                        job_url=j.get("url") or ""
+                    )
+                    j["_company_research"] = comp_research
+                except Exception:
+                    comp_research = {}
+
+            # 2. Deep LLM resume tailoring with company context
             if not tailored.exists():
                 try:
-                    rdata = R.build(p, j)
+                    rdata = R.llm_tailor_resume(p, j, company_research=comp_research)
                     R.render_pdf(rdata, tailored)
                 except Exception:
-                    pass
+                    try:
+                        rdata = R.build(p, j)
+                        R.render_pdf(rdata, tailored)
+                    except Exception:
+                        pass
             use = tailored if tailored.exists() else cv
             rec_email = resolve_recruiter_email(j)
             status_val = "applied" if submit else "applied_prepared"
             now_iso = dt.datetime.now().isoformat(timespec="seconds")
+            pitch = (comp_research or {}).get("application_hook") or f"Excited to apply my experience to {j.get('company')}'s {j.get('title')} team."
+
             rec = {
                 "company": j["company"],
                 "title": j["title"],
@@ -166,8 +189,10 @@ def apply_jobs(vault, log, submit=False, yes=False, limit=10):
                 "hiring_email": rec_email,
                 "ats_score": j.get("ats") or 100,
                 "resume_pdf": f"/private/resumes/{use.name}",
+                "company_domain": (comp_research or {}).get("domain", "Technology"),
+                "tailored_pitch": pitch,
                 "at": now_iso,
-                "engine": "aihawk+resume-pdf+outreach",
+                "engine": "aihawk+llm-tailored-resume+company-intel",
                 "status": status_val,
             }
             tr[j["id"]] = rec
@@ -181,11 +206,11 @@ def apply_jobs(vault, log, submit=False, yes=False, limit=10):
                 "status": "Applied",
                 "ats_score": j.get("ats") or 100,
                 "resume_path": f"/private/resumes/{use.name}",
-                "outreach_note": f"Tailored 1-page ATS PDF ({use.name}) & AIHawk YAML prepared for {rec_email}"
+                "outreach_note": f"Company Domain: {(comp_research or {}).get('domain', 'Tech')} | Tailored Hook: {pitch[:120]}... | Resume: {use.name}"
             })
             udb.record_ledger_action("APPLICATION_TRACKED", "AUTO_APPLY_JOB", f"Applied to {j['title']} @ {j['company']} ({rec_email}) with {use.name} (ATS {j.get('ats', 100)}%)", actor="AUTO_APPLIER")
             applied_count += 1
-            log(f"  [APPLIED {applied_count}/{len(todo)}] {j['title']} @ {j['company']} | Portal: {j.get('portal')} | Recruiter: {rec_email} | Resume: {use.name} (ATS {j.get('ats', 100)}%) -> {j['url']}")
+            log(f"  [APPLIED {applied_count}/{len(todo)}] {j['title']} @ {j['company']} ({(comp_research or {}).get('domain', 'Tech')}) | Recruiter: {rec_email} | Resume: {use.name} (ATS {j.get('ats', 100)}%)")
         vault.save_artifact("live_applications_v1.json", tr, "application/json", ["tracker"], AG, ["All"], ["All"], agent_name=AG)
         log(f"Total applications processed and tracked: {applied_count} (saved to vault/live_applications_v1.json & SQLite applications table)")
         return
@@ -200,7 +225,15 @@ def apply_jobs(vault, log, submit=False, yes=False, limit=10):
             for sel, key in FIELDS.get(j["portal"], {}).items():
                 if vals.get(key) and pg.query_selector(sel):
                     pg.fill(sel, vals[key])
-            tailored = out_resumes / (re.sub(r"\W", "_", j["id"]) + ".pdf")
+            slug = re.sub(r"\W+", "_", j["id"]).strip("_")
+            tailored = out_resumes / f"{slug}.pdf"
+            if not tailored.exists():
+                try:
+                    cres = j.get("_company_research") or company_researcher.research_company(j.get("company", ""))
+                    rdata = R.llm_tailor_resume(p, j, company_research=cres)
+                    R.render_pdf(rdata, tailored)
+                except Exception:
+                    pass
             use = tailored if tailored.exists() else cv
             if use.exists() and pg.query_selector("input[type=file]"):
                 pg.set_input_files("input[type=file]", str(use))

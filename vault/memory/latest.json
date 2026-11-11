@@ -1,7 +1,7 @@
 {
-  "run_id": "20261111T042055Z",
-  "started": "2026-11-11T04:20:55+00:00",
-  "finished": "2026-11-11T04:24:42+00:00",
+  "run_id": "20261111T064530Z",
+  "started": "2026-11-11T06:45:30+00:00",
+  "finished": "2026-11-11T06:49:05+00:00",
   "version": "7.9.0",
   "user": {
     "handle": "kodimurthybalu",
@@ -12,10 +12,9 @@
       "AI Engineer Intern"
     ],
     "technical_skills": [
-      "Python",
-      "SQL",
-      "Git",
-      "REST APIs"
+      "Continuous Integration (CI)",
+      "GitHub Actions",
+      "Software Development"
     ],
     "skill_gaps": [
       "typescript",
@@ -29,7 +28,11 @@
       "mongodb",
       "aws"
     ],
-    "interests": [],
+    "interests": [
+      "Career Development",
+      "AI and Technology News",
+      "Hiring Trends in India"
+    ],
     "preferred_locations": [
       "Bengaluru",
       "Hyderabad",
@@ -44,33 +47,34 @@
   "analysis": {
     "level": "intermediate",
     "strengths": [
-      "python",
-      "sql",
-      "git",
-      "rest apis"
+      "continuous integration (ci)",
+      "github actions",
+      "software development"
     ],
     "terms": [
       "typescript",
-      "mongodb",
       "aws",
       "llm",
+      "python",
+      "java",
+      "react",
+      "git",
+      "c++",
       "kubernetes",
-      "rag",
       "langgraph",
-      "mcp",
       "langchain",
-      "dsa"
+      "mcp"
     ],
     "target_roles": [
       "Software Engineer Intern",
       "Backend Developer",
       "AI Engineer Intern"
     ],
-    "jobs_seen": 1468,
+    "jobs_seen": 1463,
     "jobs_matched": 0
   },
   "jobs": {
-    "scanned": 1468,
+    "scanned": 1463,
     "matched": 0,
     "new_since_last_run": 0,
     "gone_since_last_run": 0,
@@ -79,115 +83,115 @@
         "source": "greenhouse:sezzle",
         "count": 289,
         "error": null,
-        "ms": 8375
+        "ms": 13032
       },
       {
         "source": "greenhouse:enterpret",
         "count": 14,
         "error": null,
-        "ms": 827
+        "ms": 844
       },
       {
         "source": "greenhouse:karya",
         "count": 19,
         "error": null,
-        "ms": 1108
+        "ms": 1156
       },
       {
         "source": "greenhouse:cresta",
         "count": 91,
         "error": null,
-        "ms": 6515
+        "ms": 11703
       },
       {
         "source": "greenhouse:datacor",
         "count": 12,
         "error": null,
-        "ms": 3858
+        "ms": 2781
       },
       {
         "source": "greenhouse:eqtcorporation",
         "count": 52,
         "error": null,
-        "ms": 3515
+        "ms": 4031
       },
       {
         "source": "ashby:anyone-ai",
         "count": 226,
         "error": null,
-        "ms": 1608
+        "ms": 2186
       },
       {
         "source": "ashby:aiprise",
-        "count": 21,
+        "count": 23,
         "error": null,
-        "ms": 967
+        "ms": 1297
       },
       {
         "source": "ashby:outmarket",
         "count": 18,
         "error": null,
-        "ms": 734
+        "ms": 1577
       },
       {
         "source": "ashby:pinecone",
         "count": 6,
         "error": null,
-        "ms": 688
+        "ms": 1093
       },
       {
         "source": "ashby:build-ai",
         "count": 29,
         "error": null,
-        "ms": 1078
+        "ms": 1109
       },
       {
         "source": "remotive",
         "count": 39,
         "error": null,
-        "ms": 5859
+        "ms": 9031
       },
       {
         "source": "arbeitnow",
         "count": 300,
         "error": null,
-        "ms": 23280
+        "ms": 11297
       },
       {
         "source": "hn_hiring",
         "count": 194,
         "error": null,
-        "ms": 35016
+        "ms": 19108
       },
       {
         "source": "unstop",
         "count": 25,
         "error": null,
-        "ms": 1858
+        "ms": 1608
       },
       {
         "source": "page:https://wellfound.com/jobs",
         "count": 37,
         "error": null,
-        "ms": 34062
+        "ms": 38672
       },
       {
         "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
-        "count": 39,
+        "count": 40,
         "error": null,
-        "ms": 46046
+        "ms": 46312
       },
       {
         "source": "page:https://myinternships.in/internships-at/postman/software-development",
-        "count": 39,
+        "count": 40,
         "error": null,
-        "ms": 44108
+        "ms": 45702
       },
       {
         "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
         "count": 40,
         "error": null,
-        "ms": 42920
+        "ms": 44936
       }
     ],
     "top": []
@@ -195,51 +199,51 @@
   "market_demand": [
     {
       "skill": "typescript",
-      "jobs": 15,
-      "of": 56,
-      "in_your_roadmap": true
-    },
-    {
-      "skill": "mongodb",
-      "jobs": 13,
-      "of": 56,
+      "jobs": 2,
+      "of": 11,
       "in_your_roadmap": true
     },
     {
       "skill": "aws",
-      "jobs": 9,
-      "of": 56,
+      "jobs": 1,
+      "of": 11,
       "in_your_roadmap": true
     },
     {
       "skill": "llm",
-      "jobs": 6,
-      "of": 56,
+      "jobs": 1,
+      "of": 11,
       "in_your_roadmap": true
     },
     {
-      "skill": "kubernetes",
-      "jobs": 5,
-      "of": 56,
-      "in_your_roadmap": true
+      "skill": "python",
+      "jobs": 9,
+      "of": 11,
+      "in_your_roadmap": false
     },
     {
-      "skill": "rag",
-      "jobs": 4,
-      "of": 56,
-      "in_your_roadmap": true
+      "skill": "java",
+      "jobs": 7,
+      "of": 11,
+      "in_your_roadmap": false
     },
     {
-      "skill": "langgraph",
+      "skill": "react",
       "jobs": 2,
-      "of": 56,
-      "in_your_roadmap": true
+      "of": 11,
+      "in_your_roadmap": false
     },
     {
-      "skill": "mcp",
+      "skill": "git",
       "jobs": 2,
-      "of": 56,
-      "in_your_roadmap": true
+      "of": 11,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "c++",
+      "jobs": 2,
+      "of": 11,
+      "in_your_roadmap": false
     }
   ],
   "certs": [
@@ -250,10 +254,10 @@
       "source": "curated",
       "covers": [
         "llm",
-        "rag",
+        "python",
         "langgraph",
-        "mcp",
-        "langchain"
+        "langchain",
+        "mcp"
       ],
       "free_claim": "100% free course & verified certificate",
       "levels": [],
@@ -263,37 +267,57 @@
       "verified_live": true
     },
     {
-      "name": "CodeSignal: Understanding LLMs, Prompting & Agentic Workflows in Python",
-      "url": "https://www.classcentral.com/report/free-certificates/",
-      "provider": "Class Central / CodeSignal",
+      "name": "CS107: C++ Programming",
+      "url": "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
+      "provider": "Class Central",
       "source": "curated",
       "covers": [
-        "llm",
-        "rag",
-        "mcp"
+        "typescript",
+        "python",
+        "c++",
+        "kubernetes"
       ],
-      "free_claim": "Free interactive path & badge via Class Central",
+      "free_claim": "Verified free certificate course on classcentral.com",
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": false,
+      "new": true,
       "verified_live": true
     },
     {
-      "name": "Google Cloud Generative AI & Kubernetes Foundations",
-      "url": "https://www.classcentral.com/report/free-google-certifications/",
-      "provider": "Class Central / Google Cloud",
+      "name": "Getting Started with Java",
+      "url": "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
+      "provider": "Class Central",
       "source": "curated",
       "covers": [
-        "aws",
-        "llm",
+        "typescript",
+        "python",
+        "java",
         "kubernetes"
       ],
-      "free_claim": "Free skill badges & certificates indexed by Class Central",
+      "free_claim": "Verified free certificate course on classcentral.com",
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": false,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Java Programming",
+      "url": "https://www.classcentral.com/course/mooc-fi-java-programming-89476",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "java",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
       "verified_live": true
     },
     {
@@ -304,6 +328,7 @@
       "covers": [
         "typescript",
         "llm",
+        "python",
         "mcp"
       ],
       "free_claim": "100% free official documentation & SDK",
@@ -314,120 +339,21 @@
       "verified_live": true
     },
     {
-      "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
-      "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
-      "provider": "Microsoft Learn",
-      "source": "mslearn-cert",
-      "covers": [
-        "rag",
-        "langgraph",
-        "mcp"
-      ],
-      "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
-      "levels": [
-        "advanced"
-      ],
-      "hours": null,
-      "updated": "2026-09-29T23:17:00+00:00",
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "Microsoft Certified: AI Agent Builder Associate",
-      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/?WT.mc_id=api_CatalogApi",
-      "provider": "Microsoft Learn",
-      "source": "mslearn-cert",
-      "covers": [
-        "rag",
-        "mcp"
-      ],
-      "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
-      "levels": [
-        "intermediate"
-      ],
-      "hours": null,
-      "updated": "2026-11-09T22:03:00+00:00",
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "&gt;Introduction to Career Skills in Data Analytics",
-      "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+      "name": "PRDV410: Introduction to Java and Object-Oriented Programming",
+      "url": "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625",
       "provider": "Class Central",
       "source": "curated",
       "covers": [
         "typescript",
+        "python",
+        "java",
         "kubernetes"
       ],
       "free_claim": "Verified free certificate course on classcentral.com",
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "A brief introduction to nursing",
-      "url": "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
-      "provider": "Class Central",
-      "source": "curated",
-      "covers": [
-        "typescript",
-        "kubernetes"
-      ],
-      "free_claim": "Verified free certificate course on classcentral.com",
-      "levels": [],
-      "hours": null,
-      "updated": null,
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "AI Fluency for Educators",
-      "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
-      "provider": "Class Central",
-      "source": "curated",
-      "covers": [
-        "typescript",
-        "kubernetes"
-      ],
-      "free_claim": "Verified free certificate course on classcentral.com",
-      "levels": [],
-      "hours": null,
-      "updated": null,
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "AI Fluency for Students",
-      "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165",
-      "provider": "Class Central",
-      "source": "curated",
-      "covers": [
-        "typescript",
-        "kubernetes"
-      ],
-      "free_claim": "Verified free certificate course on classcentral.com",
-      "levels": [],
-      "hours": null,
-      "updated": null,
-      "new": false,
-      "verified_live": true
-    },
-    {
-      "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
-      "url": "https://github.com/anthropics/courses",
-      "provider": "Anthropic",
-      "source": "curated",
-      "covers": [
-        "llm",
-        "rag"
-      ],
-      "free_claim": "100% free open-source curriculum",
-      "levels": [],
-      "hours": null,
-      "updated": null,
-      "new": false,
+      "new": true,
       "verified_live": true
     }
   ],
@@ -465,7 +391,7 @@
     "replied": 0,
     "interview": 0,
     "rejected": 0,
-    "needs_human": 0,
+    "needs_human": 1,
     "reply_rate": 0
   },
   "followups_due": [],
@@ -498,7 +424,11 @@
     "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
     "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
     "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
-    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165"
+    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165",
+    "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
+    "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
+    "https://www.classcentral.com/course/mooc-fi-java-programming-89476",
+    "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625"
   ],
   "errors": [
     "cert_health: community-free-list: free-certifications list not reachable (404/empty)"
@@ -506,59 +436,50 @@
   "log": [
     "! private fields ['full_name', 'contact_email', 'contact_phone'] found in the committed Vault profile; move them to private/profile.json",
     "> scanner",
-    "  greenhouse:sezzle: 289 postings in 8375 ms",
-    "  greenhouse:enterpret: 14 postings in 827 ms",
-    "  greenhouse:karya: 19 postings in 1108 ms",
-    "  greenhouse:cresta: 91 postings in 6515 ms",
-    "  greenhouse:datacor: 12 postings in 3858 ms",
-    "  greenhouse:eqtcorporation: 52 postings in 3515 ms",
-    "  ashby:anyone-ai: 226 postings in 1608 ms",
-    "  ashby:aiprise: 21 postings in 967 ms",
-    "  ashby:outmarket: 18 postings in 734 ms",
-    "  ashby:pinecone: 6 postings in 688 ms",
-    "  ashby:build-ai: 29 postings in 1078 ms",
-    "  remotive: 39 postings in 5859 ms",
-    "  arbeitnow: 300 postings in 23280 ms",
-    "  hn_hiring: 194 postings in 35016 ms",
-    "  unstop: 25 postings in 1858 ms",
-    "  page:https://wellfound.com/jobs: 37 postings in 34062 ms",
-    "  page:https://myinternships.in/internships-at/razorpay/software-development: 39 postings in 46046 ms",
-    "  page:https://myinternships.in/internships-at/postman/software-development: 39 postings in 44108 ms",
-    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 42920 ms",
+    "  greenhouse:sezzle: 289 postings in 13032 ms",
+    "  greenhouse:enterpret: 14 postings in 844 ms",
+    "  greenhouse:karya: 19 postings in 1156 ms",
+    "  greenhouse:cresta: 91 postings in 11703 ms",
+    "  greenhouse:datacor: 12 postings in 2781 ms",
+    "  greenhouse:eqtcorporation: 52 postings in 4031 ms",
+    "  ashby:anyone-ai: 226 postings in 2186 ms",
+    "  ashby:aiprise: 23 postings in 1297 ms",
+    "  ashby:outmarket: 18 postings in 1577 ms",
+    "  ashby:pinecone: 6 postings in 1093 ms",
+    "  ashby:build-ai: 29 postings in 1109 ms",
+    "  remotive: 39 postings in 9031 ms",
+    "  arbeitnow: 300 postings in 11297 ms",
+    "  hn_hiring: 194 postings in 19108 ms",
+    "  unstop: 25 postings in 1608 ms",
+    "  page:https://wellfound.com/jobs: 37 postings in 38672 ms",
+    "  page:https://myinternships.in/internships-at/razorpay/software-development: 40 postings in 46312 ms",
+    "  page:https://myinternships.in/internships-at/postman/software-development: 40 postings in 45702 ms",
+    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 44936 ms",
     "> inbox",
-    "  inbox: synced 0 new Gmail messages (total stored: 51)",
+    "  inbox: synced 0 new Gmail messages (total stored: 69)",
     "  inbox skipped (no secrets or nothing applied yet)",
     "> aiupdates",
-    "  30 live AI update links saved (+6 Kaggle datasets)",
+    "  30 live AI update links saved (+5 Kaggle datasets)",
     "> contests",
     "  35 live hackathons & hiring challenges saved",
     "> matcher",
-    "  0/1468 jobs >= 60",
+    "  0/1463 jobs >= 60",
     "> funnel",
+    "* [LLM GATEWAY] Auto-approved 'drafter' (Confidence: 95%)",
     "> drafter",
     "> skillgap",
     "> tailor",
     "  tip: add 'projects'/'experience' to the Vault profile (see profile.example.json) for fuller resumes",
     "> certs",
     "  certs source community-free-list note: free-certifications list not reachable (404/empty)",
-    "  11 learning picks for terms: typescript, mongodb, aws, llm, kubernetes, rag",
+    "  6 learning picks for terms: typescript, aws, llm, python, java, react",
     "> prep",
     "> resume_pdf",
     "> portfolio",
     "> reporter",
-    "> autoapply",
-    "NEEDS YOU (no resume attached): https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
-    "NEEDS YOU (no resume attached): https://unstop.com/internships/software-engineer-internship-mind-merge-soft-tech-1716336",
-    "NEEDS YOU (no resume attached): https://wellfound.com/jobs/4126022-ai-engineer-intern",
-    "NEEDS YOU (no resume attached): https://wellfound.com/jobs/3940311-python-backend-developer-intern",
-    "NEEDS YOU (no resume attached): https://unstop.com/internships/backend-developer-internship-nyaami-ai-1724666",
-    "NEEDS YOU (no resume attached): https://wellfound.com/jobs/4903558-software-engineer-intern",
-    "NEEDS YOU (no resume attached): https://wellfound.com/jobs/4903444-software-engineer-intern",
-    "NEEDS YOU (no resume attached): https://myinternships.in/internships/razorpay-is-hiring-software-engineer-intern-bengaluru-2elhm",
-    "NEEDS YOU (6 required fields empty): https://job-boards.greenhouse.io/datacor/jobs/5242412007",
-    "  autoapply (submit): 12 applications prepared & tracked today",
+    "! [LLM INTERRUPT] Paused 'autoapply' for human signoff (ID: int_2489085611c2)",
     "> digest",
-    "  digest built: private/digest_latest.txt (8293 chars) & private/digest_latest.html (43801 chars)",
+    "  digest built: private/digest_latest.txt (7022 chars) & private/digest_latest.html (39369 chars)",
     "  digest emailed",
     "> memory"
   ]

@@ -152,6 +152,88 @@ def llm_summary(p, data, job, ask):
     return out if out and len(out) < 700 and claims_ok(out, p) else None
 
 
+def llm_tailor_resume(p, job=None, company_research=None, limits=None):
+    """Deep LLM resume tailoring incorporating company intelligence, domain fit, and ATS alignment.
+    Strictly truth-grounded to the Vault profile facts."""
+    data = build(p, job, limits=limits)
+    if not job or not job.get("company"):
+        return data
+
+    company_name = str(job.get("company", "")).strip()
+    job_title = str(job.get("title", "")).strip()
+
+    # 1. Fetch or use company research dossier
+    if not company_research:
+        try:
+            from . import company_researcher
+            company_research = company_researcher.research_company(
+                company=company_name,
+                job_title=job_title,
+                job_desc=job.get("desc") or job.get("description") or "",
+                job_url=job.get("url") or ""
+            )
+        except Exception:
+            company_research = {}
+
+    data["company_research"] = company_research or {}
+
+    # 2. Re-prioritize projects based on company tech stack & domain keywords if available
+    comp_tech = [t.lower() for t in (company_research.get("tech_stack") or [])]
+    comp_domain = str(company_research.get("domain") or "").lower()
+
+    if comp_tech or comp_domain:
+        def _comp_project_score(pr):
+            body = " ".join([pr.get("name", ""), " ".join(pr.get("bullets", [])), " ".join(pr.get("skills", []))]).lower()
+            sc = sum(3 for ct in comp_tech if ct and ct in body)
+            if any(w in body for w in comp_domain.split() if len(w) > 3):
+                sc += 2
+            return sc
+
+        if data.get("projects"):
+            data["projects"] = sorted(data["projects"], key=_comp_project_score, reverse=True)
+
+    # 3. LLM-crafted company-aligned summary
+    try:
+        from . import llm_gateway
+        facts = {
+            "current_position": data.get("headline"),
+            "skills": [s for _, vs in data.get("skills", []) for s in vs][:15],
+            "experience": data.get("experience"),
+            "projects": [{"name": x["name"], "skills": x.get("skills", []), "bullets": x["bullets"][:2]} for x in data.get("projects", [])]
+        }
+
+        c_mission = company_research.get("mission") or "software innovation"
+        c_domain = company_research.get("domain") or "technology"
+        c_angle = company_research.get("tailoring_angle") or "highlight engineering excellence and rapid adaptability"
+
+        prompt = (
+            f"You are an Elite Executive Career Coach & Technical Resume Strategist.\n"
+            f"TARGET COMPANY: {company_name} (Domain: {c_domain})\n"
+            f"MISSION: {c_mission}\n"
+            f"RECOMMENDED TAILORING ANGLE: {c_angle}\n"
+            f"TARGET ROLE: {job_title}\n\n"
+            f"CANDIDATE VAULT FACTS (Use ONLY these facts; NEVER invent employers, tools, numbers, or experiences):\n"
+            f"{facts}\n\n"
+            f"Write a 2-3 sentence company-tailored resume summary (in third person, no 'I' or 'my') that positions the candidate as an ideal fit for {company_name} while strictly respecting the facts above.\n"
+            f"Output ONLY the summary text, with no markdown quotes or extra commentary."
+        )
+
+        res = llm_gateway.gateway_generate(prompt, max_tokens=250)
+        tailored_summary = (res.get("reply") or "").strip()
+        tailored_summary = re.sub(r'["\n\r]+', ' ', tailored_summary).strip()
+
+        if tailored_summary and len(tailored_summary) < 700 and claims_ok(tailored_summary, p):
+            data["summary"] = tailored_summary
+            data["_llm_tailored"] = True
+            data["_llm_provider"] = res.get("provider", "gateway")
+    except Exception:
+        pass
+
+    # 4. Attach application hook for cover letter / outreach
+    data["tailored_pitch"] = company_research.get("application_hook") or f"Excited to apply my experience to {company_name}'s {job_title} role."
+    return data
+
+
 # ---------- rendering ----------
 def _t(x): return html.escape(str(x or "").encode("cp1252", "replace").decode("cp1252"))      # built-in PDF fonts are Latin-1/cp1252 only
 def _safe_url(u): return u if re.match(r"https?://", str(u or ""), re.I) else ""
@@ -231,4 +313,16 @@ def render_md(d):
     for key, title in (("education", "Education"), ("certifications", "Certifications"), ("achievements", "Achievements")):
         if d[key]: L += ["", f"## {title}"] + [f"- {x['text'] if isinstance(x, dict) else x}" for x in d[key]]
     if d.get("job"): L += ["", f"**ATS coverage:** {d['ats']}%", "", f"**Do NOT claim (not in your vault):** {', '.join(d['missing']) or 'none'}"]
+    if d.get("company_research"):
+        cr = d["company_research"]
+        L += [
+            "",
+            "## Company Intelligence Briefing",
+            f"- **Domain:** {cr.get('domain', 'N/A')}",
+            f"- **Mission:** {cr.get('mission', 'N/A')}",
+            f"- **Core Tech Stack:** {', '.join(cr.get('tech_stack', [])) or 'N/A'}",
+            f"- **Culture & Engineering Values:** {', '.join(cr.get('culture_values', [])) or 'N/A'}",
+            f"- **Tailoring Strategy:** {cr.get('tailoring_angle', 'N/A')}",
+            f"- **Tailored Pitch Hook:** {cr.get('application_hook', 'N/A')}"
+        ]
     return "\n".join(L) + "\n"

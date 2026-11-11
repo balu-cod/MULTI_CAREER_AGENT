@@ -81,11 +81,26 @@ def run_pipeline(vault, log, only_agents=None, extra_ctx=None):
                 try:
                     from . import llm_gateway
                     if getattr(llm_gateway.INTERRUPT_ENGINE, "interrupt_mode", "auto") != "off":
+                        targets = [
+                            {
+                                "company": m.get("company"),
+                                "title": m.get("title"),
+                                "domain": (m.get("_company_research") or {}).get("domain", "Technology"),
+                                "ats": m.get("ats", 90),
+                                "pitch": (m.get("_company_research") or {}).get("application_hook", "")[:100]
+                            }
+                            for m in ctx.get("matches", [])[:5]
+                        ]
+                        comp_names = [m.get("company") for m in ctx.get("matches", [])[:3] if m.get("company")]
                         chk = llm_gateway.INTERRUPT_ENGINE.create_interrupt(
                             agent_name=n,
                             action=f"execute_{n}",
-                            payload={"run_id": ctx.get("run_id"), "pending_matches": len(ctx.get("matches", []))},
-                            reason=f"Pipeline policy checkpoint for high-impact agent '{n}'",
+                            payload={
+                                "run_id": ctx.get("run_id"),
+                                "pending_matches": len(ctx.get("matches", [])),
+                                "target_preview": targets
+                            },
+                            reason=f"Pipeline policy checkpoint for '{n}'" + (f" targeting {', '.join(comp_names)}" if comp_names else ""),
                             severity="HIGH" if n == "autoapply" else "MEDIUM"
                         )
                         if chk.get("status") == "paused":

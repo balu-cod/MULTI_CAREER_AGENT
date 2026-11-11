@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T09:54:19",
+  "updated": "2026-11-11T12:16:58",
   "contests": [
     {
       "id": "dp:31302",
@@ -196,21 +196,6 @@
       "score": 75
     },
     {
-      "id": "1794884",
-      "title": "BuildSprint",
-      "organizer": "Workelate",
-      "type": "hackathons",
-      "reward": "INR 20000",
-      "deadline": "2026-11-17",
-      "url": "https://unstop.com/hackathons/buildsprint-workelate-1794884",
-      "skills": [
-        "Engineering Students",
-        "Undergraduate"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
       "id": "1803912",
       "title": "Code to Cart: AI x E-commerce Hackathon | KartAI X CodeXcelerate",
       "organizer": "KartAI",
@@ -277,6 +262,21 @@
         "Management",
         "Medical",
         "Law"
+      ],
+      "matched_skills": [],
+      "score": 75
+    },
+    {
+      "id": "1794884",
+      "title": "BuildSprint",
+      "organizer": "Workelate",
+      "type": "hackathons",
+      "reward": "INR 20000",
+      "deadline": "2026-11-17",
+      "url": "https://unstop.com/hackathons/buildsprint-workelate-1794884",
+      "skills": [
+        "Engineering Students",
+        "Undergraduate"
       ],
       "matched_skills": [],
       "score": 75
@@ -362,43 +362,56 @@
       "score": 75
     },
     {
-      "id": "1794522",
-      "title": "CodeElitePune - Hack With Pune",
-      "organizer": "HackWithPune",
+      "id": "1794479",
+      "title": "Inceptrix 3.0",
+      "organizer": "Faculty of Engineering and Technology, Jain Deemed to be University",
+      "type": "hackathons",
+      "reward": "INR 125000",
+      "deadline": "2027-02-20",
+      "url": "https://unstop.com/hackathons/incpetrix-30-faculty-of-engineering-and-technology-jain-deemed-to-be-university-1794479",
+      "skills": [
+        "Engineering Students",
+        "Postgraduate",
+        "Undergraduate",
+        "Management",
+        "Medical",
+        "Law"
+      ],
+      "matched_skills": [],
+      "score": 75
+    },
+    {
+      "id": "1798677",
+      "title": "Overclock",
+      "organizer": "Agnel Charities Fr. C. Rodrigues Institute of Technology, Vashi, Navi Mumbai",
+      "type": "hackathons",
+      "reward": "INR 25000",
+      "deadline": "2027-01-30",
+      "url": "https://unstop.com/hackathons/overclock-agnel-charities-fr-c-rodrigues-institute-of-technology-vashi-navi-mumbai-1798677",
+      "skills": [
+        "Engineering Students",
+        "Postgraduate",
+        "Undergraduate",
+        "Management",
+        "Arts, Commerce, Sciences & Others"
+      ],
+      "matched_skills": [],
+      "score": 75
+    },
+    {
+      "id": "1799780",
+      "title": "Expanding Horizons 8.0  EE",
+      "organizer": "Motilal Nehru National Institute of Technology",
       "type": "hackathons",
       "reward": "Prizes + Hiring / Certificates",
-      "deadline": "2026-12-17",
-      "url": "https://unstop.com/hackathons/codeelitepune-hack-with-pune-hackwithpune-1794522",
+      "deadline": "2026-11-21",
+      "url": "https://unstop.com/hackathons/expanding-horizons-80-ee-expanding-horizon-80-motilal-nehru-national-institute-of-technology-1799780",
       "skills": [
-        "All"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
-      "id": "1801200",
-      "title": "Code Red",
-      "organizer": "Army Institute of Technology (AIT), Pune",
-      "type": "hackathons",
-      "reward": "INR 12000",
-      "deadline": "2027-03-06",
-      "url": "https://unstop.com/hackathons/code-red-solutions-2k27-army-institute-of-technology-ait-pune-1801200",
-      "skills": [
-        "All"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
-      "id": "1789431",
-      "title": "AI Vibeathon 2026: 24-Hour AI Hackathon",
-      "organizer": "DotRepo",
-      "type": "hackathons",
-      "reward": "INR 50000",
-      "deadline": "2026-12-20",
-      "url": "https://unstop.com/hackathons/ai-vibeathon-2026-24-hour-ai-hackathon-dotrepo-1789431",
-      "skills": [
-        "All"
+        "Engineering Students",
+        "Postgraduate",
+        "Undergraduate",
+        "Management",
+        "Arts, Commerce, Sciences & Others"
       ],
       "matched_skills": [],
       "score": 75
@@ -457,10 +470,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://razorpay.com/buildathon/"
     },
@@ -471,10 +483,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://unstop.com/hackathons"
     },
@@ -485,10 +496,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://unstop.com/competitions"
     },
@@ -499,10 +509,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://devpost.com/hackathons"
     },
@@ -513,10 +522,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://www.kaggle.com/competitions"
     },
@@ -527,10 +535,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://leetcode.com/contest/"
     },
@@ -541,10 +548,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://www.hackerearth.com/challenges/"
     },
@@ -555,10 +561,9 @@
       "deadline": "Open",
       "reward": "Prizes & Hiring",
       "skills": [
-        "Python",
-        "SQL",
-        "Git",
-        "REST APIs"
+        "Continuous Integration (CI)",
+        "GitHub Actions",
+        "Software Development"
       ],
       "url": "https://unstop.com/job-fairs"
     }

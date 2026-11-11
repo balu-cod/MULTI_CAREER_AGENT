@@ -372,20 +372,45 @@ class Reporter(LiveAgent):
 
 @agent
 class Tailor(LiveAgent):
-    name, needs, doc = "tailor", ["matcher"], "Builds each tailored resume from the Vault (relevant projects/bullets/skills first); summaries may only claim what the Vault supports"
+    name, needs, doc = "tailor", ["matcher"], "Autonomous company research and LLM resume tailoring strictly grounded in Vault profile facts"
 
     def run(self, ctx):
         from . import resume as R
+        from . import company_researcher
         p = ctx["profile"]
         (ROOT / "private" / "tailored").mkdir(parents=True, exist_ok=True)
+        (ROOT / "private" / "resumes").mkdir(parents=True, exist_ok=True)
         if not (p.get("projects") or p.get("experience")):
             ctx["log"]("  tip: add 'projects'/'experience' to the Vault profile (see profile.example.json) for fuller resumes")
         for j in ctx["matches"][:10]:
-            data = R.build(p, j)
+            comp = j.get("company", "Company")
+            ctx["log"](f"  [AI TAILOR] Researching company & tailoring resume for {j.get('title')} @ {comp}...")
+            # 1. Company Research
+            try:
+                research = company_researcher.research_company(
+                    company=comp,
+                    job_title=j.get("title", ""),
+                    job_desc=j.get("desc") or j.get("description") or "",
+                    job_url=j.get("url", "")
+                )
+                j["_company_research"] = research
+                ctx["log"](f"    * Domain: {research.get('domain')} | Mission: {str(research.get('mission', ''))[:60]}...")
+            except Exception as e:
+                research = None
+                ctx["log"](f"    ! Company research fallback: {e}")
+
+            # 2. Deep LLM resume tailoring with company context
+            data = R.llm_tailor_resume(p, j, company_research=research)
             j["ats"], j["missing"] = data["ats"], data["missing"][:6]
-            data["summary"] = R.llm_summary(p, data, j, TOOLS["ask_llm"]) or data["summary"]
             j["_resume"] = data
-            (ROOT / "private" / "tailored" / f"{_slug(j['id'])}.md").write_text(R.render_md(data))
+
+            # 3. Save Markdown and PDF
+            slug_id = _slug(j['id'])
+            (ROOT / "private" / "tailored" / f"{slug_id}.md").write_text(R.render_md(data), encoding="utf-8")
+            try:
+                R.render_pdf(data, ROOT / "private" / "resumes" / f"{slug_id}.pdf")
+            except Exception:
+                pass
 
 
 PROJECTS = {

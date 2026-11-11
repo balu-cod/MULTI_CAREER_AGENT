@@ -1,35 +1,35 @@
 {
-  "updated": "2026-11-11T09:54:18",
+  "updated": "2026-11-11T12:16:56",
   "items": [
     {
       "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
       "source": "GitHub #mcp",
-      "score": 450468
+      "score": 450743
     },
     {
       "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research",
       "url": "https://github.com/affaan-m/ECC",
       "source": "GitHub #ai-agents",
-      "score": 300874
+      "score": 300922
     },
     {
       "title": "NousResearch/hermes-agent: The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "GitHub #ai-agents",
-      "score": 262502
+      "score": 262530
     },
     {
       "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus",
       "url": "https://github.com/n8n-io/n8n",
       "source": "GitHub #mcp",
-      "score": 210047
+      "score": 210072
     },
     {
       "title": "firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintellig",
       "url": "https://github.com/firecrawl/firecrawl",
       "source": "GitHub #ai-agents",
-      "score": 200608
+      "score": 200638
     },
     {
       "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi",
@@ -41,109 +41,109 @@
       "title": "ollama/ollama: Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "url": "https://github.com/ollama/ollama",
       "source": "GitHub #llm",
-      "score": 186594
+      "score": 186604
     },
     {
       "title": "langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor",
       "url": "https://github.com/langgenius/dify",
       "source": "GitHub #mcp",
-      "score": 160916
+      "score": 160927
     },
     {
       "title": "open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "url": "https://github.com/open-webui/open-webui",
       "source": "GitHub #mcp",
-      "score": 158341
+      "score": 158344
     },
     {
       "title": "langchain-ai/langchain: The agent engineering platform.",
       "url": "https://github.com/langchain-ai/langchain",
       "source": "GitHub #ai-agents",
-      "score": 149338
+      "score": 149340
     },
     {
       "title": "Graphify-Labs/graphify: Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. ",
       "url": "https://github.com/Graphify-Labs/graphify",
       "source": "GitHub #ai-agents",
-      "score": 145735
+      "score": 145778
     },
     {
       "title": "fastapi/fastapi: FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "url": "https://github.com/fastapi/fastapi",
       "source": "GitHub #fastapi",
-      "score": 104636
+      "score": 104648
     },
     {
       "title": "bytedance/deer-flow: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of",
       "url": "https://github.com/bytedance/deer-flow",
       "source": "GitHub #langgraph",
-      "score": 85229
+      "score": 85235
     },
     {
       "title": "headroomlabs-ai/headroom: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for c",
       "url": "https://github.com/headroomlabs-ai/headroom",
       "source": "GitHub #fastapi",
-      "score": 79324
+      "score": 79330
     },
     {
       "title": "langchain-ai/langgraph: Build resilient agents.",
       "url": "https://github.com/langchain-ai/langgraph",
       "source": "GitHub #langgraph",
-      "score": 44773
+      "score": 44776
     },
     {
       "title": "langchain-ai/deepagents: The batteries-included agent harness.",
       "url": "https://github.com/langchain-ai/deepagents",
       "source": "GitHub #langgraph",
-      "score": 31183
+      "score": 31189
     },
     {
       "title": "Evil0ctal/Douyin_TikTok_Download_API: 🚀 自托管的抖音、TikTok、B 站数据采集与无水印视频下载 API，支持 AI agent 通过 MCP 调用与离线语音转文字，Docker 一键部署。| Self-hosted TikTok, ",
       "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
       "source": "GitHub #fastapi",
-      "score": 21336
+      "score": 21337
     },
     {
       "title": "fastapi/sqlmodel: SQL databases in Python, designed for simplicity, compatibility, and robustness.",
       "url": "https://github.com/fastapi/sqlmodel",
       "source": "GitHub #fastapi",
-      "score": 18584
+      "score": 18585
     },
     {
       "title": "JoeanAmier/XHS-Downloader: 小红书（XiaoHongShu、RedNote）链接提取/作品采集工具",
       "url": "https://github.com/JoeanAmier/XHS-Downloader",
       "source": "GitHub #fastapi",
-      "score": 13265
+      "score": 13266
     },
     {
       "title": "xerrors/Yuxi: 可私有部署的多租户知识智能体平台：统一 RAG、知识图谱、多智能体、MCP/Skills、沙盒与权限管理。Yuxi = Cloud Agents + Knowledge RAG, Self-hoste",
       "url": "https://github.com/xerrors/Yuxi",
       "source": "GitHub #langgraph",
-      "score": 7645
+      "score": 7646
     },
     {
       "title": "Foldable Flight: The Best Paper Airplanes",
       "url": "https://www.foldableflight.com",
       "source": "Hacker News",
-      "score": 1207
+      "score": 1214
     },
     {
       "title": "AI usage generates a fragile codebase",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
       "source": "Hacker News",
-      "score": 428
+      "score": 479
     },
     {
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
       "source": "Hacker News",
-      "score": 192
+      "score": 194
     },
     {
       "title": "Fireworks AI security breach impacts Notion and their customers",
       "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
       "source": "Hacker News",
-      "score": 160
+      "score": 161
     },
     {
       "title": "A year after the 100% AI mandate nobody understands our code",
@@ -155,31 +155,31 @@
       "title": "Apple has new Mac app coming to make running local AI models easy",
       "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
       "source": "Hacker News",
-      "score": 119
-    },
-    {
-      "title": "Apple capped engineers at a $200 daily AI budget",
-      "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "source": "Hacker News",
-      "score": 113
+      "score": 149
     },
     {
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
       "source": "Hacker News",
-      "score": 105
+      "score": 107
     },
     {
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai/",
       "source": "Hacker News",
-      "score": 75
+      "score": 76
+    },
+    {
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "source": "Hugging Face",
+      "score": 60
     },
     {
       "title": "Pay for Hugging Face Hub with your Google Cloud Account",
       "url": "https://huggingface.co/blog/hub-gcp-marketplace",
       "source": "Hugging Face",
-      "score": 60
+      "score": 59
     }
   ]
 }

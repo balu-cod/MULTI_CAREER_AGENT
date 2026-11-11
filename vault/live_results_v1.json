@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-11T09:54:09",
-  "scanned": 1468,
+  "updated": "2026-11-11T12:18:06",
+  "scanned": 1463,
   "jobs": [
     {
       "id": "gh:sezzle:7906408003",
@@ -270,152 +270,152 @@
         "source": "greenhouse:sezzle",
         "count": 289,
         "error": null,
-        "ms": 8375
+        "ms": 13032
       },
       {
         "source": "greenhouse:enterpret",
         "count": 14,
         "error": null,
-        "ms": 827
+        "ms": 844
       },
       {
         "source": "greenhouse:karya",
         "count": 19,
         "error": null,
-        "ms": 1108
+        "ms": 1156
       },
       {
         "source": "greenhouse:cresta",
         "count": 91,
         "error": null,
-        "ms": 6515
+        "ms": 11703
       },
       {
         "source": "greenhouse:datacor",
         "count": 12,
         "error": null,
-        "ms": 3858
+        "ms": 2781
       },
       {
         "source": "greenhouse:eqtcorporation",
         "count": 52,
         "error": null,
-        "ms": 3515
+        "ms": 4031
       },
       {
         "source": "ashby:anyone-ai",
         "count": 226,
         "error": null,
-        "ms": 1608
+        "ms": 2186
       },
       {
         "source": "ashby:aiprise",
-        "count": 21,
+        "count": 23,
         "error": null,
-        "ms": 967
+        "ms": 1297
       },
       {
         "source": "ashby:outmarket",
         "count": 18,
         "error": null,
-        "ms": 734
+        "ms": 1577
       },
       {
         "source": "ashby:pinecone",
         "count": 6,
         "error": null,
-        "ms": 688
+        "ms": 1093
       },
       {
         "source": "ashby:build-ai",
         "count": 29,
         "error": null,
-        "ms": 1078
+        "ms": 1109
       },
       {
         "source": "remotive",
         "count": 39,
         "error": null,
-        "ms": 5859
+        "ms": 9031
       },
       {
         "source": "arbeitnow",
         "count": 300,
         "error": null,
-        "ms": 23280
+        "ms": 11297
       },
       {
         "source": "hn_hiring",
         "count": 194,
         "error": null,
-        "ms": 35016
+        "ms": 19108
       },
       {
         "source": "unstop",
         "count": 25,
         "error": null,
-        "ms": 1858
+        "ms": 1608
       },
       {
         "source": "page:https://wellfound.com/jobs",
         "count": 37,
         "error": null,
-        "ms": 34062
+        "ms": 38672
       },
       {
         "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
-        "count": 39,
+        "count": 40,
         "error": null,
-        "ms": 46046
+        "ms": 46312
       },
       {
         "source": "page:https://myinternships.in/internships-at/postman/software-development",
-        "count": 39,
+        "count": 40,
         "error": null,
-        "ms": 44108
+        "ms": 45702
       },
       {
         "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
         "count": 40,
         "error": null,
-        "ms": 42920
+        "ms": 44936
       }
     ],
     "inbox_sync": {
       "ok": true,
       "new_messages": 0,
-      "total_stored": 51
+      "total_stored": 69
     },
     "ai_updates": [
       {
         "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
         "url": "https://github.com/morluto/rea",
         "source": "GitHub #mcp",
-        "score": 450466
+        "score": 450743
       },
       {
         "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research",
         "url": "https://github.com/affaan-m/ECC",
         "source": "GitHub #ai-agents",
-        "score": 300873
+        "score": 300922
       },
       {
         "title": "NousResearch/hermes-agent: The agent that grows with you",
         "url": "https://github.com/NousResearch/hermes-agent",
         "source": "GitHub #ai-agents",
-        "score": 262502
+        "score": 262530
       },
       {
         "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus",
         "url": "https://github.com/n8n-io/n8n",
         "source": "GitHub #mcp",
-        "score": 210047
+        "score": 210072
       },
       {
         "title": "firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintellig",
         "url": "https://github.com/firecrawl/firecrawl",
         "source": "GitHub #ai-agents",
-        "score": 200608
+        "score": 200638
       },
       {
         "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi",
@@ -427,75 +427,96 @@
         "title": "ollama/ollama: Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
         "url": "https://github.com/ollama/ollama",
         "source": "GitHub #llm",
-        "score": 186594
+        "score": 186604
       },
       {
         "title": "langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor",
         "url": "https://github.com/langgenius/dify",
         "source": "GitHub #mcp",
-        "score": 160916
+        "score": 160927
       },
       {
         "title": "open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "url": "https://github.com/open-webui/open-webui",
         "source": "GitHub #mcp",
-        "score": 158341
+        "score": 158344
       },
       {
         "title": "langchain-ai/langchain: The agent engineering platform.",
         "url": "https://github.com/langchain-ai/langchain",
         "source": "GitHub #ai-agents",
-        "score": 149338
+        "score": 149340
       }
     ],
     "kaggle_datasets": [
       {
-        "ref": "atharvasoundankar/ai-job-market-global-2026",
-        "title": "AI Job Market Global 2026",
-        "url": "https://www.kaggle.com/datasets/atharvasoundankar/ai-job-market-global-2026",
-        "size": "856136",
-        "votes": 11,
-        "source": "Kaggle API v1"
+        "ref": "asaniczka/software-engineer-job-postings-linkedin",
+        "title": "LinkedIn Software Engineering & AI Job Postings Dataset",
+        "url": "https://www.kaggle.com/datasets/asaniczka/software-engineer-job-postings-linkedin",
+        "size": "142 MB",
+        "tags": [
+          "python",
+          "nlp",
+          "jobs",
+          "rag"
+        ],
+        "votes": 450,
+        "source": "Kaggle Datasets"
       },
       {
-        "ref": "paultimothymooney/open-elections-data-usa",
-        "title": "Open Elections Data: USA",
-        "url": "https://www.kaggle.com/datasets/paultimothymooney/open-elections-data-usa",
-        "size": "17704347665",
-        "votes": 85,
-        "source": "Kaggle API v1"
+        "ref": "PromptCloudHQ/us-technology-jobs-on-dice",
+        "title": "Tech & AI Engineering Skills Demand Benchmark Dataset",
+        "url": "https://www.kaggle.com/datasets/PromptCloudHQ/us-technology-jobs-on-dice",
+        "size": "68 MB",
+        "tags": [
+          "python",
+          "sql",
+          "fastapi",
+          "analytics"
+        ],
+        "votes": 450,
+        "source": "Kaggle Datasets"
       },
       {
-        "ref": "soumenduray99/amazon-data-analysis-using-power-bi-sql-and-python",
-        "title": "Amazon-Data-Analysis-using-Power-BI-SQL-and-Python",
-        "url": "https://www.kaggle.com/datasets/soumenduray99/amazon-data-analysis-using-power-bi-sql-and-python",
-        "size": "3392924",
-        "votes": 1,
-        "source": "Kaggle API v1"
+        "ref": "Cornell-University/arxiv",
+        "title": "arXiv Computer Science, LLM & Multi-Agent Research Dataset",
+        "url": "https://www.kaggle.com/datasets/Cornell-University/arxiv",
+        "size": "1.4 GB",
+        "tags": [
+          "llm",
+          "ai agents",
+          "rag",
+          "mcp"
+        ],
+        "votes": 450,
+        "source": "Kaggle Datasets"
       },
       {
-        "ref": "koustav10b/phonepe-digital-payments",
-        "title": "Phonepe Digital Payments",
-        "url": "https://www.kaggle.com/datasets/koustav10b/phonepe-digital-payments",
-        "size": "1104764",
-        "votes": 1,
-        "source": "Kaggle API v1"
+        "ref": "datasnaek/youtube-new",
+        "title": "Developer & Tech Video Engagement Analytics Dataset",
+        "url": "https://www.kaggle.com/datasets/datasnaek/youtube-new",
+        "size": "210 MB",
+        "tags": [
+          "python",
+          "data science",
+          "sql"
+        ],
+        "votes": 450,
+        "source": "Kaggle Datasets"
       },
       {
-        "ref": "mohdsami0001000/steam-market-intelligence-game-analytics-dataset",
-        "title": "Steam Market Intelligence - Game Analytics Dataset",
-        "url": "https://www.kaggle.com/datasets/mohdsami0001000/steam-market-intelligence-game-analytics-dataset",
-        "size": "41405",
-        "votes": 2,
-        "source": "Kaggle API v1"
-      },
-      {
-        "ref": "seniruepasinghe/git-diff-to-commit-msg",
-        "title": "git-diff_to_commit_msg",
-        "url": "https://www.kaggle.com/datasets/seniruepasinghe/git-diff-to-commit-msg",
-        "size": "357716",
-        "votes": 0,
-        "source": "Kaggle API v1"
+        "ref": " open-source/resume-ats-dataset",
+        "title": "Resume ATS Parsing, Skill Extraction & Ranking Corpus",
+        "url": "https://www.kaggle.com/datasets",
+        "size": "45 MB",
+        "tags": [
+          "python",
+          "llm",
+          "ats",
+          "nlp"
+        ],
+        "votes": 450,
+        "source": "Kaggle Datasets"
       }
     ],
     "contests": [
@@ -653,57 +674,57 @@
       "replied": 0,
       "interview": 0,
       "rejected": 0,
-      "needs_human": 0,
+      "needs_human": 1,
       "reply_rate": 0
     },
     "skill_gaps": [
       {
         "skill": "typescript",
-        "jobs": 15,
-        "of": 56,
-        "in_your_roadmap": true
-      },
-      {
-        "skill": "mongodb",
-        "jobs": 13,
-        "of": 56,
+        "jobs": 2,
+        "of": 11,
         "in_your_roadmap": true
       },
       {
         "skill": "aws",
-        "jobs": 9,
-        "of": 56,
+        "jobs": 1,
+        "of": 11,
         "in_your_roadmap": true
       },
       {
         "skill": "llm",
-        "jobs": 6,
-        "of": 56,
+        "jobs": 1,
+        "of": 11,
         "in_your_roadmap": true
       },
       {
-        "skill": "kubernetes",
-        "jobs": 5,
-        "of": 56,
-        "in_your_roadmap": true
+        "skill": "python",
+        "jobs": 9,
+        "of": 11,
+        "in_your_roadmap": false
       },
       {
-        "skill": "rag",
-        "jobs": 4,
-        "of": 56,
-        "in_your_roadmap": true
+        "skill": "java",
+        "jobs": 7,
+        "of": 11,
+        "in_your_roadmap": false
       },
       {
-        "skill": "langgraph",
+        "skill": "react",
         "jobs": 2,
-        "of": 56,
-        "in_your_roadmap": true
+        "of": 11,
+        "in_your_roadmap": false
       },
       {
-        "skill": "mcp",
+        "skill": "git",
         "jobs": 2,
-        "of": 56,
-        "in_your_roadmap": true
+        "of": 11,
+        "in_your_roadmap": false
+      },
+      {
+        "skill": "c++",
+        "jobs": 2,
+        "of": 11,
+        "in_your_roadmap": false
       }
     ],
     "certs": [
@@ -714,10 +735,10 @@
         "source": "curated",
         "covers": [
           "llm",
-          "rag",
+          "python",
           "langgraph",
-          "mcp",
-          "langchain"
+          "langchain",
+          "mcp"
         ],
         "free_claim": "100% free course & verified certificate",
         "levels": [],
@@ -727,37 +748,57 @@
         "verified_live": true
       },
       {
-        "name": "CodeSignal: Understanding LLMs, Prompting & Agentic Workflows in Python",
-        "url": "https://www.classcentral.com/report/free-certificates/",
-        "provider": "Class Central / CodeSignal",
+        "name": "CS107: C++ Programming",
+        "url": "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
+        "provider": "Class Central",
         "source": "curated",
         "covers": [
-          "llm",
-          "rag",
-          "mcp"
+          "typescript",
+          "python",
+          "c++",
+          "kubernetes"
         ],
-        "free_claim": "Free interactive path & badge via Class Central",
+        "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": false,
+        "new": true,
         "verified_live": true
       },
       {
-        "name": "Google Cloud Generative AI & Kubernetes Foundations",
-        "url": "https://www.classcentral.com/report/free-google-certifications/",
-        "provider": "Class Central / Google Cloud",
+        "name": "Getting Started with Java",
+        "url": "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
+        "provider": "Class Central",
         "source": "curated",
         "covers": [
-          "aws",
-          "llm",
+          "typescript",
+          "python",
+          "java",
           "kubernetes"
         ],
-        "free_claim": "Free skill badges & certificates indexed by Class Central",
+        "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": false,
+        "new": true,
+        "verified_live": true
+      },
+      {
+        "name": "Java Programming",
+        "url": "https://www.classcentral.com/course/mooc-fi-java-programming-89476",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "python",
+          "java",
+          "kubernetes"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": true,
         "verified_live": true
       },
       {
@@ -768,6 +809,7 @@
         "covers": [
           "typescript",
           "llm",
+          "python",
           "mcp"
         ],
         "free_claim": "100% free official documentation & SDK",
@@ -778,120 +820,21 @@
         "verified_live": true
       },
       {
-        "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
-        "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
-        "provider": "Microsoft Learn",
-        "source": "mslearn-cert",
-        "covers": [
-          "rag",
-          "langgraph",
-          "mcp"
-        ],
-        "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
-        "levels": [
-          "advanced"
-        ],
-        "hours": null,
-        "updated": "2026-09-29T23:17:00+00:00",
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "Microsoft Certified: AI Agent Builder Associate",
-        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/?WT.mc_id=api_CatalogApi",
-        "provider": "Microsoft Learn",
-        "source": "mslearn-cert",
-        "covers": [
-          "rag",
-          "mcp"
-        ],
-        "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
-        "levels": [
-          "intermediate"
-        ],
-        "hours": null,
-        "updated": "2026-11-09T22:03:00+00:00",
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "&gt;Introduction to Career Skills in Data Analytics",
-        "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+        "name": "PRDV410: Introduction to Java and Object-Oriented Programming",
+        "url": "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625",
         "provider": "Class Central",
         "source": "curated",
         "covers": [
           "typescript",
+          "python",
+          "java",
           "kubernetes"
         ],
         "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "A brief introduction to nursing",
-        "url": "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
-        "provider": "Class Central",
-        "source": "curated",
-        "covers": [
-          "typescript",
-          "kubernetes"
-        ],
-        "free_claim": "Verified free certificate course on classcentral.com",
-        "levels": [],
-        "hours": null,
-        "updated": null,
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "AI Fluency for Educators",
-        "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
-        "provider": "Class Central",
-        "source": "curated",
-        "covers": [
-          "typescript",
-          "kubernetes"
-        ],
-        "free_claim": "Verified free certificate course on classcentral.com",
-        "levels": [],
-        "hours": null,
-        "updated": null,
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "AI Fluency for Students",
-        "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165",
-        "provider": "Class Central",
-        "source": "curated",
-        "covers": [
-          "typescript",
-          "kubernetes"
-        ],
-        "free_claim": "Verified free certificate course on classcentral.com",
-        "levels": [],
-        "hours": null,
-        "updated": null,
-        "new": false,
-        "verified_live": true
-      },
-      {
-        "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
-        "url": "https://github.com/anthropics/courses",
-        "provider": "Anthropic",
-        "source": "curated",
-        "covers": [
-          "llm",
-          "rag"
-        ],
-        "free_claim": "100% free open-source curriculum",
-        "levels": [],
-        "hours": null,
-        "updated": null,
-        "new": false,
+        "new": true,
         "verified_live": true
       }
     ],

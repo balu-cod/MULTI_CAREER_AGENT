@@ -7,10 +7,9 @@
     "AI Engineer Intern"
   ],
   "technical_skills": [
-    "Python",
-    "SQL",
-    "Git",
-    "REST APIs"
+    "Continuous Integration (CI)",
+    "GitHub Actions",
+    "Software Development"
   ],
   "skill_gaps": [
     "typescript",
@@ -24,7 +23,11 @@
     "mongodb",
     "aws"
   ],
-  "interests": [],
+  "interests": [
+    "Career Development",
+    "AI and Technology News",
+    "Hiring Trends in India"
+  ],
   "preferred_locations": [
     "Bengaluru",
     "Hyderabad",
@@ -101,14 +104,14 @@
   "experience": [],
   "projects": [],
   "certifications": [],
-  "bio": "Software developer with verified digital activity across GitHub, Amazon Web Services (AWS), LinkedIn. Skilled in Python, SQL, Git, REST APIs.",
+  "bio": "KODIMURTHI BHALAVARDAN appears to be actively involved in software development, particularly in managing continuous integration (CI) workflows for a project named 'MULTI_CAREER_AGENT'. They are also engaged with career-related services and news, indicating a strong interest in staying updated with industry trends and job opportunities.",
   "logged_platforms": [
     "GitHub",
     "Amazon Web Services (AWS)",
     "LinkedIn"
   ],
-  "inbox_summary": "Analyzed 50 recent emails for kodimurthybalu@gmail.com. Active communications identified across GitHub, Amazon Web Services (AWS), LinkedIn. Primary technical interests and activity signals center around software engineering.",
-  "full_name": "Kodimurthybalu",
+  "inbox_summary": "The candidate frequently receives notifications about failed CI runs for their projects, indicating active involvement in software development. They also subscribe to career-related digests and daily news updates, showing a keen interest in staying informed about industry trends and job opportunities.",
+  "full_name": "KODIMURTHI BHALAVARDAN",
   "contact_email": "kodimurthybalu@gmail.com",
   "contact_phone": ""
 }

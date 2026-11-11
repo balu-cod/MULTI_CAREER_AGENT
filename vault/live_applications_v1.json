@@ -2,65 +2,66 @@
   "gh:sezzle:7906408003": {
     "company": "sezzle",
     "title": "Software Engineer Intern",
-    "at": "2026-11-11T09:54:21",
+    "at": "2026-11-11T11:54:59",
     "engine": "aihawk+browser-use+chromium",
-    "status": "needs_human_form"
+    "status": "Applied",
+    "sent_at": "2026-11-11T12:17:54.371113"
   },
   "an:unstop-1716336-software-engineer-internship-mind-merge-soft-tech": {
     "company": "Mind Merge Soft Tech",
     "title": "Software Engineer Internship",
-    "at": "2026-11-11T09:54:23",
+    "at": "2026-11-11T11:55:01",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "rm:4126022": {
     "company": "Alchemyst AI",
     "title": "AI Engineer Intern",
-    "at": "2026-11-11T09:54:26",
+    "at": "2026-11-11T11:55:03",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "rm:3940311": {
     "company": "TrueDax",
     "title": "Python Backend Developer Intern",
-    "at": "2026-11-11T09:54:27",
+    "at": "2026-11-11T11:55:05",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "an:unstop-1724666-backend-developer-internship-nyaami-ai": {
     "company": "NyaaMi AI",
     "title": "Backend Developer Internship",
-    "at": "2026-11-11T09:54:28",
+    "at": "2026-11-11T11:55:07",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "rm:4903558": {
     "company": "SonicAI",
     "title": "Software Engineer Intern",
-    "at": "2026-11-11T09:54:32",
+    "at": "2026-11-11T11:55:10",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "pg:https://wellfound.com/jobs/4903444-software-engineer-intern": {
     "company": "Ziro.digital",
     "title": "Software Engineer Intern (Full Stack + AI)",
-    "at": "2026-11-11T09:54:33",
+    "at": "2026-11-11T11:55:13",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "pg:https://myinternships.in/internships/razorpay-is-hiring-software-engineer-intern-bengaluru-2elhm": {
     "company": "Razorpay",
     "title": "Software Engineer Intern (SDE - Backend)",
-    "at": "2026-11-11T09:54:34",
+    "at": "2026-11-11T11:55:13",
     "engine": "aihawk+browser-use+chromium",
     "status": "needs_human_form"
   },
   "gh:datacor:5242412007": {
     "company": "datacor",
     "title": "Summer 2027 AI Engineer Intern",
-    "at": "2026-11-11T09:54:36",
+    "at": "2026-11-11T11:55:16",
     "engine": "aihawk+browser-use+chromium",
-    "status": "needs_human_form"
+    "status": "needs_human_captcha"
   },
   "app-telus-digital-1794370654": {
     "company": "TELUS Digital",
@@ -95,7 +96,7 @@
     "title": "Application for US Remote Patient Care Advocate (Customer Service)",
     "status": "Applied",
     "hiring_email": "careers@vxiglobalsolutions.com",
-    "sent_at": "2026-11-11T10:07:17.551987"
+    "sent_at": "2026-11-11T12:19:55.621794"
   },
   "tr-1794371821962": {
     "company": "VXI Global Solutions",
@@ -103,5 +104,40 @@
     "status": "Applied",
     "url": "https://remotive.com/remote-jobs/customer-service/us-remote-patient-care-advocate-customer-service-2091168",
     "at": "2026-11-11T10:07:02"
+  },
+  "app-enterpret-1794377180": {
+    "company": "Enterpret",
+    "title": "Application for [Backend, Onsite] Software Engineering Intern",
+    "status": "Applied",
+    "hiring_email": "careers@enterpret.com",
+    "sent_at": "2026-11-11T11:37:55.423546"
+  },
+  "tr-1794377181863": {
+    "company": "Enterpret",
+    "title": "[Backend, Onsite] Software Engineering Intern",
+    "status": "Applied",
+    "url": "https://job-boards.greenhouse.io/enterpret/jobs/7847134003",
+    "at": "2026-11-11T11:36:21"
+  },
+  "tr-1794379675783": {
+    "company": "Sezzle",
+    "title": "A.I. Engineering Intern ",
+    "status": "Applied",
+    "url": "https://job-boards.greenhouse.io/sezzle/jobs/7980003003",
+    "at": "2026-11-11T12:17:55"
+  },
+  "app-anyone-ai-1794379840": {
+    "company": "Anyone Ai",
+    "title": "Application for Mathematics Expert (LATAM & Europe)",
+    "status": "Applied",
+    "hiring_email": "jobs@anyoneai.com",
+    "sent_at": "2026-11-11T12:20:40.806221"
+  },
+  "tr-1794379842789": {
+    "company": "Anyone Ai",
+    "title": "Mathematics Expert (LATAM & Europe)",
+    "status": "Applied",
+    "url": "https://jobs.ashbyhq.com/anyone-ai/e795562e-4cfb-4903-bcca-6edfc4aca554",
+    "at": "2026-11-11T12:20:43"
   }
 }
