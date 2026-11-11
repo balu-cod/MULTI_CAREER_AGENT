@@ -1,0 +1,791 @@
+{
+  "run_id": "20261105T014220Z",
+  "started": "2026-11-05T01:42:20+00:00",
+  "finished": "2026-11-05T01:42:37+00:00",
+  "version": "6.5.0",
+  "user": {
+    "handle": "balu-cod",
+    "current_position": "Software Developer Intern (3 months)",
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "SQL",
+      "PostgreSQL",
+      "Supabase",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "PHP",
+      "C++",
+      "Java",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "REST"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [
+      "ai agents",
+      "llm",
+      "fastapi",
+      "automation"
+    ],
+    "preferred_locations": [
+      "remote",
+      "hyderabad",
+      "india"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 75,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "beginner",
+    "strengths": [
+      "python",
+      "sql",
+      "react",
+      "javascript",
+      "postgresql",
+      "git"
+    ],
+    "terms": [
+      "llm",
+      "typescript",
+      "rag",
+      "aws",
+      "kubernetes",
+      "mongodb",
+      "langchain",
+      "langgraph",
+      "mcp",
+      "dsa",
+      "ai agents",
+      "automation"
+    ],
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "jobs_seen": 35,
+    "jobs_matched": 35
+  },
+  "jobs": {
+    "scanned": 35,
+    "matched": 35,
+    "new_since_last_run": 33,
+    "gone_since_last_run": 22,
+    "sources": [
+      {
+        "source": "greenhouse:sezzle",
+        "count": 2,
+        "error": null,
+        "ms": 208
+      },
+      {
+        "source": "greenhouse:enterpret",
+        "count": 2,
+        "error": null,
+        "ms": 319
+      },
+      {
+        "source": "greenhouse:karya",
+        "count": 1,
+        "error": null,
+        "ms": 583
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 1,
+        "error": null,
+        "ms": 830
+      },
+      {
+        "source": "greenhouse:datacor",
+        "count": 1,
+        "error": null,
+        "ms": 1077
+      },
+      {
+        "source": "greenhouse:eqtcorporation",
+        "count": 1,
+        "error": null,
+        "ms": 1316
+      },
+      {
+        "source": "ashby:anyone-ai",
+        "count": 1,
+        "error": null,
+        "ms": 86
+      },
+      {
+        "source": "ashby:aiprise",
+        "count": 1,
+        "error": null,
+        "ms": 239
+      },
+      {
+        "source": "ashby:outmarket",
+        "count": 2,
+        "error": null,
+        "ms": 474
+      },
+      {
+        "source": "ashby:pinecone",
+        "count": 1,
+        "error": null,
+        "ms": 504
+      },
+      {
+        "source": "ashby:build-ai",
+        "count": 1,
+        "error": null,
+        "ms": 695
+      },
+      {
+        "source": "remotive",
+        "count": 27,
+        "error": null,
+        "ms": 740
+      },
+      {
+        "source": "arbeitnow",
+        "count": 7,
+        "error": null,
+        "ms": 89
+      },
+      {
+        "source": "hn_hiring",
+        "count": 5,
+        "error": null,
+        "ms": 317
+      }
+    ],
+    "top": [
+      {
+        "id": "gh:cresta:4123841008",
+        "title": "Software Engineer Intern",
+        "company": "cresta",
+        "score": 99,
+        "url": "https://job-boards.greenhouse.io/cresta/jobs/4123841008",
+        "posted": "2026-11-01T12:00:00Z",
+        "ats": 67,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "rm:4903558",
+        "title": "Software Engineer Intern",
+        "company": "SonicAI (Wellfound)",
+        "score": 99,
+        "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+        "posted": "2026-10-29T10:00:00",
+        "ats": 80,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "rm:3940311",
+        "title": "Intern Python Developer",
+        "company": "TrueDax (Wellfound)",
+        "score": 95,
+        "url": "https://wellfound.com/jobs/3940311-onsite-bengaluru-intern-python-developer",
+        "posted": "2026-11-01T08:00:00",
+        "ats": 100,
+        "pay": "Rs. 1.8L - 3L",
+        "new": true
+      },
+      {
+        "id": "rm:4739725",
+        "title": "Software Engineer Intern - AI & Full Stack",
+        "company": "Exaful (Wellfound)",
+        "score": 95,
+        "url": "https://wellfound.com/jobs/4739725-software-engineer-intern-ai-full-stack-exaful",
+        "posted": "2026-10-31T10:00:00",
+        "ats": 100,
+        "pay": "Rs. 8000/mo",
+        "new": true
+      },
+      {
+        "id": "gh:sezzle:7906408003",
+        "title": "Software Engineer Intern",
+        "company": "sezzle",
+        "score": 94,
+        "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
+        "posted": "2026-11-01T10:00:00Z",
+        "ats": 80,
+        "pay": "$800",
+        "new": false
+      },
+      {
+        "id": "rm:4126022",
+        "title": "Full Stack AI Engineer Intern",
+        "company": "Alchemyst AI (Wellfound)",
+        "score": 94,
+        "url": "https://wellfound.com/jobs/4126022-full-stack-ai-engineer-intern",
+        "posted": "2026-11-01T10:00:00",
+        "ats": 80,
+        "pay": "Rs. 1.8L - 6L",
+        "new": true
+      },
+      {
+        "id": "rm:4746833",
+        "title": "Engineering Intern (Frontend + AI)",
+        "company": "Magi (Wellfound)",
+        "score": 94,
+        "url": "https://wellfound.com/jobs/4746833-engineering-intern-clone",
+        "posted": "2026-11-02T10:00:00",
+        "ats": 83,
+        "pay": "Rs. 6L - 8.5L",
+        "new": true
+      },
+      {
+        "id": "an:the-ai-signal-1782306",
+        "title": "Full Stack Developer Internship (AI Platforms)",
+        "company": "The AI Signal (Unstop)",
+        "score": 94,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306",
+        "posted": "2026-10-28T00:00:00+00:00",
+        "ats": 88,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "gh:enterpret:7847134003",
+        "title": "[Backend, Onsite] Software Engineering Intern",
+        "company": "enterpret",
+        "score": 91,
+        "url": "https://job-boards.greenhouse.io/enterpret/jobs/7847134003",
+        "posted": "2026-11-01T09:00:00Z",
+        "ats": 57,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "rm:4866665",
+        "title": "Full Stack Software Engineer Intern",
+        "company": "Gridbricks (Wellfound)",
+        "score": 90,
+        "url": "https://wellfound.com/jobs/4866665-full-stack-software-engineer-clone",
+        "posted": "2026-10-30T12:00:00",
+        "ats": 100,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "an:mind-merge-1716336",
+        "title": "Python Full Stack Development Intern",
+        "company": "Mind Merge Soft Tech (Unstop)",
+        "score": 90,
+        "url": "https://unstop.com/internships/python-full-stack-development-internship-mind-merge-soft-tech-private-ltd-1716336",
+        "posted": "2026-10-30T00:00:00+00:00",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "an:vortizo-ai-1775204",
+        "title": "Python Developer Internship",
+        "company": "Vortizo AI (Unstop)",
+        "score": 90,
+        "url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
+        "posted": "2026-10-24T00:00:00+00:00",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "hn:50340102",
+        "title": "Matcha.fm | Founding Backend Engineer AI Search & Full-Stack Software Engineer | REMOTE (Worldwide) | Full-time | Working on AI agents that ",
+        "company": "Matcha.fm",
+        "score": 90,
+        "url": "https://news.ycombinator.com/item?id=50340102",
+        "posted": "2026-11-04T09:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "an:nyaami-ai-1724666",
+        "title": "Full Stack Developer Internship (AI Workflow)",
+        "company": "NyaaMi AI (Unstop)",
+        "score": 89,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-nyaami-ai-1724666",
+        "posted": "2026-10-26T00:00:00+00:00",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "an:zenotalent-1791205",
+        "title": "Full Stack Developer Internship",
+        "company": "Zenotalent (Unstop)",
+        "score": 87,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-zenotalent-1791205",
+        "posted": "2026-11-02T00:00:00+00:00",
+        "ats": null,
+        "pay": "",
+        "new": true
+      }
+    ]
+  },
+  "market_demand": [
+    {
+      "skill": "llm",
+      "jobs": 12,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "typescript",
+      "jobs": 12,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "rag",
+      "jobs": 5,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "aws",
+      "jobs": 1,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "kubernetes",
+      "jobs": 1,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "mongodb",
+      "jobs": 1,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "langchain",
+      "jobs": 1,
+      "of": 35,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "langgraph",
+      "jobs": 1,
+      "of": 35,
+      "in_your_roadmap": true
+    }
+  ],
+  "certs": [
+    {
+      "name": "LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows",
+      "url": "https://academy.langchain.com/",
+      "provider": "LangChain Academy",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "langchain",
+        "langgraph",
+        "ai agents"
+      ],
+      "free_claim": "100% free interactive course",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "Anthropic / MCP",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "typescript",
+        "mcp",
+        "ai agents"
+      ],
+      "free_claim": "100% free official documentation & SDK",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Develop Generative AI Solutions with Large Language Models",
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents/",
+      "provider": "Microsoft Learn",
+      "source": "mslearn",
+      "covers": [
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "learning path is free; any certification exam fee is separate",
+      "levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "hours": 5.0,
+      "updated": "2026-10-20",
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+      "url": "https://github.com/anthropics/courses",
+      "provider": "Anthropic",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "100% free open-source curriculum",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "DeepLearning.AI: ChatGPT Prompt Engineering & Building Systems with LLMs",
+      "url": "https://www.deeplearning.ai/short-courses/",
+      "provider": "DeepLearning.AI",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "free short courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Google Cloud Skills Boost: Generative AI & Cloud Engineering Foundations",
+      "url": "https://www.cloudskillsboost.google/",
+      "provider": "Google Cloud",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "kubernetes"
+      ],
+      "free_claim": "free foundational courses & skill badges",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Kubernetes Official Interactive Tutorials & Cluster Basics",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "provider": "CNCF / Kubernetes",
+      "source": "curated",
+      "covers": [
+        "aws",
+        "kubernetes"
+      ],
+      "free_claim": "100% free official tutorials",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "University of Helsinki: Full Stack Open (React, Node, TypeScript, GraphQL, Docker)",
+      "url": "https://fullstackopen.com/en/",
+      "provider": "University of Helsinki",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "mongodb"
+      ],
+      "free_claim": "100% free university course & official certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Build JavaScript and TypeScript Applications with React and Node.js",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+      "provider": "Microsoft Learn",
+      "source": "mslearn",
+      "covers": [
+        "typescript"
+      ],
+      "free_claim": "learning path is free; any certification exam fee is separate",
+      "levels": [
+        "beginner"
+      ],
+      "hours": 3.0,
+      "updated": "2026-10-12",
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Introduction to Kubernetes and Containers on Linux",
+      "url": "https://learn.microsoft.com/en-us/training/paths/intro-to-kubernetes/",
+      "provider": "Microsoft Learn",
+      "source": "mslearn",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "learning path is free; any certification exam fee is separate",
+      "levels": [
+        "beginner"
+      ],
+      "hours": 3.5,
+      "updated": "2026-10-10",
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "AWS Skill Builder: AWS Cloud Essentials & Serverless Foundations",
+      "url": "https://explore.skillbuilder.aws/",
+      "provider": "AWS",
+      "source": "curated",
+      "covers": [
+        "aws"
+      ],
+      "free_claim": "600+ free digital courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "CS50x: Introduction to Computer Science (Harvard University)",
+      "url": "https://cs50.harvard.edu/x/",
+      "provider": "Harvard University",
+      "source": "curated",
+      "covers": [
+        "dsa"
+      ],
+      "free_claim": "100% free course & free CS50 certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Docker Get Started & Multi-Stage Containerization Workshop",
+      "url": "https://docs.docker.com/get-started/",
+      "provider": "Docker",
+      "source": "curated",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "100% free official workshop",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Linux Foundation: LFS101 Introduction to Linux & Git for Distributed Dev",
+      "url": "https://training.linuxfoundation.org/free-courses/",
+      "provider": "Linux Foundation",
+      "source": "curated",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "100% free courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 4,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 0,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 2,
+      "error": null
+    },
+    {
+      "source": "curated",
+      "count": 24,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-05",
+    "morning_7am": "Study: dsa (90 min)",
+    "evening_630pm": "DSA: 2 problems on linked lists",
+    "night_9pm": "Build: ship one small feature using llm",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 1,
+    "tech": 1
+  },
+  "matched_ids": [
+    "gh:cresta:4123841008",
+    "rm:4903558",
+    "rm:3940311",
+    "rm:4739725",
+    "gh:sezzle:7906408003",
+    "rm:4126022",
+    "rm:4746833",
+    "an:the-ai-signal-1782306",
+    "gh:enterpret:7847134003",
+    "rm:4866665",
+    "an:mind-merge-1716336",
+    "an:vortizo-ai-1775204",
+    "hn:50340102",
+    "an:nyaami-ai-1724666",
+    "an:zenotalent-1791205",
+    "ab:outmarket:716e3319-1d72-4f8d-b5d9-efb9de1cf72f",
+    "rm:4101394",
+    "an:memorlyai-1724402",
+    "an:revino-1596255",
+    "hn:49207409",
+    "gh:datacor:5242412007",
+    "ab:anyone-ai:e825df23-e721-465b-87d7-04a569f7269e",
+    "ab:outmarket:10a2487a-1594-4400-8404-9ad2e96eb253",
+    "ab:build-ai:6c6e4334-8219-49cc-926e-a5289cf95432",
+    "hn:47977662",
+    "ab:aiprise:3763c791-a387-4078-9ca4-00cbfbf9b1a6",
+    "ab:pinecone:edf2a2a5-64e2-45b8-9f2e-4f354af350b8",
+    "rm:4696235",
+    "hn:50340101",
+    "gh:sezzle:7980015003",
+    "gh:karya:5469564008",
+    "gh:eqtcorporation:5462562008",
+    "rm:4903444",
+    "gh:enterpret:7723230003",
+    "hn:50340103"
+  ],
+  "cert_urls": [
+    "https://huggingface.co/learn/agents-course",
+    "https://langchain-ai.github.io/langgraph/",
+    "https://modelcontextprotocol.io/",
+    "https://cs50.harvard.edu/x/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://neetcode.io/roadmap",
+    "https://www.postgresql.org/docs/current/tutorial.html",
+    "https://course.fast.ai/",
+    "https://academy.langchain.com/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://fullstackopen.com/en/",
+    "https://explore.skillbuilder.aws/",
+    "https://docs.docker.com/get-started/",
+    "https://training.linuxfoundation.org/free-courses/",
+    "https://learn.mongodb.com/",
+    "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "https://www.freecodecamp.org/learn",
+    "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents/",
+    "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+    "https://learn.microsoft.com/en-us/training/paths/intro-to-kubernetes/"
+  ],
+  "errors": [],
+  "log": [
+    "> scanner",
+    "  greenhouse:sezzle: 2 postings in 208 ms",
+    "  greenhouse:enterpret: 2 postings in 319 ms",
+    "  greenhouse:karya: 1 postings in 583 ms",
+    "  greenhouse:cresta: 1 postings in 830 ms",
+    "  greenhouse:datacor: 1 postings in 1077 ms",
+    "  greenhouse:eqtcorporation: 1 postings in 1316 ms",
+    "  ashby:anyone-ai: 1 postings in 86 ms",
+    "  ashby:aiprise: 1 postings in 239 ms",
+    "  ashby:outmarket: 2 postings in 474 ms",
+    "  ashby:pinecone: 1 postings in 504 ms",
+    "  ashby:build-ai: 1 postings in 695 ms",
+    "  remotive: 27 postings in 740 ms",
+    "  arbeitnow: 7 postings in 89 ms",
+    "  hn_hiring: 5 postings in 317 ms",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  6 AI update links saved",
+    "> youtube",
+    "  youtube: 1 news, 1 tech videos; 0 source errors",
+    "> matcher",
+    "  35/35 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "> certs",
+    "  14 learning picks for terms: llm, typescript, rag, aws, kubernetes, mongodb",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> digest",
+    "  digest skipped (no Gmail secrets or contact_email)",
+    "> memory"
+  ]
+}

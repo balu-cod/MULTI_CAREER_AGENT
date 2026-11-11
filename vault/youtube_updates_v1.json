@@ -1,0 +1,139 @@
+{
+  "updated": "2026-11-11T01:06:58",
+  "resolved": {
+    "@Fireship": "UCsBjURrPoezykLs9EqgamOA",
+    "@aiexplained-official": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "@mreflow": "UC4JX40jDee_tINbkjycV4Sg",
+    "@freecodecamp": "UC8butISFwT-Wl7EV0hUK0BQ",
+    "@TechWorldwithNana": "UCdngmbVKX1Tgre699-XLlUA",
+    "@ArjanCodes": "UCVhQ2NnY5Rskt6UjCUkJ_DA",
+    "@ThePrimeagen": "UC8ENHE5xdFSwx71u3fDH5Xw",
+    "@CodeWithHarry": "UCeVMnSShP_Iviwkknt83cww"
+  },
+  "news": [
+    {
+      "id": "nEaJMdM1djM",
+      "title": "Did the AI bubble just pop?",
+      "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
+      "channel": "Fireship",
+      "published": "2026-10-28T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/nEaJMdM1djM/mqdefault.jpg",
+      "views": 2623967
+    },
+    {
+      "id": "1PxEziv5XIU",
+      "title": "The Two Best AI Models/Enemies Just Got Released Simultaneously",
+      "url": "https://www.youtube.com/watch?v=1PxEziv5XIU",
+      "channel": "AI Explained",
+      "published": "2026-02-06T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/1PxEziv5XIU/mqdefault.jpg",
+      "views": 81771
+    },
+    {
+      "id": "STH929HARLo",
+      "title": "9 Free AI Skills That Feel Like Cheat Codes",
+      "url": "https://www.youtube.com/watch?v=STH929HARLo",
+      "channel": "Matt Wolfe",
+      "published": "2026-06-24T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/STH929HARLo/mqdefault.jpg",
+      "views": 154173
+    }
+  ],
+  "tech": [
+    {
+      "id": "oblaHqULUHk",
+      "title": "MCP Explained Simply — What It Is and Why It Exists",
+      "url": "https://www.youtube.com/watch?v=oblaHqULUHk",
+      "channel": "TechWorld with Nana",
+      "published": "2026-09-02T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/oblaHqULUHk/mqdefault.jpg",
+      "views": 591347
+    },
+    {
+      "id": "-WB0T0XmDrY",
+      "title": "Build Production-Ready AI Agents in Python with Pydantic AI",
+      "url": "https://www.youtube.com/watch?v=-WB0T0XmDrY",
+      "channel": "ArjanCodes",
+      "published": "2025-08-29T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/-WB0T0XmDrY/mqdefault.jpg",
+      "views": 129615
+    },
+    {
+      "id": "jGg_1h0qzaM",
+      "title": "LangGraph Complete Course for Beginners – Complex AI Agents with Python",
+      "url": "https://www.youtube.com/watch?v=jGg_1h0qzaM",
+      "channel": "freeCodeCamp.org",
+      "published": "2025-05-20T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/jGg_1h0qzaM/mqdefault.jpg",
+      "views": 1143312
+    },
+    {
+      "id": "Om0ojoKO6sQ",
+      "title": "You won't believe how they got hacked",
+      "url": "https://www.youtube.com/watch?v=Om0ojoKO6sQ",
+      "channel": "The PrimeTime",
+      "published": "2026-07-27T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/Om0ojoKO6sQ/mqdefault.jpg",
+      "views": 270791
+    },
+    {
+      "id": "s4dLwoanLm0",
+      "title": "2026 will be the Year of Multi-agent AIs - Here's why!",
+      "url": "https://www.youtube.com/watch?v=s4dLwoanLm0",
+      "channel": "CodeWithHarry",
+      "published": "2026-02-25T00:00:00+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/s4dLwoanLm0/mqdefault.jpg",
+      "views": 125214
+    }
+  ],
+  "health": [
+    {
+      "section": "news",
+      "source": "@Fireship",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "news",
+      "source": "@aiexplained-official",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "news",
+      "source": "@mreflow",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UC4JX40jDee_tINbkjycV4Sg (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "tech",
+      "source": "@freecodecamp",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "tech",
+      "source": "@TechWorldwithNana",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UCdngmbVKX1Tgre699-XLlUA (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "tech",
+      "source": "@ArjanCodes",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UCVhQ2NnY5Rskt6UjCUkJ_DA (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "tech",
+      "source": "@ThePrimeagen",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    },
+    {
+      "section": "tech",
+      "source": "@CodeWithHarry",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /feeds/videos.xml?channel_id=UCeVMnSShP_Iviwkknt83cww (Caused by NameResolutionError(\"HTTPSConnection(host='www.yo"
+    }
+  ]
+}

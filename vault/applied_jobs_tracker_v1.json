@@ -1,0 +1,144 @@
+{
+  "updated_at": "2026-11-04T07:10:00.511225+00:00",
+  "total_tracked_jobs": 9,
+  "applications": [
+    {
+      "title": "Full Stack Software Engineer Intern (Remote)",
+      "company": "Gridbricks",
+      "location": "Remote (Everywhere)",
+      "work_mode": "100% Remote",
+      "salary": "₹3,60,000 – ₹6,00,000 / year (₹30,000 – ₹50,000 / month)",
+      "match_score": 92,
+      "application_url": "https://wellfound.com/jobs/4866665-full-stack-software-engineer-clone",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880497363919959934%2Bmsg-a:r-5376682746060770382",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "Modern React/Next.js & TypeScript patterns"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Software Development Internship (Python, FastAPI, React, AI)",
+      "company": "RavelCode",
+      "location": "Remote (Pan India)",
+      "work_mode": "Remote / Work From Home",
+      "salary": "Verified Unstop Stipend",
+      "match_score": 91,
+      "application_url": "https://unstop.com/internships/software-development-internship-ravelcode-1784881",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880497391500685214%2Bmsg-a:r2283925876881981627",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "FastAPI",
+        "React.js",
+        "MongoDB"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Full-Stack AI Engineer Intern (Agentic Workflow Automation)",
+      "company": "Langslide",
+      "location": "Remote (India)",
+      "work_mode": "Remote / Work From Home",
+      "salary": "₹1,00,000 – ₹1,50,000 / year (₹8,300 – ₹12,500 / month)",
+      "match_score": 90,
+      "application_url": "https://wellfound.com/jobs/4101394-full-stack-ai-engineer-intern",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880497391518490153%2Bmsg-a:r-4131793301572206502",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "TypeScript",
+        "React.js state management"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Python Developer Internship",
+      "company": "Vortizo AI",
+      "location": "Remote (Pan India)",
+      "work_mode": "Remote / Work From Home",
+      "salary": "Verified Unstop Stipend",
+      "match_score": 90,
+      "application_url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880497391500685214%2Bmsg-a:r2283925876881981627",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "FastAPI REST framework"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Software Engineer Intern – AI & Full Stack",
+      "company": "Exaful",
+      "location": "Remote / Chennai",
+      "work_mode": "100% Remote (3–6 Months, FTE conversion)",
+      "salary": "₹5,000 – ₹8,000/mo intern → ₹45,000 – ₹50,000/mo FTE",
+      "match_score": 89,
+      "application_url": "https://wellfound.com/jobs/4739725-software-engineer-intern-ai-full-stack-exaful",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880526362083179012%2Bmsg-a:r5997285059930947198",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "React/Next.js frontend architecture"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Full Stack Developer Internship (AI Developer Platforms)",
+      "company": "The AI Signal",
+      "location": "Remote (Pan India)",
+      "work_mode": "Remote / Part-Time (5 days/week, PPO Track)",
+      "salary": "Part-Time Remote + PPO / Job Offer Track",
+      "match_score": 88,
+      "application_url": "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306",
+      "gmail_cold_draft_url": "https://mail.google.com/mail/?authuser=kodimurthybalu@gmail.com#all?compose=thread-f:1880526365664995348%2Bmsg-a:r1239011362302110697",
+      "status": "Cold Email Draft Ready in Gmail + Portal Application Queued",
+      "missing_skills": [
+        "TypeScript / Next.js UI patterns"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Python Development Internship",
+      "company": "IntelleQAcademy",
+      "location": "Remote (Pan India)",
+      "work_mode": "Remote / Work From Home",
+      "salary": "Verified Unstop Stipend",
+      "match_score": 84,
+      "application_url": "https://unstop.com/internships/python-development-internship-intelleqacademy-1775190",
+      "gmail_cold_draft_url": "",
+      "status": "Portal Application Queued",
+      "missing_skills": [
+        "Automated unit testing (pytest)"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "Timbre",
+      "location": "Bengaluru, Karnataka",
+      "work_mode": "Onsite / Hybrid (Bengaluru)",
+      "salary": "Competitive Internship Stipend",
+      "match_score": 80,
+      "application_url": "https://wellfound.com/jobs/4897602-full-stack-developer-intern",
+      "gmail_cold_draft_url": "",
+      "status": "Portal Application Queued",
+      "missing_skills": [
+        "Bengaluru onsite attendance during semester"
+      ],
+      "last_checked": "2026-11-04"
+    },
+    {
+      "title": "AI Engineer Intern",
+      "company": "CRUV",
+      "location": "Bengaluru, Karnataka",
+      "work_mode": "Onsite / Hybrid (Bengaluru)",
+      "salary": "Competitive Internship Stipend",
+      "match_score": 77,
+      "application_url": "https://wellfound.com/jobs/4696235-ai-engineer-intern",
+      "gmail_cold_draft_url": "",
+      "status": "Portal Application Queued",
+      "missing_skills": [
+        "NumPy, Pandas, Scikit-learn, PyTorch"
+      ],
+      "last_checked": "2026-11-04"
+    }
+  ]
+}

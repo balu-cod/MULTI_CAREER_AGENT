@@ -1,0 +1,226 @@
+{
+  "updated": "2026-11-10T12:07:08",
+  "date": "2026-11-10",
+  "applications_tracked": 3,
+  "bounced_count": 2,
+  "drafts_ready": 11,
+  "resumes_ready": 13,
+  "applications": {
+    "rm:4903558": {
+      "company": "SonicAI",
+      "title": "Software Engineer Intern",
+      "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+      "status": "portal_required_email_bounced",
+      "at": "2026-11-05T01:57:50Z",
+      "note": "Email to founders@sonicai.io bounced (550); apply directly via Wellfound portal."
+    },
+    "gh:databricks:8211450002": {
+      "company": "Databricks",
+      "title": "Sr Software Engineer-Networking",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8211450002",
+      "status": "portal_required_email_bounced",
+      "at": "2026-11-05T02:11:05Z",
+      "note": "Email to careers@databricks.com bounced; apply via Greenhouse portal."
+    },
+    "app-1794069207": {
+      "company": "Postman",
+      "title": "AI Platform Intern",
+      "status": "Applied",
+      "hiring_email": "careers@postman.com",
+      "resume_pdf": "/private/resumes/tailored_postman.pdf",
+      "ats": 0,
+      "at": "2026-11-07T16:33:27"
+    }
+  },
+  "tonight_study": {
+    "dsa_630pm": "DSA: 2 problems on arrays/hashing",
+    "cert_900pm": "Complete 1 module in Hugging Face: Official AI Agents & MCP Course (https://huggingface.co/learn/agents-course) + LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows (https://academy.langchain.com/)",
+    "hands_on_task": "Port the dashboard to TypeScript with typed API client",
+    "flashcards": [
+      "python",
+      "sql",
+      "git"
+    ]
+  },
+  "tomorrow_queue": [
+    {
+      "title": "Software Engineer Intern",
+      "company": "sezzle",
+      "score": 80,
+      "ats": 100,
+      "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
+      "location": "Remote"
+    },
+    {
+      "title": "Software Engineer Internship",
+      "company": "Mind Merge Soft Tech",
+      "score": 80,
+      "ats": 100,
+      "url": "https://unstop.com/internships/software-engineer-internship-mind-merge-soft-tech-1716336",
+      "location": "Hyderabad / Remote, India"
+    },
+    {
+      "title": "AI Engineer Intern",
+      "company": "Alchemyst AI",
+      "score": 80,
+      "ats": 100,
+      "url": "https://wellfound.com/jobs/4126022-ai-engineer-intern",
+      "location": "Remote / Bengaluru, India"
+    },
+    {
+      "title": "Python Backend Developer Intern",
+      "company": "TrueDax",
+      "score": 80,
+      "ats": 100,
+      "url": "https://wellfound.com/jobs/3940311-python-backend-developer-intern",
+      "location": "Remote / India"
+    },
+    {
+      "title": "Backend Developer Internship",
+      "company": "NyaaMi AI",
+      "score": 80,
+      "ats": 100,
+      "url": "https://unstop.com/internships/backend-developer-internship-nyaami-ai-1724666",
+      "location": "Remote, India"
+    }
+  ],
+  "top_contests": [
+    {
+      "id": "unstop-1776294",
+      "title": "BharatCode Build League 2026 — Build with AI (₹60,000 SDE Internship + ₹10,000 Cash)",
+      "organizer": "BharatCode.ai (Unstop)",
+      "platform": "Unstop",
+      "type": "Hiring Hackathon + SDE Internship",
+      "reward": "₹60,000 SDE Internship + ₹10,000 Cash",
+      "deadline": "Nov 2026",
+      "skills": [
+        "python",
+        "llm",
+        "ai agents",
+        "fastapi",
+        "react"
+      ],
+      "url": "https://unstop.com/hackathons/bharatcode-build-league-bharatcode-build-league-build-with-ai-and-win-rs10000-and-a-rs60000-sde-internship-bh-1776294",
+      "matched_skills": [
+        "python",
+        "llm",
+        "ai agents",
+        "fastapi",
+        "react"
+      ],
+      "score": 99
+    },
+    {
+      "id": "he-smpl-ai",
+      "title": "SMPL AI Hiring Hackathon 2026",
+      "organizer": "SMPL (HackerEarth)",
+      "platform": "HackerEarth",
+      "type": "AI Hiring Hackathon",
+      "reward": "AI Engineering Role + Finalist Interviews",
+      "deadline": "Nov 2026",
+      "skills": [
+        "python",
+        "llm",
+        "javascript",
+        "react",
+        "rest"
+      ],
+      "url": "https://www.hackerearth.com/challenges/test/smpl-ai-hiring-challenge/",
+      "matched_skills": [
+        "python",
+        "llm",
+        "javascript",
+        "react",
+        "rest"
+      ],
+      "score": 99
+    },
+    {
+      "id": "unstop-1783707",
+      "title": "Forge '26 — India's Biggest Gen AI Buildathon",
+      "organizer": "NxtWave Launchpad (Unstop)",
+      "platform": "Unstop",
+      "type": "National Gen AI Buildathon",
+      "reward": "National Finale Prizes + Certificates",
+      "deadline": "Nov 2026",
+      "skills": [
+        "python",
+        "llm",
+        "javascript",
+        "react",
+        "html5"
+      ],
+      "url": "https://unstop.com/hackathons/forge-26-indias-biggest-gen-ai-buildathon-nxtwave-launchpad-1783707",
+      "matched_skills": [
+        "python",
+        "llm",
+        "javascript",
+        "react",
+        "html5"
+      ],
+      "score": 99
+    },
+    {
+      "id": "he-simplifyx-2026",
+      "title": "SimplifyX AI & ML Hiring Challenge 2026 (Junior AI Engineer)",
+      "organizer": "SimplifyX (HackerEarth)",
+      "platform": "HackerEarth",
+      "type": "Direct Hiring Challenge",
+      "reward": "Junior AI Engineer Full-Time / Intern Offer",
+      "deadline": "Nov 2026",
+      "skills": [
+        "python",
+        "llm",
+        "rag",
+        "sql",
+        "fastapi"
+      ],
+      "url": "https://www.hackerearth.com/challenges/competitive/simplifyx-hiring-challenge-2026/",
+      "matched_skills": [
+        "python",
+        "llm",
+        "sql",
+        "fastapi"
+      ],
+      "score": 98
+    }
+  ],
+  "skill_gaps": [
+    {
+      "skill": "typescript",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "mongodb",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "kubernetes",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "aws",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "langchain",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "langgraph",
+      "jobs": 9,
+      "of": 9,
+      "in_your_roadmap": true
+    }
+  ]
+}

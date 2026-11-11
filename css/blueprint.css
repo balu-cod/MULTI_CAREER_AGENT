@@ -1,0 +1,19 @@
+/* ==========================================================================
+   css/blueprint.css — Page & Component Architecture Blueprint Specification
+   Linked by: blueprint.html
+   ========================================================================== */
+.blueprint-spec-card {
+  border-left: 3px solid var(--studio-primary);
+}
+
+.component-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background-color: var(--studio-subtle);
+  border: 1px solid var(--studio-border);
+}

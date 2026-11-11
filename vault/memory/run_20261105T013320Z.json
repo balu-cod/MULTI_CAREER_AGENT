@@ -1,0 +1,696 @@
+{
+  "run_id": "20261105T013320Z",
+  "started": "2026-11-05T01:33:20+00:00",
+  "finished": "2026-11-05T01:33:36+00:00",
+  "version": "6.5.0",
+  "user": {
+    "handle": "balu-cod",
+    "current_position": "Software Developer Intern (3 months)",
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "SQL",
+      "PostgreSQL",
+      "Supabase",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "PHP",
+      "C++",
+      "Java",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "REST"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [
+      "ai agents",
+      "llm",
+      "fastapi",
+      "automation"
+    ],
+    "preferred_locations": [
+      "remote",
+      "hyderabad",
+      "india"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 75,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "beginner",
+    "strengths": [
+      "python",
+      "javascript",
+      "html5",
+      "css3",
+      "tailwind css",
+      "sql"
+    ],
+    "terms": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws",
+      "ai agents",
+      "automation"
+    ],
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "jobs_seen": 0,
+    "jobs_matched": 0
+  },
+  "jobs": {
+    "scanned": 0,
+    "matched": 0,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 12,
+    "sources": [
+      {
+        "source": "greenhouse:cloudflare",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+        "ms": 171
+      },
+      {
+        "source": "greenhouse:databricks",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+        "ms": 316
+      },
+      {
+        "source": "greenhouse:sezzle",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/sezzle/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+        "ms": 555
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cresta/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+        "ms": 799
+      },
+      {
+        "source": "greenhouse:stripe",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/stripe/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+        "ms": 1050
+      },
+      {
+        "source": "greenhouse:vercel",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/vercel/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+        "ms": 1290
+      },
+      {
+        "source": "greenhouse:figma",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/figma/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.green",
+        "ms": 1377
+      },
+      {
+        "source": "greenhouse:coinbase",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/coinbase/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+        "ms": 1479
+      },
+      {
+        "source": "greenhouse:gitlab",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/gitlab/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+        "ms": 1493
+      },
+      {
+        "source": "greenhouse:scaleai",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/scaleai/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+        "ms": 1497
+      },
+      {
+        "source": "greenhouse:postman",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/postman/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+        "ms": 1485
+      },
+      {
+        "source": "greenhouse:razorpay",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/razorpay/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+        "ms": 1504
+      },
+      {
+        "source": "lever:palantir",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+        "ms": 96
+      },
+      {
+        "source": "lever:mistral",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/mistral?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed",
+        "ms": 258
+      },
+      {
+        "source": "lever:zoox",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/zoox?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed to",
+        "ms": 354
+      },
+      {
+        "source": "lever:plaid",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/plaid?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed t",
+        "ms": 511
+      },
+      {
+        "source": "ashby:langchain",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/langchain?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='ap",
+        "ms": 62
+      },
+      {
+        "source": "ashby:linear",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/linear?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+        "ms": 264
+      },
+      {
+        "source": "ashby:supabase",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/supabase?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api",
+        "ms": 465
+      },
+      {
+        "source": "ashby:perplexity",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/perplexity?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+        "ms": 627
+      },
+      {
+        "source": "ashby:elevenlabs",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/elevenlabs?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+        "ms": 723
+      },
+      {
+        "source": "ashby:replit",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/replit?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+        "ms": 933
+      },
+      {
+        "source": "remotive",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+        "ms": 56
+      },
+      {
+        "source": "remoteok",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='remoteok.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPSConnection(host='remoteok.com', port=443): Failed to resolve 'remoteok.com'",
+        "ms": 60
+      },
+      {
+        "source": "arbeitnow",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='www.arbeitnow.com', port=443): Max retries exceeded with url: /api/job-board-api (Caused by NameResolutionError(\"HTTPSConnection(host='www.arbeitnow.com', port=443): Failed t",
+        "ms": 63
+      },
+      {
+        "source": "hn_hiring",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?query=%22Who%20is%20hiring%22&tags=story,author_whoishiring&hitsPerPage=1 (Caused by NameRes",
+        "ms": 60
+      },
+      {
+        "source": "jobicy",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='jobicy.com', port=443): Max retries exceeded with url: /api/v2/remote-jobs?count=50 (Caused by NameResolutionError(\"HTTPSConnection(host='jobicy.com', port=443): Failed to re",
+        "ms": 69
+      },
+      {
+        "source": "himalayas",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='himalayas.app', port=443): Max retries exceeded with url: /jobs/api?limit=50 (Caused by NameResolutionError(\"HTTPSConnection(host='himalayas.app', port=443): Failed to resolv",
+        "ms": 54
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 0,
+        "error": "page unavailable (disallowed by robots.txt, missing, or blocked)",
+        "ms": 82
+      },
+      {
+        "source": "page:https://unstop.com/internships",
+        "count": 0,
+        "error": "page unavailable (disallowed by robots.txt, missing, or blocked)",
+        "ms": 82
+      },
+      {
+        "source": "page:https://internshala.com/internships/python-internship",
+        "count": 0,
+        "error": "page unavailable (disallowed by robots.txt, missing, or blocked)",
+        "ms": 73
+      },
+      {
+        "source": "page:https://www.ycombinator.com/jobs",
+        "count": 0,
+        "error": "page unavailable (disallowed by robots.txt, missing, or blocked)",
+        "ms": 72
+      }
+    ],
+    "top": []
+  },
+  "market_demand": [],
+  "certs": [
+    {
+      "name": "Hugging Face: Official AI Agents & MCP Course",
+      "url": "https://huggingface.co/learn/agents-course",
+      "provider": "Hugging Face",
+      "source": "curated",
+      "covers": [
+        "langgraph",
+        "langchain",
+        "mcp",
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "100% free course & verified certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows",
+      "url": "https://academy.langchain.com/",
+      "provider": "LangChain Academy",
+      "source": "curated",
+      "covers": [
+        "langgraph",
+        "langchain",
+        "llm",
+        "ai agents"
+      ],
+      "free_claim": "100% free interactive course",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "Anthropic / MCP",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "mcp",
+        "llm",
+        "ai agents"
+      ],
+      "free_claim": "100% free official documentation & SDK",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+      "url": "https://github.com/anthropics/courses",
+      "provider": "Anthropic",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "100% free open-source curriculum",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "DeepLearning.AI: ChatGPT Prompt Engineering & Building Systems with LLMs",
+      "url": "https://www.deeplearning.ai/short-courses/",
+      "provider": "DeepLearning.AI",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag",
+        "ai agents"
+      ],
+      "free_claim": "free short courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Google Cloud Skills Boost: Generative AI & Cloud Engineering Foundations",
+      "url": "https://www.cloudskillsboost.google/",
+      "provider": "Google Cloud",
+      "source": "curated",
+      "covers": [
+        "kubernetes",
+        "llm"
+      ],
+      "free_claim": "free foundational courses & skill badges",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Kubernetes Official Interactive Tutorials & Cluster Basics",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "provider": "CNCF / Kubernetes",
+      "source": "curated",
+      "covers": [
+        "kubernetes",
+        "aws"
+      ],
+      "free_claim": "100% free official tutorials",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "University of Helsinki: Full Stack Open (React, Node, TypeScript, GraphQL, Docker)",
+      "url": "https://fullstackopen.com/en/",
+      "provider": "University of Helsinki",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "mongodb"
+      ],
+      "free_claim": "100% free university course & official certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "AWS Skill Builder: AWS Cloud Essentials & Serverless Foundations",
+      "url": "https://explore.skillbuilder.aws/",
+      "provider": "AWS",
+      "source": "curated",
+      "covers": [
+        "aws"
+      ],
+      "free_claim": "600+ free digital courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "CS50x: Introduction to Computer Science (Harvard University)",
+      "url": "https://cs50.harvard.edu/x/",
+      "provider": "Harvard University",
+      "source": "curated",
+      "covers": [
+        "dsa"
+      ],
+      "free_claim": "100% free course & free CS50 certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Docker Get Started & Multi-Stage Containerization Workshop",
+      "url": "https://docs.docker.com/get-started/",
+      "provider": "Docker",
+      "source": "curated",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "100% free official workshop",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "Linux Foundation: LFS101 Introduction to Linux & Git for Distributed Dev",
+      "url": "https://training.linuxfoundation.org/free-courses/",
+      "provider": "Linux Foundation",
+      "source": "curated",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "100% free courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "MongoDB University: MongoDB Python Developer Path",
+      "url": "https://learn.mongodb.com/",
+      "provider": "MongoDB University",
+      "source": "curated",
+      "covers": [
+        "mongodb"
+      ],
+      "free_claim": "100% free learning path & digital badge",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "NeetCode: Data Structures & Algorithms 150 Roadmap",
+      "url": "https://neetcode.io/roadmap",
+      "provider": "NeetCode",
+      "source": "curated",
+      "covers": [
+        "dsa"
+      ],
+      "free_claim": "free tier & video explanations",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "curated",
+      "count": 24,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-05",
+    "morning_7am": "Study: dsa (90 min)",
+    "evening_630pm": "DSA: 2 problems on linked lists",
+    "night_9pm": "Build: ship one small feature using dsa",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 1,
+    "tech": 1
+  },
+  "matched_ids": [],
+  "cert_urls": [
+    "https://huggingface.co/learn/agents-course",
+    "https://langchain-ai.github.io/langgraph/",
+    "https://modelcontextprotocol.io/",
+    "https://cs50.harvard.edu/x/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://neetcode.io/roadmap",
+    "https://www.postgresql.org/docs/current/tutorial.html",
+    "https://course.fast.ai/",
+    "https://academy.langchain.com/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://fullstackopen.com/en/",
+    "https://explore.skillbuilder.aws/",
+    "https://docs.docker.com/get-started/",
+    "https://training.linuxfoundation.org/free-courses/",
+    "https://learn.mongodb.com/"
+  ],
+  "errors": [
+    "source_health: greenhouse:cloudflare: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "source_health: greenhouse:databricks: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "source_health: greenhouse:sezzle: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/sezzle/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "source_health: greenhouse:cresta: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cresta/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "source_health: greenhouse:stripe: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/stripe/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "source_health: greenhouse:vercel: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/vercel/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "source_health: greenhouse:figma: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/figma/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.green",
+    "source_health: greenhouse:coinbase: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/coinbase/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "source_health: greenhouse:gitlab: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/gitlab/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "source_health: greenhouse:scaleai: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/scaleai/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "source_health: greenhouse:postman: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/postman/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "source_health: greenhouse:razorpay: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/razorpay/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "source_health: lever:palantir: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "source_health: lever:mistral: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/mistral?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed",
+    "source_health: lever:zoox: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/zoox?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed to",
+    "source_health: lever:plaid: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/plaid?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed t",
+    "source_health: ashby:langchain: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/langchain?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='ap",
+    "source_health: ashby:linear: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/linear?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "source_health: ashby:supabase: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/supabase?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api",
+    "source_health: ashby:perplexity: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/perplexity?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "source_health: ashby:elevenlabs: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/elevenlabs?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "source_health: ashby:replit: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/replit?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "source_health: remotive: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "source_health: remoteok: HTTPSConnectionPool(host='remoteok.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPSConnection(host='remoteok.com', port=443): Failed to resolve 'remoteok.com'",
+    "source_health: arbeitnow: HTTPSConnectionPool(host='www.arbeitnow.com', port=443): Max retries exceeded with url: /api/job-board-api (Caused by NameResolutionError(\"HTTPSConnection(host='www.arbeitnow.com', port=443): Failed t",
+    "source_health: hn_hiring: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?query=%22Who%20is%20hiring%22&tags=story,author_whoishiring&hitsPerPage=1 (Caused by NameRes",
+    "source_health: jobicy: HTTPSConnectionPool(host='jobicy.com', port=443): Max retries exceeded with url: /api/v2/remote-jobs?count=50 (Caused by NameResolutionError(\"HTTPSConnection(host='jobicy.com', port=443): Failed to re",
+    "source_health: himalayas: HTTPSConnectionPool(host='himalayas.app', port=443): Max retries exceeded with url: /jobs/api?limit=50 (Caused by NameResolutionError(\"HTTPSConnection(host='himalayas.app', port=443): Failed to resolv",
+    "source_health: page:https://wellfound.com/jobs: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "source_health: page:https://unstop.com/internships: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "source_health: page:https://internshala.com/internships/python-internship: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "source_health: page:https://www.ycombinator.com/jobs: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "all job sources returned zero postings"
+  ],
+  "log": [
+    "> scanner",
+    "  greenhouse:cloudflare failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:databricks failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:sezzle failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/sezzle/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:cresta failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cresta/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:stripe failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/stripe/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:vercel failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/vercel/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:figma failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/figma/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.green",
+    "  greenhouse:coinbase failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/coinbase/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "  greenhouse:gitlab failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/gitlab/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:scaleai failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/scaleai/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "  greenhouse:postman failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/postman/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "  greenhouse:razorpay failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/razorpay/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "  lever:palantir failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "  lever:mistral failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/mistral?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed",
+    "  lever:zoox failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/zoox?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed to",
+    "  lever:plaid failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/plaid?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed t",
+    "  ashby:langchain failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/langchain?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='ap",
+    "  ashby:linear failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/linear?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "  ashby:supabase failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/supabase?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api",
+    "  ashby:perplexity failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/perplexity?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "  ashby:elevenlabs failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/elevenlabs?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "  ashby:replit failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/replit?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "  remotive failed: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "  remoteok failed: HTTPSConnectionPool(host='remoteok.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPSConnection(host='remoteok.com', port=443): Failed to resolve 'remoteok.com'",
+    "  arbeitnow failed: HTTPSConnectionPool(host='www.arbeitnow.com', port=443): Max retries exceeded with url: /api/job-board-api (Caused by NameResolutionError(\"HTTPSConnection(host='www.arbeitnow.com', port=443): Failed t",
+    "  hn_hiring failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?query=%22Who%20is%20hiring%22&tags=story,author_whoishiring&hitsPerPage=1 (Caused by NameRes",
+    "  jobicy failed: HTTPSConnectionPool(host='jobicy.com', port=443): Max retries exceeded with url: /api/v2/remote-jobs?count=50 (Caused by NameResolutionError(\"HTTPSConnection(host='jobicy.com', port=443): Failed to re",
+    "  himalayas failed: HTTPSConnectionPool(host='himalayas.app', port=443): Max retries exceeded with url: /jobs/api?limit=50 (Caused by NameResolutionError(\"HTTPSConnection(host='himalayas.app', port=443): Failed to resolv",
+    "  page:https://wellfound.com/jobs failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://unstop.com/internships failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://internshala.com/internships/python-internship failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://www.ycombinator.com/jobs failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "! ALL sources returned zero postings; check network or source config",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  HN failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search?tags=story&query=AI&numericFilters=created_at_i%3E1793756005,points%3E=40&hitsPerPage=15 (Caused by NameResolutionError(\"HTTPSConnection(host='hn.algolia.com', port=443): Failed to resolv",
+    "  GitHub ai-agents failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:ai-agents+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to re",
+    "  GitHub mcp failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:mcp+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  GitHub llm failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:llm+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  4 AI update links saved",
+    "> youtube",
+    "  youtube: 1 news, 1 tech videos; 0 source errors",
+    "> matcher",
+    "  0/0 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "> certs",
+    "  14 learning picks for terms: typescript, kubernetes, langgraph, langchain, mcp, llm",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> digest",
+    "  digest skipped (no Gmail secrets or contact_email)",
+    "> memory"
+  ]
+}

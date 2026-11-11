@@ -1,0 +1,155 @@
+[
+  {
+    "timestamp": "2026-11-11T04:37:17+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@vxiglobalsolutions.com (VXI Global Solutions) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:37:02+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (15 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T04:37:01+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@vxiglobalsolutions.com (VXI Global Solutions) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:36:54+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for US Remote Patient Care Advocate (Customer Service) (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T04:25:52+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:24:42+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1468 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T04:24:40+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:24:39+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1460 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T04:24:18+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to kodimurthybalu@gmail.com (kodimurthybalu@gmail.com) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:23:52+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (13 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T04:23:51+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (12 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T04:22:24+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:21:39+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1468 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T04:20:42+00:00",
+    "date": "2026-11-11",
+    "category": "CONFIG_UPDATE",
+    "action": "SET_SECRETS",
+    "details": "Updated keys: ['GOOGLE_CLIENT_ID']",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T04:20:44+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "Verified Gmail for kodimurthybalu@gmail.com. Fetched 50 emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:20:43+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T04:20:42+00:00",
+    "date": "2026-11-11",
+    "category": "CONFIG_UPDATE",
+    "action": "SET_SECRETS",
+    "details": "Updated keys: ['GOOGLE_CLIENT_ID']",
+    "status": "SUCCESS",
+    "actor": "USER"
+  }
+]

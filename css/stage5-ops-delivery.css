@@ -1,0 +1,11 @@
+/* ==========================================================================
+   css/stage5-ops-delivery.css — Stage 5: Kanban Tracker, Terminal & Vault
+   Linked by: tracker.html, terminal.html, vault.html
+   ========================================================================== */
+#terminal-console-box {
+  background-color: #090D16;
+  color: #E2E8F0;
+  border: 1px solid #1E293B;
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}

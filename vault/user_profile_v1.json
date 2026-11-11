@@ -1,0 +1,114 @@
+{
+  "handle": "kodimurthybalu",
+  "current_position": "Aspiring Software Engineer",
+  "target_roles": [
+    "Software Engineer Intern",
+    "Backend Developer",
+    "AI Engineer Intern"
+  ],
+  "technical_skills": [
+    "Python",
+    "SQL",
+    "Git",
+    "REST APIs"
+  ],
+  "skill_gaps": [
+    "typescript",
+    "kubernetes",
+    "langgraph",
+    "langchain",
+    "mcp",
+    "llm",
+    "rag",
+    "dsa",
+    "mongodb",
+    "aws"
+  ],
+  "interests": [],
+  "preferred_locations": [
+    "Bengaluru",
+    "Hyderabad",
+    "Remote India",
+    "Remote"
+  ],
+  "availability": "4 hrs/day Remote",
+  "github": "https://github.com/balu-cod",
+  "match_threshold": 60,
+  "apply_threshold": 70,
+  "max_age_days": 45,
+  "max_apply_per_day": 15,
+  "blocked_companies": [],
+  "memory_keep": 90,
+  "job_sources": {
+    "greenhouse": [
+      "sezzle",
+      "enterpret",
+      "karya",
+      "cresta",
+      "datacor",
+      "eqtcorporation"
+    ],
+    "lever": [],
+    "ashby": [
+      "anyone-ai",
+      "aiprise",
+      "outmarket",
+      "pinecone",
+      "build-ai"
+    ],
+    "workable": [],
+    "remotive": true,
+    "arbeitnow": true,
+    "hn_hiring": true,
+    "remoteok": false,
+    "pages": [
+      "https://wellfound.com/jobs",
+      "https://myinternships.in/internships-at/razorpay/software-development",
+      "https://myinternships.in/internships-at/postman/software-development",
+      "https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/"
+    ],
+    "unstop": true
+  },
+  "youtube": {
+    "news": {
+      "channels": [
+        "@Fireship",
+        "@aiexplained-official",
+        "@mreflow"
+      ],
+      "queries": [],
+      "max_age_days": 4
+    },
+    "tech": {
+      "channels": [
+        "@freecodecamp",
+        "@TechWorldwithNana",
+        "@ArjanCodes",
+        "@ThePrimeagen",
+        "@CodeWithHarry"
+      ],
+      "queries": [],
+      "max_age_days": 14
+    },
+    "per_channel": 3,
+    "limit": 12
+  },
+  "auto_apply": {
+    "mode": "submit",
+    "limit": 10,
+    "min_ats": 50
+  },
+  "experience": [],
+  "projects": [],
+  "certifications": [],
+  "bio": "Software developer with verified digital activity across GitHub, Amazon Web Services (AWS), LinkedIn. Skilled in Python, SQL, Git, REST APIs.",
+  "logged_platforms": [
+    "GitHub",
+    "Amazon Web Services (AWS)",
+    "LinkedIn"
+  ],
+  "inbox_summary": "Analyzed 50 recent emails for kodimurthybalu@gmail.com. Active communications identified across GitHub, Amazon Web Services (AWS), LinkedIn. Primary technical interests and activity signals center around software engineering.",
+  "full_name": "Kodimurthybalu",
+  "contact_email": "kodimurthybalu@gmail.com",
+  "contact_phone": ""
+}

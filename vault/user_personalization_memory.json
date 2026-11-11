@@ -1,0 +1,35 @@
+{
+  "updated": "2026-11-11T01:48:33+00:00",
+  "facts": [
+    {
+      "id": "mem_1794361713_5",
+      "category": "preference",
+      "fact": "Prefers local Ollama and FastAPI roles",
+      "updated": "2026-11-11"
+    },
+    {
+      "id": "mem_stack",
+      "category": "stack_preference",
+      "fact": "Prioritize Python, FastAPI, React, SQL, LangGraph, Model Context Protocol (MCP), and Edge AI / SLM roles.",
+      "updated": "2026-11-10"
+    },
+    {
+      "id": "mem_proof",
+      "category": "production_proof",
+      "fact": "Highlight TIMS (Tailoring Inventory Management System) and File Shelf Tracker built during Software Developer Internship at Aditya Birla Garments Limited.",
+      "updated": "2026-11-10"
+    },
+    {
+      "id": "mem_loc",
+      "category": "location_preference",
+      "fact": "Target Bengaluru, Hyderabad, Chennai, and Remote India product companies and funded AI startups.",
+      "updated": "2026-11-10"
+    },
+    {
+      "id": "mem_tone",
+      "category": "outreach_style",
+      "fact": "Keep cold recruiter emails under 120 words, attach role-tailored 1-page ATS PDF resume, and link GitHub portfolio.",
+      "updated": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "run_id": "20261109T154757Z",
+  "started": "2026-11-09T15:47:57+00:00",
+  "finished": "2026-11-09T15:48:04+00:00",
+  "version": "7.8.0",
+  "user": {
+    "target_roles": [
+      "Software Engineer Intern",
+      "Backend Developer",
+      "AI Engineer Intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ]
+  },
+  "analysis": {
+    "level": "intermediate",
+    "strengths": [
+      "python",
+      "sql",
+      "git",
+      "rest apis"
+    ],
+    "terms": [],
+    "target_roles": [
+      "Software Engineer Intern",
+      "Backend Developer",
+      "AI Engineer Intern"
+    ],
+    "jobs_seen": 0,
+    "jobs_matched": 0
+  },
+  "jobs": {
+    "scanned": 0,
+    "matched": 0,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:cloudflare",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+        "ms": 104
+      },
+      {
+        "source": "greenhouse:databricks",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+        "ms": 307
+      },
+      {
+        "source": "lever:palantir",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+        "ms": 134
+      },
+      {
+        "source": "remotive",
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+        "ms": 62
+      }
+    ],
+    "top": []
+  },
+  "market_demand": [],
+  "certs": [],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=learningPaths&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.micr"
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=certifications&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.mic"
+    },
+    {
+      "source": "community-free-list",
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /cloudcommunity/Free-Certifications/main/README.md (Caused by NameResolutionError(\"HTTPSConnection(host="
+    },
+    {
+      "source": "curated",
+      "count": 24,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-09",
+    "morning_7am": "Study: your weakest skill (90 min)",
+    "evening_630pm": "DSA: 2 problems on dp",
+    "night_9pm": "Build: ship one small feature using your weakest skill",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 0,
+    "tech": 0
+  },
+  "matched_ids": [],
+  "cert_urls": [],
+  "errors": [
+    "source_health: greenhouse:cloudflare: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "source_health: greenhouse:databricks: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "source_health: lever:palantir: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "source_health: remotive: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "cert_health: mslearn-paths: HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=learningPaths&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.micr",
+    "cert_health: mslearn-certs: HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=certifications&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.mic",
+    "cert_health: community-free-list: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /cloudcommunity/Free-Certifications/main/README.md (Caused by NameResolutionError(\"HTTPSConnection(host=",
+    "youtube: @Fireship: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@Fireship (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resolve 'w",
+    "youtube: @aiexplained-official: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@aiexplained-official (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed t",
+    "youtube: @mreflow: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@mreflow (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resolve 'ww",
+    "youtube: @freecodecamp: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@freecodecamp (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resolv",
+    "youtube: @TechWorldwithNana: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@TechWorldwithNana (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to r",
+    "youtube: @ArjanCodes: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@ArjanCodes (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resolve ",
+    "youtube: @ThePrimeagen: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@ThePrimeagen (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resolv",
+    "youtube: @CodeWithHarry: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /@CodeWithHarry (Caused by NameResolutionError(\"HTTPSConnection(host='www.youtube.com', port=443): Failed to resol",
+    "all job sources returned zero postings"
+  ],
+  "log": [
+    "> scanner",
+    "  greenhouse:cloudflare failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:databricks failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  lever:palantir failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "  remotive failed: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "! ALL sources returned zero postings; check network or source config",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  HN failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search?tags=story&query=AI&numericFilters=created_at_i%3E1794066478,points%3E=25&hitsPerPage=15 (Caused by NameResolutionError(\"HTTPSConnection(host='hn.algolia.com', port=443): Failed to resolv",
+    "  HN failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?tags=story&query=MCP+OR+LangGraph+OR+FastAPI+OR+Claude&numericFilters=points%3E=10&hitsPerPage=10 (Caused by NameResolutionError(\"HTTPSConnection(host='hn.algolia.com', port=443):",
+    "  GitHub ai-agents failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:ai-agents+pushed:%3E2026-11-02&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to res",
+    "  GitHub mcp failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:mcp+pushed:%3E2026-11-02&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.gi",
+    "  GitHub langgraph failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:langgraph+pushed:%3E2026-11-02&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to res",
+    "  GitHub llm failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:llm+pushed:%3E2026-11-02&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.gi",
+    "  GitHub fastapi failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:fastapi+pushed:%3E2026-11-02&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve",
+    "  0 live AI update links saved",
+    "> youtube",
+    "  youtube: every source failed, keeping previous results",
+    "  youtube: 0 news, 0 tech videos; 8 source errors",
+    "> contests",
+    "  unstop hackathons fetch failed: HTTPSConnectionPool(host='unstop.com', port=443): Max retries exceeded with url: /api/public/opportunity/search-result?opportunity=hackathons&per_page=15&oppstatus=open (Caused by NameResolutionError(\"HTTPSConnection(host='unstop.com', port=443): Failed to resolve '",
+    "  devpost hackathons fetch failed: HTTPSConnectionPool(host='devpost.com', port=443): Max retries exceeded with url: /api/hackathons?status%5B%5D=open&per_page=12 (Caused by NameResolutionError(\"HTTPSConnection(host='devpost.com', port=443): Failed to resolve 'devpost.com' ([Errno -3] Temporary fail",
+    "  0 live hackathons & hiring challenges saved",
+    "> matcher",
+    "  0/0 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "  tip: add 'projects'/'experience' to the Vault profile (see profile.example.json) for fuller resumes",
+    "> dailynews",
+    "  dailynews built: private/daily_news_latest.txt (0 AI stories, 0 roles, 0 contests)",
+    "> certs",
+    "  certs source mslearn-paths failed: HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=learningPaths&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.micr",
+    "  certs source mslearn-certs failed: HTTPSConnectionPool(host='learn.microsoft.com', port=443): Max retries exceeded with url: /api/catalog/?type=certifications&locale=en-us (Caused by NameResolutionError(\"HTTPSConnection(host='learn.mic",
+    "  certs source community-free-list failed: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /cloudcommunity/Free-Certifications/main/README.md (Caused by NameResolutionError(\"HTTPSConnection(host=",
+    "  0 learning picks for terms: ",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> eveningreview",
+    "  eveningreview built: private/evening_review_latest.txt (0 tracked apps, 2 drafts, study: LangChain Academy: Intro to LangGraph)",
+    "> digest",
+    "  digest built: private/digest_latest.txt (3866 chars) & private/digest_latest.html (7630 chars)",
+    "  digest email skipped (DIGEST_SEND=0)",
+    "> memory"
+  ]
+}

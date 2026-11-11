@@ -1,0 +1,19 @@
+/* ==========================================================================
+   css/stage1-user-profile.css — Stage 1: User Hub, Time Presets & Profile
+   Linked by: user_hub.html, profile.html
+   ========================================================================== */
+.preset-card-btn {
+  border: 1px solid var(--studio-border);
+  background-color: var(--studio-surface);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.preset-card-btn:hover,
+.preset-card-btn.active {
+  border-color: var(--studio-primary);
+  background-color: var(--studio-primary-soft);
+}

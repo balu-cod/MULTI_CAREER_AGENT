@@ -1,0 +1,946 @@
+{
+  "updated": "2026-11-11T09:54:09",
+  "scanned": 1468,
+  "jobs": [
+    {
+      "id": "gh:sezzle:7906408003",
+      "portal": "greenhouse",
+      "company": "sezzle",
+      "title": "Software Engineer Intern",
+      "location": "Remote",
+      "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-01T10:00:00Z",
+      "pay": ""
+    },
+    {
+      "id": "an:unstop-1716336-software-engineer-internship-mind-merge-soft-tech",
+      "portal": "arbeitnow",
+      "company": "Mind Merge Soft Tech",
+      "title": "Software Engineer Internship",
+      "location": "Hyderabad / Remote, India",
+      "url": "https://unstop.com/internships/software-engineer-internship-mind-merge-soft-tech-1716336",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-01T02:26:40+00:00",
+      "pay": ""
+    },
+    {
+      "id": "rm:4126022",
+      "portal": "remotive",
+      "company": "Alchemyst AI",
+      "title": "AI Engineer Intern",
+      "location": "Remote / Bengaluru, India",
+      "url": "https://wellfound.com/jobs/4126022-ai-engineer-intern",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-10-31T15:00:00",
+      "pay": ""
+    },
+    {
+      "id": "rm:3940311",
+      "portal": "remotive",
+      "company": "TrueDax",
+      "title": "Python Backend Developer Intern",
+      "location": "Remote / India",
+      "url": "https://wellfound.com/jobs/3940311-python-backend-developer-intern",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-01T09:00:00",
+      "pay": ""
+    },
+    {
+      "id": "an:unstop-1724666-backend-developer-internship-nyaami-ai",
+      "portal": "arbeitnow",
+      "company": "NyaaMi AI",
+      "title": "Backend Developer Internship",
+      "location": "Remote, India",
+      "url": "https://unstop.com/internships/backend-developer-internship-nyaami-ai-1724666",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-10-31T20:53:20+00:00",
+      "pay": ""
+    },
+    {
+      "id": "rm:4903558",
+      "portal": "remotive",
+      "company": "SonicAI",
+      "title": "Software Engineer Intern",
+      "location": "Remote / India",
+      "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-02T10:00:00",
+      "pay": ""
+    },
+    {
+      "id": "pg:https://wellfound.com/jobs/4903444-software-engineer-intern",
+      "portal": "page",
+      "company": "Ziro.digital",
+      "title": "Software Engineer Intern (Full Stack + AI)",
+      "location": "Remote, India; Remote",
+      "url": "https://wellfound.com/jobs/4903444-software-engineer-intern",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-02",
+      "pay": ""
+    },
+    {
+      "id": "pg:https://myinternships.in/internships/razorpay-is-hiring-software-engineer-intern-bengaluru-2elhm",
+      "portal": "page",
+      "company": "Razorpay",
+      "title": "Software Engineer Intern (SDE - Backend)",
+      "location": "Hyderabad / Bengaluru, India",
+      "url": "https://myinternships.in/internships/razorpay-is-hiring-software-engineer-intern-bengaluru-2elhm",
+      "desc": null,
+      "hiring_email": null,
+      "score": 80,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 10,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-11-02",
+      "pay": ""
+    },
+    {
+      "id": "gh:datacor:5242412007",
+      "portal": "greenhouse",
+      "company": "datacor",
+      "title": "Summer 2027 AI Engineer Intern",
+      "location": "Florham Park, NJ / Hybrid",
+      "url": "https://job-boards.greenhouse.io/datacor/jobs/5242412007",
+      "desc": null,
+      "hiring_email": null,
+      "score": 70,
+      "breakdown": {
+        "skill": 30,
+        "role": 25,
+        "experience": 15,
+        "location": 0,
+        "interest": 0,
+        "gap_penalty": 0
+      },
+      "skills": [
+        "python",
+        "sql",
+        "git"
+      ],
+      "status": "applied",
+      "ats": 100,
+      "missing": [],
+      "posted": "2026-10-27T10:00:00Z",
+      "pay": ""
+    }
+  ],
+  "insights": {
+    "source_health": [
+      {
+        "source": "greenhouse:sezzle",
+        "count": 289,
+        "error": null,
+        "ms": 8375
+      },
+      {
+        "source": "greenhouse:enterpret",
+        "count": 14,
+        "error": null,
+        "ms": 827
+      },
+      {
+        "source": "greenhouse:karya",
+        "count": 19,
+        "error": null,
+        "ms": 1108
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 91,
+        "error": null,
+        "ms": 6515
+      },
+      {
+        "source": "greenhouse:datacor",
+        "count": 12,
+        "error": null,
+        "ms": 3858
+      },
+      {
+        "source": "greenhouse:eqtcorporation",
+        "count": 52,
+        "error": null,
+        "ms": 3515
+      },
+      {
+        "source": "ashby:anyone-ai",
+        "count": 226,
+        "error": null,
+        "ms": 1608
+      },
+      {
+        "source": "ashby:aiprise",
+        "count": 21,
+        "error": null,
+        "ms": 967
+      },
+      {
+        "source": "ashby:outmarket",
+        "count": 18,
+        "error": null,
+        "ms": 734
+      },
+      {
+        "source": "ashby:pinecone",
+        "count": 6,
+        "error": null,
+        "ms": 688
+      },
+      {
+        "source": "ashby:build-ai",
+        "count": 29,
+        "error": null,
+        "ms": 1078
+      },
+      {
+        "source": "remotive",
+        "count": 39,
+        "error": null,
+        "ms": 5859
+      },
+      {
+        "source": "arbeitnow",
+        "count": 300,
+        "error": null,
+        "ms": 23280
+      },
+      {
+        "source": "hn_hiring",
+        "count": 194,
+        "error": null,
+        "ms": 35016
+      },
+      {
+        "source": "unstop",
+        "count": 25,
+        "error": null,
+        "ms": 1858
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 37,
+        "error": null,
+        "ms": 34062
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 46046
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/postman/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 44108
+      },
+      {
+        "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
+        "count": 40,
+        "error": null,
+        "ms": 42920
+      }
+    ],
+    "inbox_sync": {
+      "ok": true,
+      "new_messages": 0,
+      "total_stored": 51
+    },
+    "ai_updates": [
+      {
+        "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
+        "url": "https://github.com/morluto/rea",
+        "source": "GitHub #mcp",
+        "score": 450466
+      },
+      {
+        "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research",
+        "url": "https://github.com/affaan-m/ECC",
+        "source": "GitHub #ai-agents",
+        "score": 300873
+      },
+      {
+        "title": "NousResearch/hermes-agent: The agent that grows with you",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "source": "GitHub #ai-agents",
+        "score": 262502
+      },
+      {
+        "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus",
+        "url": "https://github.com/n8n-io/n8n",
+        "source": "GitHub #mcp",
+        "score": 210047
+      },
+      {
+        "title": "firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintellig",
+        "url": "https://github.com/firecrawl/firecrawl",
+        "source": "GitHub #ai-agents",
+        "score": 200608
+      },
+      {
+        "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "source": "GitHub #llm",
+        "score": 187987
+      },
+      {
+        "title": "ollama/ollama: Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "url": "https://github.com/ollama/ollama",
+        "source": "GitHub #llm",
+        "score": 186594
+      },
+      {
+        "title": "langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor",
+        "url": "https://github.com/langgenius/dify",
+        "source": "GitHub #mcp",
+        "score": 160916
+      },
+      {
+        "title": "open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "url": "https://github.com/open-webui/open-webui",
+        "source": "GitHub #mcp",
+        "score": 158341
+      },
+      {
+        "title": "langchain-ai/langchain: The agent engineering platform.",
+        "url": "https://github.com/langchain-ai/langchain",
+        "source": "GitHub #ai-agents",
+        "score": 149338
+      }
+    ],
+    "kaggle_datasets": [
+      {
+        "ref": "atharvasoundankar/ai-job-market-global-2026",
+        "title": "AI Job Market Global 2026",
+        "url": "https://www.kaggle.com/datasets/atharvasoundankar/ai-job-market-global-2026",
+        "size": "856136",
+        "votes": 11,
+        "source": "Kaggle API v1"
+      },
+      {
+        "ref": "paultimothymooney/open-elections-data-usa",
+        "title": "Open Elections Data: USA",
+        "url": "https://www.kaggle.com/datasets/paultimothymooney/open-elections-data-usa",
+        "size": "17704347665",
+        "votes": 85,
+        "source": "Kaggle API v1"
+      },
+      {
+        "ref": "soumenduray99/amazon-data-analysis-using-power-bi-sql-and-python",
+        "title": "Amazon-Data-Analysis-using-Power-BI-SQL-and-Python",
+        "url": "https://www.kaggle.com/datasets/soumenduray99/amazon-data-analysis-using-power-bi-sql-and-python",
+        "size": "3392924",
+        "votes": 1,
+        "source": "Kaggle API v1"
+      },
+      {
+        "ref": "koustav10b/phonepe-digital-payments",
+        "title": "Phonepe Digital Payments",
+        "url": "https://www.kaggle.com/datasets/koustav10b/phonepe-digital-payments",
+        "size": "1104764",
+        "votes": 1,
+        "source": "Kaggle API v1"
+      },
+      {
+        "ref": "mohdsami0001000/steam-market-intelligence-game-analytics-dataset",
+        "title": "Steam Market Intelligence - Game Analytics Dataset",
+        "url": "https://www.kaggle.com/datasets/mohdsami0001000/steam-market-intelligence-game-analytics-dataset",
+        "size": "41405",
+        "votes": 2,
+        "source": "Kaggle API v1"
+      },
+      {
+        "ref": "seniruepasinghe/git-diff-to-commit-msg",
+        "title": "git-diff_to_commit_msg",
+        "url": "https://www.kaggle.com/datasets/seniruepasinghe/git-diff-to-commit-msg",
+        "size": "357716",
+        "votes": 0,
+        "source": "Kaggle API v1"
+      }
+    ],
+    "contests": [
+      {
+        "id": "dp:31302",
+        "title": "PayPal AI Hackathon",
+        "organizer": "PayPal",
+        "type": "Global Hackathon",
+        "reward": "$67,500",
+        "deadline": "Oct 01 - Nov 12, 2026",
+        "url": "https://paypalaihackathon.devpost.com/",
+        "skills": [
+          "Low/No Code",
+          "Machine Learning/AI",
+          "Web"
+        ],
+        "matched_skills": [
+          "machine learning/ai",
+          "web"
+        ],
+        "score": 86
+      },
+      {
+        "id": "dp:31024",
+        "title": "Meta VR Start Developer Competition 2026",
+        "organizer": "Meta",
+        "type": "Global Hackathon",
+        "reward": "$1,000,000",
+        "deadline": "Sep 24 - Nov 18, 2026",
+        "url": "https://start-developer-competition-26.devpost.com/",
+        "skills": [
+          "AR/VR",
+          "Machine Learning/AI",
+          "Web"
+        ],
+        "matched_skills": [
+          "machine learning/ai",
+          "web"
+        ],
+        "score": 86
+      },
+      {
+        "id": "dp:30740",
+        "title": "Code for Humanity",
+        "organizer": "nill",
+        "type": "Global Hackathon",
+        "reward": "$0",
+        "deadline": "Jul 16, 2026 - Jan 15, 2027",
+        "url": "https://code-for-humanity.devpost.com/",
+        "skills": [
+          "Education",
+          "Machine Learning/AI",
+          "Web"
+        ],
+        "matched_skills": [
+          "machine learning/ai",
+          "web"
+        ],
+        "score": 86
+      },
+      {
+        "id": "dp:31642",
+        "title": "AWS MSP AI Hackathon",
+        "organizer": "AWS",
+        "type": "Global Hackathon",
+        "reward": "$64,000",
+        "deadline": "Nov 02 - Dec 11, 2026",
+        "url": "https://aws-agentic-msp.devpost.com/",
+        "skills": [
+          "Machine Learning/AI",
+          "Productivity",
+          "Web"
+        ],
+        "matched_skills": [
+          "machine learning/ai",
+          "web"
+        ],
+        "score": 86
+      },
+      {
+        "id": "dp:31667",
+        "title": "Kiroween 2026",
+        "organizer": "Kiro",
+        "type": "Global Hackathon",
+        "reward": "$100,000",
+        "deadline": "Oct 30 - Dec 04, 2026",
+        "url": "https://kiroween.devpost.com/",
+        "skills": [
+          "Beginner Friendly",
+          "Machine Learning/AI",
+          "Open Ended"
+        ],
+        "matched_skills": [
+          "machine learning/ai"
+        ],
+        "score": 79
+      },
+      {
+        "id": "dp:31552",
+        "title": "UGREEN Hackathon 2026 on AI NAS",
+        "organizer": "UGREEN",
+        "type": "Global Hackathon",
+        "reward": "$46,000",
+        "deadline": "Oct 22 - Nov 16, 2026",
+        "url": "https://ugreenhackathon.devpost.com/",
+        "skills": [
+          "Lifehacks",
+          "Machine Learning/AI",
+          "Productivity"
+        ],
+        "matched_skills": [
+          "machine learning/ai"
+        ],
+        "score": 79
+      },
+      {
+        "id": "dp:31572",
+        "title": "Codegeist 2026: Build with context. Ship with confidence.",
+        "organizer": "Atlassian",
+        "type": "Global Hackathon",
+        "reward": "$120,000",
+        "deadline": "Oct 27 - Dec 22, 2026",
+        "url": "https://codegeist2026.devpost.com/",
+        "skills": [
+          "Machine Learning/AI",
+          "Enterprise",
+          "Productivity"
+        ],
+        "matched_skills": [
+          "machine learning/ai"
+        ],
+        "score": 79
+      },
+      {
+        "id": "dp:31083",
+        "title": "QNX Global Hackathon",
+        "organizer": "QNX",
+        "type": "Global Hackathon",
+        "reward": "$50,000",
+        "deadline": "Nov 02 - Dec 15, 2026",
+        "url": "https://qnx.devpost.com/",
+        "skills": [
+          "IoT",
+          "Machine Learning/AI",
+          "Open Ended"
+        ],
+        "matched_skills": [
+          "machine learning/ai"
+        ],
+        "score": 79
+      }
+    ],
+    "funnel": {
+      "applied": 0,
+      "replied": 0,
+      "interview": 0,
+      "rejected": 0,
+      "needs_human": 0,
+      "reply_rate": 0
+    },
+    "skill_gaps": [
+      {
+        "skill": "typescript",
+        "jobs": 15,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "mongodb",
+        "jobs": 13,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "aws",
+        "jobs": 9,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "llm",
+        "jobs": 6,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "kubernetes",
+        "jobs": 5,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "rag",
+        "jobs": 4,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "langgraph",
+        "jobs": 2,
+        "of": 56,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "mcp",
+        "jobs": 2,
+        "of": 56,
+        "in_your_roadmap": true
+      }
+    ],
+    "certs": [
+      {
+        "name": "Hugging Face: Official AI Agents & MCP Course",
+        "url": "https://huggingface.co/learn/agents-course",
+        "provider": "Hugging Face",
+        "source": "curated",
+        "covers": [
+          "llm",
+          "rag",
+          "langgraph",
+          "mcp",
+          "langchain"
+        ],
+        "free_claim": "100% free course & verified certificate",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "CodeSignal: Understanding LLMs, Prompting & Agentic Workflows in Python",
+        "url": "https://www.classcentral.com/report/free-certificates/",
+        "provider": "Class Central / CodeSignal",
+        "source": "curated",
+        "covers": [
+          "llm",
+          "rag",
+          "mcp"
+        ],
+        "free_claim": "Free interactive path & badge via Class Central",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Google Cloud Generative AI & Kubernetes Foundations",
+        "url": "https://www.classcentral.com/report/free-google-certifications/",
+        "provider": "Class Central / Google Cloud",
+        "source": "curated",
+        "covers": [
+          "aws",
+          "llm",
+          "kubernetes"
+        ],
+        "free_claim": "Free skill badges & certificates indexed by Class Central",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+        "url": "https://modelcontextprotocol.io/",
+        "provider": "Anthropic / MCP",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "llm",
+          "mcp"
+        ],
+        "free_claim": "100% free official documentation & SDK",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
+        "provider": "Microsoft Learn",
+        "source": "mslearn-cert",
+        "covers": [
+          "rag",
+          "langgraph",
+          "mcp"
+        ],
+        "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
+        "levels": [
+          "advanced"
+        ],
+        "hours": null,
+        "updated": "2026-09-29T23:17:00+00:00",
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Microsoft Certified: AI Agent Builder Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/?WT.mc_id=api_CatalogApi",
+        "provider": "Microsoft Learn",
+        "source": "mslearn-cert",
+        "covers": [
+          "rag",
+          "mcp"
+        ],
+        "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
+        "levels": [
+          "intermediate"
+        ],
+        "hours": null,
+        "updated": "2026-11-09T22:03:00+00:00",
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "&gt;Introduction to Career Skills in Data Analytics",
+        "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "kubernetes"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "A brief introduction to nursing",
+        "url": "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "kubernetes"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "AI Fluency for Educators",
+        "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "kubernetes"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "AI Fluency for Students",
+        "url": "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "kubernetes"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+        "url": "https://github.com/anthropics/courses",
+        "provider": "Anthropic",
+        "source": "curated",
+        "covers": [
+          "llm",
+          "rag"
+        ],
+        "free_claim": "100% free open-source curriculum",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      }
+    ],
+    "cert_health": [
+      {
+        "source": "mslearn-paths",
+        "count": 830,
+        "error": null
+      },
+      {
+        "source": "mslearn-certs",
+        "count": 155,
+        "error": null
+      },
+      {
+        "source": "community-free-list",
+        "count": 0,
+        "error": "free-certifications list not reachable (404/empty)"
+      },
+      {
+        "source": "curated",
+        "count": 234,
+        "error": null
+      }
+    ],
+    "today": {
+      "date": "2026-11-11",
+      "morning_7am": "Study: typescript (90 min)",
+      "evening_630pm": "DSA: 2 problems on two pointers",
+      "night_9pm": "Build: ship one small feature using typescript",
+      "apply_block": "Review top matches + approve applications (30 min)"
+    },
+    "resumes": {
+      "made": 1,
+      "failed": 0
+    },
+    "weekend_projects": [
+      {
+        "skill": "typescript",
+        "project": "Port the dashboard to TypeScript with typed API client"
+      },
+      {
+        "skill": "aws",
+        "project": "Deploy the scanner as a scheduled AWS Lambda"
+      },
+      {
+        "skill": "llm",
+        "project": "RAG over your own notes/resume"
+      }
+    ]
+  }
+}

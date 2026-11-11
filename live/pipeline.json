@@ -1,0 +1,21 @@
+{
+  "agents": [
+    "scanner",
+    "inbox",
+    "matcher",
+    "drafter",
+    "skillgap",
+    "certs",
+    "prep",
+    "tailor",
+    "resume_pdf",
+    "portfolio",
+    "funnel",
+    "aiupdates",
+    "reporter",
+    "autoapply",
+    "digest",
+    "contests",
+    "memory"
+  ]
+}

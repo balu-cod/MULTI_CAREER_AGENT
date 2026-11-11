@@ -1,0 +1,146 @@
+{
+  "ai_updates_v1.json": {
+    "sha256": "3b256282fb0f4ab81b61bb23d86ac11257d7f31d32a0bb7f55bc869a4630a122",
+    "version": 45,
+    "mime": "application/json",
+    "tags": [
+      "ai",
+      "news"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "AI Agents"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T04:24:18+00:00"
+  },
+  "youtube_updates_v1.json": {
+    "sha256": "0ad12af237fa6982a07f77e1e24e6205eb4da97e2d917884e15862c968f81b8b",
+    "version": 30,
+    "mime": "application/json",
+    "tags": [
+      "youtube",
+      "news"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "All"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T01:06:58+00:00"
+  },
+  "live_results_v1.json": {
+    "sha256": "6684ae06f2c46578058e0a4d036e3b28041f593866fb1f583770642907904270",
+    "version": 35,
+    "mime": "application/json",
+    "tags": [
+      "live",
+      "jobs"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "Python"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T04:24:09+00:00"
+  },
+  "contests_v1.json": {
+    "sha256": "4b657aa36acad9cf79abeaa30129fff1207725dcf996b9cc5b8764e2b5f1a416",
+    "version": 31,
+    "mime": "application/json",
+    "tags": [
+      "contests",
+      "hackathons"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "Python",
+      "AI Agents"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T04:24:19+00:00"
+  },
+  "live_applications_v1.json": {
+    "sha256": "469b860c0bab3863bbd0649a9355a8576d53a35b73e5a61c0bd6115551c82cc5",
+    "version": 25,
+    "mime": "application/json",
+    "tags": [
+      "tracker"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "All"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T04:37:17+00:00"
+  },
+  "evening_review_v1.json": {
+    "sha256": "2b1793f1fb2d2c65d2d594d28da109f04dcc0bef2032cfe7275fd36a138d8f55",
+    "version": 8,
+    "mime": "application/json",
+    "tags": [
+      "evening",
+      "review",
+      "study"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "Python",
+      "AI Agents"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-10T12:07:08+00:00"
+  },
+  "user_profile_v1.json": {
+    "sha256": "e687003d632edc74fe5aa0187570a6ed6da88f7a55604cfcd4285da0a84e6713",
+    "version": 14,
+    "mime": "application/json",
+    "tags": [],
+    "owner": null,
+    "skills": [],
+    "access": [],
+    "updated": "2026-11-11T04:25:52+00:00"
+  },
+  "skill_roadmap_v1.json": {
+    "sha256": "bc32973cea9de0acc57ec5fc9da914feddc726ae568533f53e73973ba5d128ae",
+    "version": 4,
+    "mime": "application/json",
+    "tags": [
+      "roadmap",
+      "skills"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [],
+    "access": [],
+    "updated": "2026-11-11T01:48:33+00:00"
+  },
+  "user_personalization_memory.json": {
+    "sha256": "6c3fa8dc2336d07a3bc77a9c74e90f8bcfdf7605268693d92ec8821dd5795784",
+    "version": 3,
+    "mime": "application/json",
+    "tags": [
+      "memory",
+      "personalization"
+    ],
+    "owner": "LIVE_PIPELINE_AGENT",
+    "skills": [
+      "All"
+    ],
+    "access": [
+      "All"
+    ],
+    "updated": "2026-11-11T01:48:33+00:00"
+  }
+}

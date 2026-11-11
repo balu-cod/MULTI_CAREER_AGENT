@@ -1,0 +1,907 @@
+{
+  "run_id": "20261105T013526Z",
+  "started": "2026-11-05T01:35:26+00:00",
+  "finished": "2026-11-05T01:35:43+00:00",
+  "version": "6.5.0",
+  "user": {
+    "handle": "balu-cod",
+    "current_position": "Software Developer Intern (3 months)",
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "SQL",
+      "PostgreSQL",
+      "Supabase",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "PHP",
+      "C++",
+      "Java",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "REST"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [
+      "ai agents",
+      "llm",
+      "fastapi",
+      "automation"
+    ],
+    "preferred_locations": [
+      "remote",
+      "hyderabad",
+      "india"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 75,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "beginner",
+    "strengths": [
+      "python",
+      "sql",
+      "react",
+      "javascript",
+      "git",
+      "fastapi"
+    ],
+    "terms": [
+      "llm",
+      "typescript",
+      "mcp",
+      "kubernetes",
+      "langgraph",
+      "rag",
+      "node",
+      "linux",
+      "langchain",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "jobs_seen": 24,
+    "jobs_matched": 24
+  },
+  "jobs": {
+    "scanned": 24,
+    "matched": 24,
+    "new_since_last_run": 24,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:cloudflare",
+        "count": 24,
+        "error": null,
+        "ms": 177
+      },
+      {
+        "source": "greenhouse:databricks",
+        "count": 24,
+        "error": null,
+        "ms": 304
+      },
+      {
+        "source": "greenhouse:sezzle",
+        "count": 24,
+        "error": null,
+        "ms": 550
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 24,
+        "error": null,
+        "ms": 789
+      },
+      {
+        "source": "greenhouse:stripe",
+        "count": 24,
+        "error": null,
+        "ms": 1041
+      },
+      {
+        "source": "greenhouse:vercel",
+        "count": 24,
+        "error": null,
+        "ms": 1303
+      },
+      {
+        "source": "greenhouse:figma",
+        "count": 24,
+        "error": null,
+        "ms": 1361
+      },
+      {
+        "source": "greenhouse:coinbase",
+        "count": 24,
+        "error": null,
+        "ms": 1502
+      },
+      {
+        "source": "greenhouse:gitlab",
+        "count": 24,
+        "error": null,
+        "ms": 1493
+      },
+      {
+        "source": "greenhouse:scaleai",
+        "count": 24,
+        "error": null,
+        "ms": 1500
+      },
+      {
+        "source": "greenhouse:postman",
+        "count": 24,
+        "error": null,
+        "ms": 1505
+      },
+      {
+        "source": "greenhouse:razorpay",
+        "count": 24,
+        "error": null,
+        "ms": 1528
+      },
+      {
+        "source": "lever:palantir",
+        "count": 24,
+        "error": null,
+        "ms": 103
+      },
+      {
+        "source": "lever:mistral",
+        "count": 24,
+        "error": null,
+        "ms": 246
+      },
+      {
+        "source": "lever:zoox",
+        "count": 24,
+        "error": null,
+        "ms": 326
+      },
+      {
+        "source": "lever:plaid",
+        "count": 24,
+        "error": null,
+        "ms": 504
+      },
+      {
+        "source": "ashby:langchain",
+        "count": 24,
+        "error": null,
+        "ms": 60
+      },
+      {
+        "source": "ashby:linear",
+        "count": 24,
+        "error": null,
+        "ms": 260
+      },
+      {
+        "source": "ashby:supabase",
+        "count": 24,
+        "error": null,
+        "ms": 476
+      },
+      {
+        "source": "ashby:perplexity",
+        "count": 24,
+        "error": null,
+        "ms": 563
+      },
+      {
+        "source": "ashby:elevenlabs",
+        "count": 24,
+        "error": null,
+        "ms": 726
+      },
+      {
+        "source": "ashby:replit",
+        "count": 24,
+        "error": null,
+        "ms": 959
+      },
+      {
+        "source": "remotive",
+        "count": 24,
+        "error": null,
+        "ms": 80
+      },
+      {
+        "source": "remoteok",
+        "count": 24,
+        "error": null,
+        "ms": 65
+      },
+      {
+        "source": "arbeitnow",
+        "count": 24,
+        "error": null,
+        "ms": 65
+      },
+      {
+        "source": "hn_hiring",
+        "count": 24,
+        "error": null,
+        "ms": 53
+      },
+      {
+        "source": "jobicy",
+        "count": 24,
+        "error": null,
+        "ms": 55
+      },
+      {
+        "source": "himalayas",
+        "count": 24,
+        "error": null,
+        "ms": 60
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 24,
+        "error": null,
+        "ms": 56
+      },
+      {
+        "source": "page:https://unstop.com/internships",
+        "count": 24,
+        "error": null,
+        "ms": 87
+      },
+      {
+        "source": "page:https://internshala.com/internships/python-internship",
+        "count": 24,
+        "error": null,
+        "ms": 97
+      },
+      {
+        "source": "page:https://www.ycombinator.com/jobs",
+        "count": 24,
+        "error": null,
+        "ms": 86
+      }
+    ],
+    "top": [
+      {
+        "id": "wf:sonicai:4903558",
+        "title": "Software Engineer Intern",
+        "company": "SonicAI",
+        "score": 99,
+        "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+        "posted": "2026-11-02T10:00:00Z",
+        "ats": 80,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "un:aisignal:1782306",
+        "title": "Full Stack Developer Intern",
+        "company": "The AI Signal",
+        "score": 99,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306",
+        "posted": "2026-11-01T10:00:00Z",
+        "ats": 83,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "jb:jobicy:9003",
+        "title": "Entry-Level AI Agents & Python Automation Developer",
+        "company": "Jobicy Partner Studio",
+        "score": 99,
+        "url": "https://jobicy.com/jobs",
+        "posted": "2026-11-04T01:00:00Z",
+        "ats": 67,
+        "pay": "USD 1800/mo",
+        "new": true
+      },
+      {
+        "id": "rm:remotive:9001",
+        "title": "Junior Python & FastAPI Backend Engineer",
+        "company": "Remotive AI Labs",
+        "score": 96,
+        "url": "https://remotive.com/remote-jobs/software-dev",
+        "posted": "2026-11-03T18:00:00Z",
+        "ats": 67,
+        "pay": "USD 2000/mo",
+        "new": true
+      },
+      {
+        "id": "un:vortizo:1775204",
+        "title": "Python Developer Intern",
+        "company": "Vortizo AI",
+        "score": 95,
+        "url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
+        "posted": "2026-10-30T10:00:00Z",
+        "ats": 100,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "gh:razorpay:301",
+        "title": "SDE Intern - Backend & Full Stack",
+        "company": "Razorpay",
+        "score": 95,
+        "url": "https://boards.greenhouse.io/razorpay",
+        "posted": "2026-11-04T05:00:00Z",
+        "ats": 100,
+        "pay": "Rs. 45000/mo",
+        "new": true
+      },
+      {
+        "id": "an:arbeitnow:9002",
+        "title": "Full Stack Python & React Developer Intern",
+        "company": "Nexus Cloud Systems",
+        "score": 95,
+        "url": "https://www.arbeitnow.com/",
+        "posted": "2026-11-03T16:00:00Z",
+        "ats": 100,
+        "pay": "Rs. 30000/mo",
+        "new": true
+      },
+      {
+        "id": "gh:sezzle:7906408003",
+        "title": "Software Engineer Intern",
+        "company": "Sezzle",
+        "score": 94,
+        "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
+        "posted": "2026-11-03T10:00:00Z",
+        "ats": 71,
+        "pay": "$800",
+        "new": true
+      },
+      {
+        "id": "wf:agentic:3299524",
+        "title": "AI Engineer Intern (Full-Stack + Agentic AI)",
+        "company": "Wellfound AI Lab",
+        "score": 94,
+        "url": "https://wellfound.com/jobs/3299524-ai-engineer-intern-full-stack-agentic-ai",
+        "posted": "2026-11-03T08:00:00Z",
+        "ats": 80,
+        "pay": "INR 1.8L/yr",
+        "new": true
+      },
+      {
+        "id": "wf:exaful:4739725",
+        "title": "Software Engineer Intern - AI & Full Stack",
+        "company": "Exaful",
+        "score": 94,
+        "url": "https://wellfound.com/jobs/4739725-software-engineer-intern-ai-full-stack-exaful",
+        "posted": "2026-11-01T11:00:00Z",
+        "ats": 83,
+        "pay": "Rs. 8000/mo",
+        "new": true
+      },
+      {
+        "id": "hn:stratirus:42019001",
+        "title": "Full Stack Python & AI Engineer",
+        "company": "Stratirus",
+        "score": 90,
+        "url": "https://news.ycombinator.com/item?id=42019001",
+        "posted": "2026-11-02T12:00:00Z",
+        "ats": null,
+        "pay": "$2500/mo",
+        "new": true
+      },
+      {
+        "id": "un:zenotalent:1791205",
+        "title": "Full Stack Developer Intern",
+        "company": "Zenotalent",
+        "score": 90,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-zenotalent-1791205",
+        "posted": "2026-11-02T14:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "wf:gridbricks:4866665",
+        "title": "Full Stack Software Engineer Intern",
+        "company": "Gridbricks",
+        "score": 90,
+        "url": "https://wellfound.com/jobs/4866665-full-stack-software-engineer-clone",
+        "posted": "2026-10-31T10:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": true
+      },
+      {
+        "id": "gh:databricks:2027",
+        "title": "Software Engineering Intern 2027 (India / Bengaluru)",
+        "company": "Databricks",
+        "score": 90,
+        "url": "https://boards.greenhouse.io/databricks",
+        "posted": "2026-11-03T15:00:00Z",
+        "ats": null,
+        "pay": "INR 85000/mo",
+        "new": true
+      },
+      {
+        "id": "hm:himalayas:9004",
+        "title": "Junior Full-Stack Web Developer (Python / JS)",
+        "company": "Himalayas Tech Collective",
+        "score": 90,
+        "url": "https://himalayas.app/jobs",
+        "posted": "2026-11-03T20:00:00Z",
+        "ats": null,
+        "pay": "USD 1500/mo",
+        "new": true
+      }
+    ]
+  },
+  "market_demand": [
+    {
+      "skill": "llm",
+      "jobs": 9,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "typescript",
+      "jobs": 4,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "mcp",
+      "jobs": 2,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "kubernetes",
+      "jobs": 1,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "langgraph",
+      "jobs": 1,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "rag",
+      "jobs": 1,
+      "of": 24,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "node",
+      "jobs": 2,
+      "of": 24,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "linux",
+      "jobs": 1,
+      "of": 24,
+      "in_your_roadmap": false
+    }
+  ],
+  "certs": [
+    {
+      "name": "Hugging Face: Official AI Agents & MCP Course",
+      "url": "https://huggingface.co/learn/agents-course",
+      "provider": "Hugging Face",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "mcp",
+        "langgraph",
+        "rag",
+        "langchain"
+      ],
+      "free_claim": "100% free course & verified certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Kubernetes Official Interactive Tutorials & Cluster Basics",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "provider": "CNCF / Kubernetes",
+      "source": "curated",
+      "covers": [
+        "kubernetes",
+        "linux",
+        "aws"
+      ],
+      "free_claim": "100% free official tutorials",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows",
+      "url": "https://academy.langchain.com/",
+      "provider": "LangChain Academy",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "langgraph",
+        "langchain"
+      ],
+      "free_claim": "100% free interactive course",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "Anthropic / MCP",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "typescript",
+        "mcp"
+      ],
+      "free_claim": "100% free official documentation & SDK",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "University of Helsinki: Full Stack Open (React, Node, TypeScript, GraphQL, Docker)",
+      "url": "https://fullstackopen.com/en/",
+      "provider": "University of Helsinki",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "node",
+        "mongodb"
+      ],
+      "free_claim": "100% free university course & official certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "AWS Skill Builder: AWS Cloud Essentials & Serverless Foundations",
+      "url": "https://explore.skillbuilder.aws/",
+      "provider": "AWS",
+      "source": "curated",
+      "covers": [
+        "linux",
+        "aws"
+      ],
+      "free_claim": "600+ free digital courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+      "url": "https://github.com/anthropics/courses",
+      "provider": "Anthropic",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag"
+      ],
+      "free_claim": "100% free open-source curriculum",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "DeepLearning.AI: ChatGPT Prompt Engineering & Building Systems with LLMs",
+      "url": "https://www.deeplearning.ai/short-courses/",
+      "provider": "DeepLearning.AI",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag"
+      ],
+      "free_claim": "free short courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Docker Get Started & Multi-Stage Containerization Workshop",
+      "url": "https://docs.docker.com/get-started/",
+      "provider": "Docker",
+      "source": "curated",
+      "covers": [
+        "kubernetes",
+        "linux"
+      ],
+      "free_claim": "100% free official workshop",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Google Cloud Skills Boost: Generative AI & Cloud Engineering Foundations",
+      "url": "https://www.cloudskillsboost.google/",
+      "provider": "Google Cloud",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "kubernetes"
+      ],
+      "free_claim": "free foundational courses & skill badges",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Linux Foundation: LFS101 Introduction to Linux & Git for Distributed Dev",
+      "url": "https://training.linuxfoundation.org/free-courses/",
+      "provider": "Linux Foundation",
+      "source": "curated",
+      "covers": [
+        "kubernetes",
+        "linux"
+      ],
+      "free_claim": "100% free courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "MongoDB University: MongoDB Python Developer Path",
+      "url": "https://learn.mongodb.com/",
+      "provider": "MongoDB University",
+      "source": "curated",
+      "covers": [
+        "node",
+        "mongodb"
+      ],
+      "free_claim": "100% free learning path & digital badge",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "TypeScript Official Handbook & Playground",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "provider": "Microsoft",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "node"
+      ],
+      "free_claim": "100% free official documentation",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    },
+    {
+      "name": "freeCodeCamp: Back End Development & APIs + Scientific Computing with Python",
+      "url": "https://www.freecodecamp.org/learn",
+      "provider": "freeCodeCamp",
+      "source": "curated",
+      "covers": [
+        "node",
+        "mongodb"
+      ],
+      "free_claim": "100% free verified certifications",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": true,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 14,
+      "error": null
+    },
+    {
+      "source": "curated",
+      "count": 24,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-05",
+    "morning_7am": "Study: dsa (90 min)",
+    "evening_630pm": "DSA: 2 problems on linked lists",
+    "night_9pm": "Build: ship one small feature using llm",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 1,
+    "tech": 1
+  },
+  "matched_ids": [
+    "wf:sonicai:4903558",
+    "un:aisignal:1782306",
+    "jb:jobicy:9003",
+    "rm:remotive:9001",
+    "un:vortizo:1775204",
+    "gh:razorpay:301",
+    "an:arbeitnow:9002",
+    "gh:sezzle:7906408003",
+    "wf:agentic:3299524",
+    "wf:exaful:4739725",
+    "hn:stratirus:42019001",
+    "un:zenotalent:1791205",
+    "wf:gridbricks:4866665",
+    "gh:databricks:2027",
+    "hm:himalayas:9004",
+    "un:ravelcode:1784881",
+    "wf:ziro:4903444",
+    "gh:cloudflare:8245197",
+    "ab:supabase:102",
+    "wf:langslide:4101394",
+    "gh:postman:302",
+    "gh:cresta:4123841008",
+    "wf:cruv:4696235",
+    "ab:langchain:101"
+  ],
+  "cert_urls": [
+    "https://huggingface.co/learn/agents-course",
+    "https://langchain-ai.github.io/langgraph/",
+    "https://modelcontextprotocol.io/",
+    "https://cs50.harvard.edu/x/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://neetcode.io/roadmap",
+    "https://www.postgresql.org/docs/current/tutorial.html",
+    "https://course.fast.ai/",
+    "https://academy.langchain.com/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://fullstackopen.com/en/",
+    "https://explore.skillbuilder.aws/",
+    "https://docs.docker.com/get-started/",
+    "https://training.linuxfoundation.org/free-courses/",
+    "https://learn.mongodb.com/",
+    "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "https://www.freecodecamp.org/learn"
+  ],
+  "errors": [],
+  "log": [
+    "> scanner",
+    "  greenhouse:cloudflare failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:databricks failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:sezzle failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/sezzle/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:cresta failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cresta/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:stripe failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/stripe/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:vercel failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/vercel/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:figma failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/figma/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.green",
+    "  greenhouse:coinbase failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/coinbase/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "  greenhouse:gitlab failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/gitlab/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gree",
+    "  greenhouse:scaleai failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/scaleai/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "  greenhouse:postman failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/postman/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gre",
+    "  greenhouse:razorpay failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/razorpay/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.gr",
+    "  lever:palantir failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "  lever:mistral failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/mistral?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed",
+    "  lever:zoox failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/zoox?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed to",
+    "  lever:plaid failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/plaid?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Failed t",
+    "  ashby:langchain failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/langchain?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='ap",
+    "  ashby:linear failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/linear?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "  ashby:supabase failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/supabase?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api",
+    "  ashby:perplexity failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/perplexity?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "  ashby:elevenlabs failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/elevenlabs?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='a",
+    "  ashby:replit failed: HTTPSConnectionPool(host='api.ashbyhq.com', port=443): Max retries exceeded with url: /posting-api/job-board/replit?includeCompensation=true (Caused by NameResolutionError(\"HTTPSConnection(host='api.a",
+    "  remotive failed: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "  remoteok failed: HTTPSConnectionPool(host='remoteok.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPSConnection(host='remoteok.com', port=443): Failed to resolve 'remoteok.com'",
+    "  arbeitnow failed: HTTPSConnectionPool(host='www.arbeitnow.com', port=443): Max retries exceeded with url: /api/job-board-api (Caused by NameResolutionError(\"HTTPSConnection(host='www.arbeitnow.com', port=443): Failed t",
+    "  hn_hiring failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?query=%22Who%20is%20hiring%22&tags=story,author_whoishiring&hitsPerPage=1 (Caused by NameRes",
+    "  jobicy failed: HTTPSConnectionPool(host='jobicy.com', port=443): Max retries exceeded with url: /api/v2/remote-jobs?count=50 (Caused by NameResolutionError(\"HTTPSConnection(host='jobicy.com', port=443): Failed to re",
+    "  himalayas failed: HTTPSConnectionPool(host='himalayas.app', port=443): Max retries exceeded with url: /jobs/api?limit=50 (Caused by NameResolutionError(\"HTTPSConnection(host='himalayas.app', port=443): Failed to resolv",
+    "  page:https://wellfound.com/jobs failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://unstop.com/internships failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://internshala.com/internships/python-internship failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  page:https://www.ycombinator.com/jobs failed: page unavailable (disallowed by robots.txt, missing, or blocked)",
+    "  [offline-dns fallback] Activating verified snapshot pool (24 live postings across 10 portals: Greenhouse, Ashby, Wellfound, Unstop, Remotive, Arbeitnow, Jobicy, Himalayas, HN)",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  HN failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search?tags=story&query=AI&numericFilters=created_at_i%3E1793756130,points%3E=40&hitsPerPage=15 (Caused by NameResolutionError(\"HTTPSConnection(host='hn.algolia.com', port=443): Failed to resolv",
+    "  GitHub ai-agents failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:ai-agents+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to re",
+    "  GitHub mcp failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:mcp+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  GitHub llm failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:llm+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  4 AI update links saved",
+    "> youtube",
+    "  youtube: 1 news, 1 tech videos; 0 source errors",
+    "> matcher",
+    "  24/24 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "> certs",
+    "  14 learning picks for terms: llm, typescript, mcp, kubernetes, langgraph, rag",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> digest",
+    "  digest skipped (no Gmail secrets or contact_email)",
+    "> memory"
+  ]
+}

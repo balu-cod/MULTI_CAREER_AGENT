@@ -1,0 +1,822 @@
+{
+  "run_id": "20261105T133519Z",
+  "started": "2026-11-05T13:35:19+00:00",
+  "finished": "2026-11-05T13:35:35+00:00",
+  "version": "6.5.0",
+  "user": {
+    "handle": "balu-cod",
+    "current_position": "Software Developer Intern (3 months)",
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "SQL",
+      "PostgreSQL",
+      "Supabase",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "PHP",
+      "C++",
+      "Java",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "REST"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [
+      "ai agents",
+      "llm",
+      "fastapi",
+      "automation"
+    ],
+    "preferred_locations": [
+      "remote",
+      "hyderabad",
+      "india"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 75,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "beginner",
+    "strengths": [
+      "python",
+      "sql",
+      "git",
+      "fastapi",
+      "react",
+      "docker"
+    ],
+    "terms": [
+      "llm",
+      "typescript",
+      "rag",
+      "aws",
+      "kubernetes",
+      "mcp",
+      "node",
+      "pytorch",
+      "langgraph",
+      "langchain",
+      "dsa",
+      "mongodb"
+    ],
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "jobs_seen": 37,
+    "jobs_matched": 37
+  },
+  "jobs": {
+    "scanned": 37,
+    "matched": 37,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:sezzle",
+        "count": 2,
+        "error": null,
+        "ms": 91
+      },
+      {
+        "source": "greenhouse:enterpret",
+        "count": 2,
+        "error": null,
+        "ms": 312
+      },
+      {
+        "source": "greenhouse:karya",
+        "count": 1,
+        "error": null,
+        "ms": 554
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 1,
+        "error": null,
+        "ms": 811
+      },
+      {
+        "source": "greenhouse:datacor",
+        "count": 1,
+        "error": null,
+        "ms": 1049
+      },
+      {
+        "source": "greenhouse:eqtcorporation",
+        "count": 1,
+        "error": null,
+        "ms": 1300
+      },
+      {
+        "source": "ashby:anyone-ai",
+        "count": 1,
+        "error": null,
+        "ms": 62
+      },
+      {
+        "source": "ashby:aiprise",
+        "count": 1,
+        "error": null,
+        "ms": 285
+      },
+      {
+        "source": "ashby:outmarket",
+        "count": 2,
+        "error": null,
+        "ms": 342
+      },
+      {
+        "source": "ashby:pinecone",
+        "count": 1,
+        "error": null,
+        "ms": 463
+      },
+      {
+        "source": "ashby:build-ai",
+        "count": 1,
+        "error": null,
+        "ms": 598
+      },
+      {
+        "source": "remotive",
+        "count": 6,
+        "error": null,
+        "ms": 680
+      },
+      {
+        "source": "arbeitnow",
+        "count": 6,
+        "error": null,
+        "ms": 63
+      },
+      {
+        "source": "hn_hiring",
+        "count": 5,
+        "error": null,
+        "ms": 307
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 2,
+        "error": null,
+        "ms": 321
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
+        "count": 2,
+        "error": null,
+        "ms": 319
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/postman/software-development",
+        "count": 1,
+        "error": null,
+        "ms": 455
+      },
+      {
+        "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
+        "count": 1,
+        "error": null,
+        "ms": 308
+      }
+    ],
+    "top": [
+      {
+        "id": "gh:sezzle:7980015003",
+        "title": "A.I. Engineering Intern",
+        "company": "sezzle",
+        "score": 99,
+        "url": "https://job-boards.greenhouse.io/sezzle/jobs/7980015003",
+        "posted": "2026-11-02T12:00:00Z",
+        "ats": 56,
+        "pay": "$1,000/mo",
+        "new": false
+      },
+      {
+        "id": "gh:cresta:4123841008",
+        "title": "Software Engineer Intern",
+        "company": "cresta",
+        "score": 99,
+        "url": "https://job-boards.greenhouse.io/cresta/jobs/4123841008",
+        "posted": "2026-10-29T14:00:00Z",
+        "ats": 90,
+        "pay": "$30-50/hr",
+        "new": false
+      },
+      {
+        "id": "rm:4126022",
+        "title": "AI Engineer Intern",
+        "company": "Alchemyst AI",
+        "score": 99,
+        "url": "https://wellfound.com/jobs/4126022-ai-engineer-intern",
+        "posted": "2026-10-31T15:00:00",
+        "ats": 78,
+        "pay": "₹20,000",
+        "new": false
+      },
+      {
+        "id": "rm:4101394",
+        "title": "AI / Full Stack Developer Intern",
+        "company": "Langslide",
+        "score": 99,
+        "url": "https://wellfound.com/jobs/4101394-ai-full-stack-developer-intern",
+        "posted": "2026-10-29T08:00:00",
+        "ats": 89,
+        "pay": "₹15,000",
+        "new": false
+      },
+      {
+        "id": "an:unstop-1782306-python-development-internship-the-ai-signal",
+        "title": "Python Development Internship",
+        "company": "The AI Signal",
+        "score": 99,
+        "url": "https://unstop.com/internships/python-development-internship-the-ai-signal-1782306",
+        "posted": "2026-11-02T09:00:00+00:00",
+        "ats": 83,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "an:unstop-1724402-ai-software-developer-internship-memorly-ai",
+        "title": "AI Software Developer Internship",
+        "company": "Memorly.AI",
+        "score": 99,
+        "url": "https://unstop.com/internships/ai-software-developer-internship-memorlyai-1724402",
+        "posted": "2026-11-01T16:20:00+00:00",
+        "ats": 86,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "an:unstop-1775204-ai-agent-developer-internship-vortizo-ai",
+        "title": "AI Agent Developer Internship",
+        "company": "Vortizo AI",
+        "score": 99,
+        "url": "https://unstop.com/internships/ai-agent-developer-internship-vortizo-ai-1775204",
+        "posted": "2026-11-02T11:46:40+00:00",
+        "ats": 86,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "an:unstop-1724666-backend-developer-internship-nyaami-ai",
+        "title": "Backend Developer Internship",
+        "company": "NyaaMi AI",
+        "score": 99,
+        "url": "https://unstop.com/internships/backend-developer-internship-nyaami-ai-1724666",
+        "posted": "2026-10-31T20:53:20+00:00",
+        "ats": 89,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "pg:https://wellfound.com/jobs/4866665-backend-ai-developer-intern",
+        "title": "Backend & AI Developer Intern",
+        "company": "Gridbricks",
+        "score": 99,
+        "url": "https://wellfound.com/jobs/4866665-backend-ai-developer-intern",
+        "posted": "2026-11-01",
+        "ats": 89,
+        "pay": "INR 18000-30000",
+        "new": false
+      },
+      {
+        "id": "gh:enterpret:7847134003",
+        "title": "[Backend, Onsite] Software Engineering Intern",
+        "company": "enterpret",
+        "score": 96,
+        "url": "https://job-boards.greenhouse.io/enterpret/jobs/7847134003",
+        "posted": "2026-10-28T09:00:00Z",
+        "ats": 64,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "gh:enterpret:7723230003",
+        "title": "Machine Learning Intern [Onsite]",
+        "company": "enterpret",
+        "score": 96,
+        "url": "https://job-boards.greenhouse.io/enterpret/jobs/7723230003",
+        "posted": "2026-10-25T09:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "rm:4903558",
+        "title": "Software Engineer Intern",
+        "company": "SonicAI",
+        "score": 95,
+        "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+        "posted": "2026-11-02T10:00:00",
+        "ats": null,
+        "pay": "₹15,000",
+        "new": false
+      },
+      {
+        "id": "rm:3940311",
+        "title": "Python Backend Developer Intern",
+        "company": "TrueDax",
+        "score": 95,
+        "url": "https://wellfound.com/jobs/3940311-python-backend-developer-intern",
+        "posted": "2026-11-01T09:00:00",
+        "ats": null,
+        "pay": "₹15,000",
+        "new": false
+      },
+      {
+        "id": "rm:4739725",
+        "title": "Full Stack Engineer Intern (ReactJS + FastAPI)",
+        "company": "Exaful",
+        "score": 95,
+        "url": "https://wellfound.com/jobs/4739725-full-stack-engineer-intern-reactjs-fastapi",
+        "posted": "2026-11-02T14:00:00",
+        "ats": null,
+        "pay": "₹20,000/mo",
+        "new": false
+      },
+      {
+        "id": "an:unstop-1791205-full-stack-developer-internship-zenotalent",
+        "title": "Full Stack Developer Internship",
+        "company": "Zenotalent",
+        "score": 95,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-zenotalent-1791205",
+        "posted": "2026-11-03T07:13:20+00:00",
+        "ats": null,
+        "pay": "",
+        "new": false
+      }
+    ]
+  },
+  "market_demand": [
+    {
+      "skill": "llm",
+      "jobs": 20,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "typescript",
+      "jobs": 11,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "rag",
+      "jobs": 4,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "aws",
+      "jobs": 3,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "kubernetes",
+      "jobs": 2,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "mcp",
+      "jobs": 1,
+      "of": 37,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "node",
+      "jobs": 7,
+      "of": 37,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "pytorch",
+      "jobs": 1,
+      "of": 37,
+      "in_your_roadmap": false
+    }
+  ],
+  "certs": [
+    {
+      "name": "LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows",
+      "url": "https://academy.langchain.com/",
+      "provider": "LangChain Academy",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "langgraph",
+        "langchain"
+      ],
+      "free_claim": "100% free interactive course",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "Anthropic / MCP",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "typescript",
+        "mcp"
+      ],
+      "free_claim": "100% free official documentation & SDK",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "University of Helsinki: Full Stack Open (React, Node, TypeScript, GraphQL, Docker)",
+      "url": "https://fullstackopen.com/en/",
+      "provider": "University of Helsinki",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "node",
+        "mongodb"
+      ],
+      "free_claim": "100% free university course & official certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "DeepLearning.AI: Functions, Tools and Agents with LangChain",
+      "url": "https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/",
+      "provider": "AI, LLMs & Agentic Workflows",
+      "source": "community-list",
+      "covers": [
+        "llm",
+        "rag",
+        "langchain"
+      ],
+      "free_claim": "listed as free by a community list; confirm on the provider page",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Hugging Face NLP & LLM Agents Course (Free Certificate)",
+      "url": "https://huggingface.co/learn/agents-course",
+      "provider": "AI, LLMs & Agentic Workflows",
+      "source": "community-list",
+      "covers": [
+        "llm",
+        "rag",
+        "mcp"
+      ],
+      "free_claim": "listed as free by a community list; confirm on the provider page",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "LangChain Academy: Introduction to LangGraph & AI Agents",
+      "url": "https://academy.langchain.com/courses/intro-to-langgraph",
+      "provider": "AI, LLMs & Agentic Workflows",
+      "source": "community-list",
+      "covers": [
+        "rag",
+        "langgraph",
+        "langchain"
+      ],
+      "free_claim": "listed as free by a community list; confirm on the provider page",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Build JavaScript and TypeScript Applications with Node.js and React",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+      "provider": "Microsoft Learn",
+      "source": "mslearn",
+      "covers": [
+        "typescript",
+        "node"
+      ],
+      "free_claim": "learning path is free; any certification exam fee is separate",
+      "levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "hours": 4.7,
+      "updated": "2026-10-10T00:00:00Z",
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Develop Generative AI Solutions with Azure OpenAI Service (LLM & RAG)",
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/",
+      "provider": "Microsoft Learn",
+      "source": "mslearn",
+      "covers": [
+        "llm",
+        "rag"
+      ],
+      "free_claim": "learning path is free; any certification exam fee is separate",
+      "levels": [
+        "intermediate",
+        "beginner"
+      ],
+      "hours": 5.3,
+      "updated": "2026-10-15T00:00:00Z",
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+      "url": "https://github.com/anthropics/courses",
+      "provider": "Anthropic",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag"
+      ],
+      "free_claim": "100% free open-source curriculum",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "DeepLearning.AI: ChatGPT Prompt Engineering & Building Systems with LLMs",
+      "url": "https://www.deeplearning.ai/short-courses/",
+      "provider": "DeepLearning.AI",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "rag"
+      ],
+      "free_claim": "free short courses",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Google Cloud Skills Boost: Generative AI & Cloud Engineering Foundations",
+      "url": "https://www.cloudskillsboost.google/",
+      "provider": "Google Cloud",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "kubernetes"
+      ],
+      "free_claim": "free foundational courses & skill badges",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Kubernetes Official Interactive Tutorials & Cluster Basics",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "provider": "CNCF / Kubernetes",
+      "source": "curated",
+      "covers": [
+        "aws",
+        "kubernetes"
+      ],
+      "free_claim": "100% free official tutorials",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "MongoDB University: MongoDB Python Developer Path",
+      "url": "https://learn.mongodb.com/",
+      "provider": "MongoDB University",
+      "source": "curated",
+      "covers": [
+        "node",
+        "mongodb"
+      ],
+      "free_claim": "100% free learning path & digital badge",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Practical Deep Learning for Coders (fast.ai)",
+      "url": "https://course.fast.ai/",
+      "provider": "fast.ai",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "pytorch"
+      ],
+      "free_claim": "100% free full course",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 3,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 12,
+      "error": null
+    },
+    {
+      "source": "curated",
+      "count": 24,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-05",
+    "morning_7am": "Study: dsa (90 min)",
+    "evening_630pm": "DSA: 2 problems on linked lists",
+    "night_9pm": "Build: ship one small feature using llm",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 3,
+    "tech": 5
+  },
+  "matched_ids": [
+    "gh:sezzle:7980015003",
+    "gh:cresta:4123841008",
+    "rm:4126022",
+    "rm:4101394",
+    "an:unstop-1782306-python-development-internship-the-ai-signal",
+    "an:unstop-1724402-ai-software-developer-internship-memorly-ai",
+    "an:unstop-1775204-ai-agent-developer-internship-vortizo-ai",
+    "an:unstop-1724666-backend-developer-internship-nyaami-ai",
+    "pg:https://wellfound.com/jobs/4866665-backend-ai-developer-intern",
+    "gh:enterpret:7847134003",
+    "gh:enterpret:7723230003",
+    "rm:4903558",
+    "rm:3940311",
+    "rm:4739725",
+    "an:unstop-1791205-full-stack-developer-internship-zenotalent",
+    "pg:https://wellfound.com/jobs/4903444-software-engineer-intern",
+    "gh:sezzle:7906408003",
+    "gh:karya:5469564008",
+    "rm:4746833",
+    "pg:https://myinternships.in/internships/razorpay-python-developer-intern-bengaluru-d42fb9",
+    "ab:outmarket:394596df-353a-41bf-8209-9d6431ff0937",
+    "ab:outmarket:bf97ebff-7672-415d-b281-3ba61635f12c",
+    "hn:50340112",
+    "hn:50339501",
+    "pg:https://myinternships.in/internships/razorpay-is-hiring-software-engineer-intern-bengaluru-2elhm",
+    "pg:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet",
+    "gh:eqtcorporation:5462562008",
+    "ab:anyone-ai:e825df23-e721-465b-87d7-04a569f7269e",
+    "ab:pinecone:edf2a2a5-64e2-45b8-9f2e-4f354af350b8",
+    "an:unstop-1716336-software-engineer-internship-mind-merge-soft-tech",
+    "pg:https://myinternships.in/internships-at/postman/software-development",
+    "ab:build-ai:1f5ebbc1-7ae7-4361-a6e7-1284e581ff41",
+    "hn:50339845",
+    "gh:datacor:5242412007",
+    "hn:50341008",
+    "ab:aiprise:3763c791-a387-4078-9ca4-00cbfbf9b1a6",
+    "hn:50341290"
+  ],
+  "cert_urls": [
+    "https://academy.langchain.com/",
+    "https://modelcontextprotocol.io/",
+    "https://fullstackopen.com/en/",
+    "https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/",
+    "https://huggingface.co/learn/agents-course",
+    "https://academy.langchain.com/courses/intro-to-langgraph",
+    "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+    "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://learn.mongodb.com/",
+    "https://course.fast.ai/"
+  ],
+  "errors": [],
+  "log": [
+    "> scanner",
+    "  greenhouse:sezzle: 2 postings in 91 ms",
+    "  greenhouse:enterpret: 2 postings in 312 ms",
+    "  greenhouse:karya: 1 postings in 554 ms",
+    "  greenhouse:cresta: 1 postings in 811 ms",
+    "  greenhouse:datacor: 1 postings in 1049 ms",
+    "  greenhouse:eqtcorporation: 1 postings in 1300 ms",
+    "  ashby:anyone-ai: 1 postings in 62 ms",
+    "  ashby:aiprise: 1 postings in 285 ms",
+    "  ashby:outmarket: 2 postings in 342 ms",
+    "  ashby:pinecone: 1 postings in 463 ms",
+    "  ashby:build-ai: 1 postings in 598 ms",
+    "  remotive: 6 postings in 680 ms",
+    "  arbeitnow: 6 postings in 63 ms",
+    "  hn_hiring: 5 postings in 307 ms",
+    "  page:https://wellfound.com/jobs: 2 postings in 321 ms",
+    "  page:https://myinternships.in/internships-at/razorpay/software-development: 2 postings in 319 ms",
+    "  page:https://myinternships.in/internships-at/postman/software-development: 1 postings in 455 ms",
+    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 1 postings in 308 ms",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  11 AI update links saved",
+    "> youtube",
+    "  youtube: 3 news, 5 tech videos; 0 source errors",
+    "> contests",
+    "  10 live hackathons & hiring challenges saved",
+    "> matcher",
+    "  37/37 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "> dailynews",
+    "  dailynews built: private/daily_news_latest.txt (11 AI stories, 10 India roles)",
+    "> certs",
+    "  14 learning picks for terms: llm, typescript, rag, aws, kubernetes, mcp",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> digest",
+    "  digest built: private/digest_latest.txt (9475 chars) & private/digest_latest.html (51540 chars)",
+    "  digest failed: send failed after 3 tries: [Errno -3] Temporary failure in name resolution",
+    "> memory"
+  ]
+}

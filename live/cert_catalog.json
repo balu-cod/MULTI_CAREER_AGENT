@@ -1,0 +1,331 @@
+[
+  {
+    "name": "University of Helsinki: Full Stack Open (React, Node, TypeScript, GraphQL, Docker)",
+    "url": "https://fullstackopen.com/en/",
+    "tags": [
+      "javascript",
+      "typescript",
+      "react",
+      "node",
+      "node.js",
+      "express",
+      "mongodb",
+      "graphql",
+      "docker",
+      "ci/cd"
+    ],
+    "provider": "University of Helsinki",
+    "free_claim": "100% free university course & official certificate"
+  },
+  {
+    "name": "Hugging Face: Official AI Agents & MCP Course",
+    "url": "https://huggingface.co/learn/agents-course",
+    "tags": [
+      "python",
+      "llm",
+      "ai agents",
+      "langchain",
+      "langgraph",
+      "mcp",
+      "rag"
+    ],
+    "provider": "Hugging Face",
+    "free_claim": "100% free course & verified certificate"
+  },
+  {
+    "name": "LangChain Academy: Introduction to LangGraph & Multi-Agent Workflows",
+    "url": "https://academy.langchain.com/",
+    "tags": [
+      "python",
+      "langgraph",
+      "langchain",
+      "llm",
+      "ai agents"
+    ],
+    "provider": "LangChain Academy",
+    "free_claim": "100% free interactive course"
+  },
+  {
+    "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+    "url": "https://modelcontextprotocol.io/",
+    "tags": [
+      "mcp",
+      "llm",
+      "ai agents",
+      "python",
+      "typescript"
+    ],
+    "provider": "Anthropic / MCP",
+    "free_claim": "100% free official documentation & SDK"
+  },
+  {
+    "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+    "url": "https://github.com/anthropics/courses",
+    "tags": [
+      "llm",
+      "ai agents",
+      "python",
+      "rag"
+    ],
+    "provider": "Anthropic",
+    "free_claim": "100% free open-source curriculum"
+  },
+  {
+    "name": "DeepLearning.AI: ChatGPT Prompt Engineering & Building Systems with LLMs",
+    "url": "https://www.deeplearning.ai/short-courses/",
+    "tags": [
+      "python",
+      "llm",
+      "openai",
+      "rag",
+      "ai agents"
+    ],
+    "provider": "DeepLearning.AI",
+    "free_claim": "free short courses"
+  },
+  {
+    "name": "FastAPI Official Tutorial \u2014 Async SQL, OAuth2 JWT & Dependency Injection",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "tags": [
+      "python",
+      "fastapi",
+      "rest",
+      "sql",
+      "postgresql",
+      "docker"
+    ],
+    "provider": "FastAPI",
+    "free_claim": "100% free official guide"
+  },
+  {
+    "name": "MongoDB University: MongoDB Python Developer Path",
+    "url": "https://learn.mongodb.com/",
+    "tags": [
+      "mongodb",
+      "python",
+      "sql",
+      "node.js"
+    ],
+    "provider": "MongoDB University",
+    "free_claim": "100% free learning path & digital badge"
+  },
+  {
+    "name": "Postman Academy: Postman API Fundamentals Student Expert",
+    "url": "https://academy.postman.com/",
+    "tags": [
+      "rest",
+      "javascript",
+      "node",
+      "fastapi",
+      "ci/cd"
+    ],
+    "provider": "Postman",
+    "free_claim": "100% free student expert certification & badge"
+  },
+  {
+    "name": "Supabase Official Guide: PostgreSQL, Row-Level Security (RLS) & Edge Functions",
+    "url": "https://supabase.com/docs",
+    "tags": [
+      "supabase",
+      "postgresql",
+      "sql",
+      "typescript",
+      "react"
+    ],
+    "provider": "Supabase",
+    "free_claim": "100% free official docs & quickstarts"
+  },
+  {
+    "name": "CS50x: Introduction to Computer Science (Harvard University)",
+    "url": "https://cs50.harvard.edu/x/",
+    "tags": [
+      "python",
+      "sql",
+      "dsa",
+      "c++",
+      "c",
+      "javascript",
+      "html",
+      "css",
+      "git"
+    ],
+    "provider": "Harvard University",
+    "free_claim": "100% free course & free CS50 certificate"
+  },
+  {
+    "name": "CS50W: Web Programming with Python and JavaScript (Harvard University)",
+    "url": "https://cs50.harvard.edu/web/",
+    "tags": [
+      "python",
+      "django",
+      "javascript",
+      "react",
+      "sql",
+      "html",
+      "css",
+      "git",
+      "ci/cd"
+    ],
+    "provider": "Harvard University",
+    "free_claim": "100% free course & free CS50 certificate"
+  },
+  {
+    "name": "freeCodeCamp: Back End Development & APIs + Scientific Computing with Python",
+    "url": "https://www.freecodecamp.org/learn",
+    "tags": [
+      "javascript",
+      "react",
+      "node",
+      "python",
+      "sql",
+      "rest",
+      "mongodb",
+      "git"
+    ],
+    "provider": "freeCodeCamp",
+    "free_claim": "100% free verified certifications"
+  },
+  {
+    "name": "NeetCode: Data Structures & Algorithms 150 Roadmap",
+    "url": "https://neetcode.io/roadmap",
+    "tags": [
+      "dsa",
+      "python",
+      "java",
+      "c++",
+      "javascript"
+    ],
+    "provider": "NeetCode",
+    "free_claim": "free tier & video explanations"
+  },
+  {
+    "name": "TypeScript Official Handbook & Playground",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "tags": [
+      "typescript",
+      "javascript",
+      "react",
+      "node"
+    ],
+    "provider": "Microsoft",
+    "free_claim": "100% free official documentation"
+  },
+  {
+    "name": "Docker Get Started & Multi-Stage Containerization Workshop",
+    "url": "https://docs.docker.com/get-started/",
+    "tags": [
+      "docker",
+      "ci/cd",
+      "linux",
+      "kubernetes"
+    ],
+    "provider": "Docker",
+    "free_claim": "100% free official workshop"
+  },
+  {
+    "name": "Kubernetes Official Interactive Tutorials & Cluster Basics",
+    "url": "https://kubernetes.io/docs/tutorials/",
+    "tags": [
+      "kubernetes",
+      "docker",
+      "linux",
+      "ci/cd",
+      "aws",
+      "gcp",
+      "azure"
+    ],
+    "provider": "CNCF / Kubernetes",
+    "free_claim": "100% free official tutorials"
+  },
+  {
+    "name": "PostgreSQL Official Tutorial & Query Tuning Guide",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "tags": [
+      "postgresql",
+      "sql",
+      "supabase"
+    ],
+    "provider": "PostgreSQL",
+    "free_claim": "100% free official documentation"
+  },
+  {
+    "name": "Practical Deep Learning for Coders (fast.ai)",
+    "url": "https://course.fast.ai/",
+    "tags": [
+      "pytorch",
+      "python",
+      "llm",
+      "machine learning",
+      "nlp"
+    ],
+    "provider": "fast.ai",
+    "free_claim": "100% free full course"
+  },
+  {
+    "name": "Kaggle Learn: Python, Pandas, SQL & Intro to Machine Learning",
+    "url": "https://www.kaggle.com/learn",
+    "tags": [
+      "python",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "sql",
+      "machine learning"
+    ],
+    "provider": "Kaggle",
+    "free_claim": "100% free micro-courses & certificates"
+  },
+  {
+    "name": "Microsoft Learn: Build APIs with FastAPI, Python & Azure Fundamentals",
+    "url": "https://learn.microsoft.com/training/azure/",
+    "tags": [
+      "azure",
+      "python",
+      "fastapi",
+      "linux",
+      "docker",
+      "ci/cd"
+    ],
+    "provider": "Microsoft Learn",
+    "free_claim": "free learning paths & badges"
+  },
+  {
+    "name": "Google Cloud Skills Boost: Generative AI & Cloud Engineering Foundations",
+    "url": "https://www.cloudskillsboost.google/",
+    "tags": [
+      "gcp",
+      "llm",
+      "python",
+      "kubernetes",
+      "docker"
+    ],
+    "provider": "Google Cloud",
+    "free_claim": "free foundational courses & skill badges"
+  },
+  {
+    "name": "AWS Skill Builder: AWS Cloud Essentials & Serverless Foundations",
+    "url": "https://explore.skillbuilder.aws/",
+    "tags": [
+      "aws",
+      "linux",
+      "docker",
+      "python",
+      "sql"
+    ],
+    "provider": "AWS",
+    "free_claim": "600+ free digital courses"
+  },
+  {
+    "name": "Linux Foundation: LFS101 Introduction to Linux & Git for Distributed Dev",
+    "url": "https://training.linuxfoundation.org/free-courses/",
+    "tags": [
+      "linux",
+      "bash",
+      "git",
+      "docker",
+      "kubernetes"
+    ],
+    "provider": "Linux Foundation",
+    "free_claim": "100% free courses"
+  }
+]

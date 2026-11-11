@@ -1,0 +1,57 @@
+name: Daily 6 AM News, 8 AM Digest & Evening Career Agent
+on:
+  schedule:
+    - cron: '30 0 * * *'   # 06:00 AM IST — Daily AI, Tech & India Hiring News Email
+    - cron: '30 2 * * *'   # 08:00 AM IST — Morning Job Matches & Tailored Resumes Digest
+    - cron: '30 13 * * *'  # 07:00 PM IST — Evening Review & Vault Sync
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Agent mode to execute'
+        required: false
+        default: 'daily-news'
+        type: choice
+        options:
+          - daily-news
+          - morning-digest
+          - live-pipeline
+          - evening-review
+
+permissions:
+  contents: write
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run Career Agent System (Autonomous Live Fetch & SMTP Send)
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
+          GMAIL_SMTP_APP_PASSWORD: ${{ secrets.GMAIL_SMTP_APP_PASSWORD }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event.schedule }}" = "30 0 * * *" ]; then
+            python3 career_agent_system.py --mode daily-news
+          elif [ "${{ github.event.schedule }}" = "30 13 * * *" ]; then
+            python3 career_agent_system.py --mode evening-review
+          elif [ -n "${{ inputs.mode }}" ]; then
+            python3 career_agent_system.py --mode "${{ inputs.mode }}"
+          else
+            python3 career_agent_system.py --mode morning-digest
+          fi
+      - name: Commit & Push Live Vault Artifacts
+        run: |
+          git config user.name "career-agent-bot"
+          git config user.email "actions@github.com"
+          git add vault/
+          git diff --staged --quiet || (git commit -m "chore(vault): sync live career agent artifacts [skip ci]" && git push)

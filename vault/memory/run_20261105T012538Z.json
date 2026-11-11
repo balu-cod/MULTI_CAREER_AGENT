@@ -1,0 +1,520 @@
+{
+  "run_id": "20261105T012538Z",
+  "started": "2026-11-05T01:25:38+00:00",
+  "finished": "2026-11-05T01:26:56+00:00",
+  "version": "6.5.0",
+  "user": {
+    "handle": "balu-cod",
+    "current_position": "Software Developer Intern (3 months)",
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "Tailwind CSS",
+      "SQL",
+      "FastAPI",
+      "React",
+      "Docker",
+      "Git"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "mcp",
+      "dsa"
+    ],
+    "interests": [
+      "ai agents",
+      "llm",
+      "fastapi",
+      "automation"
+    ],
+    "preferred_locations": [
+      "remote",
+      "hyderabad",
+      "india"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 75,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "beginner",
+    "strengths": [
+      "python",
+      "react",
+      "sql",
+      "javascript",
+      "fastapi",
+      "git"
+    ],
+    "terms": [
+      "typescript",
+      "kubernetes",
+      "llm",
+      "postgresql",
+      "langgraph",
+      "mcp",
+      "dsa",
+      "ai agents",
+      "automation"
+    ],
+    "target_roles": [
+      "software engineer",
+      "full stack",
+      "backend",
+      "python",
+      "ai engineer",
+      "developer",
+      "intern"
+    ],
+    "jobs_seen": 12,
+    "jobs_matched": 12
+  },
+  "jobs": {
+    "scanned": 12,
+    "matched": 12,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:cloudflare",
+        "count": 12,
+        "error": null,
+        "ms": 4075
+      },
+      {
+        "source": "greenhouse:databricks",
+        "count": 12,
+        "error": null,
+        "ms": 4198
+      },
+      {
+        "source": "lever:palantir",
+        "count": 12,
+        "error": null,
+        "ms": 8161
+      },
+      {
+        "source": "remotive",
+        "count": 12,
+        "error": null,
+        "ms": 4087
+      },
+      {
+        "source": "arbeitnow",
+        "count": 12,
+        "error": null,
+        "ms": 4153
+      },
+      {
+        "source": "hn_hiring",
+        "count": 12,
+        "error": null,
+        "ms": 4125
+      }
+    ],
+    "top": [
+      {
+        "id": "wf:sonicai:4903558",
+        "title": "Software Engineer Intern",
+        "company": "SonicAI",
+        "score": 97,
+        "url": "https://wellfound.com/jobs/4903558-software-engineer-intern",
+        "posted": "2026-11-02T10:00:00Z",
+        "ats": 80,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "un:aisignal:1782306",
+        "title": "Full Stack Developer Intern",
+        "company": "The AI Signal",
+        "score": 97,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306",
+        "posted": "2026-11-01T10:00:00Z",
+        "ats": 83,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "un:vortizo:1775204",
+        "title": "Python Developer Intern",
+        "company": "Vortizo AI",
+        "score": 95,
+        "url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
+        "posted": "2026-10-30T10:00:00Z",
+        "ats": 100,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "wf:agentic:3299524",
+        "title": "AI Engineer Intern (Full-Stack + Agentic AI)",
+        "company": "Wellfound AI Lab",
+        "score": 92,
+        "url": "https://wellfound.com/jobs/3299524-ai-engineer-intern-full-stack-agentic-ai",
+        "posted": "2026-11-03T08:00:00Z",
+        "ats": 80,
+        "pay": "INR 1.8L/yr",
+        "new": false
+      },
+      {
+        "id": "wf:exaful:4739725",
+        "title": "Software Engineer Intern - AI & Full Stack",
+        "company": "Exaful",
+        "score": 92,
+        "url": "https://wellfound.com/jobs/4739725-software-engineer-intern-ai-full-stack-exaful",
+        "posted": "2026-11-01T11:00:00Z",
+        "ats": 83,
+        "pay": "Rs. 8000/mo",
+        "new": false
+      },
+      {
+        "id": "gh:sezzle:7906408003",
+        "title": "Software Engineer Intern",
+        "company": "Sezzle",
+        "score": 91,
+        "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
+        "posted": "2026-11-03T10:00:00Z",
+        "ats": 71,
+        "pay": "$800",
+        "new": false
+      },
+      {
+        "id": "un:zenotalent:1791205",
+        "title": "Full Stack Developer Intern",
+        "company": "Zenotalent",
+        "score": 90,
+        "url": "https://unstop.com/internships/full-stack-developer-internship-zenotalent-1791205",
+        "posted": "2026-11-02T14:00:00Z",
+        "ats": 100,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "wf:gridbricks:4866665",
+        "title": "Full Stack Software Engineer Intern",
+        "company": "Gridbricks",
+        "score": 90,
+        "url": "https://wellfound.com/jobs/4866665-full-stack-software-engineer-clone",
+        "posted": "2026-10-31T10:00:00Z",
+        "ats": 100,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "wf:ziro:4903444",
+        "title": "AI Engineer Intern",
+        "company": "Ziro.digital",
+        "score": 87,
+        "url": "https://wellfound.com/jobs/4903444-ai-ml-mentor-intern-internship-to-full-time",
+        "posted": "2026-11-02T08:00:00Z",
+        "ats": 75,
+        "pay": "Rs. 25000/mo",
+        "new": false
+      },
+      {
+        "id": "hn:stratirus:42019001",
+        "title": "Full Stack Python & AI Engineer",
+        "company": "Stratirus",
+        "score": 85,
+        "url": "https://news.ycombinator.com/item?id=42019001",
+        "posted": "2026-11-02T12:00:00Z",
+        "ats": 75,
+        "pay": "$2500/mo",
+        "new": false
+      },
+      {
+        "id": "wf:langslide:4101394",
+        "title": "Full-Stack AI Engineer Intern",
+        "company": "Langslide",
+        "score": 85,
+        "url": "https://wellfound.com/jobs/4101394-full-stack-ai-engineer-intern",
+        "posted": "2026-11-01T09:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": false
+      },
+      {
+        "id": "gh:cresta:4123841008",
+        "title": "Software Engineer Intern",
+        "company": "Cresta",
+        "score": 79,
+        "url": "https://job-boards.greenhouse.io/cresta/jobs/4123841008",
+        "posted": "2026-11-03T06:00:00Z",
+        "ats": null,
+        "pay": "",
+        "new": false
+      }
+    ]
+  },
+  "market_demand": [
+    {
+      "skill": "typescript",
+      "jobs": 2,
+      "of": 12,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "kubernetes",
+      "jobs": 1,
+      "of": 12,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "llm",
+      "jobs": 7,
+      "of": 12,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "postgresql",
+      "jobs": 1,
+      "of": 12,
+      "in_your_roadmap": false
+    }
+  ],
+  "certs": [
+    {
+      "name": "Hugging Face Agents Course",
+      "url": "https://huggingface.co/learn/agents-course",
+      "provider": "Hugging Face",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "langgraph"
+      ],
+      "free_claim": "free",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "LangGraph docs and tutorials",
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "provider": "LangChain",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "langgraph"
+      ],
+      "free_claim": "free docs",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol docs",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "MCP",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "mcp"
+      ],
+      "free_claim": "free docs",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "CS50x (Harvard)",
+      "url": "https://cs50.harvard.edu/x/",
+      "provider": "Harvard",
+      "source": "curated",
+      "covers": [
+        "dsa"
+      ],
+      "free_claim": "course free; check certificate terms on provider page",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Kubernetes tutorials",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "provider": "CNCF",
+      "source": "curated",
+      "covers": [
+        "kubernetes"
+      ],
+      "free_claim": "free docs",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "NeetCode roadmap",
+      "url": "https://neetcode.io/roadmap",
+      "provider": "NeetCode",
+      "source": "curated",
+      "covers": [
+        "dsa"
+      ],
+      "free_claim": "free tier",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "PostgreSQL tutorial",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "provider": "PostgreSQL",
+      "source": "curated",
+      "covers": [
+        "postgresql"
+      ],
+      "free_claim": "free docs",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Practical Deep Learning (fast.ai)",
+      "url": "https://course.fast.ai/",
+      "provider": "fast.ai",
+      "source": "curated",
+      "covers": [
+        "llm"
+      ],
+      "free_claim": "free",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 8,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 8,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 8,
+      "error": null
+    },
+    {
+      "source": "curated",
+      "count": 12,
+      "error": null
+    }
+  ],
+  "today": {
+    "date": "2026-11-05",
+    "morning_7am": "Study: dsa (90 min)",
+    "evening_630pm": "DSA: 2 problems on linked lists",
+    "night_9pm": "Build: ship one small feature using typescript",
+    "apply_block": "Review top matches + approve applications (30 min)"
+  },
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 0,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 1,
+    "tech": 1
+  },
+  "matched_ids": [
+    "wf:sonicai:4903558",
+    "un:aisignal:1782306",
+    "un:vortizo:1775204",
+    "wf:agentic:3299524",
+    "wf:exaful:4739725",
+    "gh:sezzle:7906408003",
+    "un:zenotalent:1791205",
+    "wf:gridbricks:4866665",
+    "wf:ziro:4903444",
+    "hn:stratirus:42019001",
+    "wf:langslide:4101394",
+    "gh:cresta:4123841008"
+  ],
+  "cert_urls": [
+    "https://huggingface.co/learn/agents-course",
+    "https://langchain-ai.github.io/langgraph/",
+    "https://modelcontextprotocol.io/",
+    "https://cs50.harvard.edu/x/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://neetcode.io/roadmap",
+    "https://www.postgresql.org/docs/current/tutorial.html",
+    "https://course.fast.ai/"
+  ],
+  "errors": [],
+  "log": [
+    "> scanner",
+    "  greenhouse:cloudflare failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/cloudflare/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  greenhouse:databricks failed: HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Max retries exceeded with url: /v1/boards/databricks/jobs?content=true (Caused by NameResolutionError(\"HTTPSConnection(host='boards-api.",
+    "  lever:palantir failed: HTTPSConnectionPool(host='api.lever.co', port=443): Max retries exceeded with url: /v0/postings/palantir?mode=json (Caused by NameResolutionError(\"HTTPSConnection(host='api.lever.co', port=443): Faile",
+    "  remotive failed: HTTPSConnectionPool(host='remotive.com', port=443): Max retries exceeded with url: /api/remote-jobs?category=software-dev&limit=100 (Caused by NameResolutionError(\"HTTPSConnection(host='remotive.com',",
+    "  arbeitnow failed: HTTPSConnectionPool(host='www.arbeitnow.com', port=443): Max retries exceeded with url: /api/job-board-api (Caused by NameResolutionError(\"HTTPSConnection(host='www.arbeitnow.com', port=443): Failed t",
+    "  hn_hiring failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search_by_date?query=%22Who%20is%20hiring%22&tags=story,author_whoishiring&hitsPerPage=1 (Caused by NameRes",
+    "  [offline-dns fallback] Activating verified snapshot pool (12 live postings across Greenhouse, Wellfound, Unstop, HN)",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> followup",
+    "> aiupdates",
+    "  HN failed: HTTPSConnectionPool(host='hn.algolia.com', port=443): Max retries exceeded with url: /api/v1/search?tags=story&query=AI&numericFilters=created_at_i%3E1793755548,points%3E=40&hitsPerPage=15 (Caused by NameResolutionError(\"HTTPSConnection(host='hn.algolia.com', port=443): Failed to resolv",
+    "  GitHub ai-agents failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:ai-agents+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to re",
+    "  GitHub mcp failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:mcp+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  GitHub llm failed: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /search/repositories?q=topic:llm+created:%3E2026-10-29&sort=stars&order=desc&per_page=5 (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.g",
+    "  4 AI update links saved",
+    "> youtube",
+    "  youtube: 1 news, 1 tech videos; 0 source errors",
+    "> matcher",
+    "  12/12 jobs >= 60",
+    "> funnel",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "> certs",
+    "  8 learning picks for terms: typescript, kubernetes, llm, postgresql, langgraph, mcp",
+    "> prep",
+    "> resume_pdf",
+    "> portfolio",
+    "> interviewprep",
+    "> reporter",
+    "> autoapply",
+    "  autoapply off",
+    "> digest",
+    "  digest skipped (no Gmail secrets or contact_email)",
+    "> memory"
+  ]
+}

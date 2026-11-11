@@ -1,0 +1,21 @@
+{
+  "full_name": "Your Name",
+  "contact_email": "you@example.com",
+  "contact_phone": "+00 0000000000",
+  "education": [{"degree": "B.Tech Computer Science", "school": "Your College", "period": "2022 - 2026"}],
+  "linkedin": "https://www.linkedin.com/in/your-handle",
+  "location": "Hyderabad, India",
+  "portfolio": "",
+  "summary": "",
+  "skill_groups": {},
+  "experience": [
+    {"role": "Software Developer Intern", "company": "Company Name", "period": "3 months", "location": "Remote",
+     "bullets": ["What you built or fixed, in one line, using only true facts", "Another real contribution"], "skills": ["Python", "FastAPI"]}
+  ],
+  "projects": [
+    {"name": "Project name", "link": "https://github.com/you/project", "period": "2026",
+     "bullets": ["What it does and the stack you used", "One measurable or concrete outcome (only if true)"], "skills": ["Python", "SQL"]}
+  ],
+  "certifications": [{"name": "Certificate name", "issuer": "Provider", "year": "2026"}],
+  "achievements": ["Only things that really happened"]
+}

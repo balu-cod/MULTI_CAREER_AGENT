@@ -1,0 +1,264 @@
+{
+  "run_id": "20261111T042237Z",
+  "started": "2026-11-11T04:22:37+00:00",
+  "finished": "2026-11-11T04:24:19+00:00",
+  "version": "7.9.0",
+  "user": {
+    "handle": "kodimurthybalu",
+    "current_position": "Aspiring Software Engineer",
+    "target_roles": [
+      "Software Engineer Intern",
+      "Backend Developer",
+      "AI Engineer Intern"
+    ],
+    "technical_skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [],
+    "preferred_locations": [
+      "Bengaluru",
+      "Hyderabad",
+      "Remote India",
+      "Remote"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 70,
+    "max_age_days": 45
+  },
+  "analysis": {},
+  "jobs": {
+    "scanned": 1460,
+    "matched": 0,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:sezzle",
+        "count": 289,
+        "error": null,
+        "ms": 8858
+      },
+      {
+        "source": "greenhouse:enterpret",
+        "count": 14,
+        "error": null,
+        "ms": 686
+      },
+      {
+        "source": "greenhouse:karya",
+        "count": 19,
+        "error": null,
+        "ms": 1672
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 91,
+        "error": null,
+        "ms": 8735
+      },
+      {
+        "source": "greenhouse:datacor",
+        "count": 12,
+        "error": null,
+        "ms": 2782
+      },
+      {
+        "source": "greenhouse:eqtcorporation",
+        "count": 52,
+        "error": null,
+        "ms": 4844
+      },
+      {
+        "source": "ashby:anyone-ai",
+        "count": 226,
+        "error": null,
+        "ms": 1468
+      },
+      {
+        "source": "ashby:aiprise",
+        "count": 21,
+        "error": null,
+        "ms": 1016
+      },
+      {
+        "source": "ashby:outmarket",
+        "count": 18,
+        "error": null,
+        "ms": 688
+      },
+      {
+        "source": "ashby:pinecone",
+        "count": 6,
+        "error": null,
+        "ms": 391
+      },
+      {
+        "source": "ashby:build-ai",
+        "count": 29,
+        "error": null,
+        "ms": 1108
+      },
+      {
+        "source": "remotive",
+        "count": 39,
+        "error": null,
+        "ms": 4327
+      },
+      {
+        "source": "arbeitnow",
+        "count": 300,
+        "error": null,
+        "ms": 17250
+      },
+      {
+        "source": "hn_hiring",
+        "count": 194,
+        "error": null,
+        "ms": 33172
+      },
+      {
+        "source": "unstop",
+        "count": 25,
+        "error": null,
+        "ms": 2218
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 37,
+        "error": null,
+        "ms": 38016
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 55000
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/postman/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 53405
+      },
+      {
+        "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
+        "count": 40,
+        "error": null,
+        "ms": 50171
+      }
+    ],
+    "top": []
+  },
+  "market_demand": [],
+  "certs": [],
+  "cert_sources": [],
+  "today": null,
+  "funnel": null,
+  "followups_due": [],
+  "youtube": {
+    "news": 0,
+    "tech": 0
+  },
+  "matched_ids": [],
+  "cert_urls": [
+    "https://academy.langchain.com/",
+    "https://modelcontextprotocol.io/",
+    "https://fullstackopen.com/en/",
+    "https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/",
+    "https://huggingface.co/learn/agents-course",
+    "https://academy.langchain.com/courses/intro-to-langgraph",
+    "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+    "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://learn.mongodb.com/",
+    "https://course.fast.ai/",
+    "https://explore.skillbuilder.aws/",
+    "https://cs50.harvard.edu/x/",
+    "https://www.classcentral.com/report/free-certificates/",
+    "https://www.classcentral.com/report/free-google-certifications/",
+    "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
+    "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/?WT.mc_id=api_CatalogApi",
+    "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+    "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
+    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
+    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165"
+  ],
+  "errors": [
+    "agent failed or skipped: autoapply",
+    "agent failed or skipped: certs",
+    "agent failed or skipped: digest",
+    "agent failed or skipped: drafter",
+    "agent failed or skipped: funnel",
+    "agent failed or skipped: matcher",
+    "agent failed or skipped: portfolio",
+    "agent failed or skipped: prep",
+    "agent failed or skipped: reporter",
+    "agent failed or skipped: resume_pdf",
+    "agent failed or skipped: skillgap",
+    "agent failed or skipped: tailor"
+  ],
+  "log": [
+    "! private fields ['full_name', 'contact_email', 'contact_phone'] found in the committed Vault profile; move them to private/profile.json",
+    "> scanner",
+    "  greenhouse:sezzle: 289 postings in 8858 ms",
+    "  greenhouse:enterpret: 14 postings in 686 ms",
+    "  greenhouse:karya: 19 postings in 1672 ms",
+    "  greenhouse:cresta: 91 postings in 8735 ms",
+    "  greenhouse:datacor: 12 postings in 2782 ms",
+    "  greenhouse:eqtcorporation: 52 postings in 4844 ms",
+    "  ashby:anyone-ai: 226 postings in 1468 ms",
+    "  ashby:aiprise: 21 postings in 1016 ms",
+    "  ashby:outmarket: 18 postings in 688 ms",
+    "  ashby:pinecone: 6 postings in 391 ms",
+    "  ashby:build-ai: 29 postings in 1108 ms",
+    "  remotive: 39 postings in 4327 ms",
+    "  arbeitnow: 300 postings in 17250 ms",
+    "  hn_hiring: 194 postings in 33172 ms",
+    "  unstop: 25 postings in 2218 ms",
+    "  page:https://wellfound.com/jobs: 37 postings in 38016 ms",
+    "  page:https://myinternships.in/internships-at/razorpay/software-development: 39 postings in 55000 ms",
+    "  page:https://myinternships.in/internships-at/postman/software-development: 39 postings in 53405 ms",
+    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 50171 ms",
+    "> inbox",
+    "  inbox: synced 0 new Gmail messages (total stored: 51)",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> aiupdates",
+    "  30 live AI update links saved (+6 Kaggle datasets)",
+    "> contests",
+    "  35 live hackathons & hiring challenges saved",
+    "> matcher",
+    "x matcher failed: live_applications_v1.json does not match its recorded SHA-256 (edited outside the Vault?)",
+    "> funnel",
+    "x funnel failed: live_applications_v1.json does not match its recorded SHA-256 (edited outside the Vault?)",
+    "- drafter skipped (dependency failed)",
+    "- skillgap skipped (dependency failed)",
+    "- tailor skipped (dependency failed)",
+    "- certs skipped (dependency failed)",
+    "- prep skipped (dependency failed)",
+    "- resume_pdf skipped (dependency failed)",
+    "- portfolio skipped (dependency failed)",
+    "- reporter skipped (dependency failed)",
+    "- autoapply skipped (dependency failed)",
+    "- digest skipped (dependency failed)",
+    "> memory"
+  ]
+}

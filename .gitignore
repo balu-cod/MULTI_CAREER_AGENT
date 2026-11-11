@@ -1,0 +1,19 @@
+# Private data & secret keys: never committed
+private/
+*.pdf
+.env/*
+!.env/README.md
+!.env/secrets.env.example
+.env.*
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+# Generated plugins stay local until reviewed
+live/custom/*.py
+!live/custom/__init__.py

@@ -1,0 +1,24 @@
+/* ==========================================================================
+   css/stage4-resume-tailor.css — Stage 4: A4 (1:1.414) Resume & Outreach
+   Linked by: resume.html
+   ========================================================================== */
+#resume-printable-sheet {
+  aspect-ratio: 1 / 1.414;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+@media print {
+  header, aside, #pipeline-bar, .no-print, #toast-container {
+    display: none !important;
+  }
+  #resume-printable-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+}
