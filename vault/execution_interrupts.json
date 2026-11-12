@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T10:03:36.602547",
+  "updated_at": "2026-11-12T23:46:24.359954",
   "interrupt_mode": "auto",
   "pending": [
     {
@@ -19,6 +19,67 @@
       "optimization": "none",
       "status": "pending",
       "evaluated_by": "OpenRouter Auto (meta-llama/llama-3.3-70b-instruct)"
+    },
+    {
+      "id": "int_67ce1600348d",
+      "agent_name": "autoapply",
+      "action": "execute_autoapply",
+      "payload": {
+        "run_id": "20261112T181620Z",
+        "pending_matches": 2,
+        "target_preview": [
+          {
+            "company": "x",
+            "title": "Python Developer Intern",
+            "domain": "Software & Technology Solutions",
+            "ats": 83,
+            "pitch": "Excited by x's engineering impact in Software & Technology Solutions and eager to contribute reliabl"
+          },
+          {
+            "company": "BadCo",
+            "title": "Python Developer Intern",
+            "domain": "Software & Technology Solutions",
+            "ats": 100,
+            "pitch": "Excited by BadCo's engineering impact in Software & Technology Solutions and eager to contribute rel"
+          }
+        ]
+      },
+      "reason": "Pipeline policy checkpoint for 'autoapply' targeting x, BadCo",
+      "severity": "HIGH",
+      "created_at": "2026-11-12T23:46:21.997781",
+      "confidence": 92,
+      "verdict": "APPROVE",
+      "rationale": "Action conforms to user profile and safety policy boundaries.",
+      "optimization": "None",
+      "status": "pending",
+      "evaluated_by": "Local Deterministic RAG Synthesis"
+    },
+    {
+      "id": "int_9ab4ce4858dd",
+      "agent_name": "autoapply",
+      "action": "execute_autoapply",
+      "payload": {
+        "run_id": "20261112T181623Z",
+        "pending_matches": 1,
+        "target_preview": [
+          {
+            "company": "x",
+            "title": "Python Developer Intern",
+            "domain": "Software & Technology Solutions",
+            "ats": 83,
+            "pitch": "Excited by x's engineering impact in Software & Technology Solutions and eager to contribute reliabl"
+          }
+        ]
+      },
+      "reason": "Pipeline policy checkpoint for 'autoapply' targeting x",
+      "severity": "HIGH",
+      "created_at": "2026-11-12T23:46:24.329256",
+      "confidence": 92,
+      "verdict": "APPROVE",
+      "rationale": "Action conforms to user profile and safety policy boundaries.",
+      "optimization": "None",
+      "status": "pending",
+      "evaluated_by": "Local Deterministic RAG Synthesis"
     }
   ],
   "history": [
@@ -82,6 +143,69 @@
       "status": "auto_approved",
       "evaluated_by": "Local Deterministic RAG Synthesis",
       "resolved_at": "2026-11-12T10:03:36.602517"
+    },
+    {
+      "id": "int_19371fab4217",
+      "agent_name": "drafter",
+      "action": "execute_drafter",
+      "payload": {
+        "run_id": "20261112T181620Z",
+        "pending_matches": 2,
+        "target_preview": [
+          {
+            "company": "x",
+            "title": "Python Developer Intern",
+            "domain": "Technology",
+            "ats": 90,
+            "pitch": ""
+          },
+          {
+            "company": "BadCo",
+            "title": "Python Developer Intern",
+            "domain": "Technology",
+            "ats": 90,
+            "pitch": ""
+          }
+        ]
+      },
+      "reason": "Pipeline policy checkpoint for 'drafter' targeting x, BadCo",
+      "severity": "MEDIUM",
+      "created_at": "2026-11-12T23:46:20.650441",
+      "confidence": 92,
+      "verdict": "APPROVE",
+      "rationale": "Action conforms to user profile and safety policy boundaries.",
+      "optimization": "None",
+      "status": "auto_approved",
+      "evaluated_by": "Local Deterministic RAG Synthesis",
+      "resolved_at": "2026-11-12T23:46:20.686725"
+    },
+    {
+      "id": "int_ba752752f46d",
+      "agent_name": "drafter",
+      "action": "execute_drafter",
+      "payload": {
+        "run_id": "20261112T181623Z",
+        "pending_matches": 1,
+        "target_preview": [
+          {
+            "company": "x",
+            "title": "Python Developer Intern",
+            "domain": "Technology",
+            "ats": 90,
+            "pitch": ""
+          }
+        ]
+      },
+      "reason": "Pipeline policy checkpoint for 'drafter' targeting x",
+      "severity": "MEDIUM",
+      "created_at": "2026-11-12T23:46:24.058635",
+      "confidence": 92,
+      "verdict": "APPROVE",
+      "rationale": "Action conforms to user profile and safety policy boundaries.",
+      "optimization": "None",
+      "status": "auto_approved",
+      "evaluated_by": "Local Deterministic RAG Synthesis",
+      "resolved_at": "2026-11-12T23:46:24.092778"
     }
   ]
 }

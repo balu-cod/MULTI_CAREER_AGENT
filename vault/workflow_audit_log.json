@@ -1,5 +1,32 @@
 [
   {
+    "timestamp": "2026-11-12T18:16:34+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "Verified Gmail for Me@Gmail.com. Fetched 0 emails.",
+    "status": "SUCCESS",
+    "actor": "Me@Gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T18:16:34+00:00",
+    "date": "2026-11-12",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for me@gmail.com from 0 real emails.",
+    "status": "SUCCESS",
+    "actor": "me@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T18:16:23+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Software Engineer @ Target (ATS 100%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
     "timestamp": "2026-11-12T05:12:54+00:00",
     "date": "2026-11-12",
     "category": "RESUME_TAILORED",
