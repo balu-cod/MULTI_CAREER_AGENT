@@ -1,0 +1,481 @@
+{
+  "run_id": "20261112T100247Z",
+  "started": "2026-11-12T10:02:47+00:00",
+  "finished": "2026-11-12T10:03:45+00:00",
+  "version": "7.9.0",
+  "user": {
+    "handle": "kodimurthybalu",
+    "current_position": "Aspiring Software Engineer",
+    "target_roles": [
+      "Software Engineer Intern",
+      "Backend Developer",
+      "AI Engineer Intern"
+    ],
+    "technical_skills": [
+      "Continuous Integration (CI)",
+      "GitHub Actions",
+      "Software Development"
+    ],
+    "skill_gaps": [
+      "typescript",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp",
+      "llm",
+      "rag",
+      "dsa",
+      "mongodb",
+      "aws"
+    ],
+    "interests": [
+      "Career Development",
+      "AI and Technology News",
+      "Hiring Trends in India"
+    ],
+    "preferred_locations": [
+      "Bengaluru",
+      "Hyderabad",
+      "Remote India",
+      "Remote"
+    ],
+    "availability": "4 hrs/day Remote",
+    "match_threshold": 60,
+    "apply_threshold": 70,
+    "max_age_days": 45
+  },
+  "analysis": {
+    "level": "intermediate",
+    "strengths": [
+      "continuous integration (ci)",
+      "github actions",
+      "software development"
+    ],
+    "terms": [
+      "aws",
+      "llm",
+      "typescript",
+      "python",
+      "java",
+      "react",
+      "next.js",
+      "node",
+      "kubernetes",
+      "langgraph",
+      "langchain",
+      "mcp"
+    ],
+    "target_roles": [
+      "Software Engineer Intern",
+      "Backend Developer",
+      "AI Engineer Intern"
+    ],
+    "jobs_seen": 1441,
+    "jobs_matched": 0
+  },
+  "jobs": {
+    "scanned": 1441,
+    "matched": 0,
+    "new_since_last_run": 0,
+    "gone_since_last_run": 0,
+    "sources": [
+      {
+        "source": "greenhouse:sezzle",
+        "count": 271,
+        "error": null,
+        "ms": 658
+      },
+      {
+        "source": "greenhouse:enterpret",
+        "count": 14,
+        "error": null,
+        "ms": 432
+      },
+      {
+        "source": "greenhouse:karya",
+        "count": 19,
+        "error": null,
+        "ms": 677
+      },
+      {
+        "source": "greenhouse:cresta",
+        "count": 88,
+        "error": null,
+        "ms": 937
+      },
+      {
+        "source": "greenhouse:datacor",
+        "count": 12,
+        "error": null,
+        "ms": 1082
+      },
+      {
+        "source": "greenhouse:eqtcorporation",
+        "count": 55,
+        "error": null,
+        "ms": 1706
+      },
+      {
+        "source": "ashby:anyone-ai",
+        "count": 226,
+        "error": null,
+        "ms": 259
+      },
+      {
+        "source": "ashby:aiprise",
+        "count": 23,
+        "error": null,
+        "ms": 87
+      },
+      {
+        "source": "ashby:outmarket",
+        "count": 18,
+        "error": null,
+        "ms": 292
+      },
+      {
+        "source": "ashby:pinecone",
+        "count": 6,
+        "error": null,
+        "ms": 580
+      },
+      {
+        "source": "ashby:build-ai",
+        "count": 29,
+        "error": null,
+        "ms": 897
+      },
+      {
+        "source": "remotive",
+        "count": 42,
+        "error": null,
+        "ms": 948
+      },
+      {
+        "source": "arbeitnow",
+        "count": 300,
+        "error": null,
+        "ms": 670
+      },
+      {
+        "source": "hn_hiring",
+        "count": 192,
+        "error": null,
+        "ms": 1791
+      },
+      {
+        "source": "unstop",
+        "count": 25,
+        "error": null,
+        "ms": 1493
+      },
+      {
+        "source": "page:https://wellfound.com/jobs",
+        "count": 38,
+        "error": null,
+        "ms": 10032
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 37720
+      },
+      {
+        "source": "page:https://myinternships.in/internships-at/postman/software-development",
+        "count": 39,
+        "error": null,
+        "ms": 38584
+      },
+      {
+        "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
+        "count": 40,
+        "error": null,
+        "ms": 10561
+      }
+    ],
+    "top": []
+  },
+  "market_demand": [
+    {
+      "skill": "aws",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "llm",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "typescript",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "python",
+      "jobs": 7,
+      "of": 8,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "java",
+      "jobs": 6,
+      "of": 8,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "react",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "next.js",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": false
+    },
+    {
+      "skill": "node",
+      "jobs": 1,
+      "of": 8,
+      "in_your_roadmap": false
+    }
+  ],
+  "certs": [
+    {
+      "name": "Hugging Face: Official AI Agents & MCP Course",
+      "url": "https://huggingface.co/learn/agents-course",
+      "provider": "Hugging Face",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "python",
+        "langgraph",
+        "langchain",
+        "mcp"
+      ],
+      "free_claim": "100% free course & verified certificate",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Getting Started with Java",
+      "url": "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "java",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Java Programming",
+      "url": "https://www.classcentral.com/course/mooc-fi-java-programming-89476",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "java",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "Model Context Protocol (MCP): Official Specification & Server SDK Tutorials",
+      "url": "https://modelcontextprotocol.io/",
+      "provider": "Anthropic / MCP",
+      "source": "curated",
+      "covers": [
+        "llm",
+        "typescript",
+        "python",
+        "mcp"
+      ],
+      "free_claim": "100% free official documentation & SDK",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "PRDV410: Introduction to Java and Object-Oriented Programming",
+      "url": "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "java",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "&gt;Introduction to Career Skills in Data Analytics",
+      "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
+      "verified_live": true
+    }
+  ],
+  "cert_sources": [
+    {
+      "source": "mslearn-paths",
+      "count": 834,
+      "error": null
+    },
+    {
+      "source": "mslearn-certs",
+      "count": 155,
+      "error": null
+    },
+    {
+      "source": "community-free-list",
+      "count": 0,
+      "error": "free-certifications list not reachable (404/empty)"
+    },
+    {
+      "source": "curated",
+      "count": 234,
+      "error": null
+    }
+  ],
+  "today": null,
+  "funnel": {
+    "applied": 0,
+    "replied": 0,
+    "interview": 0,
+    "rejected": 0,
+    "needs_human": 1,
+    "reply_rate": 0
+  },
+  "followups_due": [],
+  "youtube": {
+    "news": 0,
+    "tech": 0
+  },
+  "matched_ids": [],
+  "cert_urls": [
+    "https://academy.langchain.com/",
+    "https://modelcontextprotocol.io/",
+    "https://fullstackopen.com/en/",
+    "https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/",
+    "https://huggingface.co/learn/agents-course",
+    "https://academy.langchain.com/courses/intro-to-langgraph",
+    "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
+    "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/",
+    "https://github.com/anthropics/courses",
+    "https://www.deeplearning.ai/short-courses/",
+    "https://www.cloudskillsboost.google/",
+    "https://kubernetes.io/docs/tutorials/",
+    "https://learn.mongodb.com/",
+    "https://course.fast.ai/",
+    "https://explore.skillbuilder.aws/",
+    "https://cs50.harvard.edu/x/",
+    "https://www.classcentral.com/report/free-certificates/",
+    "https://www.classcentral.com/report/free-google-certifications/",
+    "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
+    "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/?WT.mc_id=api_CatalogApi",
+    "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+    "https://www.classcentral.com/course/openlearn-health-sports-psychology-so-you-want-be-95658",
+    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-educators-536164",
+    "https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-students-536165",
+    "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
+    "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
+    "https://www.classcentral.com/course/mooc-fi-java-programming-89476",
+    "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625"
+  ],
+  "errors": [
+    "agent failed or skipped: autoapply",
+    "agent failed or skipped: digest",
+    "agent failed or skipped: prep",
+    "agent failed or skipped: reporter",
+    "cert_health: community-free-list: free-certifications list not reachable (404/empty)"
+  ],
+  "log": [
+    "! private fields ['full_name', 'contact_email', 'contact_phone'] found in the committed Vault profile; move them to private/profile.json",
+    "> scanner",
+    "  greenhouse:sezzle: 271 postings in 658 ms",
+    "  greenhouse:enterpret: 14 postings in 432 ms",
+    "  greenhouse:karya: 19 postings in 677 ms",
+    "  greenhouse:cresta: 88 postings in 937 ms",
+    "  greenhouse:datacor: 12 postings in 1082 ms",
+    "  greenhouse:eqtcorporation: 55 postings in 1706 ms",
+    "  ashby:anyone-ai: 226 postings in 259 ms",
+    "  ashby:aiprise: 23 postings in 87 ms",
+    "  ashby:outmarket: 18 postings in 292 ms",
+    "  ashby:pinecone: 6 postings in 580 ms",
+    "  ashby:build-ai: 29 postings in 897 ms",
+    "  remotive: 42 postings in 948 ms",
+    "  arbeitnow: 300 postings in 670 ms",
+    "  hn_hiring: 192 postings in 1791 ms",
+    "  unstop: 25 postings in 1493 ms",
+    "  page:https://wellfound.com/jobs: 38 postings in 10032 ms",
+    "  page:https://myinternships.in/internships-at/razorpay/software-development: 39 postings in 37720 ms",
+    "  page:https://myinternships.in/internships-at/postman/software-development: 39 postings in 38584 ms",
+    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 10561 ms",
+    "> inbox",
+    "  inbox skipped (no secrets or nothing applied yet)",
+    "> aiupdates",
+    "  30 live AI update links saved (+5 Kaggle datasets)",
+    "> contests",
+    "  27 live hackathons & hiring challenges saved",
+    "> matcher",
+    "  0/1441 jobs >= 60",
+    "> funnel",
+    "* [LLM GATEWAY] Auto-approved 'drafter' (Confidence: 92%)",
+    "> drafter",
+    "> skillgap",
+    "> tailor",
+    "  tip: add 'projects'/'experience' to the Vault profile (see profile.example.json) for fuller resumes",
+    "> certs",
+    "  certs source community-free-list note: free-certifications list not reachable (404/empty)",
+    "  6 learning picks for terms: aws, llm, typescript, python, java, react",
+    "> prep",
+    "x prep failed: skill_roadmap_v1.json does not match its recorded SHA-256 (edited outside the Vault?)",
+    "> resume_pdf",
+    "> portfolio",
+    "- reporter skipped (dependency failed)",
+    "- autoapply skipped (dependency failed)",
+    "- digest skipped (dependency failed)",
+    "> memory"
+  ]
+}

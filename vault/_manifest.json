@@ -1,7 +1,7 @@
 {
   "ai_updates_v1.json": {
-    "sha256": "639252474f3667b7c77bd411f7622986fde4fd560bfe070f0c5963285a65fc42",
-    "version": 48,
+    "sha256": "a552473b34534c9ac6d58d0ad5940469ecda27280d43e9b60e19f39f222d4d94",
+    "version": 49,
     "mime": "application/json",
     "tags": [
       "ai",
@@ -14,7 +14,7 @@
     "access": [
       "All"
     ],
-    "updated": "2026-11-12T07:34:20+00:00"
+    "updated": "2026-11-12T10:03:33+00:00"
   },
   "youtube_updates_v1.json": {
     "sha256": "af514355000d21a5b5585d8f2b237cb2cd3594bc50ba78363392de32150d9cc5",
@@ -51,8 +51,8 @@
     "updated": "2026-11-11T06:48:06+00:00"
   },
   "contests_v1.json": {
-    "sha256": "afa1cdf28fa22427a53addd6bbebee2ced48fe04c24cc29f08ff70125562209f",
-    "version": 34,
+    "sha256": "94420a92aed36c9336fbe093c0848281a716632d25c3b5b586d6745f082eefdd",
+    "version": 35,
     "mime": "application/json",
     "tags": [
       "contests",
@@ -66,7 +66,7 @@
     "access": [
       "All"
     ],
-    "updated": "2026-11-12T07:34:22+00:00"
+    "updated": "2026-11-12T10:03:34+00:00"
   },
   "live_applications_v1.json": {
     "sha256": "cc6868870291e93379e8fe1d4433e8423016014b71abb1bda27dc900d27fed4d",

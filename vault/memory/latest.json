@@ -1,7 +1,7 @@
 {
-  "run_id": "20261111T064530Z",
-  "started": "2026-11-11T06:45:30+00:00",
-  "finished": "2026-11-11T06:49:05+00:00",
+  "run_id": "20261112T100247Z",
+  "started": "2026-11-12T10:02:47+00:00",
+  "finished": "2026-11-12T10:03:45+00:00",
   "version": "7.9.0",
   "user": {
     "handle": "kodimurthybalu",
@@ -52,14 +52,14 @@
       "software development"
     ],
     "terms": [
-      "typescript",
       "aws",
       "llm",
+      "typescript",
       "python",
       "java",
       "react",
-      "git",
-      "c++",
+      "next.js",
+      "node",
       "kubernetes",
       "langgraph",
       "langchain",
@@ -70,179 +70,179 @@
       "Backend Developer",
       "AI Engineer Intern"
     ],
-    "jobs_seen": 1463,
+    "jobs_seen": 1441,
     "jobs_matched": 0
   },
   "jobs": {
-    "scanned": 1463,
+    "scanned": 1441,
     "matched": 0,
     "new_since_last_run": 0,
     "gone_since_last_run": 0,
     "sources": [
       {
         "source": "greenhouse:sezzle",
-        "count": 289,
+        "count": 271,
         "error": null,
-        "ms": 13032
+        "ms": 658
       },
       {
         "source": "greenhouse:enterpret",
         "count": 14,
         "error": null,
-        "ms": 844
+        "ms": 432
       },
       {
         "source": "greenhouse:karya",
         "count": 19,
         "error": null,
-        "ms": 1156
+        "ms": 677
       },
       {
         "source": "greenhouse:cresta",
-        "count": 91,
+        "count": 88,
         "error": null,
-        "ms": 11703
+        "ms": 937
       },
       {
         "source": "greenhouse:datacor",
         "count": 12,
         "error": null,
-        "ms": 2781
+        "ms": 1082
       },
       {
         "source": "greenhouse:eqtcorporation",
-        "count": 52,
+        "count": 55,
         "error": null,
-        "ms": 4031
+        "ms": 1706
       },
       {
         "source": "ashby:anyone-ai",
         "count": 226,
         "error": null,
-        "ms": 2186
+        "ms": 259
       },
       {
         "source": "ashby:aiprise",
         "count": 23,
         "error": null,
-        "ms": 1297
+        "ms": 87
       },
       {
         "source": "ashby:outmarket",
         "count": 18,
         "error": null,
-        "ms": 1577
+        "ms": 292
       },
       {
         "source": "ashby:pinecone",
         "count": 6,
         "error": null,
-        "ms": 1093
+        "ms": 580
       },
       {
         "source": "ashby:build-ai",
         "count": 29,
         "error": null,
-        "ms": 1109
+        "ms": 897
       },
       {
         "source": "remotive",
-        "count": 39,
+        "count": 42,
         "error": null,
-        "ms": 9031
+        "ms": 948
       },
       {
         "source": "arbeitnow",
         "count": 300,
         "error": null,
-        "ms": 11297
+        "ms": 670
       },
       {
         "source": "hn_hiring",
-        "count": 194,
+        "count": 192,
         "error": null,
-        "ms": 19108
+        "ms": 1791
       },
       {
         "source": "unstop",
         "count": 25,
         "error": null,
-        "ms": 1608
+        "ms": 1493
       },
       {
         "source": "page:https://wellfound.com/jobs",
-        "count": 37,
+        "count": 38,
         "error": null,
-        "ms": 38672
+        "ms": 10032
       },
       {
         "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
-        "count": 40,
+        "count": 39,
         "error": null,
-        "ms": 46312
+        "ms": 37720
       },
       {
         "source": "page:https://myinternships.in/internships-at/postman/software-development",
-        "count": 40,
+        "count": 39,
         "error": null,
-        "ms": 45702
+        "ms": 38584
       },
       {
         "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
         "count": 40,
         "error": null,
-        "ms": 44936
+        "ms": 10561
       }
     ],
     "top": []
   },
   "market_demand": [
     {
-      "skill": "typescript",
-      "jobs": 2,
-      "of": 11,
-      "in_your_roadmap": true
-    },
-    {
       "skill": "aws",
       "jobs": 1,
-      "of": 11,
+      "of": 8,
       "in_your_roadmap": true
     },
     {
       "skill": "llm",
       "jobs": 1,
-      "of": 11,
+      "of": 8,
+      "in_your_roadmap": true
+    },
+    {
+      "skill": "typescript",
+      "jobs": 1,
+      "of": 8,
       "in_your_roadmap": true
     },
     {
       "skill": "python",
-      "jobs": 9,
-      "of": 11,
+      "jobs": 7,
+      "of": 8,
       "in_your_roadmap": false
     },
     {
       "skill": "java",
-      "jobs": 7,
-      "of": 11,
+      "jobs": 6,
+      "of": 8,
       "in_your_roadmap": false
     },
     {
       "skill": "react",
-      "jobs": 2,
-      "of": 11,
+      "jobs": 1,
+      "of": 8,
       "in_your_roadmap": false
     },
     {
-      "skill": "git",
-      "jobs": 2,
-      "of": 11,
+      "skill": "next.js",
+      "jobs": 1,
+      "of": 8,
       "in_your_roadmap": false
     },
     {
-      "skill": "c++",
-      "jobs": 2,
-      "of": 11,
+      "skill": "node",
+      "jobs": 1,
+      "of": 8,
       "in_your_roadmap": false
     }
   ],
@@ -267,24 +267,6 @@
       "verified_live": true
     },
     {
-      "name": "CS107: C++ Programming",
-      "url": "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
-      "provider": "Class Central",
-      "source": "curated",
-      "covers": [
-        "typescript",
-        "python",
-        "c++",
-        "kubernetes"
-      ],
-      "free_claim": "Verified free certificate course on classcentral.com",
-      "levels": [],
-      "hours": null,
-      "updated": null,
-      "new": true,
-      "verified_live": true
-    },
-    {
       "name": "Getting Started with Java",
       "url": "https://www.classcentral.com/course/codesignal-getting-started-with-java-357726",
       "provider": "Class Central",
@@ -299,7 +281,7 @@
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": true,
+      "new": false,
       "verified_live": true
     },
     {
@@ -317,7 +299,7 @@
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": true,
+      "new": false,
       "verified_live": true
     },
     {
@@ -326,8 +308,8 @@
       "provider": "Anthropic / MCP",
       "source": "curated",
       "covers": [
-        "typescript",
         "llm",
+        "typescript",
         "python",
         "mcp"
       ],
@@ -353,14 +335,31 @@
       "levels": [],
       "hours": null,
       "updated": null,
-      "new": true,
+      "new": false,
+      "verified_live": true
+    },
+    {
+      "name": "&gt;Introduction to Career Skills in Data Analytics",
+      "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+      "provider": "Class Central",
+      "source": "curated",
+      "covers": [
+        "typescript",
+        "python",
+        "kubernetes"
+      ],
+      "free_claim": "Verified free certificate course on classcentral.com",
+      "levels": [],
+      "hours": null,
+      "updated": null,
+      "new": false,
       "verified_live": true
     }
   ],
   "cert_sources": [
     {
       "source": "mslearn-paths",
-      "count": 830,
+      "count": 834,
       "error": null
     },
     {
@@ -379,13 +378,7 @@
       "error": null
     }
   ],
-  "today": {
-    "date": "2026-11-11",
-    "morning_7am": "Study: typescript (90 min)",
-    "evening_630pm": "DSA: 2 problems on two pointers",
-    "night_9pm": "Build: ship one small feature using typescript",
-    "apply_block": "Review top matches + approve applications (30 min)"
-  },
+  "today": null,
   "funnel": {
     "applied": 0,
     "replied": 0,
@@ -431,56 +424,58 @@
     "https://www.classcentral.com/course/saylor-academy-448-prdv410-introduction-to-java-a-99625"
   ],
   "errors": [
+    "agent failed or skipped: autoapply",
+    "agent failed or skipped: digest",
+    "agent failed or skipped: prep",
+    "agent failed or skipped: reporter",
     "cert_health: community-free-list: free-certifications list not reachable (404/empty)"
   ],
   "log": [
     "! private fields ['full_name', 'contact_email', 'contact_phone'] found in the committed Vault profile; move them to private/profile.json",
     "> scanner",
-    "  greenhouse:sezzle: 289 postings in 13032 ms",
-    "  greenhouse:enterpret: 14 postings in 844 ms",
-    "  greenhouse:karya: 19 postings in 1156 ms",
-    "  greenhouse:cresta: 91 postings in 11703 ms",
-    "  greenhouse:datacor: 12 postings in 2781 ms",
-    "  greenhouse:eqtcorporation: 52 postings in 4031 ms",
-    "  ashby:anyone-ai: 226 postings in 2186 ms",
-    "  ashby:aiprise: 23 postings in 1297 ms",
-    "  ashby:outmarket: 18 postings in 1577 ms",
-    "  ashby:pinecone: 6 postings in 1093 ms",
-    "  ashby:build-ai: 29 postings in 1109 ms",
-    "  remotive: 39 postings in 9031 ms",
-    "  arbeitnow: 300 postings in 11297 ms",
-    "  hn_hiring: 194 postings in 19108 ms",
-    "  unstop: 25 postings in 1608 ms",
-    "  page:https://wellfound.com/jobs: 37 postings in 38672 ms",
-    "  page:https://myinternships.in/internships-at/razorpay/software-development: 40 postings in 46312 ms",
-    "  page:https://myinternships.in/internships-at/postman/software-development: 40 postings in 45702 ms",
-    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 44936 ms",
+    "  greenhouse:sezzle: 271 postings in 658 ms",
+    "  greenhouse:enterpret: 14 postings in 432 ms",
+    "  greenhouse:karya: 19 postings in 677 ms",
+    "  greenhouse:cresta: 88 postings in 937 ms",
+    "  greenhouse:datacor: 12 postings in 1082 ms",
+    "  greenhouse:eqtcorporation: 55 postings in 1706 ms",
+    "  ashby:anyone-ai: 226 postings in 259 ms",
+    "  ashby:aiprise: 23 postings in 87 ms",
+    "  ashby:outmarket: 18 postings in 292 ms",
+    "  ashby:pinecone: 6 postings in 580 ms",
+    "  ashby:build-ai: 29 postings in 897 ms",
+    "  remotive: 42 postings in 948 ms",
+    "  arbeitnow: 300 postings in 670 ms",
+    "  hn_hiring: 192 postings in 1791 ms",
+    "  unstop: 25 postings in 1493 ms",
+    "  page:https://wellfound.com/jobs: 38 postings in 10032 ms",
+    "  page:https://myinternships.in/internships-at/razorpay/software-development: 39 postings in 37720 ms",
+    "  page:https://myinternships.in/internships-at/postman/software-development: 39 postings in 38584 ms",
+    "  page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/: 40 postings in 10561 ms",
     "> inbox",
-    "  inbox: synced 0 new Gmail messages (total stored: 69)",
     "  inbox skipped (no secrets or nothing applied yet)",
     "> aiupdates",
     "  30 live AI update links saved (+5 Kaggle datasets)",
     "> contests",
-    "  35 live hackathons & hiring challenges saved",
+    "  27 live hackathons & hiring challenges saved",
     "> matcher",
-    "  0/1463 jobs >= 60",
+    "  0/1441 jobs >= 60",
     "> funnel",
-    "* [LLM GATEWAY] Auto-approved 'drafter' (Confidence: 95%)",
+    "* [LLM GATEWAY] Auto-approved 'drafter' (Confidence: 92%)",
     "> drafter",
     "> skillgap",
     "> tailor",
     "  tip: add 'projects'/'experience' to the Vault profile (see profile.example.json) for fuller resumes",
     "> certs",
     "  certs source community-free-list note: free-certifications list not reachable (404/empty)",
-    "  6 learning picks for terms: typescript, aws, llm, python, java, react",
+    "  6 learning picks for terms: aws, llm, typescript, python, java, react",
     "> prep",
+    "x prep failed: skill_roadmap_v1.json does not match its recorded SHA-256 (edited outside the Vault?)",
     "> resume_pdf",
     "> portfolio",
-    "> reporter",
-    "! [LLM INTERRUPT] Paused 'autoapply' for human signoff (ID: int_2489085611c2)",
-    "> digest",
-    "  digest built: private/digest_latest.txt (7022 chars) & private/digest_latest.html (39369 chars)",
-    "  digest emailed",
+    "- reporter skipped (dependency failed)",
+    "- autoapply skipped (dependency failed)",
+    "- digest skipped (dependency failed)",
     "> memory"
   ]
 }
