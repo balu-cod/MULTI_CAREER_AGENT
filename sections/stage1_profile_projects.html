@@ -1,0 +1,661 @@
+      <section id="view-profile" class="tab-view hidden space-y-6">
+        <div class="adaptive-golden-grid">
+          <div class="studio-card p-5 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+                  <i data-lucide="user-check" class="w-4 h-4"></i>
+                </div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Candidate Profile</h1>
+              </div>
+              <button onclick="saveCandidateProfile()" class="btn-primary text-xs">
+                <i data-lucide="save" class="w-3.5 h-3.5"></i>
+                <span>Save Profile</span>
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Full Name</label>
+                <input type="text" id="prof-name" value="" placeholder="Full Name (auto-extracted from Gmail)" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
+                <input type="email" id="prof-email" value="" placeholder="you@gmail.com" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Phone Number</label>
+                <input type="text" id="prof-phone" value="" placeholder="+91 XXXXXXXXXX (optional)" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Education</label>
+                <input type="text" id="prof-edu" value="" placeholder="Degree, Major • University / College" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Preferred Locations</label>
+                <input type="text" id="prof-locations" value="Bengaluru, Hyderabad, Remote India, Remote" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Target Roles</label>
+                <input type="text" id="prof-roles" value="Software Engineer Intern, AI Engineer Intern, Python Backend Developer" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Experience Summary</label>
+              <textarea id="prof-bio" rows="3" placeholder="Summary of engineering experience, projects, or background (auto-synthesized by AI)..."></textarea>
+            </div>
+          </div>
+
+          <div class="studio-card p-5 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                  <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Technical Skills</h2>
+              </div>
+              <span id="profile-skill-count" class="pill-shape bg-emerald-50 text-emerald-700">14</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="text" id="new-skill-input" placeholder="Add a skill (e.g. LangGraph, Docker)..." class="text-xs" />
+              <button onclick="addProfileSkill()" class="btn-primary text-xs shrink-0">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+            </div>
+            <div id="profile-skills-tags" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+      
+        <!-- ===============================================================
+             USER PERSONALIZATION MEMORY ENGINE & UNIFIED LLM GATEWAY
+             =============================================================== -->
+        <div class="adaptive-golden-grid">
+          <!-- Left: User Personalization Memory Store -->
+          <div id="personalization-memory-card" class="studio-card p-5 space-y-4 border border-purple-500/20">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                  <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h2 class="text-sm font-bold text-slate-900 dark:text-white">User Personalization Memory Store</h2>
+                  <p class="text-[11px] text-slate-500">Persistent candidate rules, stack preferences &amp; project proof automatically injected into every LLM &amp; agent run</p>
+                </div>
+              </div>
+              <span id="personalization-memory-count" class="pill-shape bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300 text-xs">4 Active Facts</span>
+            </div>
+
+            <!-- Add New Personalization Fact -->
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-2">
+              <select id="new-memory-category" class="w-40 text-xs py-2 shrink-0">
+                <option value="stack_preference">Stack Preference</option>
+                <option value="production_proof">Production Proof</option>
+                <option value="location_preference">Location Rule</option>
+                <option value="outreach_style">Outreach Style</option>
+              </select>
+              <input type="text" id="new-memory-fact-input" placeholder="Add a personalization rule (e.g., Prioritize FastAPI, LangGraph & Edge AI roles)..." class="text-xs flex-1" />
+              <button type="button" onclick="addPersonalizationMemoryFact()" class="btn-primary text-xs py-2 px-3.5 shrink-0">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Save Memory</span>
+              </button>
+            </div>
+
+            <!-- Active Memory Facts List -->
+            <div id="personalization-memory-list" class="space-y-2 max-h-[280px] overflow-y-auto pr-1">
+              <!-- Populated dynamically by renderPersonalizationMemoryAndGateway() -->
+            </div>
+          </div>
+
+          <!-- Right: Unified Multi-Provider LLM Gateway Controller (Smart Paste Auto-Recognition + Local Model Discovery) -->
+          <div id="llm-gateway-control-card" class="studio-card p-5 space-y-3.5 border border-blue-500/20">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+                  <i data-lucide="network" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h2 class="text-sm font-bold text-slate-900 dark:text-white">Smart Multi-Provider &amp; Local LLM Gateway</h2>
+                  <p class="text-[11px] text-slate-500">Paste any API key, URL, curl, or local model tag — auto-detects provider, endpoint &amp; model</p>
+                </div>
+              </div>
+              <span id="llm-active-pill" class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 text-xs flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Gateway Active</span>
+              </span>
+            </div>
+
+            <!-- Row 1: Smart Paste Input + Auto-Detected Provider -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300">Paste API Key / Tunnel URL / Local Model</label>
+                  <button type="button" onclick="toggleLlmKeyVisibility('main')" class="text-[10px] text-blue-600 dark:text-blue-400 hover:underline">Show/Hide</button>
+                </div>
+                <input type="text" id="llm-key-input" oninput="onLlmInputPasteOrChange('main')" onpaste="setTimeout(() => onLlmInputPasteOrChange('main'), 15)" placeholder="Paste sk-or-v1-..., AIza..., gsk_..., http://localhost:11434, or qwen2.5-coder:7b" class="text-xs font-mono py-1.5 w-full" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Recognized Provider (Auto-Set)</label>
+                <select id="llm-provider-select" onchange="onLlmProviderManualChange('main')" class="text-xs py-1.5 w-full">
+                  <option value="OPENROUTER_API_KEY">OpenRouter Gateway (Llama-3.3-70B / Free)</option>
+                  <option value="GEMINI_API_KEY">Google Gemini API (gemini-2.5-flash)</option>
+                  <option value="GROQ_API_KEY">Groq LPU Gateway (llama-3.3-70b-versatile)</option>
+                  <option value="ANTHROPIC_API_KEY">Anthropic Claude API (claude-sonnet-4-6)</option>
+                  <option value="OPENAI_API_KEY">OpenAI / Compatible API (gpt-4o-mini)</option>
+                  <option value="HF_TOKEN">Hugging Face Router (Qwen2.5-72B-Instruct)</option>
+                  <option value="GITHUB_TOKEN">GitHub Models Azure AI (gpt-4o-mini)</option>
+                  <option value="CEREBRAS_API_KEY">Cerebras Wafer-Scale API (llama-3.3-70b)</option>
+                  <option value="XAI_API_KEY">xAI Grok API (grok-2-latest)</option>
+                  <option value="PERPLEXITY_API_KEY">Perplexity Sonar API (sonar-pro)</option>
+                  <option value="MISTRAL_API_KEY">Mistral La Plateforme (mistral-small-latest)</option>
+                  <option value="COHERE_API_KEY">Cohere Chat v2 API (command-r-08-2024)</option>
+                  <option value="OLLAMA_MODEL">Local Ollama Engine (:11434 • qwen2.5-coder:7b)</option>
+                  <option value="LOCAL_LLM_URL">Local llama.cpp / LM Studio / GPU Tunnel (:8080 / :1234)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 2: Auto-Configured Endpoint URL & Target Model -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Auto-Configured Base Endpoint URL</label>
+                <input type="text" id="llm-endpoint-input" placeholder="https://openrouter.ai/api/v1/chat/completions" value="https://openrouter.ai/api/v1/chat/completions" class="text-xs font-mono py-1.5 w-full" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Auto-Selected Model (Editable)</label>
+                <input type="text" id="llm-model-select" list="llm-model-datalist" placeholder="meta-llama/llama-3.3-70b-instruct:free" value="meta-llama/llama-3.3-70b-instruct:free" class="text-xs font-mono py-1.5 w-full" />
+                <datalist id="llm-model-datalist">
+                  <option value="meta-llama/llama-3.3-70b-instruct:free"></option>
+                  <option value="gemini-2.5-flash"></option>
+                  <option value="llama-3.3-70b-versatile"></option>
+                  <option value="claude-sonnet-4-6"></option>
+                  <option value="gpt-4o-mini"></option>
+                  <option value="qwen2.5-coder:7b"></option>
+                  <option value="llama3.2:3b"></option>
+                  <option value="deepseek-r1:7b"></option>
+                  <option value="gemma4-e2b-uncensored.gguf"></option>
+                </datalist>
+              </div>
+            </div>
+
+            <!-- Auto-Recognized Metadata Details Strip -->
+            <div id="llm-auto-details-strip" class="p-2.5 rounded-xl bg-blue-50/60 dark:bg-slate-900/80 border border-blue-200/70 dark:border-slate-800 text-[11px] flex flex-wrap items-center justify-between gap-2">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded-md bg-blue-600 text-white font-semibold text-[10px]" id="llm-det-badge">Ready for Paste</span>
+                <span class="text-slate-700 dark:text-slate-300 font-mono" id="llm-det-env">KEY: OPENROUTER_API_KEY</span>
+                <span class="text-slate-400">•</span>
+                <span class="text-slate-600 dark:text-slate-400" id="llm-det-auth">Auth: Bearer Token</span>
+                <span class="text-slate-400">•</span>
+                <span class="text-slate-600 dark:text-slate-400" id="llm-det-proto">OpenAI v1 (128K ctx)</span>
+              </div>
+            </div>
+
+            <!-- Local Model Discovery Bar -->
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800 space-y-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                  <i data-lucide="hard-drive" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>Local &amp; Tunnel Models (Ollama :11434 • llama-server :8080 • LM Studio :1234 • GGUF)</span>
+                </span>
+                <button type="button" onclick="scanLocalLlmModels('main')" class="text-[11px] font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+                  <i data-lucide="radar" class="w-3 h-3"></i>
+                  <span>Scan Local Models</span>
+                </button>
+              </div>
+              <div id="llm-local-models-bar" class="flex flex-wrap gap-1.5">
+                <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder:7b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama Engine', 'main')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🦙 qwen2.5-coder:7b (Ollama)</button>
+                <button type="button" onclick="selectDiscoveredLocalModel('llama3.2:3b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama (8GB Fast)', 'main')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">⚡ llama3.2:3b (Ollama)</button>
+                <button type="button" onclick="selectDiscoveredLocalModel('deepseek-r1:7b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama Reasoning', 'main')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🧠 deepseek-r1:7b (Ollama)</button>
+                <button type="button" onclick="selectDiscoveredLocalModel('gemma4-e2b-uncensored.gguf', 'LOCAL_LLM_URL', 'http://localhost:8080/v1/chat/completions', 'llama-server / GGUF (:8080)', 'main')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🔥 gemma4-e2b-uncensored.gguf (:8080)</button>
+                <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder-7b-instruct-q4_k_m.gguf', 'LOCAL_LLM_URL', 'http://localhost:1234/v1/chat/completions', 'LM Studio Local (:1234)', 'main')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🖥️ LM Studio (:1234)</button>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <button type="button" onclick="saveSelectedLlmKey('main')" class="btn-primary text-xs py-1.5 px-3.5">
+                <i data-lucide="key" class="w-3.5 h-3.5"></i>
+                <span>Save &amp; Route Gateway</span>
+              </button>
+              <button type="button" onclick="testLlmGatewayLive('main')" class="btn-secondary text-xs py-1.5 px-3">
+                <i data-lucide="zap" class="w-3.5 h-3.5 text-blue-600"></i>
+                <span>Test Gateway Latency</span>
+              </button>
+            </div>
+
+            <div id="llm-test-feedback" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              <strong>Active Failover Chain:</strong> Local Tunnel / Ollama ➔ OpenRouter ➔ Google Gemini ➔ Groq LPU ➔ Anthropic Claude ➔ Deterministic RAG Synthesis (0% downtime).
+            </div>
+
+            <!-- LLM Execution Interrupt & Guardrail Panel -->
+            <div id="llm-interrupt-guardrail-panel" class="p-3.5 rounded-xl bg-amber-500/5 border border-amber-500/25 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+                  <span class="text-xs font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wide">LLM Execution Guardrail &amp; Interrupt Engine</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <select id="llm-interrupt-mode-select" onchange="changeLlmInterruptMode(this.value)" class="text-[11px] py-1 px-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                    <option value="auto">Mode: Auto-Arbitrate (LLM &gt;=80% passes)</option>
+                    <option value="always_on_critical">Mode: Human Signoff on Critical Actions</option>
+                    <option value="off">Mode: Off (Fully Automated)</option>
+                  </select>
+                  <button type="button" onclick="refreshLlmInterrupts()" class="text-[10px] text-blue-600 dark:text-blue-400 hover:underline">Refresh</button>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500">Monitors sensitive execution (job applications, cold emails, resume modifications). When an agent acts, the LLM intercepts, analyzes risk, and requests your signoff if needed.</p>
+              <div id="llm-interrupts-list" class="space-y-1.5 text-xs">
+                <div class="text-[11px] text-slate-400 italic">No execution interrupts pending. Agents execute safely within policy boundaries.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inbox Intelligence & Account Activity Summary -->
+        <div class="studio-card p-5 space-y-4 border border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.02] to-teal-500/[0.04]">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="mail-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Inbox Intelligence &amp; Verified Account Activity</h2>
+                <p class="text-[11px] text-slate-500">Autonomous email summarization, detected platforms, and candidate interest analysis</p>
+              </div>
+            </div>
+            <button id="btn-rescan-inbox" type="button" onclick="rescanInboxIntelligence()" class="btn-primary text-xs py-2 px-3.5 flex items-center gap-1.5 shadow-md shadow-emerald-600/20 bg-emerald-600 hover:bg-emerald-700 text-white">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+              <span>Re-scan &amp; Summarize Inbox with AI</span>
+            </button>
+          </div>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-200 leading-relaxed">
+              <div class="flex items-center justify-between font-bold text-slate-900 dark:text-white mb-1.5">
+                <span class="flex items-center gap-1.5"><i data-lucide="sparkles" class="w-4 h-4 text-emerald-500"></i>AI Inbox Activity Synthesis</span>
+                <span id="inbox-msg-count-badge" class="pill-shape bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300">0 Emails Analyzed</span>
+              </div>
+              <p id="inbox-summary-narrative" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Connect your Gmail to automatically analyze recent inbox messages, detect your registered platforms, education credentials, and technical interests.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 space-y-2">
+                <div class="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                  <i data-lucide="globe" class="w-4 h-4 text-blue-500"></i>
+                  <span>Logged Websites &amp; Connected Services</span>
+                </div>
+                <div id="inbox-detected-platforms" class="flex flex-wrap gap-1.5 text-xs">
+                  <span class="text-slate-400 text-xs italic">No platforms detected yet.</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 space-y-2">
+                <div class="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                  <i data-lucide="compass" class="w-4 h-4 text-purple-500"></i>
+                  <span>Detected Technical Interests</span>
+                </div>
+                <div id="inbox-detected-interests" class="flex flex-wrap gap-1.5 text-xs">
+                  <span class="text-slate-400 text-xs italic">No interests detected yet.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Profile Diagnostic: Skills, Certifications & Drawbacks Audit -->
+        <div class="studio-card p-5 space-y-4 border border-blue-500/20 bg-gradient-to-br from-blue-500/[0.02] to-indigo-500/[0.04]">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">AI Profile Diagnostic &amp; Drawback Analysis</h2>
+                <p class="text-[11px] text-slate-500">LLM evaluation of verified skills, technical gaps, and recruiter impression</p>
+              </div>
+            </div>
+            <button id="btn-run-profile-audit" type="button" onclick="runAiProfileAudit()" class="btn-primary text-xs py-2 px-3.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>Run LLM Profile &amp; Gap Audit</span>
+            </button>
+          </div>
+
+          <div id="ai-audit-results-card" class="space-y-4">
+            <div class="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs text-purple-900 dark:text-purple-200 leading-relaxed">
+              <strong class="font-bold text-purple-600 dark:text-purple-400">Strategic Recruiter Directive:</strong>
+              <div id="ai-audit-advice-text" class="mt-1">Click "Run LLM Profile & Gap Audit" to evaluate your verified skills, technical drawbacks, and receive personalized strategic recruiter recommendations.</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-500/20 space-y-2">
+                <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                  <span>Core Strengths &amp; Production Proof</span>
+                </div>
+                <ul id="ai-audit-strengths-list" class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Production Backend Delivery: Proven real-world experience building TIMS inventory system with Python and FastAPI at Aditya Birla.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Relational Data Engineering: Strong SQL, PostgreSQL, and schema design skills with transactional integrity.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Containerization: Dockerized backend deployments and clean RESTful API contracts.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Full-Stack Coordination: Bridging React interfaces with asynchronous FastAPI services.</span></li>
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-500/20 space-y-2">
+                <div class="text-xs font-bold text-amber-700 dark:text-amber-400 flex items-center gap-1.5">
+                  <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                  <span>Critical Drawbacks &amp; Technical Gaps</span>
+                </div>
+                <ul id="ai-audit-drawbacks-list" class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>TypeScript: Enterprise frontend/full-stack roles require strict type safety.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>Kubernetes &amp; Cloud Scaling: Lacking production container orchestration experience.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>Distributed In-Memory Caching (Redis): Required for high-concurrency microservices.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>System Design: Needs formal proof of high-throughput distributed architectures.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <span class="text-[11px] text-slate-400">Certifications matching your gaps are updated automatically.</span>
+              <button type="button" onclick="switchTab('certs')" class="btn-secondary text-xs py-1.5 px-3 flex items-center gap-1.5">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500"></i>
+                <span>View Matching Certifications</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="view-projects" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center shrink-0">
+                <i data-lucide="circuit-board" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                  <span>Engineering Projects &amp; Hardware Builds</span>
+                  <span class="pill-shape bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px]">VLSI • Embedded • PCB • AI</span>
+                </h1>
+                <p class="text-xs text-slate-400">Manage RTL designs, STM32/ESP32 firmware builds, KiCad PCBs, and AI/Software projects synced to your Vault &amp; AIHawk Resume Tailor.</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span id="projects-vault-sync-pill" class="pill-shape bg-emerald-500/20 text-emerald-300 text-[11px] font-mono">Vault Synced</span>
+              <button type="button" onclick="openProjectEditorModal()" class="btn-primary text-xs py-2 px-3.5 flex items-center gap-1.5">
+                <i data-lucide="plus-circle" class="w-4 h-4"></i>
+                <span>Add Engineering Project</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/70">
+            <div id="projects-domain-filter-bar" class="flex flex-wrap gap-1.5">
+              <button type="button" data-proj-filter="all" onclick="setProjectFilter('all')" class="proj-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500 text-slate-950 transition">All Builds</button>
+              <button type="button" data-proj-filter="VLSI / RTL" onclick="setProjectFilter('VLSI / RTL')" class="proj-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 hover:text-white transition">VLSI / RTL</button>
+              <button type="button" data-proj-filter="Embedded / IoT" onclick="setProjectFilter('Embedded / IoT')" class="proj-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 hover:text-white transition">Embedded / IoT</button>
+              <button type="button" data-proj-filter="PCB / Hardware" onclick="setProjectFilter('PCB / Hardware')" class="proj-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 hover:text-white transition">PCB / Hardware</button>
+              <button type="button" data-proj-filter="Software / AI" onclick="setProjectFilter('Software / AI')" class="proj-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 hover:text-white transition">Software / AI</button>
+            </div>
+            <div class="flex items-center gap-3 text-xs font-mono text-slate-400">
+              <span>Total: <strong id="projects-count-total" class="text-white">0</strong></span>
+              <span>•</span>
+              <span>ECE/HW: <strong id="projects-count-hw" class="text-amber-400">0</strong></span>
+              <span>•</span>
+              <span>SW/AI: <strong id="projects-count-sw" class="text-cyan-400">0</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Showcase Grid -->
+        <div id="projects-showcase-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
+      </section>
+
+      <!-- Project Add / Edit Modal -->
+      <div id="project-editor-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4">
+        <div class="studio-card w-full max-w-xl p-6 space-y-4 shadow-2xl">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center">
+                <i data-lucide="wrench" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 id="project-modal-title" class="text-sm font-bold text-white">Add Engineering Project</h2>
+                <p class="text-[11px] text-slate-400">Saved directly to your Vault profile &amp; available in Resume Tailor</p>
+              </div>
+            </div>
+            <button type="button" onclick="closeProjectEditorModal()" class="text-slate-400 hover:text-white p-1">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+          <input type="hidden" id="proj-edit-index" value="-1">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="sm:col-span-2">
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">Project Title</label>
+              <input id="proj-input-name" type="text" placeholder="e.g., 5-Stage Pipelined RISC-V RV32I Core in SystemVerilog" class="form-input text-xs">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">Engineering Domain</label>
+              <select id="proj-input-domain" class="form-input text-xs">
+                <option value="VLSI / RTL">VLSI / RTL</option>
+                <option value="Embedded / IoT">Embedded / IoT</option>
+                <option value="PCB / Hardware">PCB / Hardware</option>
+                <option value="Software / AI">Software / AI</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">Timeline / Period</label>
+              <input id="proj-input-period" type="text" placeholder="e.g., Jan 2026 - Apr 2026" class="form-input text-xs">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">GitHub / Schematic / Demo Link</label>
+              <input id="proj-input-link" type="text" placeholder="https://github.com/..." class="form-input text-xs">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">Hardware, EDA Tools &amp; Tech Stack (comma separated)</label>
+              <input id="proj-input-skills" type="text" placeholder="SystemVerilog, Vivado, RISC-V, UVM, Timing Closure" class="form-input text-xs">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-[11px] font-semibold text-slate-300 mb-1">Engineering Highlights &amp; Verified Metrics (one bullet per line)</label>
+              <textarea id="proj-input-bullets" rows="4" placeholder="Designed hazard-detection unit and forwarding paths targeting Artix-7 FPGA at 100 MHz.&#10;Verified ISA compliance with 100% pass rate on RISC-V formal testbench." class="form-input text-xs"></textarea>
+            </div>
+          </div>
+          <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-800">
+            <button type="button" onclick="closeProjectEditorModal()" class="btn-secondary text-xs py-2 px-3">Cancel</button>
+            <button type="button" onclick="saveEngineeringProject()" class="btn-primary text-xs py-2 px-4 flex items-center gap-1.5">
+              <i data-lucide="save" class="w-3.5 h-3.5"></i>
+              <span>Save Project to Vault</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <section id="view-user-hub" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Time Presets &amp; Results Memory</h1>
+                <p class="text-xs text-slate-500" id="user-hub-active-preset-badge">Active Window: Last 24 Hours</p>
+              </div>
+            </div>
+            <button onclick="runAllLiveAgentsFromInternet()" class="btn-primary text-xs">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+              <span>Fetch Newer &amp; Archive Current</span>
+            </button>
+          </div>
+
+          <div id="time-presets-grid" class="adaptive-presets-grid"></div>
+
+          <div class="adaptive-split-grid">
+            <div class="studio-card p-5 agent-newer-panel space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
+                  <h2 class="text-sm font-bold text-slate-900 dark:text-white">Newer Results</h2>
+                </div>
+                <span id="user-hub-newer-count" class="pill-shape bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">0</span>
+              </div>
+              <div id="user-hub-newer-list" class="space-y-2.5 max-h-96 overflow-y-auto pr-1"></div>
+            </div>
+
+            <div class="studio-card p-5 agent-archive-panel space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="archive" class="w-4 h-4 text-amber-600"></i>
+                  <h2 class="text-sm font-bold text-slate-900 dark:text-white">Older Memory Archive</h2>
+                </div>
+                <span id="user-hub-older-count" class="pill-shape bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300">0</span>
+              </div>
+              <div id="user-hub-older-list" class="space-y-2.5 max-h-96 overflow-y-auto pr-1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-user-data-engine" class="tab-view space-y-6 hidden">
+        <!-- Backend Architecture Telemetry Card -->
+        <div class="studio-card p-5 bg-gradient-to-r from-blue-900/20 via-slate-900/40 to-slate-900/20 border-blue-500/30">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="pill-shape bg-blue-500 text-white font-bold text-[10px] uppercase">Secondary Backend Microservice</span>
+                <span class="pill-shape bg-emerald-500/20 text-emerald-400 font-mono text-[10px]">Port 8766 / Port 8000 Bridged</span>
+              </div>
+              <h2 class="text-base font-bold text-slate-900 dark:text-white">User Data Backend &amp; SQLite Persistence Engine</h2>
+              <p class="text-xs text-slate-400">Directly serves candidate records, real Gmail communications, corporate contact directories, and active OAuth sessions from private/user_data.db.</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="text-right font-mono text-xs text-slate-400">
+                <div>DB: <span id="db-file-name" class="text-slate-200 font-bold">private/user_data.db</span></div>
+                <div>Size: <span id="db-file-size" class="text-blue-400 font-bold">40.0 KB</span></div>
+              </div>
+              <button type="button" onclick="refreshUserDataStats()" class="btn-secondary py-2 px-3 text-xs font-medium flex items-center gap-1.5">
+                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                <span>Check Status</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate Facts & SQLite Profile Manager -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2 studio-card p-5 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="user-check" class="w-4 h-4 text-blue-500"></i>
+                <h3 class="text-sm font-bold text-slate-900 dark:text-white">Real Candidate Profile Facts</h3>
+              </div>
+              <span class="text-[11px] text-slate-400">Stored in candidate_profile table</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Full Name</label>
+                <input type="text" id="udb-profile-name" value="" placeholder="Candidate Full Name" class="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Primary Email</label>
+                <input type="email" id="udb-profile-email" value="" placeholder="you@gmail.com" class="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Phone Number</label>
+                <input type="text" id="udb-profile-phone" value="" placeholder="+91 XXXXXXXXXX (optional)" class="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Location</label>
+                <input type="text" id="udb-profile-location" value="Kurabala Kota, Andhra Pradesh, India" class="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Production Project &amp; Experience Highlight</label>
+              <textarea id="udb-profile-highlight" rows="3" class="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white">Aditya Birla Garments Limited: Engineered TIMS (Tailoring Inventory Management System) and File Shelf Tracker with Python, FastAPI, and PostgreSQL, cutting tracking latency by 42%.</textarea>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+              <button type="button" onclick="saveCandidateFactsToDatabase()" class="btn-primary py-2 px-4 text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                <i data-lucide="save" class="w-3.5 h-3.5"></i>
+                <span>Save Changes to SQLite</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Database Table Telemetry & Quick Exports -->
+          <div class="studio-card p-5 space-y-4">
+            <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+              <i data-lucide="database" class="w-4 h-4 text-purple-500"></i>
+              <h3 class="text-sm font-bold text-slate-900 dark:text-white">SQLite Schema Telemetry</h3>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <span class="font-mono text-slate-600 dark:text-slate-300">candidate_profile</span>
+                <span class="pill-shape bg-emerald-500/20 text-emerald-400">1 Row (Active)</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <span class="font-mono text-slate-600 dark:text-slate-300">gmail_messages</span>
+                <span id="udb-count-gmail" class="pill-shape bg-blue-500/20 text-blue-400">4 Synced</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <span class="font-mono text-slate-600 dark:text-slate-300">user_applications</span>
+                <span id="udb-count-apps" class="pill-shape bg-purple-500/20 text-purple-400">2 Tracked</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <span class="font-mono text-slate-600 dark:text-slate-300">hiring_contacts</span>
+                <span id="udb-count-contacts" class="pill-shape bg-amber-500/20 text-amber-400">2 Verified</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <span class="font-mono text-slate-600 dark:text-slate-300">oauth_sessions</span>
+                <span id="udb-count-oauth" class="pill-shape bg-teal-500/20 text-teal-400">1 Session</span>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-200 dark:border-slate-800 space-y-2">
+              <button type="button" onclick="exportUserDataJson()" class="btn-secondary w-full py-2 text-xs flex items-center justify-center gap-1.5">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                <span>Export SQLite Snapshot (JSON)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Hiring Contacts Directory -->
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="contact" class="w-4 h-4 text-emerald-500"></i>
+              <h3 class="text-sm font-bold text-slate-900 dark:text-white">Corporate Hiring Directory (Extracted from Real Emails)</h3>
+            </div>
+            <button type="button" onclick="openAddContactModal()" class="btn-primary py-1.5 px-3 text-xs flex items-center gap-1 shadow-sm">
+              <i data-lucide="plus" class="w-3 h-3"></i> Add Recruiter Contact
+            </button>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="text-[11px] uppercase tracking-wider text-slate-400 bg-slate-50 dark:bg-slate-800">
+                <tr>
+                  <th class="p-3">Recruiter / Team</th>
+                  <th class="p-3">Company</th>
+                  <th class="p-3">Corporate Inbox</th>
+                  <th class="p-3">Phone</th>
+                  <th class="p-3">Notes &amp; Role</th>
+                  <th class="p-3 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="udb-contacts-tbody" class="divide-y divide-slate-100 dark:divide-slate-800">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>

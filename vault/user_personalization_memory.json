@@ -1,12 +1,6 @@
 {
-  "updated": "2026-11-11T01:48:33+00:00",
+  "updated": "2026-11-11T08:03:48+00:00",
   "facts": [
-    {
-      "id": "mem_1794361713_5",
-      "category": "preference",
-      "fact": "Prefers local Ollama and FastAPI roles",
-      "updated": "2026-11-11"
-    },
     {
       "id": "mem_stack",
       "category": "stack_preference",

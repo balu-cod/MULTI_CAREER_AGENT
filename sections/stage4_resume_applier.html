@@ -1,0 +1,158 @@
+      <section id="view-resume" class="tab-view hidden space-y-6">
+        <div class="adaptive-golden-reverse">
+          <div class="studio-card p-5 space-y-4 no-print">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                  <i data-lucide="file-check-2" class="w-4 h-4"></i>
+                </div>
+                <h1 class="text-sm font-bold text-slate-900 dark:text-white">Resume Tailor</h1>
+              </div>
+              <span id="resume-ats-score-badge" class="pill-shape ats-pill-high">94% Match</span>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Target Role &amp; Company</label>
+              <input type="text" id="jd-target-title" value="AI &amp; Python Backend Engineer Intern — Razorpay" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Job Description</label>
+              <textarea id="jd-paste-input" rows="5">Looking for a Software & AI Engineering Intern skilled in Python, FastAPI, React, SQL, REST APIs, LLM Agents, Model Context Protocol (MCP), and automated testing to build scalable backend services.</textarea>
+            </div>
+
+            <!-- AI Tailoring Actions -->
+            <div class="space-y-2">
+              <button id="btn-ai-generate-resume" type="button" onclick="generateAiTailoredResumeWithProfile()" class="btn-primary w-full py-2.5 px-4 text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl transition">
+                <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i>
+                <span>Generate AI Tailored Resume for Logged-In User</span>
+              </button>
+              
+              <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="tailorResumeToJobDescription()" class="btn-secondary text-xs flex-1 py-2">
+                  <i data-lucide="wand-2" class="w-3.5 h-3.5"></i>
+                  <span>Quick Local Match</span>
+                </button>
+                <button type="button" onclick="generateBackendPdfResume()" class="btn-secondary text-xs py-2 px-3">
+                  <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+                  <span>Download PDF</span>
+                </button>
+              </div>
+              <div id="resume-pdf-download-slot" class="pt-1"></div>
+            </div>
+
+            <!-- Autonomous Company Intelligence & Strategy Dossier -->
+            <div id="company-research-card" class="hidden pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2 bg-indigo-50/50 dark:bg-indigo-950/30 p-3 rounded-xl border border-indigo-100 dark:border-indigo-900/60">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-indigo-700 dark:text-indigo-300">
+                  <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
+                  <span id="comp-intel-company">Target Company Dossier</span>
+                </div>
+                <span id="comp-intel-domain" class="text-[10px] px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-bold uppercase">Software</span>
+              </div>
+              <div id="comp-intel-mission" class="text-[11px] text-slate-600 dark:text-slate-300 leading-snug"></div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400">
+                <span class="font-bold text-indigo-900 dark:text-indigo-200">Tailoring Strategy:</span> <span id="comp-intel-angle"></span>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1" id="comp-intel-tech"></div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2">
+              <div class="text-xs font-bold text-slate-700 dark:text-slate-300">Matched Keywords</div>
+              <div id="resume-matched-keywords" class="flex flex-wrap gap-1.5"></div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Outreach Note</span>
+                <button onclick="copyOutreachEmail()" class="text-xs font-semibold text-blue-600 hover:underline inline-flex items-center gap-1">
+                  <i data-lucide="copy" class="w-3 h-3"></i><span>Copy</span>
+                </button>
+              </div>
+              <textarea id="outreach-email-box" rows="4" class="text-xs"></textarea>
+            </div>
+          </div>
+
+          <div id="resume-printable-sheet" class="space-y-4">
+            <div class="border-b-2 border-slate-900 pb-3 flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h2 class="text-xl font-bold tracking-tight text-slate-900" id="resume-sheet-name">CANDIDATE</h2>
+                <div class="text-xs font-semibold text-blue-700 mt-0.5" id="resume-sheet-role">AI &amp; Python Backend Engineer Intern</div>
+              </div>
+              <div class="text-[11px] text-slate-600 text-right">
+                <div id="resume-sheet-email-phone">candidate@gmail.com • Verified Candidate</div>
+                <div id="resume-sheet-loc">Remote India</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Summary</div>
+              <p id="resume-summary-text" class="text-xs text-slate-800 leading-relaxed">
+                Results-driven candidate experienced in architecting full-stack production systems and autonomous multi-agent pipelines using Python, FastAPI, React, SQL, and LLM agent frameworks.
+              </p>
+            </div>
+
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Technical Skills</div>
+              <div id="resume-sheet-skills" class="text-xs text-slate-800 font-medium">
+                Python, FastAPI, React, SQL, JavaScript, TypeScript, REST APIs, Git, Linux, LangGraph, Model Context Protocol (MCP), Automated Scraping, SQLite, Tailwind CSS
+              </div>
+            </div>
+
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Experience</div>
+              <div class="space-y-2 text-xs text-slate-800">
+                <div>
+                  <div class="flex justify-between font-bold">
+                    <span id="resume-sheet-exp-title">Software Developer Projects</span>
+                    <span class="text-[11px]">3 Months</span>
+                  </div>
+                  <ul class="list-disc list-inside space-y-1 mt-1 text-slate-700" id="resume-sheet-exp-bullets">
+                    <li>Architected and deployed software services and applications with version control and REST APIs.</li>
+                    <li>Implemented relational database schemas, query indexing, and automated data processing.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Projects</div>
+              <div class="space-y-1.5 text-xs text-slate-800">
+                <div><strong>Autonomous Career Agent System</strong>: Built a multi-agent system with ATS scoring, direct auto-applying, and automated morning/evening briefings.</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Education</div>
+              <div class="flex justify-between text-xs text-slate-800">
+                <span id="resume-sheet-edu"><strong>Engineering &amp; Computer Science</strong></span>
+                <span class="text-[11px]">Verified Candidate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-direct-apply" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="send" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Direct Job &amp; Internship Applying</h1>
+                <p class="text-xs text-slate-500">Autonomous LLM tailors your resume for each role and initiates application emails to verified corporate hiring inboxes</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="runAutoApplyBatch()" class="btn-primary text-xs">
+                <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+                <span>Auto-Apply All Eligible Roles</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="adaptive-cards-grid" id="direct-apply-cards-container"></div>
+        </div>
+      </section>

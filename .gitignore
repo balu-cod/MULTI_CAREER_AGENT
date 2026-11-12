@@ -17,3 +17,6 @@ dist/
 # Generated plugins stay local until reviewed
 live/custom/*.py
 !live/custom/__init__.py
+# Firebase
+.firebase/
+firebase-debug.log*

@@ -1,0 +1,1024 @@
+      <section id="view-dashboard" class="tab-view space-y-6 pb-12">
+        <!-- Option 8: 4-Card High-Density Analytics & Sparkbar KPI Row -->
+        <div class="adaptive-kpi-grid">
+          <div class="studio-card p-5 flex items-start justify-between gap-3">
+            <div class="space-y-1 min-w-0">
+              <div class="text-xs font-semibold text-slate-500">Total Scraped &amp; Candidate</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-extrabold text-slate-900 dark:text-white" id="kpi-total-scraped">37 Roles</span>
+                <span class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 text-[10px]">+12 today</span>
+              </div>
+              <div class="text-xs text-slate-500 truncate">Candidate: <strong class="text-slate-800 dark:text-slate-200" id="hero-greeting">Kodimurthy Bhalavardan</strong> (<span id="hero-bio">Python, FastAPI, React, SQL</span>)</div>
+            </div>
+            <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+              <i data-lucide="trending-up" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+          <div class="studio-card p-5 flex items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="text-xs font-semibold text-slate-500">Active Pipeline Agents</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-extrabold text-slate-900 dark:text-white">22 / 22</span>
+                <span class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 text-[10px]">All Online</span>
+              </div>
+              <div class="text-xs text-slate-500">RAG Memory: <span class="font-semibold text-slate-700 dark:text-slate-300" id="metric-rag-count">36 Indexed Chunks</span></div>
+            </div>
+            <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+          <div class="studio-card p-5 flex items-start justify-between gap-3">
+            <div class="space-y-1 flex-1">
+              <div class="text-xs font-semibold text-slate-500">Average ATS Match Score</div>
+              <div class="flex items-center justify-between gap-3">
+                <span class="text-2xl font-extrabold text-slate-900 dark:text-white" id="kpi-avg-ats">89%</span>
+                <!-- Mini Sparkbar Chart (Option 8) -->
+                <div class="flex items-end gap-1 h-7 pt-1">
+                  <span class="w-1.5 h-3 bg-blue-200 dark:bg-blue-900 rounded-sm"></span>
+                  <span class="w-1.5 h-4 bg-blue-300 dark:bg-blue-800 rounded-sm"></span>
+                  <span class="w-1.5 h-5 bg-blue-400 dark:bg-blue-700 rounded-sm"></span>
+                  <span class="w-1.5 h-6 bg-blue-600 rounded-sm"></span>
+                  <span class="w-1.5 h-5 bg-blue-500 rounded-sm"></span>
+                  <span class="w-1.5 h-7 bg-blue-600 rounded-sm"></span>
+                </div>
+              </div>
+              <div class="text-xs text-blue-600 dark:text-blue-400 font-medium" id="metric-llm-decisions">12 Priority Matches Scored</div>
+            </div>
+          </div>
+
+          <div class="studio-card p-5 flex items-start justify-between gap-3">
+            <div class="space-y-1 min-w-0">
+              <div class="text-xs font-semibold text-slate-500">Application &amp; SMTP Rate</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-extrabold text-slate-900 dark:text-white">94.2%</span>
+                <span class="pill-shape bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 text-[10px]">Verified</span>
+              </div>
+              <div class="text-xs text-slate-500 truncate" id="metric-auth-email">project143gh@gmail.com</div>
+            </div>
+            <div class="icon-shape bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===============================================================
+             OPTION 5: 4-COLUMN KANBAN PIPELINE & STAGE BOARD
+             =============================================================== -->
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3.5">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-slate-900 dark:bg-blue-600 text-white">
+                <i data-lucide="columns" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h2 class="text-base font-bold text-slate-900 dark:text-white">Board View — Autonomous Agent Stage Pipeline</h2>
+                  <span class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 text-[11px]">Live Sync</span>
+                </div>
+                <p class="text-xs text-slate-500">Track opportunities autonomously across Portal Scraping, ATS Scoring, Resume/Email Drafting, and Direct Auto-Apply</p>
+              </div>
+            </div>
+
+            <!-- Option 5 Board Filters (All Portals, Score Threshold, Agent Status) -->
+            <div class="flex flex-wrap items-center gap-2">
+              <select id="kanban-portal-filter" onchange="renderOption5KanbanBoard()" class="w-36 text-xs py-1.5">
+                <option value="all">All Portals</option>
+                <option value="Greenhouse">Greenhouse</option>
+                <option value="Ashby">Ashby</option>
+                <option value="Unstop">Unstop</option>
+                <option value="Remotive">Remotive</option>
+                <option value="Wellfound">Wellfound</option>
+              </select>
+              <select id="kanban-score-filter" onchange="renderOption5KanbanBoard()" class="w-40 text-xs py-1.5">
+                <option value="0">All Match Scores</option>
+                <option value="80">Score Threshold: 80%+</option>
+                <option value="90">Score Threshold: 90%+</option>
+              </select>
+              <button onclick="switchTab('email-dispatcher')" class="btn-secondary text-xs py-1.5 px-3">
+                <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-600"></i>
+                <span>Email Dispatcher</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 4-Column Kanban Grid -->
+          <div id="option5-kanban-board" class="kanban-board-grid">
+            <!-- Populated dynamically by renderOption5KanbanBoard() -->
+          </div>
+        </div>
+
+        <!-- ===============================================================
+             OPTION 8: LIVE PORTAL SCRAPER MATRIX TABLE
+             =============================================================== -->
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3.5">
+            <div>
+              <h2 class="text-base font-bold text-slate-900 dark:text-white">Live Portal Scraper Matrix</h2>
+              <p class="text-xs text-slate-500">Real-time multi-portal feed with inline ATS fit bars and 1-Click Direct Apply</p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <input type="search" id="matrix-search-input" oninput="renderOption8PortalMatrix()" placeholder="Search role, company, skill..." class="w-52 text-xs py-1.5" />
+              <button onclick="runAllLiveAgentsFromInternet()" class="btn-secondary text-xs py-1.5 px-3">
+                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                <span>Refresh Matrix</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Portal Filter Pill Tabs (All Portals, Greenhouse, Ashby, Remotive, Unstop, Wellfound) -->
+          <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-100/80 dark:bg-slate-900/60 p-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
+            <div class="flex flex-wrap items-center gap-1" id="matrix-portal-tabs">
+              <button type="button" onclick="setMatrixPortalFilter('all')" data-portal-pill="all" class="portal-filter-pill active">All Portals</button>
+              <button type="button" onclick="setMatrixPortalFilter('Greenhouse')" data-portal-pill="Greenhouse" class="portal-filter-pill">Greenhouse</button>
+              <button type="button" onclick="setMatrixPortalFilter('Ashby')" data-portal-pill="Ashby" class="portal-filter-pill">Ashby</button>
+              <button type="button" onclick="setMatrixPortalFilter('Remotive')" data-portal-pill="Remotive" class="portal-filter-pill">Remotive</button>
+              <button type="button" onclick="setMatrixPortalFilter('Unstop')" data-portal-pill="Unstop" class="portal-filter-pill">Unstop</button>
+              <button type="button" onclick="setMatrixPortalFilter('Wellfound')" data-portal-pill="Wellfound" class="portal-filter-pill">Wellfound</button>
+            </div>
+            <span class="text-xs font-semibold text-slate-500 px-2" id="matrix-count-label">Showing 12 Verified Postings</span>
+          </div>
+
+          <!-- High-Density Portal Table -->
+          <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Candidate / Job Title</th>
+                  <th>Source Portal</th>
+                  <th>ATS Fit Score</th>
+                  <th>Match Quality</th>
+                  <th class="text-right">Quick Actions</th>
+                </tr>
+              </thead>
+              <tbody id="option8-matrix-tbody">
+                <!-- Populated dynamically by renderOption8PortalMatrix() -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Featured Slide Carousel & Candidate Skill Readiness -->
+        <div class="adaptive-golden-grid">
+          <div class="studio-card p-5 space-y-4 relative overflow-hidden">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+                  <i data-lucide="layers" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Featured Opportunity Slides</h3>
+                  <p class="text-[11px] text-slate-500">Top prioritized matches rotating via autonomous RAG ranking</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span id="carousel-slide-indicator" class="text-xs font-semibold text-blue-600 dark:text-blue-400">Slide 1 of 4</span>
+                <button onclick="prevOpportunitySlide()" class="btn-secondary p-1.5 rounded-lg" title="Previous Slide">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button onclick="nextOpportunitySlide()" class="btn-secondary p-1.5 rounded-lg" title="Next Slide">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+            <div id="carousel-slides-wrapper" class="relative min-h-[135px]"></div>
+            <div id="carousel-dots-bar" class="flex justify-center items-center gap-2 pt-1"></div>
+            <div id="dashboard-top-jobs" class="hidden"></div>
+          </div>
+
+          <div class="studio-card p-5 space-y-4">
+            <div class="flex items-center gap-2.5 border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="activity" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Candidate Skill Readiness</h2>
+                <p class="text-xs text-slate-500">Weighted against live requirements</p>
+              </div>
+            </div>
+            <div id="dashboard-skill-bars" class="space-y-3"></div>
+          </div>
+        </div>
+      </section>
+
+<section id="view-email-dispatcher" class="tab-view hidden space-y-6 pb-12">
+        <div class="adaptive-golden-grid">
+          <!-- Left: Upgraded Recruiter Cold Email Composer & Live Verifier -->
+          <div class="studio-card p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h1 class="text-base font-bold text-slate-900 dark:text-white">Recruiter Gmail Sending Agent</h1>
+                  <p class="text-[11px] text-slate-500">Verified recruiter email resolution + multipart HTML &amp; tailored PDF resume delivery over Gmail SMTP</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1.5 pill-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 text-xs">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span id="dispatcher-sender-badge">OAuth &amp; SMTP Verified</span>
+              </div>
+            </div>
+
+            <!-- Live Recruiter Email Accuracy & Verification Banner -->
+            <div id="recruiter-email-verify-banner" class="p-3 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 flex flex-wrap items-center justify-between gap-2 text-xs">
+              <div class="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-semibold">
+                <i data-lucide="badge-check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span id="recruiter-email-verify-badge">Verified Corporate Recruiting Inbox: jobs@razorpay.com (Razorpay Tech Careers)</span>
+              </div>
+              <span class="pill-shape bg-white dark:bg-slate-900 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-[10px]">SPF / DKIM / TLS Ready</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Target Recruiter Email</label>
+                <input type="email" id="outreach-to-email" value="jobs@razorpay.com" oninput="validateRecruiterEmailLive(this.value)" class="text-xs font-mono" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Company Name</label>
+                <input type="text" id="outreach-company" value="Razorpay" oninput="autoResolveCompanyEmail(this.value)" class="text-xs" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Target Job Role</label>
+                <input type="text" id="outreach-role" value="AI &amp; Python Backend Engineer Intern" class="text-xs" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Email Subject Line</label>
+              <input type="text" id="outreach-subject" value="Application for AI &amp; Python Backend Engineer Intern — Kodimurthy Bhalavardan" class="text-xs" />
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300">Personalized Cold Outreach Pitch</label>
+                <div class="flex items-center gap-3">
+                  <button type="button" onclick="autoDraftOutreachPitchWithLLM()" class="text-xs font-semibold text-blue-600 hover:underline inline-flex items-center gap-1">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-blue-500"></i>
+                    <span>Auto-Draft Pitch with LLM</span>
+                  </button>
+                </div>
+              </div>
+              <textarea id="outreach-body" rows="9" class="text-xs font-mono leading-relaxed" placeholder="Type or auto-draft your recruiter pitch..."></textarea>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+              <label class="flex items-center gap-2 text-xs font-medium text-slate-700 dark:text-slate-300 cursor-pointer">
+                <input type="checkbox" id="outreach-attach-resume" checked class="rounded text-blue-600" />
+                <span>Auto-Attach Role-Tailored PDF Resume (<strong id="outreach-pdf-label" class="text-emerald-600 dark:text-emerald-400">auto_razorpay.pdf</strong>)</span>
+              </label>
+
+              <button type="button" onclick="sendDirectOutreachEmail()" class="btn-primary text-xs py-2.5 px-5 font-bold shadow-md flex items-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Email to Recruiter via Gmail SMTP</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Searchable Verified Recruiter Gmail Directory -->
+          <div class="studio-card p-5 space-y-3.5">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2.5">
+              <div class="flex items-center gap-2">
+                <i data-lucide="building-2" class="w-4 h-4 text-blue-600"></i>
+                <div>
+                  <h2 class="text-sm font-bold text-slate-900 dark:text-white">Verified Recruiter &amp; Hiring Inboxes</h2>
+                  <p class="text-[11px] text-slate-500">16+ verified corporate talent acquisition addresses</p>
+                </div>
+              </div>
+              <span class="pill-shape bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 text-[10px]">Verified Registry</span>
+            </div>
+
+            <input type="search" id="recruiter-dir-search" oninput="renderVerifiedRecruiterDirectory()" placeholder="Search company, email, or role..." class="text-xs py-1.5" />
+
+            <div id="verified-recruiter-dir-list" class="space-y-2 max-h-[380px] overflow-y-auto pr-1">
+              <!-- Populated dynamically by renderVerifiedRecruiterDirectory() -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom: Sent & Drafted Recruiter Outreach Delivery Log -->
+        <div class="studio-card p-5 space-y-3.5">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="mail-check" class="w-4 h-4 text-emerald-600"></i>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Recruiter Outreach Delivery &amp; Drafts Queue</h2>
+                <p class="text-[11px] text-slate-500">Every cold email drafted by the `Drafter` agent or dispatched via Gmail SMTP (`smtp.gmail.com:465`)</p>
+              </div>
+            </div>
+            <span id="outreach-log-count-badge" class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 text-xs">11 Ready / Sent</span>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Verified Recruiter Email</th>
+                  <th>Target Role</th>
+                  <th>Attached Resume</th>
+                  <th>Status</th>
+                  <th class="text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="sent-outreach-history-tbody">
+                <!-- Populated dynamically by renderVerifiedRecruiterDirectory() -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-gmail-inbox" class="tab-view space-y-6 hidden">
+        <!-- Top Metric Counters -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="studio-card p-4">
+            <div class="text-xs text-slate-500 font-medium">Real Synced Emails</div>
+            <div id="gmail-stat-total" class="text-2xl font-bold text-slate-900 dark:text-white mt-1">4</div>
+            <div class="text-[11px] text-blue-500 font-medium mt-1 flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i> IMAP &amp; OAuth2 Active
+            </div>
+          </div>
+          <div class="studio-card p-4">
+            <div class="text-xs text-slate-500 font-medium">Interview Invitations</div>
+            <div id="gmail-stat-interviews" class="text-2xl font-bold text-emerald-500 mt-1">1</div>
+            <div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium mt-1 flex items-center gap-1">
+              <i data-lucide="calendar" class="w-3 h-3"></i> Action Required
+            </div>
+          </div>
+          <div class="studio-card p-4">
+            <div class="text-xs text-slate-500 font-medium">Offers &amp; Credentials</div>
+            <div id="gmail-stat-offers" class="text-2xl font-bold text-purple-500 mt-1">1</div>
+            <div class="text-[11px] text-purple-600 dark:text-purple-400 font-medium mt-1 flex items-center gap-1">
+              <i data-lucide="award" class="w-3 h-3"></i> Letter of Recommendation
+            </div>
+          </div>
+          <div class="studio-card p-4">
+            <div class="text-xs text-slate-500 font-medium">Recruiter Outreach</div>
+            <div id="gmail-stat-outreach" class="text-2xl font-bold text-amber-500 mt-1">1</div>
+            <div class="text-[11px] text-amber-600 dark:text-amber-400 font-medium mt-1 flex items-center gap-1">
+              <i data-lucide="user-check" class="w-3 h-3"></i> Direct Talent Screening
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Bar & Filter Controls -->
+        <div class="studio-card p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <div class="relative flex-1 sm:w-72">
+              <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+              <input type="text" id="gmail-search-input" placeholder="Search emails, recruiters, companies..." oninput="filterGmailMessages()" class="pl-9 pr-3 py-2 text-xs w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-100" />
+            </div>
+            <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-lg text-xs">
+              <button type="button" onclick="setGmailFilter('ALL')" class="gmail-filter-btn px-2.5 py-1 rounded font-medium bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400" data-cat="ALL">All</button>
+              <button type="button" onclick="setGmailFilter('INTERVIEW')" class="gmail-filter-btn px-2.5 py-1 rounded font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900" data-cat="INTERVIEW">Interviews</button>
+              <button type="button" onclick="setGmailFilter('OFFER')" class="gmail-filter-btn px-2.5 py-1 rounded font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900" data-cat="OFFER">Offers</button>
+              <button type="button" onclick="setGmailFilter('OUTREACH')" class="gmail-filter-btn px-2.5 py-1 rounded font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900" data-cat="OUTREACH">Outreach</button>
+              <button type="button" onclick="setGmailFilter('REJECTION')" class="gmail-filter-btn px-2.5 py-1 rounded font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900" data-cat="REJECTION">Updates</button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+            <span id="gmail-last-synced" class="text-[11px] text-slate-500 font-mono">Live IMAP Synchronized</span>
+            <button type="button" onclick="triggerRealGmailSync()" id="btn-sync-gmail" class="btn-primary py-2 px-3 text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+              <span>Sync Real Gmail Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages List -->
+        <div id="gmail-messages-container" class="space-y-3">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Modal for Full Email View & Autonomous Reply Drafter -->
+        <div id="gmail-detail-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+          <div class="studio-card max-w-2xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-start justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+              <div>
+                <span id="modal-email-category" class="pill-shape text-[10px] font-bold uppercase mb-1 inline-block">INTERVIEW</span>
+                <h2 id="modal-email-subject" class="text-base font-bold text-slate-900 dark:text-white"></h2>
+                <div class="text-xs text-slate-500 mt-0.5">From: <span id="modal-email-sender" class="font-medium text-slate-700 dark:text-slate-300"></span> &bull; <span id="modal-email-time"></span></div>
+              </div>
+              <button type="button" onclick="closeGmailModal()" class="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500">
+                <i data-lucide="x" class="w-5 h-5"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+              <pre id="modal-email-body" class="whitespace-pre-wrap font-sans text-xs text-slate-700 dark:text-slate-300 leading-relaxed"></pre>
+            </div>
+
+            <div class="space-y-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+              <div class="text-xs font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-blue-500"></i>
+                <span>Autonomous AI Response Drafter</span>
+              </div>
+              <textarea id="modal-reply-text" rows="4" class="w-full p-3 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-slate-800 dark:text-slate-200" placeholder="AI drafted response will appear here..."></textarea>
+              <div class="flex items-center justify-end gap-2">
+                <button type="button" onclick="generateAutoReply()" class="btn-secondary py-1.5 px-3 text-xs flex items-center gap-1">
+                  <i data-lucide="refresh-cw" class="w-3 h-3"></i> Regenerate Draft
+                </button>
+                <button type="button" onclick="sendAutoReply()" class="btn-primary py-1.5 px-3 text-xs font-semibold flex items-center gap-1">
+                  <i data-lucide="send" class="w-3 h-3"></i> Dispatch Reply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-tracker" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                <i data-lucide="kanban" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Application Tracker</h1>
+                <p class="text-xs text-slate-500">Manage applications across Saved, Applied, Interviewing, and Offer stages</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <input type="text" id="tracker-new-company" placeholder="Company..." class="w-40 text-xs" />
+              <input type="text" id="tracker-new-role" placeholder="Role..." class="w-44 text-xs" />
+              <select id="tracker-new-stage" class="w-36 text-xs">
+                <option value="Saved">Saved</option>
+                <option value="Applied">Applied</option>
+                <option value="Interviewing">Interviewing</option>
+                <option value="Offer">Offer</option>
+              </select>
+              <button onclick="addTrackerApplication()" class="btn-primary text-xs">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>Add</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="tracker-kanban-grid" class="adaptive-kpi-grid"></div>
+        </div>
+      </section>
+
+      <section id="view-terminal" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-slate-900 dark:bg-blue-600 text-white">
+                <i data-lucide="terminal-square" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Execution Logs</h1>
+                <p class="text-xs text-slate-500">Dedicated activity stream for live agent runs</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="runAllLiveAgentsFromInternet()" class="btn-primary text-xs">
+                <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                <span>Run All Agents</span>
+              </button>
+              <button onclick="clearTerminalLogs()" class="btn-secondary text-xs">
+                <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                <span>Clear</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="terminal-console-box" class="p-4">
+            <div id="terminal-content" class="text-xs h-96 overflow-y-auto space-y-1.5 leading-relaxed">
+              <div class="text-slate-400">Ready. Trigger any agent to view live activity logs.</div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Date-Stamped Action Ledger -->
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="book-open-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h2 class="text-base font-bold text-slate-900 dark:text-white">Persistent Action Ledger</h2>
+                <p class="text-xs text-slate-500">Permanent date-stamped audit record of all automated system &amp; user actions</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="date" id="ledger-date-filter" onchange="loadLedgerData(this.value)" class="text-xs py-1.5 px-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300" />
+              <button type="button" onclick="loadLedgerData(document.getElementById('ledger-date-filter')?.value)" class="btn-secondary text-xs">
+                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                <span>Refresh Ledger</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="border-b border-slate-200 dark:border-slate-700/80 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                  <th class="py-2.5 px-3">Date &amp; Time (UTC)</th>
+                  <th class="py-2.5 px-3">Category</th>
+                  <th class="py-2.5 px-3">Action</th>
+                  <th class="py-2.5 px-3">Details &amp; Output</th>
+                  <th class="py-2.5 px-3">Status</th>
+                  <th class="py-2.5 px-3">Actor</th>
+                </tr>
+              </thead>
+              <tbody id="audit-ledger-tbody" class="divide-y divide-slate-100 dark:divide-slate-800/60">
+                <tr>
+                  <td colspan="6" class="p-4 text-center text-xs text-slate-400">Loading persistent ledger entries...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="view-vault" class="tab-view hidden space-y-6">
+        <div class="studio-card p-5 space-y-5 max-w-3xl">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-base font-bold text-slate-900 dark:text-white">Email Briefing &amp; Backend Settings</h1>
+                <p class="text-xs text-slate-500">Configure automated morning and evening email delivery for candidate</p>
+              </div>
+            </div>
+            <button onclick="saveEnvToLocalServer()" class="btn-primary text-xs">
+              <i data-lucide="save" class="w-3.5 h-3.5"></i>
+              <span>Save Settings</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Local Backend Server</label>
+              <input type="url" id="vault-backend-url-input" value="http://127.0.0.1:8765" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Recipient Email</label>
+              <input type="email" id="env-gmail-address" value="kodimurthybalu@gmail.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Gmail App Password (16-Digit Code)</label>
+              <input type="password" id="env-gmail-pass" value="configured-in-private-env" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Repository Link</label>
+              <input type="text" id="env-github-repo" value="https://github.com/balu-cod/career-agent-system" />
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-2.5">
+            <button onclick="connectAndHydrateFromPythonBackend(true)" class="btn-secondary text-xs">
+              <i data-lucide="plug-zap" class="w-3.5 h-3.5 text-blue-600"></i>
+              <span>Sync Backend</span>
+            </button>
+            <button onclick="runLocalServerMode('daily-news')" class="btn-secondary text-xs">
+              <i data-lucide="sunrise" class="w-3.5 h-3.5 text-amber-600"></i>
+              <span>Send 6:00 AM News Briefing</span>
+            </button>
+            <button onclick="runLocalServerMode('evening-review')" class="btn-secondary text-xs">
+              <i data-lucide="sunset" class="w-3.5 h-3.5 text-blue-600"></i>
+              <span>Send 7:00 PM Evening Review</span>
+            </button>
+          </div>
+        </div>
+      
+        <!-- LLM Setup & Live Connection Verification Card (Smart Auto-Recognize + Local Model Discovery) -->
+        <div class="studio-card p-5 space-y-4 border border-purple-500/20 bg-gradient-to-br from-purple-500/[0.02] to-blue-500/[0.04]">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">LLM Provider, API Auto-Recognition &amp; Local Model Setup</h2>
+                <p class="text-[11px] text-slate-500">Paste any API key, URL, curl command, or local model tag — remaining details configure automatically</p>
+              </div>
+            </div>
+            <div id="vault-llm-active-pill" class="pill-shape bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Gateway Active</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300">Paste API Key / Endpoint URL / Local Model</label>
+                <button type="button" onclick="toggleLlmKeyVisibility('vault')" class="text-[10px] text-blue-600 dark:text-blue-400 hover:underline">Show/Hide</button>
+              </div>
+              <input type="text" id="vault-llm-key-input" oninput="onLlmInputPasteOrChange('vault')" onpaste="setTimeout(() => onLlmInputPasteOrChange('vault'), 15)" placeholder="Paste sk-or-v1-..., AIza..., gsk_..., http://localhost:11434, or qwen2.5-coder:7b" class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Recognized Provider (Auto-Set)</label>
+              <select id="vault-llm-provider-select" onchange="onLlmProviderManualChange('vault')" class="w-full text-xs py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white">
+                <option value="OPENROUTER_API_KEY">OpenRouter (Free Llama 3.3 / Gemini / Mistral)</option>
+                <option value="GEMINI_API_KEY">Google Gemini (gemini-2.5-flash)</option>
+                <option value="GROQ_API_KEY">GroqCloud (llama-3.3-70b-versatile)</option>
+                <option value="ANTHROPIC_API_KEY">Anthropic Claude (claude-sonnet-4-6)</option>
+                <option value="OPENAI_API_KEY">OpenAI (gpt-4o-mini)</option>
+                <option value="HF_TOKEN">Hugging Face Router (Qwen/Qwen2.5-72B-Instruct)</option>
+                <option value="GITHUB_TOKEN">GitHub Models Azure AI (gpt-4o-mini)</option>
+                <option value="CEREBRAS_API_KEY">Cerebras Wafer-Scale (llama-3.3-70b)</option>
+                <option value="XAI_API_KEY">xAI Grok (grok-2-latest)</option>
+                <option value="PERPLEXITY_API_KEY">Perplexity Sonar (sonar-pro)</option>
+                <option value="MISTRAL_API_KEY">Mistral La Plateforme (mistral-small-latest)</option>
+                <option value="COHERE_API_KEY">Cohere Chat v2 (command-r-08-2024)</option>
+                <option value="OLLAMA_MODEL">Local Ollama Engine (:11434 • qwen2.5-coder:7b)</option>
+                <option value="LOCAL_LLM_URL">Local llama.cpp / LM Studio / GPU Tunnel (:8080 / :1234)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Auto-Configured Base Endpoint URL</label>
+              <input type="text" id="vault-llm-endpoint-input" value="https://openrouter.ai/api/v1/chat/completions" class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Auto-Selected Model (Editable)</label>
+              <input type="text" id="vault-llm-model-select" list="llm-model-datalist" value="meta-llama/llama-3.3-70b-instruct:free" class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white" />
+            </div>
+          </div>
+
+          <div id="vault-llm-auto-details-strip" class="p-2.5 rounded-xl bg-purple-50/60 dark:bg-slate-900/80 border border-purple-200/70 dark:border-slate-800 text-[11px] flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-purple-600 text-white font-semibold text-[10px]" id="vault-llm-det-badge">Ready for Paste</span>
+              <span class="text-slate-700 dark:text-slate-300 font-mono" id="vault-llm-det-env">KEY: OPENROUTER_API_KEY</span>
+              <span class="text-slate-400">•</span>
+              <span class="text-slate-600 dark:text-slate-400" id="vault-llm-det-auth">Auth: Bearer Token</span>
+              <span class="text-slate-400">•</span>
+              <span class="text-slate-600 dark:text-slate-400" id="vault-llm-det-proto">OpenAI v1 (128K ctx)</span>
+            </div>
+            <button type="button" onclick="scanLocalLlmModels('vault')" class="text-[11px] font-semibold text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-1">
+              <i data-lucide="radar" class="w-3 h-3"></i>
+              <span>Scan Local Models</span>
+            </button>
+          </div>
+
+          <div id="vault-llm-local-models-bar" class="flex flex-wrap gap-1.5">
+            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder:7b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama Engine', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🦙 qwen2.5-coder:7b (Ollama)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('llama3.2:3b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama (8GB Fast)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">⚡ llama3.2:3b (Ollama)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('gemma4-e2b-uncensored.gguf', 'LOCAL_LLM_URL', 'http://localhost:8080/v1/chat/completions', 'llama-server / GGUF (:8080)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🔥 gemma4-e2b-uncensored.gguf (:8080)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder-7b-instruct-q4_k_m.gguf', 'LOCAL_LLM_URL', 'http://localhost:1234/v1/chat/completions', 'LM Studio Local (:1234)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🖥️ LM Studio (:1234)</button>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <button type="button" onclick="saveSelectedLlmKey('vault')" class="btn-primary text-xs py-2 px-3.5">
+              <i data-lucide="save" class="w-3.5 h-3.5"></i>
+              <span>Save &amp; Configure Gateway</span>
+            </button>
+            <button type="button" onclick="testLlmConnection('vault')" class="btn-secondary text-xs py-2 px-3.5">
+              <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+              <span>Test Connection</span>
+            </button>
+            <div id="vault-llm-test-feedback" class="text-xs text-slate-500 font-medium"></div>
+          </div>
+        </div>
+
+        <!-- Google OAuth 2.0 (PKCE) & Gmail REST API Controller Card (v7.9) -->
+        <div id="oauth2-gmail-setup-card" class="studio-card p-5 space-y-4 border border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.02] to-blue-500/[0.04]">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Google OAuth 2.0 (PKCE S256) &amp; Gmail REST API</h2>
+                <p class="text-[11px] text-slate-500">Paste Google Cloud <code>client_secret.json</code> or Client ID/Secret — grants <code>gmail.readonly</code> &amp; <code>gmail.send</code> without App Passwords</p>
+              </div>
+            </div>
+            <div id="oauth2-gmail-status-pill" class="pill-shape bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30 text-xs flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+              <span>PKCE S256 Ready</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">GOOGLE_CLIENT_ID (or Paste <code>client_secret.json</code>)</label>
+              <input type="text" id="oauth-client-id-input" oninput="onOAuthClientInputPaste('id')" onpaste="setTimeout(() => onOAuthClientInputPaste('id'), 15)" placeholder="123456789-abc.apps.googleusercontent.com or paste JSON" class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">GOOGLE_CLIENT_SECRET</label>
+              <input type="password" id="oauth-client-secret-input" oninput="onOAuthClientInputPaste('secret')" onpaste="setTimeout(() => onOAuthClientInputPaste('secret'), 15)" placeholder="GOCSPX-..." class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-white" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Authorised Redirect URI (Add in Google Cloud Console)</label>
+              <input type="text" id="oauth-redirect-uri-input" readonly value="http://localhost:8000/api/auth/google/callback" class="w-full text-xs font-mono py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Active OAuth 2.0 Scopes &amp; Session</label>
+              <div id="oauth-scopes-badges" class="flex flex-wrap items-center gap-1.5 py-1.5">
+                <span class="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-mono text-[10px]">openid</span>
+                <span class="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono text-[10px]">gmail.readonly</span>
+                <span class="px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 font-mono text-[10px]">gmail.send</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <button type="button" onclick="saveGoogleOAuthConfig()" class="btn-primary text-xs py-2 px-3.5">
+              <i data-lucide="save" class="w-3.5 h-3.5"></i>
+              <span>Save OAuth 2.0 Client</span>
+            </button>
+            <button type="button" onclick="startGoogleOAuthPkceFlow()" class="btn-secondary text-xs py-2 px-3.5">
+              <i data-lucide="log-in" class="w-3.5 h-3.5 text-blue-600"></i>
+              <span>Continue with Google (PKCE)</span>
+            </button>
+            <button type="button" onclick="syncGmailViaOAuthApi()" class="btn-secondary text-xs py-2 px-3.5">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-emerald-600"></i>
+              <span>Sync Gmail API</span>
+            </button>
+            <button type="button" onclick="disconnectGoogleOAuthToken()" class="btn-secondary text-xs py-2 px-3">
+              <i data-lucide="unlink" class="w-3.5 h-3.5 text-rose-500"></i>
+              <span>Disconnect</span>
+            </button>
+            <div id="oauth2-gmail-feedback" class="text-xs text-slate-500 font-medium"></div>
+          </div>
+        </div>
+
+        <!-- Autonomous Gmail Timing Scheduler Card -->
+        <div class="studio-card p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+                <i data-lucide="clock" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h2 class="text-sm font-bold text-slate-900 dark:text-white">Autonomous Timing-Based Gmail Scheduler</h2>
+                <p class="text-[11px] text-slate-500">Autonomous 24/7 background email dispatches (IST)</p>
+              </div>
+            </div>
+            <div class="pill-shape bg-blue-500/10 text-blue-400 border border-blue-500/30 text-xs">
+              <span>● Scheduled in Background</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1">
+              <div class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Morning News</div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">06:00 AM IST</div>
+              <p class="text-[11px] text-slate-500">Tech &amp; AI updates feed</p>
+              <button type="button" onclick="triggerSchedulerMode('daily-news')" class="btn-secondary text-[11px] py-1 px-2.5 w-full mt-2">Send News Now</button>
+            </div>
+            <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1">
+              <div class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Job Digest</div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">08:00 AM IST</div>
+              <p class="text-[11px] text-slate-500">Top matches + tailored resumes</p>
+              <button type="button" onclick="triggerSchedulerMode('morning-digest')" class="btn-primary text-[11px] py-1 px-2.5 w-full mt-2">Send Digest Now</button>
+            </div>
+            <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1">
+              <div class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Evening Review</div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">08:00 PM IST</div>
+              <p class="text-[11px] text-slate-500">Daily review &amp; study plan</p>
+              <button type="button" onclick="triggerSchedulerMode('evening-review')" class="btn-secondary text-[11px] py-1 px-2.5 w-full mt-2">Send Review Now</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="view-theme-studio" class="tab-view hidden space-y-6">
+        <div class="studio-card p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="icon-shape bg-purple-500/10 text-purple-500 border border-purple-500/30">
+                <i data-lucide="palette" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h1 class="text-lg font-bold text-slate-900 dark:text-white">UI Theme Studio &amp; Visual Design Gallery</h1>
+                <p class="text-xs text-slate-500">Live interactive theme switcher — select any theme to instantly re-skin the entire application</p>
+              </div>
+            </div>
+            <div id="current-active-theme-badge" class="pill-shape bg-purple-500/20 text-purple-300 font-mono text-xs flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+              <span id="active-theme-badge-name">Obsidian Linear Active</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Click on any design below to apply it across all cards, navigation, forms, telemetry, modals, and portals. Your chosen theme is automatically persisted.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Theme 0: ECE Silicon & Hardware Workbench -->
+          <div id="theme-card-ece" onclick="applyTheme('ece')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-amber-500/50 bg-[#0F1620] text-[#E6EDF3]">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-amber-500/20 text-amber-400 border border-amber-500/40 text-[10px] font-bold">PCB Copper &amp; Silicon Steel</span>
+              <span class="text-xs text-cyan-400 font-mono">ECE Default</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <span>ECE Silicon Workbench</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-amber-400 hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-slate-300 mt-1 leading-relaxed">Machined corner hex screws &amp; bolts, rotating mechanical gears, solder-mask navy canvas, and copper-amber PCB trace accents.</p>
+            </div>
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#070B10] border border-white/20" title="#070B10 (PCB Mask)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0F1620] border border-white/20" title="#0F1620 (Steel Chassis)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#16202E] border border-white/20" title="#16202E (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#F59E0B]" title="#F59E0B (Copper Trace)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#22D3EE]" title="#22D3EE (Oscilloscope Cyan)"></div>
+              </div>
+            </div>
+            <button type="button" class="w-full py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">Activate ECE Workbench</button>
+          </div>
+
+          <!-- Theme 1: Obsidian Linear -->
+          <div id="theme-card-obsidian" onclick="applyTheme('obsidian')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-slate-800 bg-[#101216] text-[#f7f8f8]">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-[#5e6ad2]/20 text-[#717cf0] border border-[#5e6ad2]/40 text-[10px] font-bold">Linear / Vercel Minimalist</span>
+              <span class="text-xs text-slate-400 font-mono">Dark Mode</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <span>Obsidian Linear</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#5e6ad2] hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-[#9ea7b3] mt-1 leading-relaxed">Sub-pixel borders, deep obsidian void background, electric indigo and violet accents. Developer-first precision.</p>
+            </div>
+            <!-- Swatches -->
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-[#626c79]">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#08090a] border border-white/20" title="#08090a (Canvas)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#101216] border border-white/20" title="#101216 (Surface)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#171a20] border border-white/20" title="#171a20 (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#5e6ad2]" title="#5e6ad2 (Accent)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#8b5cf6]" title="#8b5cf6 (Violet)"></div>
+              </div>
+            </div>
+            <!-- Mini Live Preview Box -->
+            <div class="p-3.5 rounded-xl bg-[#171a20] border border-white/10 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-white">Full Stack &amp; AI Agent Intern</span>
+                <span class="text-[10px] bg-[#5e6ad2]/20 text-[#717cf0] px-2 py-0.5 rounded-full font-bold">99% Match</span>
+              </div>
+              <div class="w-full bg-[#101216] rounded-full h-1.5"><div class="bg-[#5e6ad2] h-1.5 rounded-full" style="width: 85%"></div></div>
+              <button class="w-full py-1.5 px-3 rounded-lg bg-[#5e6ad2] hover:bg-[#717cf0] text-white text-[11px] font-bold transition">Apply with Linear</button>
+            </div>
+            <button class="btn-primary w-full py-2 text-xs font-bold bg-[#5e6ad2] hover:bg-[#717cf0]">Activate Obsidian Linear</button>
+          </div>
+
+          <!-- Theme 2: Emerald Mission Control -->
+          <div id="theme-card-emerald" onclick="applyTheme('emerald')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-[#10b981]/30 bg-[#0a1610] text-[#ecfdf5]">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40 text-[10px] font-bold">Terminal Swarm Ops</span>
+              <span class="text-xs text-emerald-400/60 font-mono">Dark Mode</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <span>Emerald Mission Control</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#10b981] hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-[#a7f3d0] mt-1 leading-relaxed">Deep forest black, radioactive mint phosphor accents, and live radar telemetry. Autonomous swarm control.</p>
+            </div>
+            <!-- Swatches -->
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-[#6ee7b7]/60">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#050b08] border border-emerald-500/30" title="#050b08 (Canvas)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0a1610] border border-emerald-500/30" title="#0a1610 (Surface)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0f2219] border border-emerald-500/30" title="#0f2219 (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#10b981]" title="#10b981 (Mint Accent)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#34d399]" title="#34d399 (Phosphor)"></div>
+              </div>
+            </div>
+            <!-- Mini Live Preview Box -->
+            <div class="p-3.5 rounded-xl bg-[#0f2219] border border-emerald-500/20 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-[#ecfdf5]">Autonomous Pipeline Scanner</span>
+                <span class="text-[10px] bg-[#10b981]/20 text-[#34d399] px-2 py-0.5 rounded-full font-bold font-mono">18 AGENTS LIVE</span>
+              </div>
+              <div class="w-full bg-[#0a1610] rounded-full h-1.5"><div class="bg-[#10b981] h-1.5 rounded-full" style="width: 92%"></div></div>
+              <button class="w-full py-1.5 px-3 rounded-lg bg-[#10b981] hover:bg-[#34d399] text-[#050b08] text-[11px] font-bold transition">Deploy Swarm</button>
+            </div>
+            <button class="btn-primary w-full py-2 text-xs font-bold bg-[#10b981] hover:bg-[#34d399] text-[#050b08]">Activate Emerald Control</button>
+          </div>
+
+          <!-- Theme 3: Nordic Frost -->
+          <div id="theme-card-nordic" onclick="applyTheme('nordic')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-slate-300 bg-white text-[#0f172a] shadow-md">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-blue-50 text-[#2563eb] border border-blue-200 text-[10px] font-bold">Scandinavian Minimal Light</span>
+              <span class="text-xs text-slate-500 font-mono">Light Mode</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span>Nordic Frost</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#2563eb] hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-[#475569] mt-1 leading-relaxed">Crisp porcelain white, soft ice-zinc canvas, cobalt blue and arctic sky accents. High-legibility daylight suite.</p>
+            </div>
+            <!-- Swatches -->
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-[#64748b]">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#f8fafc] border border-slate-300" title="#f8fafc (Canvas)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#ffffff] border border-slate-300" title="#ffffff (Surface)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#f1f5f9] border border-slate-300" title="#f1f5f9 (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#2563eb]" title="#2563eb (Cobalt Blue)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0ea5e9]" title="#0ea5e9 (Arctic Sky)"></div>
+              </div>
+            </div>
+            <!-- Mini Live Preview Box -->
+            <div class="p-3.5 rounded-xl bg-[#f1f5f9] border border-slate-200 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-slate-900">Tailored Executive Resume</span>
+                <span class="text-[10px] bg-blue-100 text-[#2563eb] px-2 py-0.5 rounded-full font-bold">96% ATS</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-1.5"><div class="bg-[#2563eb] h-1.5 rounded-full" style="width: 78%"></div></div>
+              <button class="w-full py-1.5 px-3 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-[11px] font-bold transition">Review Document</button>
+            </div>
+            <button class="btn-primary w-full py-2 text-xs font-bold bg-[#2563eb] hover:bg-[#1d4ed8] text-white">Activate Nordic Frost</button>
+          </div>
+
+          <!-- Theme 4: Cyberpunk Horizon -->
+          <div id="theme-card-cyberpunk" onclick="applyTheme('cyberpunk')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-[#ec4899]/40 bg-[#0e1124] text-[#fdf2f8]">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-[#ec4899]/20 text-[#f43f5e] border border-[#ec4899]/50 text-[10px] font-bold">Tokyo Neon Synthwave</span>
+              <span class="text-xs text-pink-400/60 font-mono">Dark Mode</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <span>Cyberpunk Horizon</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#ec4899] hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-[#fbcfe8] mt-1 leading-relaxed">Deep space midnight, hot electric fuchsia, neon cyan wireframes, and luminous glowing gradient accents.</p>
+            </div>
+            <!-- Swatches -->
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-[#94a3b8]">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#070814] border border-pink-500/30" title="#070814 (Canvas)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0e1124] border border-pink-500/30" title="#0e1124 (Surface)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#161b36] border border-pink-500/30" title="#161b36 (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#ec4899]" title="#ec4899 (Fuchsia Accent)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#06b6d4]" title="#06b6d4 (Cyan)"></div>
+              </div>
+            </div>
+            <!-- Mini Live Preview Box -->
+            <div class="p-3.5 rounded-xl bg-[#161b36] border border-pink-500/30 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-white">AI Agent Neural Matrix</span>
+                <span class="text-[10px] bg-[#ec4899]/20 text-[#f43f5e] px-2 py-0.5 rounded-full font-bold">QUANTUM SYNC</span>
+              </div>
+              <div class="w-full bg-[#0e1124] rounded-full h-1.5"><div class="bg-gradient-to-r from-[#ec4899] to-[#06b6d4] h-1.5 rounded-full" style="width: 90%"></div></div>
+              <button class="w-full py-1.5 px-3 rounded-lg bg-gradient-to-r from-[#ec4899] to-[#06b6d4] text-white text-[11px] font-bold transition">Warp Application</button>
+            </div>
+            <button class="btn-primary w-full py-2 text-xs font-bold bg-gradient-to-r from-[#ec4899] to-[#06b6d4] text-white">Activate Cyberpunk</button>
+          </div>
+
+          <!-- Theme 5: Royal Sapphire -->
+          <div id="theme-card-sapphire" onclick="applyTheme('sapphire')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-[#f59e0b]/40 bg-[#0a1128] text-[#f8fafc]">
+            <div class="flex items-center justify-between">
+              <span class="pill-shape bg-[#f59e0b]/20 text-[#fbbf24] border border-[#f59e0b]/50 text-[10px] font-bold">Executive Fintech &amp; Gold</span>
+              <span class="text-xs text-amber-400/60 font-mono">Dark Mode</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <span>Royal Sapphire &amp; Gold</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#f59e0b] hidden active-check-icon"></i>
+              </h3>
+              <p class="text-[11px] text-[#cbd5e1] mt-1 leading-relaxed">Abyssal midnight sapphire, royal blue velvet cards, and champagne gold accents. Prestigious corporate authority.</p>
+            </div>
+            <!-- Swatches -->
+            <div class="space-y-1">
+              <div class="text-[10px] uppercase font-bold text-[#93c5fd]/60">Color Swatches</div>
+              <div class="flex gap-1.5">
+                <div class="w-6 h-6 rounded-md bg-[#030712] border border-blue-500/30" title="#030712 (Canvas)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#0a1128] border border-blue-500/30" title="#0a1128 (Surface)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#101c42] border border-blue-500/30" title="#101c42 (Subtle)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#1d4ed8]" title="#1d4ed8 (Royal Blue)"></div>
+                <div class="w-6 h-6 rounded-md bg-[#f59e0b]" title="#f59e0b (Champagne Gold)"></div>
+              </div>
+            </div>
+            <!-- Mini Live Preview Box -->
+            <div class="p-3.5 rounded-xl bg-[#101c42] border border-amber-500/30 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-bold text-white">Executive Recruiter Direct Pitch</span>
+                <span class="text-[10px] bg-[#f59e0b]/20 text-[#fbbf24] px-2 py-0.5 rounded-full font-bold">EXECUTIVE</span>
+              </div>
+              <div class="w-full bg-[#0a1128] rounded-full h-1.5"><div class="bg-[#f59e0b] h-1.5 rounded-full" style="width: 88%"></div></div>
+              <button class="w-full py-1.5 px-3 rounded-lg bg-gradient-to-r from-[#1d4ed8] to-[#f59e0b] text-white text-[11px] font-bold transition">Dispatch Executive Pitch</button>
+            </div>
+            <button class="btn-primary w-full py-2 text-xs font-bold bg-[#f59e0b] hover:bg-[#fbbf24] text-[#030712]">Activate Royal Sapphire</button>
+          </div>
+        </div>
+      </section>

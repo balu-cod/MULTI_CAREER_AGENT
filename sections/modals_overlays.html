@@ -1,0 +1,406 @@
+  <button id="chatbot-toggle-btn" type="button" onclick="toggleChatbotDrawer()" class="fixed bottom-14 right-6 z-40 flex items-center gap-2.5 px-4 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-xl shadow-blue-600/30 transition-all hover:scale-105 active:scale-95">
+    <i data-lucide="bot" class="w-4 h-4"></i>
+    <span>AI Career Copilot</span>
+    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+  </button>
+
+  <!-- Expandable Chatbot Drawer -->
+  <div id="chatbot-floating-drawer" class="fixed bottom-28 right-6 z-50 w-[420px] max-w-[92vw] h-[540px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden hidden transition-all">
+    <!-- Header -->
+    <div class="px-4 py-3 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        </div>
+        <div>
+          <div class="text-xs font-bold flex items-center gap-1.5">
+            <span>Career Copilot</span>
+            <span class="px-1.5 py-0.2 rounded text-[9px] bg-blue-500/20 text-blue-300 font-normal border border-blue-400/30">Online LLM</span>
+          </div>
+          <div class="text-[10px] text-slate-400 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <span>Profile &amp; Live Portals Connected</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" onclick="toggleChatbotDrawer()" class="text-slate-400 hover:text-white p-1 rounded-lg">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+    <!-- Web search toggle bar -->
+    <div class="px-4 py-2 bg-slate-50 dark:bg-slate-950/60 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-500">
+      <label class="flex items-center gap-1.5 cursor-pointer">
+        <input type="checkbox" id="chatbot-web-toggle" checked class="rounded text-blue-600 border-slate-300 dark:border-slate-700" />
+        <span class="font-medium text-slate-700 dark:text-slate-300 flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3 text-sky-500"></i> Live Web Search Grounding</span>
+      </label>
+      <span class="text-[10px] text-slate-400">OpenRouter / Gemini / Claude</span>
+    </div>
+
+    <!-- Quick Prompts Chips -->
+    <div class="px-3 py-2 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+      <button type="button" onclick="careerChatbotSend('What are my main skill drawbacks and what should I improve?')" class="text-[10px] whitespace-nowrap px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-50 hover:text-blue-600 transition">💡 My Drawbacks</button>
+      <button type="button" onclick="careerChatbotSend('Which job opening matches my TIMS FastAPI experience best?')" class="text-[10px] whitespace-nowrap px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-50 hover:text-blue-600 transition">🎯 Best Job Match</button>
+      <button type="button" onclick="careerChatbotSend('How should I pitch my inventory system project to recruiters?')" class="text-[10px] whitespace-nowrap px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-50 hover:text-blue-600 transition">✍️ Pitch Advice</button>
+    </div>
+
+    <!-- Messages Container -->
+    <div id="chatbot-messages-container" class="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50/30 dark:bg-slate-950/30 text-xs">
+      <div class="flex justify-start">
+        <div class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs rounded-2xl rounded-tl-sm py-2.5 px-4 max-w-[88%] leading-relaxed shadow-sm">
+          👋 Hi! I'm your autonomous AI Career Copilot. I'm connected to your profile, the 18+ backend agents, and live web search. Ask me about your skill drawbacks, interview preparation, company research, or resume tailoring!
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Footer -->
+    <div class="p-3 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+      <form onsubmit="event.preventDefault(); careerChatbotSend();" class="flex items-center gap-2">
+        <input type="text" id="chatbot-user-input" placeholder="Ask anything about jobs, skills, or interviews..." class="flex-1 text-xs py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500" />
+        <button type="submit" class="btn-primary text-xs p-2 rounded-xl shrink-0" title="Send message">
+          <i data-lucide="send" class="w-3.5 h-3.5"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL: PORTAL APPLICATION WORKFLOW WITH LIVE TELEMETRY ANIMATION
+       =================================================================== -->
+  <div id="portal-apply-modal" class="fixed inset-0 z-[120] bg-slate-900/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="studio-card max-w-xl w-full p-6 sm:p-7 space-y-5 shadow-2xl border border-slate-700/60 bg-slate-900 text-slate-100 relative">
+      <button onclick="document.getElementById('portal-apply-modal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-white transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-start gap-3.5 pr-8">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-600 to-orange-600 text-white flex items-center justify-center shrink-0 shadow-lg shadow-amber-500/20 portal-pulse-indicator relative">
+          <svg class="w-7 h-7 text-amber-100 mech-spin-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12m11.32-11.32l2.12-2.12"/>
+            <circle cx="12" cy="12" r="4.5"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="flex items-center gap-2">
+            <span class="pill-shape bg-amber-500/20 text-amber-300 font-mono text-[10px]">Portal Application Pipeline</span>
+            <span id="portal-apply-modal-email" class="pill-shape bg-emerald-500/20 text-emerald-300 font-mono text-[10px]">jobs@company.com</span>
+          </div>
+          <h2 id="portal-apply-modal-title" class="text-base sm:text-lg font-bold text-white truncate mt-1">Software Engineer Intern</h2>
+          <p id="portal-apply-modal-company" class="text-xs text-slate-400 truncate mt-0.5">Company Name • Remote</p>
+        </div>
+      </div>
+
+      <div class="space-y-1.5 pt-2">
+        <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden border border-slate-700/60">
+          <div id="portal-apply-progress-bar" class="h-2.5 mech-torque-bar portal-progress-animated rounded-full transition-all duration-500" style="width: 25%"></div>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-slate-400 font-medium">
+          <span id="portal-apply-step-text" class="text-slate-200 font-bold">Analyzing Candidate Match &amp; RAG Fit</span>
+          <span id="portal-apply-step-sub" class="text-slate-400">Step 1 of 4</span>
+        </div>
+      </div>
+
+      <div id="portal-apply-steps-list" class="grid grid-cols-4 gap-2 pt-2 text-center text-[10px]">
+        <div class="space-y-1">
+          <div id="apply-step-dot-1" class="w-7 h-7 mx-auto rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xs">1</div>
+          <div class="text-slate-400 font-medium">RAG Match</div>
+        </div>
+        <div class="space-y-1">
+          <div id="apply-step-dot-2" class="w-7 h-7 mx-auto rounded-full bg-slate-800 text-slate-500 flex items-center justify-center font-bold text-xs">2</div>
+          <div class="text-slate-400 font-medium">Tailor PDF</div>
+        </div>
+        <div class="space-y-1">
+          <div id="apply-step-dot-3" class="w-7 h-7 mx-auto rounded-full bg-slate-800 text-slate-500 flex items-center justify-center font-bold text-xs">3</div>
+          <div class="text-slate-400 font-medium">Draft Pitch</div>
+        </div>
+        <div class="space-y-1">
+          <div id="apply-step-dot-4" class="w-7 h-7 mx-auto rounded-full bg-slate-800 text-slate-500 flex items-center justify-center font-bold text-xs">4</div>
+          <div class="text-slate-400 font-medium">Gmail SMTP</div>
+        </div>
+      </div>
+
+      <div id="portal-apply-success-box" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 space-y-2">
+        <div class="flex items-center gap-2 font-bold text-sm text-emerald-400">
+          <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+          <span>Application Successfully Delivered &amp; Logged!</span>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Your tailored ATS single-page resume was compiled, cover pitch synthesized, and dispatched via Gmail SMTP to the corporate hiring department. The opportunity is now tracked in your Kanban Tracker.
+        </p>
+      </div>
+
+      <div id="portal-apply-actions-box" class="hidden flex flex-wrap gap-2.5 pt-2 border-t border-slate-800">
+        <button type="button" id="btn-portal-view-pdf" onclick="document.getElementById('portal-apply-modal').classList.add('hidden'); switchTab('resume'); generateBackendPdfResume();" class="btn-primary text-xs flex-1 py-2.5 flex items-center justify-center gap-1.5">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>View Tailored PDF Resume</span>
+        </button>
+        <button onclick="document.getElementById('portal-apply-modal').classList.add('hidden'); switchTab('tracker')" class="btn-secondary text-xs py-2 px-3.5 border-slate-700 text-slate-300 hover:text-white flex items-center gap-1.5">
+          <i data-lucide="kanban" class="w-3.5 h-3.5 text-blue-400"></i>
+          <span>View Tracker</span>
+        </button>
+        <button onclick="document.getElementById('portal-apply-modal').classList.add('hidden')" class="btn-secondary text-xs py-2 px-3 border-slate-700 text-slate-300 hover:text-white">
+          <span>Done</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL: ADD CORPORATE HIRING CONTACT (SQLITE PERSISTENCE)
+       =================================================================== -->
+  <div id="add-contact-modal" class="fixed inset-0 z-[124] bg-slate-900/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="studio-card max-w-md w-full p-6 space-y-4 shadow-2xl border border-slate-700/60 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 relative">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="icon-shape bg-blue-500/15 text-blue-500">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h2 class="text-sm font-bold">Add Corporate Hiring Contact</h2>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">Persists to SQLite contacts table &amp; Outreach Directory</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeAddContactModal()" class="text-slate-400 hover:text-slate-700 dark:hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold mb-1">Contact Name / Team</label>
+          <input type="text" id="contact-modal-name" placeholder="e.g., Ananya Sharma (University Recruiting)" class="text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-1">Company / Organization</label>
+          <input type="text" id="contact-modal-company" placeholder="e.g., Razorpay / Postman / Stripe" class="text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-1">Corporate Email Address</label>
+          <input type="email" id="contact-modal-email" placeholder="e.g., careers@company.com" class="text-xs font-mono" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold mb-1">Phone (Optional)</label>
+            <input type="text" id="contact-modal-phone" placeholder="+91 80 4000 0000" class="text-xs" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold mb-1">Target Role / Notes</label>
+            <input type="text" id="contact-modal-notes" placeholder="AI &amp; Backend Intern" class="text-xs" />
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="closeAddContactModal()" class="btn-secondary text-xs py-2 px-3.5">Cancel</button>
+        <button type="button" onclick="saveNewHiringContact()" class="btn-primary text-xs py-2 px-4">
+          <i data-lucide="save" class="w-3.5 h-3.5"></i>
+          <span>Save to SQLite</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL: QUICK THEME SWITCHER
+       =================================================================== -->
+  <div id="theme-gallery-modal" class="fixed inset-0 z-[125] bg-slate-900/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="studio-card max-w-2xl w-full p-6 space-y-4 shadow-2xl border border-slate-700/60 bg-slate-900 text-slate-100 relative">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="icon-shape bg-purple-500/20 text-purple-400">
+            <i data-lucide="palette" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h2 class="text-base font-bold text-white">Select UI Theme</h2>
+            <p class="text-xs text-slate-400">Instantly applies to the entire dashboard</p>
+          </div>
+        </div>
+        <button onclick="closeThemeGalleryModal()" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+        <div onclick="applyTheme('ece')" class="theme-quick-btn p-3.5 rounded-xl border border-amber-500/50 bg-[#0F1620] hover:border-[#F59E0B] cursor-pointer transition flex items-center justify-between sm:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#F59E0B]"></div>
+            <div>
+              <div class="text-xs font-bold text-white">ECE Silicon Workbench (Default)</div>
+              <div class="text-[10px] text-amber-400/80">Machined corner hex screws &amp; bolts, copper PCB traces, turning gears</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#F59E0B] font-semibold">Select ↗</span>
+        </div>
+
+        <div onclick="applyTheme('obsidian')" class="theme-quick-btn p-3.5 rounded-xl border border-slate-700/80 bg-[#101216] hover:border-[#5e6ad2] cursor-pointer transition flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#5e6ad2]"></div>
+            <div>
+              <div class="text-xs font-bold text-white">Obsidian Linear</div>
+              <div class="text-[10px] text-slate-400">Vercel &amp; Linear minimal dark</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#5e6ad2] font-semibold">Select ↗</span>
+        </div>
+
+        <div onclick="applyTheme('emerald')" class="theme-quick-btn p-3.5 rounded-xl border border-emerald-900/40 bg-[#0a1610] hover:border-[#10b981] cursor-pointer transition flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#10b981]"></div>
+            <div>
+              <div class="text-xs font-bold text-white">Emerald Mission Control</div>
+              <div class="text-[10px] text-emerald-400/60">Swarm terminal &amp; telemetry</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#10b981] font-semibold">Select ↗</span>
+        </div>
+
+        <div onclick="applyTheme('nordic')" class="theme-quick-btn p-3.5 rounded-xl border border-slate-300 bg-white hover:border-[#2563eb] cursor-pointer transition flex items-center justify-between text-slate-900">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#2563eb]"></div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Nordic Frost</div>
+              <div class="text-[10px] text-slate-500">Scandinavian daylight clean</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#2563eb] font-semibold">Select ↗</span>
+        </div>
+
+        <div onclick="applyTheme('cyberpunk')" class="theme-quick-btn p-3.5 rounded-xl border border-pink-900/40 bg-[#0e1124] hover:border-[#ec4899] cursor-pointer transition flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#ec4899]"></div>
+            <div>
+              <div class="text-xs font-bold text-white">Cyberpunk Horizon</div>
+              <div class="text-[10px] text-pink-400/60">Tokyo neon &amp; synthwave</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#ec4899] font-semibold">Select ↗</span>
+        </div>
+
+        <div onclick="applyTheme('sapphire')" class="theme-quick-btn p-3.5 rounded-xl border border-amber-900/40 bg-[#0a1128] hover:border-[#f59e0b] cursor-pointer transition flex items-center justify-between sm:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-4 h-4 rounded-full bg-[#f59e0b]"></div>
+            <div>
+              <div class="text-xs font-bold text-white">Royal Sapphire &amp; Gold</div>
+              <div class="text-[10px] text-amber-400/60">Executive suite with champagne accents</div>
+            </div>
+          </div>
+          <span class="text-[11px] text-[#f59e0b] font-semibold">Select ↗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       REGULAR PORTAL LOADING ANIMATION OVERLAY
+       =================================================================== -->
+  <div id="portal-global-loader" class="fixed inset-0 z-[150] bg-slate-900/50 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="studio-card max-w-md w-full p-6 space-y-5 text-center bg-white dark:bg-slate-800 shadow-xl border border-slate-200 dark:border-slate-700 rounded-2xl relative">
+      <div class="flex items-center justify-center gap-2 mx-auto h-14">
+        <svg class="w-11 h-11 text-amber-500 mech-spin-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12m11.32-11.32l2.12-2.12"/>
+          <circle cx="12" cy="12" r="5.2"/>
+          <polygon points="12,8.5 15,10.2 15,13.8 12,15.5 9,13.8 9,10.2" fill="currentColor" fill-opacity="0.25"/>
+        </svg>
+        <svg class="w-8 h-8 text-cyan-400 mech-spin-ccw -ml-2 mt-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12,2 20.6,7 20.6,17 12,22 3.4,17 3.4,7" fill="currentColor" fill-opacity="0.16"/>
+          <line x1="7.5" y1="12" x2="16.5" y2="12"/><line x1="12" y1="7.5" x2="12" y2="16.5"/>
+        </svg>
+      </div>
+
+      <div class="space-y-1">
+        <h3 id="loader-title" class="text-base font-semibold text-slate-900 dark:text-white">Connecting to Career Agents</h3>
+        <p id="loader-subtitle" class="text-xs text-slate-500 dark:text-slate-400">Querying live job portals and matching profile...</p>
+      </div>
+
+      <div class="space-y-1.5">
+        <div class="w-full bg-slate-100 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+          <div id="loader-progress-bar" class="h-2.5 mech-torque-bar bg-amber-500 rounded-full transition-all duration-300" style="width: 30%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-slate-500 font-medium">
+          <span id="loader-step-info">Initializing</span>
+          <span id="loader-pct-info">30%</span>
+        </div>
+      </div>
+
+      <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-xs text-left space-y-1 text-slate-600 dark:text-slate-400">
+        <div id="loader-stream-1" class="font-medium text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
+          <span class="inline-block w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
+          <span>Checking IMAP / SMTP credentials...</span>
+        </div>
+        <div id="loader-stream-2" class="text-slate-500 pl-3.5">Querying Greenhouse, Lever &amp; Ashby boards...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       REGULAR SLIDE-OVER INSPECTOR DRAWER
+       =================================================================== -->
+  <div id="job-detail-slide-drawer" class="fixed inset-y-0 right-0 z-[130] w-full max-w-md bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 shadow-2xl p-6 space-y-5 flex flex-col justify-between slide-drawer-right overflow-y-auto">
+    <div class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="pill-shape bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 text-xs font-semibold" id="drawer-match-pill">99% Match</span>
+          <span class="text-xs font-medium text-slate-500" id="drawer-source-pill">Greenhouse</span>
+        </div>
+        <button onclick="closeJobDetailDrawer()" class="text-slate-400 hover:text-slate-700 dark:hover:text-white p-1 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div>
+        <h2 id="drawer-job-title" class="text-lg font-bold text-slate-900 dark:text-white">Software Engineer Intern</h2>
+        <p id="drawer-job-company" class="text-xs text-slate-500 mt-0.5">Company Name • Remote</p>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1 text-xs">
+        <div class="text-[10px] uppercase font-semibold text-slate-400">Corporate Hiring Inbox</div>
+        <div id="drawer-hiring-email" class="text-sm font-semibold text-blue-600 dark:text-blue-400 truncate">jobs@company.com</div>
+      </div>
+
+      <div class="space-y-1.5">
+        <div class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Required Skills &amp; Keywords</div>
+        <div id="drawer-skills-list" class="flex flex-wrap gap-1.5"></div>
+      </div>
+
+      <div class="space-y-1.5">
+        <div class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Role Details &amp; Profile Fit</div>
+        <p id="drawer-desc" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed max-h-48 overflow-y-auto p-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700"></p>
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
+      <button id="drawer-apply-btn" class="btn-primary w-full py-2.5 text-xs font-semibold flex items-center justify-center gap-2">
+        <i data-lucide="send" class="w-4 h-4 text-white"></i>
+        <span>Direct Apply with Tailored Resume</span>
+      </button>
+      <button id="drawer-pitch-btn" class="btn-secondary w-full py-2 text-xs font-semibold flex items-center justify-center gap-2">
+        <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400"></i>
+        <span>Load into Email Dispatcher</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       OPTION 8: PERSISTENT BOTTOM REAL-TIME AGENT FETCH PROGRESS BAR
+       =================================================================== -->
+  <div id="bottom-agent-progress-bar" class="fixed bottom-0 left-0 right-0 z-[65] bg-white/95 dark:bg-slate-900/95 backdrop-blur border-t border-slate-200 dark:border-slate-800 px-4 sm:px-6 py-2 shadow-lg">
+    <div class="max-w-[1600px] mx-auto flex flex-col gap-1.5">
+      <div class="flex items-center justify-between gap-4 text-xs">
+        <div class="flex items-center gap-2 min-w-0">
+          <svg class="w-3.5 h-3.5 text-amber-400 mech-bolt-turn shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <polygon points="12,2 20,6.5 20,17.5 12,22 4,17.5 4,6.5" fill="currentColor" fill-opacity="0.22"/>
+            <line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="8" x2="12" y2="16"/>
+          </svg>
+          <span class="font-bold text-slate-800 dark:text-slate-200 shrink-0">Real-time Agent Fetch Progress</span>
+          <span class="text-slate-400 hidden sm:inline">•</span>
+          <span id="bottom-agent-ticker" class="text-slate-500 dark:text-slate-400 truncate">Agent #1 Scanner synced 37 roles (Greenhouse, Ashby, Unstop) • Agent #3 Matcher scored 89% avg fit • Agent #4 Drafter prepared outreach</span>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <span id="bottom-agent-speed" class="font-semibold text-slate-700 dark:text-slate-300">22/22 Agents • 84 jobs/min</span>
+          <button type="button" onclick="switchTab('terminal')" class="text-[11px] font-semibold text-amber-500 hover:underline">Log file ↗</button>
+        </div>
+      </div>
+      <div class="w-full h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+        <div id="bottom-fetch-progress-fill" class="h-full mech-torque-bar bg-amber-500 rounded-full transition-all duration-500" style="width: 100%"></div>
+      </div>
+    </div>
+  </div>
+

@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   var STALE_DEFAULT = 'http://127.0.0.1:8765';
-  var FALLBACK = 'http://127.0.0.1:8000';
+  var FALLBACK = 'http://localhost:8000';
   var session = { token: '', method: '', email: '' };
   var cfg = null, gisLoaded = false;
 
@@ -274,7 +274,9 @@
     // This grants real Gmail API access (read + send) via PKCE Authorization Code flow.
     if (cfg.configured) {
       var oauthBtn = document.createElement('a');
-      oauthBtn.href = backendBase() + '/api/auth/google/login';
+      var oauthOrigin = backendBase();
+      try { if (cfg.redirect_uri) oauthOrigin = new URL(cfg.redirect_uri).origin; } catch (e) {}
+      oauthBtn.href = oauthOrigin + '/api/auth/google/login';
       oauthBtn.className = 'w-full flex items-center justify-center gap-3 py-2.5 px-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-semibold text-sm shadow-md border border-slate-200 transition no-underline';
       oauthBtn.style.textDecoration = 'none';
       oauthBtn.innerHTML =

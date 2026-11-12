@@ -5,7 +5,7 @@
     "at": "2026-11-11T11:54:59",
     "engine": "aihawk+browser-use+chromium",
     "status": "Applied",
-    "sent_at": "2026-11-11T12:17:54.371113"
+    "sent_at": "2026-11-12T10:42:43.573373"
   },
   "an:unstop-1716336-software-engineer-internship-mind-merge-soft-tech": {
     "company": "Mind Merge Soft Tech",
@@ -96,7 +96,7 @@
     "title": "Application for US Remote Patient Care Advocate (Customer Service)",
     "status": "Applied",
     "hiring_email": "careers@vxiglobalsolutions.com",
-    "sent_at": "2026-11-11T12:19:55.621794"
+    "sent_at": "2026-11-11T16:18:32.354749"
   },
   "tr-1794371821962": {
     "company": "VXI Global Solutions",
@@ -139,5 +139,75 @@
     "status": "Applied",
     "url": "https://jobs.ashbyhq.com/anyone-ai/e795562e-4cfb-4903-bcca-6edfc4aca554",
     "at": "2026-11-11T12:20:43"
+  },
+  "app-stripe-1794381195": {
+    "company": "Stripe",
+    "title": "Application for Abuse Investigator",
+    "status": "Applied",
+    "hiring_email": "careers@stripe.com",
+    "sent_at": "2026-11-11T12:43:15.338827"
+  },
+  "tr-1794381196252": {
+    "company": "Stripe",
+    "title": "Abuse Investigator",
+    "status": "Applied",
+    "url": "https://stripe.com/jobs/search?gh_jid=8172510",
+    "at": "2026-11-11T12:43:16"
+  },
+  "app-unio-digital-1794388645": {
+    "company": "Unio Digital",
+    "title": "Application for Tier III Service Desk Engineer",
+    "status": "Applied",
+    "hiring_email": "careers@uniodigital.com",
+    "sent_at": "2026-11-11T14:47:25.196253"
+  },
+  "tr-1794388660098": {
+    "company": "Unio Digital",
+    "title": "Tier III Service Desk Engineer",
+    "status": "Applied",
+    "url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
+    "at": "2026-11-11T14:47:42"
+  },
+  "app-karya-1794392186": {
+    "company": "Karya",
+    "title": "Application for Analytics Lead - Data, Measurement & Impact",
+    "status": "Applied",
+    "hiring_email": "careers@karya.com",
+    "sent_at": "2026-11-11T15:46:26.692446"
+  },
+  "tr-1794392196156": {
+    "company": "Karya",
+    "title": "Analytics Lead - Data, Measurement & Impact ",
+    "status": "Applied",
+    "url": "https://job-boards.greenhouse.io/karya/jobs/5215538008",
+    "at": "2026-11-11T15:46:37"
+  },
+  "app-imerit-technology-1794393026": {
+    "company": "iMerit Technology",
+    "title": "Application for AI Trainer - Video Annotation",
+    "status": "Applied",
+    "hiring_email": "careers@imerittechnology.com",
+    "sent_at": "2026-11-11T16:00:26.097902"
+  },
+  "tr-1794393037115": {
+    "company": "iMerit Technology",
+    "title": "AI Trainer - Video Annotation",
+    "status": "Applied",
+    "url": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
+    "at": "2026-11-11T16:00:37"
+  },
+  "app-credit-wellness,-llc-1794394069": {
+    "company": "Credit Wellness, LLC",
+    "title": "Application for Inside Sales Contractor",
+    "status": "Applied",
+    "hiring_email": "careers@creditwellnessllc.com",
+    "sent_at": "2026-11-11T16:17:49.751854"
+  },
+  "tr-1794394099898": {
+    "company": "Credit Wellness, LLC",
+    "title": "Inside Sales Contractor",
+    "status": "Applied",
+    "url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+    "at": "2026-11-11T16:18:21"
   }
 }

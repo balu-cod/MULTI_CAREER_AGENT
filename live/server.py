@@ -633,12 +633,14 @@ def build_api_status(vault):
 # ================================================================ Full OAuth 2.0 routes
 
 def _canon_base(host_header: str, default_port: int) -> str:
-    """Return canonical PUBLIC_BASE_URL, or construct from request Host header."""
+    """Return canonical PUBLIC_BASE_URL, or construct from request Host header (normalizing 127.0.0.1 -> localhost)."""
     pub = os.environ.get("PUBLIC_BASE_URL", "").strip().rstrip("/")
     if pub:
         return pub
     if host_header:
         h = host_header.split(":")[0]
+        if h in ("127.0.0.1", "0.0.0.0"):
+            h = "localhost"
         p = host_header.split(":")[1] if ":" in host_header else str(default_port)
         return f"http://{h}:{p}"
     return f"http://localhost:{default_port}"
@@ -1591,6 +1593,14 @@ def serve(vault, host="127.0.0.1", port=8000, log=print):
 
         def do_GET(self):
             u = urllib.parse.urlparse(self.path)
+            host_hdr = (self.headers.get("Host") or "").strip().lower()
+            if host_hdr.startswith("127.0.0.1") and u.path in ("/", "/index.html", "/career_agent_ui.html", "/api/auth/google/login"):
+                canon = _canon_base(host_hdr, self.server.server_address[1])
+                self.send_response(302)
+                self._cors()
+                self.send_header("Location", f"{canon}{self.path}")
+                self.end_headers()
+                return
             # ---- Full OAuth 2.0 routes ----
             _oauth_paths = ("/api/auth/google/login", "/api/auth/google/callback",
                             "/api/auth/me", "/api/auth/config")
@@ -1782,7 +1792,7 @@ def serve(vault, host="127.0.0.1", port=8000, log=print):
         raise SystemExit(f"No free port in {port}-{int(port) + 19}. Pass a different one with --port.")
     port = srv.server_address[1]
     _start_background_scheduler(vault, log)
-    log(f"Career Agent UI & Local API Bridge running at http://{host}:{port}")
+    log(f"Career Agent UI & Local API Bridge running at http://localhost:{port} (bound {host}:{port})")
     log("Endpoints: GET /api/status | POST /api/auth | POST /api/rag | POST /api/apply | POST /api/env | POST /api/run | POST /api/resume | POST /api/profile | POST /api/tracker | POST /api/chat | POST /api/test-llm | POST /api/analyze-profile | POST /api/ledger | POST /api/scheduler")
     try:
         srv.serve_forever()

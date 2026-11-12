@@ -1,5 +1,581 @@
 [
   {
+    "timestamp": "2026-11-12T05:12:54+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:12:43+00:00",
+    "date": "2026-11-12",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@sezzle.com (Sezzle) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T05:12:35+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern @ Sezzle (ATS 100%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:12:27+00:00",
+    "date": "2026-11-12",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Sezzle (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:11:22+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:07:56+00:00",
+    "date": "2026-11-12",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@sezzle.com (Sezzle) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T05:07:48+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern @ Sezzle (ATS 100%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:07:33+00:00",
+    "date": "2026-11-12",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Sezzle (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T05:00:12+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T04:51:51+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T04:50:45+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T04:40:19+00:00",
+    "date": "2026-11-12",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Sezzle (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T04:38:52+00:00",
+    "date": "2026-11-12",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Sezzle (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T04:22:52+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T04:07:23+00:00",
+    "date": "2026-11-12",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-12T04:05:20+00:00",
+    "date": "2026-11-12",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Software Engineer @ Target (ATS 100%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-12T04:04:02+00:00",
+    "date": "2026-11-12",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched NVIDIA (Domain: Semiconductors, VLSI & Silicon Architecture)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:48:36+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (30 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T10:48:33+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@vxiglobalsolutions.com (VXI Global Solutions) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T10:48:09+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for US Remote Patient Care Advocate (Customer Service) @ VXI Global Solutions (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:47:51+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@creditwellnessllc.com (Credit Wellness, LLC) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T10:47:41+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched VXI Global Solutions (Domain: Healthcare Technology and Customer Service)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:47:17+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:33:41+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'What are my main skill drawbacks and what should I improve?...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T10:30:43+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (28 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T10:30:26+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@imerittechnology.com (iMerit Technology) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T10:30:06+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI Trainer - Video Annotation @ iMerit Technology (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:28:39+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched iMerit Technology (Domain: AI Data Annotation and Enrichment)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:16:46+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (26 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T10:16:28+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@karya.com (Karya) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T10:16:09+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Analytics Lead - Data, Measurement & Impact @ Karya (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T10:15:44+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Karya (Domain: AI Platform)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T09:49:00+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'how to make tomato rice...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T09:47:39+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'how to make biriyani...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T09:46:50+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'what are the jobs i can get after getting the required skiil...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T09:35:12+00:00",
+    "date": "2026-11-11",
+    "category": "LLM_GATEWAY",
+    "action": "CONFIGURE_PROVIDER",
+    "details": "Configured OPENROUTER_API_KEY (model: meta-llama/llama-3.3-70b-instruct:free)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T09:32:21+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1463 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T09:25:24+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T09:18:01+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (24 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T09:17:29+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@uniodigital.com (Unio Digital) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T09:17:01+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Tier III Service Desk Engineer @ Unio Digital (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T09:16:48+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Unio Digital (Domain: Managed IT Services and Cybersecurity)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T09:14:24+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1470 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T09:10:33+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:50:53+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "Verified Gmail for kodimurthybalu@gmail.com. Fetched 79 emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:50:52+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:50:03+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "Verified Gmail for kodimurthybalu@gmail.com. Fetched 10 emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:50:03+00:00",
+    "date": "2026-11-11",
+    "category": "INBOX_SYNC",
+    "action": "EXTRACT_PROFILE",
+    "details": "Dynamically populated profile for kodimurthybalu@gmail.com from 50 real emails.",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:13:27+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'whats todays date...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T08:12:59+00:00",
+    "date": "2026-11-11",
+    "category": "CHATBOT_QUERY",
+    "action": "AI_CHAT",
+    "details": "Query: 'hii...' (Web: False)",
+    "status": "SUCCESS",
+    "actor": "Balu Kodimurthy"
+  },
+  {
+    "timestamp": "2026-11-11T08:10:20+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Applied AI Research Engineer \u2014 Enterpret @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T08:06:00+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T08:05:47+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@sezzle.com (Sezzle) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:05:39+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for A.I. Engineering Intern @ Sezzle (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T08:05:29+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Sezzle (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T08:05:19+00:00",
+    "date": "2026-11-11",
+    "category": "PORTAL_SCRAPE",
+    "action": "RUN_PIPELINE",
+    "details": "Scanned 1396 jobs, matched 0 roles across Greenhouse, Ashby, Remotive & Unstop.",
+    "status": "SUCCESS",
+    "actor": "PIPELINE_ORCHESTRATOR"
+  },
+  {
+    "timestamp": "2026-11-11T08:04:33+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T08:00:48+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T07:13:24+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for AI & Python Backend Engineer Intern \u2014 Razorpay @ Target (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T07:13:17+00:00",
+    "date": "2026-11-11",
+    "category": "APPLICATION_TRACKED",
+    "action": "UPDATE_TRACKER",
+    "details": "Updated application tracker (22 active)",
+    "status": "SUCCESS",
+    "actor": "USER"
+  },
+  {
+    "timestamp": "2026-11-11T07:13:15+00:00",
+    "date": "2026-11-11",
+    "category": "GMAIL_SENT",
+    "action": "RECRUITER_COLD_EMAIL",
+    "details": "Sent cold email from kodimurthybalu@gmail.com to careers@stripe.com (Stripe) with 1 attachment(s).",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
+    "timestamp": "2026-11-11T07:13:08+00:00",
+    "date": "2026-11-11",
+    "category": "RESUME_TAILORED",
+    "action": "BUILD_RESUME",
+    "details": "Tailored resume for Abuse Investigator @ Stripe (ATS 0%)",
+    "status": "SUCCESS",
+    "actor": "TAILOR_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T07:12:51+00:00",
+    "date": "2026-11-11",
+    "category": "COMPANY_RESEARCHED",
+    "action": "ANALYZE_COMPANY",
+    "details": "Researched Stripe (Domain: Fintech Payments)",
+    "status": "SUCCESS",
+    "actor": "RESEARCHER_AGENT"
+  },
+  {
+    "timestamp": "2026-11-11T07:12:09+00:00",
+    "date": "2026-11-11",
+    "category": "USER_AUTH",
+    "action": "SIGN_IN",
+    "details": "OAuth2 sign-in for kodimurthybalu@gmail.com",
+    "status": "SUCCESS",
+    "actor": "kodimurthybalu@gmail.com"
+  },
+  {
     "timestamp": "2026-11-11T07:06:31+00:00",
     "date": "2026-11-11",
     "category": "RESUME_TAILORED",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T12:18:06",
+  "updated": "2026-11-11T15:02:05",
   "scanned": 1463,
   "jobs": [
     {
@@ -270,182 +270,182 @@
         "source": "greenhouse:sezzle",
         "count": 289,
         "error": null,
-        "ms": 13032
+        "ms": 96983
       },
       {
         "source": "greenhouse:enterpret",
         "count": 14,
         "error": null,
-        "ms": 844
+        "ms": 13561
       },
       {
         "source": "greenhouse:karya",
         "count": 19,
         "error": null,
-        "ms": 1156
+        "ms": 35015
       },
       {
         "source": "greenhouse:cresta",
         "count": 91,
         "error": null,
-        "ms": 11703
+        "ms": 149905
       },
       {
         "source": "greenhouse:datacor",
         "count": 12,
         "error": null,
-        "ms": 2781
+        "ms": 31172
       },
       {
         "source": "greenhouse:eqtcorporation",
         "count": 52,
         "error": null,
-        "ms": 4031
+        "ms": 32186
       },
       {
         "source": "ashby:anyone-ai",
         "count": 226,
         "error": null,
-        "ms": 2186
+        "ms": 22829
       },
       {
         "source": "ashby:aiprise",
         "count": 23,
         "error": null,
-        "ms": 1297
+        "ms": 1733
       },
       {
         "source": "ashby:outmarket",
         "count": 18,
         "error": null,
-        "ms": 1577
+        "ms": 1313
       },
       {
         "source": "ashby:pinecone",
         "count": 6,
         "error": null,
-        "ms": 1093
+        "ms": 532
       },
       {
         "source": "ashby:build-ai",
         "count": 29,
         "error": null,
-        "ms": 1109
+        "ms": 1420
       },
       {
         "source": "remotive",
         "count": 39,
         "error": null,
-        "ms": 9031
+        "ms": 8405
       },
       {
         "source": "arbeitnow",
         "count": 300,
         "error": null,
-        "ms": 11297
+        "ms": 198438
       },
       {
         "source": "hn_hiring",
         "count": 194,
         "error": null,
-        "ms": 19108
+        "ms": 17061
       },
       {
         "source": "unstop",
-        "count": 25,
+        "count": 24,
         "error": null,
-        "ms": 1608
+        "ms": 3016
       },
       {
         "source": "page:https://wellfound.com/jobs",
-        "count": 37,
+        "count": 38,
         "error": null,
-        "ms": 38672
+        "ms": 119422
       },
       {
         "source": "page:https://myinternships.in/internships-at/razorpay/software-development",
         "count": 40,
         "error": null,
-        "ms": 46312
+        "ms": 204406
       },
       {
         "source": "page:https://myinternships.in/internships-at/postman/software-development",
         "count": 40,
         "error": null,
-        "ms": 45702
+        "ms": 139483
       },
       {
         "source": "page:https://cloudsoftsol.com/blog/zoho-software-developer-internship-2026-java-python-dotnet/",
         "count": 40,
         "error": null,
-        "ms": 44936
+        "ms": 101157
       }
     ],
     "inbox_sync": {
       "ok": true,
-      "new_messages": 0,
-      "total_stored": 69
+      "new_messages": 2,
+      "total_stored": 81
     },
     "ai_updates": [
       {
         "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
         "url": "https://github.com/morluto/rea",
         "source": "GitHub #mcp",
-        "score": 450743
+        "score": 451153
       },
       {
         "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research",
         "url": "https://github.com/affaan-m/ECC",
         "source": "GitHub #ai-agents",
-        "score": 300922
+        "score": 300982
       },
       {
         "title": "NousResearch/hermes-agent: The agent that grows with you",
         "url": "https://github.com/NousResearch/hermes-agent",
         "source": "GitHub #ai-agents",
-        "score": 262530
+        "score": 262573
       },
       {
         "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus",
         "url": "https://github.com/n8n-io/n8n",
         "source": "GitHub #mcp",
-        "score": 210072
+        "score": 210111
       },
       {
         "title": "firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintellig",
         "url": "https://github.com/firecrawl/firecrawl",
         "source": "GitHub #ai-agents",
-        "score": 200638
+        "score": 200687
       },
       {
         "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
         "source": "GitHub #llm",
-        "score": 187987
+        "score": 187990
       },
       {
         "title": "ollama/ollama: Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
         "url": "https://github.com/ollama/ollama",
         "source": "GitHub #llm",
-        "score": 186604
+        "score": 186625
       },
       {
         "title": "langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor",
         "url": "https://github.com/langgenius/dify",
         "source": "GitHub #mcp",
-        "score": 160927
+        "score": 160949
       },
       {
         "title": "open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "url": "https://github.com/open-webui/open-webui",
         "source": "GitHub #mcp",
-        "score": 158344
+        "score": 158353
       },
       {
         "title": "langchain-ai/langchain: The agent engineering platform.",
         "url": "https://github.com/langchain-ai/langchain",
         "source": "GitHub #ai-agents",
-        "score": 149340
+        "score": 149343
       }
     ],
     "kaggle_datasets": [
@@ -597,76 +597,88 @@
         "score": 86
       },
       {
-        "id": "dp:31667",
-        "title": "Kiroween 2026",
-        "organizer": "Kiro",
-        "type": "Global Hackathon",
-        "reward": "$100,000",
-        "deadline": "Oct 30 - Dec 04, 2026",
-        "url": "https://kiroween.devpost.com/",
+        "id": "1802400",
+        "title": "Rewired (Tech Hackathon)",
+        "organizer": "Masters Union School of Business",
+        "type": "hackathons",
+        "reward": "INR 12000",
+        "deadline": "2026-11-16",
+        "url": "https://unstop.com/hackathons/rewired-tech-hackathon-road-to-milky-way-bangalore-masters-union-school-of-business-1802400",
         "skills": [
-          "Beginner Friendly",
-          "Machine Learning/AI",
-          "Open Ended"
+          "Engineering Students",
+          "Postgraduate",
+          "Undergraduate",
+          "Management",
+          "Medical",
+          "Law"
         ],
         "matched_skills": [
-          "machine learning/ai"
+          "management"
         ],
-        "score": 79
+        "score": 81
       },
       {
-        "id": "dp:31552",
-        "title": "UGREEN Hackathon 2026 on AI NAS",
-        "organizer": "UGREEN",
-        "type": "Global Hackathon",
-        "reward": "$46,000",
-        "deadline": "Oct 22 - Nov 16, 2026",
-        "url": "https://ugreenhackathon.devpost.com/",
+        "id": "1801814",
+        "title": "Inter-College Coding Competition 2026 | Java & Python | ₹10,000 in Cash Prizes+ Free Lunch",
+        "organizer": "College Of Engineering And Management,Kolaghat",
+        "type": "hackathons",
+        "reward": "INR 5000",
+        "deadline": "2026-11-21",
+        "url": "https://unstop.com/hackathons/inter-college-coding-competition-2026-college-of-engineering-and-managementkolaghat-1801814",
         "skills": [
-          "Lifehacks",
-          "Machine Learning/AI",
-          "Productivity"
+          "Engineering Students",
+          "Postgraduate",
+          "Undergraduate",
+          "Management",
+          "Medical",
+          "Law"
         ],
         "matched_skills": [
-          "machine learning/ai"
+          "management"
         ],
-        "score": 79
+        "score": 81
       },
       {
-        "id": "dp:31572",
-        "title": "Codegeist 2026: Build with context. Ship with confidence.",
-        "organizer": "Atlassian",
-        "type": "Global Hackathon",
-        "reward": "$120,000",
-        "deadline": "Oct 27 - Dec 22, 2026",
-        "url": "https://codegeist2026.devpost.com/",
+        "id": "1800629",
+        "title": "HackKumbh 2026 : Tech For Humanity",
+        "organizer": "Yeshwantrao Chavan College of Engineering (YCCE), Nagpur",
+        "type": "hackathons",
+        "reward": "INR 100000",
+        "deadline": "2026-12-19",
+        "url": "https://unstop.com/hackathons/hackkumbh-2026-tech-for-humanity-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1800629",
         "skills": [
-          "Machine Learning/AI",
-          "Enterprise",
-          "Productivity"
+          "Engineering Students",
+          "Postgraduate",
+          "Undergraduate",
+          "Management",
+          "Medical",
+          "Law"
         ],
         "matched_skills": [
-          "machine learning/ai"
+          "management"
         ],
-        "score": 79
+        "score": 81
       },
       {
-        "id": "dp:31083",
-        "title": "QNX Global Hackathon",
-        "organizer": "QNX",
-        "type": "Global Hackathon",
-        "reward": "$50,000",
-        "deadline": "Nov 02 - Dec 15, 2026",
-        "url": "https://qnx.devpost.com/",
+        "id": "1802169",
+        "title": "Housing Fintech Challenge",
+        "organizer": "Indian Institute of Technology (IIT), Bombay",
+        "type": "hackathons",
+        "reward": "INR 100000",
+        "deadline": "2026-11-23",
+        "url": "https://unstop.com/hackathons/hero-housing-fintech-challenge-iit-bombay-1802169",
         "skills": [
-          "IoT",
-          "Machine Learning/AI",
-          "Open Ended"
+          "Engineering Students",
+          "Postgraduate",
+          "Undergraduate",
+          "Management",
+          "Medical",
+          "Law"
         ],
         "matched_skills": [
-          "machine learning/ai"
+          "management"
         ],
-        "score": 79
+        "score": 81
       }
     ],
     "funnel": {
@@ -678,12 +690,6 @@
       "reply_rate": 0
     },
     "skill_gaps": [
-      {
-        "skill": "typescript",
-        "jobs": 2,
-        "of": 11,
-        "in_your_roadmap": true
-      },
       {
         "skill": "aws",
         "jobs": 1,
@@ -697,6 +703,18 @@
         "in_your_roadmap": true
       },
       {
+        "skill": "typescript",
+        "jobs": 1,
+        "of": 11,
+        "in_your_roadmap": true
+      },
+      {
+        "skill": "kubernetes",
+        "jobs": 1,
+        "of": 11,
+        "in_your_roadmap": true
+      },
+      {
         "skill": "python",
         "jobs": 9,
         "of": 11,
@@ -704,13 +722,7 @@
       },
       {
         "skill": "java",
-        "jobs": 7,
-        "of": 11,
-        "in_your_roadmap": false
-      },
-      {
-        "skill": "react",
-        "jobs": 2,
+        "jobs": 6,
         "of": 11,
         "in_your_roadmap": false
       },
@@ -721,8 +733,8 @@
         "in_your_roadmap": false
       },
       {
-        "skill": "c++",
-        "jobs": 2,
+        "skill": "linux",
+        "jobs": 1,
         "of": 11,
         "in_your_roadmap": false
       }
@@ -738,7 +750,8 @@
           "python",
           "langgraph",
           "langchain",
-          "mcp"
+          "mcp",
+          "rag"
         ],
         "free_claim": "100% free course & verified certificate",
         "levels": [],
@@ -748,21 +761,21 @@
         "verified_live": true
       },
       {
-        "name": "CS107: C++ Programming",
-        "url": "https://www.classcentral.com/course/saylor-academy-65-cs107-c-programming-99526",
-        "provider": "Class Central",
+        "name": "CodeSignal: Understanding LLMs, Prompting & Agentic Workflows in Python",
+        "url": "https://www.classcentral.com/report/free-certificates/",
+        "provider": "Class Central / CodeSignal",
         "source": "curated",
         "covers": [
-          "typescript",
+          "llm",
           "python",
-          "c++",
-          "kubernetes"
+          "mcp",
+          "rag"
         ],
-        "free_claim": "Verified free certificate course on classcentral.com",
+        "free_claim": "Free interactive path & badge via Class Central",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": true,
+        "new": false,
         "verified_live": true
       },
       {
@@ -772,15 +785,15 @@
         "source": "curated",
         "covers": [
           "typescript",
+          "kubernetes",
           "python",
-          "java",
-          "kubernetes"
+          "java"
         ],
         "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": true,
+        "new": false,
         "verified_live": true
       },
       {
@@ -790,15 +803,15 @@
         "source": "curated",
         "covers": [
           "typescript",
+          "kubernetes",
           "python",
-          "java",
-          "kubernetes"
+          "java"
         ],
         "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": true,
+        "new": false,
         "verified_live": true
       },
       {
@@ -807,8 +820,8 @@
         "provider": "Anthropic / MCP",
         "source": "curated",
         "covers": [
-          "typescript",
           "llm",
+          "typescript",
           "python",
           "mcp"
         ],
@@ -826,15 +839,86 @@
         "source": "curated",
         "covers": [
           "typescript",
+          "kubernetes",
           "python",
-          "java",
-          "kubernetes"
+          "java"
         ],
         "free_claim": "Verified free certificate course on classcentral.com",
         "levels": [],
         "hours": null,
         "updated": null,
-        "new": true,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/?WT.mc_id=api_CatalogApi",
+        "provider": "Microsoft Learn",
+        "source": "mslearn-cert",
+        "covers": [
+          "python",
+          "langgraph",
+          "mcp",
+          "rag"
+        ],
+        "free_claim": "study material is free; the exam is paid (check for student/event vouchers)",
+        "levels": [
+          "advanced"
+        ],
+        "hours": null,
+        "updated": "2026-09-29T23:17:00+00:00",
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "&gt;Introduction to Career Skills in Data Analytics",
+        "url": "https://www.classcentral.com/course/linkedin-learning-introduction-to-career-skills-in-data-analytics-101279",
+        "provider": "Class Central",
+        "source": "curated",
+        "covers": [
+          "typescript",
+          "kubernetes",
+          "python"
+        ],
+        "free_claim": "Verified free certificate course on classcentral.com",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "AWS Skill Builder: AWS Cloud Essentials & Serverless Foundations",
+        "url": "https://explore.skillbuilder.aws/",
+        "provider": "AWS",
+        "source": "curated",
+        "covers": [
+          "aws",
+          "python",
+          "linux"
+        ],
+        "free_claim": "600+ free digital courses",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
+        "verified_live": true
+      },
+      {
+        "name": "Anthropic: Prompt Engineering & Claude Tool Use Interactive Tutorial",
+        "url": "https://github.com/anthropics/courses",
+        "provider": "Anthropic",
+        "source": "curated",
+        "covers": [
+          "llm",
+          "python",
+          "rag"
+        ],
+        "free_claim": "100% free open-source curriculum",
+        "levels": [],
+        "hours": null,
+        "updated": null,
+        "new": false,
         "verified_live": true
       }
     ],
@@ -862,9 +946,9 @@
     ],
     "today": {
       "date": "2026-11-11",
-      "morning_7am": "Study: typescript (90 min)",
+      "morning_7am": "Study: aws (90 min)",
       "evening_630pm": "DSA: 2 problems on two pointers",
-      "night_9pm": "Build: ship one small feature using typescript",
+      "night_9pm": "Build: ship one small feature using aws",
       "apply_block": "Review top matches + approve applications (30 min)"
     },
     "resumes": {
@@ -873,16 +957,16 @@
     },
     "weekend_projects": [
       {
-        "skill": "typescript",
-        "project": "Port the dashboard to TypeScript with typed API client"
-      },
-      {
         "skill": "aws",
         "project": "Deploy the scanner as a scheduled AWS Lambda"
       },
       {
         "skill": "llm",
         "project": "RAG over your own notes/resume"
+      },
+      {
+        "skill": "typescript",
+        "project": "Port the dashboard to TypeScript with typed API client"
       }
     ]
   }
