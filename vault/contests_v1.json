@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T12:16:58",
+  "updated": "2026-11-12T07:34:22",
   "contests": [
     {
       "id": "dp:31302",
@@ -40,6 +40,25 @@
       "score": 86
     },
     {
+      "id": "dp:31808",
+      "title": "#BuildHybridAI 2026",
+      "organizer": "Google",
+      "type": "Global Hackathon",
+      "reward": "$30,000",
+      "deadline": "Nov 11 - 30, 2026",
+      "url": "https://firebasehybridaihackathon.devpost.com/",
+      "skills": [
+        "Machine Learning/AI",
+        "Mobile",
+        "Web"
+      ],
+      "matched_skills": [
+        "machine learning/ai",
+        "web"
+      ],
+      "score": 86
+    },
+    {
       "id": "dp:30740",
       "title": "Code for Humanity",
       "organizer": "nill",
@@ -50,25 +69,6 @@
       "skills": [
         "Education",
         "Machine Learning/AI",
-        "Web"
-      ],
-      "matched_skills": [
-        "machine learning/ai",
-        "web"
-      ],
-      "score": 86
-    },
-    {
-      "id": "dp:31642",
-      "title": "AWS MSP AI Hackathon",
-      "organizer": "AWS",
-      "type": "Global Hackathon",
-      "reward": "$64,000",
-      "deadline": "Nov 02 - Dec 11, 2026",
-      "url": "https://aws-agentic-msp.devpost.com/",
-      "skills": [
-        "Machine Learning/AI",
-        "Productivity",
         "Web"
       ],
       "matched_skills": [
@@ -96,24 +96,6 @@
       "score": 79
     },
     {
-      "id": "dp:31552",
-      "title": "UGREEN Hackathon 2026 on AI NAS",
-      "organizer": "UGREEN",
-      "type": "Global Hackathon",
-      "reward": "$46,000",
-      "deadline": "Oct 22 - Nov 16, 2026",
-      "url": "https://ugreenhackathon.devpost.com/",
-      "skills": [
-        "Lifehacks",
-        "Machine Learning/AI",
-        "Productivity"
-      ],
-      "matched_skills": [
-        "machine learning/ai"
-      ],
-      "score": 79
-    },
-    {
       "id": "dp:31572",
       "title": "Codegeist 2026: Build with context. Ship with confidence.",
       "organizer": "Atlassian",
@@ -124,6 +106,24 @@
       "skills": [
         "Machine Learning/AI",
         "Enterprise",
+        "Productivity"
+      ],
+      "matched_skills": [
+        "machine learning/ai"
+      ],
+      "score": 79
+    },
+    {
+      "id": "dp:31552",
+      "title": "UGREEN Hackathon 2026 on AI NAS",
+      "organizer": "UGREEN",
+      "type": "Global Hackathon",
+      "reward": "$46,000",
+      "deadline": "Oct 22 - Nov 16, 2026",
+      "url": "https://ugreenhackathon.devpost.com/",
+      "skills": [
+        "Lifehacks",
+        "Machine Learning/AI",
         "Productivity"
       ],
       "matched_skills": [
@@ -166,6 +166,76 @@
         "machine learning/ai"
       ],
       "score": 79
+    },
+    {
+      "id": "dp:31973",
+      "title": "Deck the Pixels",
+      "organizer": "Google",
+      "type": "Global Hackathon",
+      "reward": "$25,000",
+      "deadline": "Nov 10 - Dec 07, 2026",
+      "url": "https://deckthepixels.devpost.com/",
+      "skills": [
+        "Design",
+        "Machine Learning/AI",
+        "Low/No Code"
+      ],
+      "matched_skills": [
+        "machine learning/ai"
+      ],
+      "score": 79
+    },
+    {
+      "id": "1806122",
+      "title": "Defy'27",
+      "organizer": "Vellore Institute of Technology (VIT), Chennai",
+      "type": "hackathons",
+      "reward": "INR 100000",
+      "deadline": "2026-12-14",
+      "url": "https://unstop.com/hackathons/defy27-vellore-institute-of-technology-vit-chennai-1806122",
+      "skills": [
+        "Engineering Students",
+        "Postgraduate",
+        "Undergraduate",
+        "Management",
+        "Medical",
+        "Law"
+      ],
+      "matched_skills": [],
+      "score": 75
+    },
+    {
+      "id": "1761846",
+      "title": "Rabinjathon: Prime 1",
+      "organizer": "Rabinja Squad",
+      "type": "hackathons",
+      "reward": "Prizes + Hiring / Certificates",
+      "deadline": "2027-02-05",
+      "url": "https://unstop.com/hackathons/rabinjathon-prime-1-rabinja-squad-1761846",
+      "skills": [
+        "Engineering Students",
+        "Postgraduate",
+        "Undergraduate",
+        "Management",
+        "Medical",
+        "Law"
+      ],
+      "matched_skills": [],
+      "score": 75
+    },
+    {
+      "id": "1805946",
+      "title": "Android Ignition",
+      "organizer": "Ganeshi Lal Bajaj Institute Of Technology And Management (GLBITM), Greater Noida",
+      "type": "hackathons",
+      "reward": "Prizes + Hiring / Certificates",
+      "deadline": "2026-12-06",
+      "url": "https://unstop.com/hackathons/android-ignition-ganeshi-lal-bajaj-institute-of-technology-and-management-glbitm-greater-noida-1805946",
+      "skills": [
+        "All"
+      ],
+      "matched_skills": [],
+      "score": 75
     },
     {
       "id": "1787722",
@@ -229,50 +299,12 @@
       "score": 75
     },
     {
-      "id": "1802400",
-      "title": "Rewired (Tech Hackathon)",
-      "organizer": "Masters Union School of Business",
-      "type": "hackathons",
-      "reward": "INR 12000",
-      "deadline": "2026-11-16",
-      "url": "https://unstop.com/hackathons/rewired-tech-hackathon-road-to-milky-way-bangalore-masters-union-school-of-business-1802400",
-      "skills": [
-        "Engineering Students",
-        "Postgraduate",
-        "Undergraduate",
-        "Management",
-        "Medical",
-        "Law"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
-      "id": "1801814",
-      "title": "Inter-College Coding Competition 2026 | Java & Python | ₹10,000 in Cash Prizes+ Free Lunch",
-      "organizer": "College Of Engineering And Management,Kolaghat",
-      "type": "hackathons",
-      "reward": "INR 5000",
-      "deadline": "2026-11-21",
-      "url": "https://unstop.com/hackathons/inter-college-coding-competition-2026-college-of-engineering-and-managementkolaghat-1801814",
-      "skills": [
-        "Engineering Students",
-        "Postgraduate",
-        "Undergraduate",
-        "Management",
-        "Medical",
-        "Law"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
       "id": "1794884",
       "title": "BuildSprint",
       "organizer": "Workelate",
       "type": "hackathons",
       "reward": "INR 20000",
-      "deadline": "2026-11-17",
+      "deadline": "2026-11-15",
       "url": "https://unstop.com/hackathons/buildsprint-workelate-1794884",
       "skills": [
         "Engineering Students",
@@ -348,27 +380,13 @@
       "score": 75
     },
     {
-      "id": "1802089",
-      "title": "SHE CODE",
-      "organizer": "Army Institute of technology, Pune",
+      "id": "1802400",
+      "title": "Rewired (Tech Hackathon)",
+      "organizer": "Masters Union School of Business",
       "type": "hackathons",
-      "reward": "INR 15000",
-      "deadline": "2027-03-06",
-      "url": "https://unstop.com/hackathons/she-code-solutions-2k27-army-institute-of-technology-pune-1802089",
-      "skills": [
-        "All"
-      ],
-      "matched_skills": [],
-      "score": 75
-    },
-    {
-      "id": "1794479",
-      "title": "Inceptrix 3.0",
-      "organizer": "Faculty of Engineering and Technology, Jain Deemed to be University",
-      "type": "hackathons",
-      "reward": "INR 125000",
-      "deadline": "2027-02-20",
-      "url": "https://unstop.com/hackathons/incpetrix-30-faculty-of-engineering-and-technology-jain-deemed-to-be-university-1794479",
+      "reward": "INR 12000",
+      "deadline": "2026-11-18",
+      "url": "https://unstop.com/hackathons/rewired-tech-hackathon-road-to-milky-way-bangalore-masters-union-school-of-business-1802400",
       "skills": [
         "Engineering Students",
         "Postgraduate",
@@ -381,16 +399,15 @@
       "score": 75
     },
     {
-      "id": "1798677",
-      "title": "Overclock",
-      "organizer": "Agnel Charities Fr. C. Rodrigues Institute of Technology, Vashi, Navi Mumbai",
+      "id": "1801814",
+      "title": "Inter-College Coding Competition 2026 | Java & Python",
+      "organizer": "College Of Engineering And Management,Kolaghat",
       "type": "hackathons",
-      "reward": "INR 25000",
-      "deadline": "2027-01-30",
-      "url": "https://unstop.com/hackathons/overclock-agnel-charities-fr-c-rodrigues-institute-of-technology-vashi-navi-mumbai-1798677",
+      "reward": "INR 5000",
+      "deadline": "2026-11-21",
+      "url": "https://unstop.com/hackathons/inter-college-coding-competition-2026-college-of-engineering-and-managementkolaghat-1801814",
       "skills": [
         "Engineering Students",
-        "Postgraduate",
         "Undergraduate",
         "Management",
         "Arts, Commerce, Sciences & Others"
@@ -399,13 +416,13 @@
       "score": 75
     },
     {
-      "id": "1799780",
-      "title": "Expanding Horizons 8.0  EE",
+      "id": "1799791",
+      "title": "Expanding Horizons 8.0 Chemical",
       "organizer": "Motilal Nehru National Institute of Technology",
       "type": "hackathons",
       "reward": "Prizes + Hiring / Certificates",
-      "deadline": "2026-11-21",
-      "url": "https://unstop.com/hackathons/expanding-horizons-80-ee-expanding-horizon-80-motilal-nehru-national-institute-of-technology-1799780",
+      "deadline": "2026-11-23",
+      "url": "https://unstop.com/hackathons/expanding-horizons-80-chemical-expanding-horizon-80-motilal-nehru-national-institute-of-technology-1799791",
       "skills": [
         "Engineering Students",
         "Postgraduate",
@@ -433,139 +450,19 @@
       "score": 72
     },
     {
-      "id": "dp:31773",
-      "title": "LaunchPad Hacks (Judges + Sponsors Needed)",
-      "organizer": "Hack4TodayOrg",
+      "id": "dp:31644",
+      "title": "Reddit’s Game of the Day Hackathon",
+      "organizer": "reddit",
       "type": "Global Hackathon",
-      "reward": "$300",
-      "deadline": "Oct 16 - Dec 04, 2026",
-      "url": "https://launchpad-hacks.devpost.com/",
+      "reward": "$35,000",
+      "deadline": "Nov 11 - Dec 08, 2026",
+      "url": "https://redditgameofday2026.devpost.com/",
       "skills": [
         "Beginner Friendly",
-        "Open Ended"
+        "Gaming"
       ],
       "matched_skills": [],
       "score": 72
-    },
-    {
-      "id": "dp:31495",
-      "title": "IceHacks",
-      "organizer": "CodeStarters",
-      "type": "Global Hackathon",
-      "reward": "$17,150",
-      "deadline": "Nov 08 - 15, 2026",
-      "url": "https://icehacks.devpost.com/",
-      "skills": [
-        "Beginner Friendly",
-        "Low/No Code",
-        "Open Ended"
-      ],
-      "matched_skills": [],
-      "score": 72
-    },
-    {
-      "id": "c-0",
-      "title": "Razorpay AI Buildathon — Verification & Autonomous Builders",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://razorpay.com/buildathon/"
-    },
-    {
-      "id": "c-1",
-      "title": "Unstop India AI & Agentic Engineering Hackathon",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://unstop.com/hackathons"
-    },
-    {
-      "id": "c-2",
-      "title": "Flipkart GRiD — Software Development Track",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://unstop.com/competitions"
-    },
-    {
-      "id": "c-3",
-      "title": "Global MCP & LangGraph Agent Builders Challenge",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://devpost.com/hackathons"
-    },
-    {
-      "id": "c-4",
-      "title": "Kaggle Community AI Agents Benchmark Hackathon",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://www.kaggle.com/competitions"
-    },
-    {
-      "id": "c-5",
-      "title": "LeetCode Weekly Algorithmic Contest",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://leetcode.com/contest/"
-    },
-    {
-      "id": "c-6",
-      "title": "HackerEarth India Product Startup Hiring Challenge",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://www.hackerearth.com/challenges/"
-    },
-    {
-      "id": "c-7",
-      "title": "Juspay Engineering Hiring Challenge",
-      "organizer": "Online Challenge",
-      "deadline": "Open",
-      "reward": "Prizes & Hiring",
-      "skills": [
-        "Continuous Integration (CI)",
-        "GitHub Actions",
-        "Software Development"
-      ],
-      "url": "https://unstop.com/job-fairs"
     }
   ]
 }
