@@ -752,20 +752,19 @@ def handle_oauth_get(path: str, query: dict, headers: dict, server_port: int) ->
         picture = claims.get("picture", "")
         scopes  = oauth_google.granted_scopes(token_resp)
 
-        # owner / allowlist gate
+        # owner / allowlist gate (open to everyone when AUTH_ALLOW_ALL is active)
         owner = _accounts.owner_email()
         allowed_emails  = [e.strip().lower() for e in os.environ.get("AUTH_ALLOWED_EMAILS", "").split(",") if e.strip()]
         allowed_domains = [d.strip().lower() for d in os.environ.get("AUTH_ALLOWED_DOMAINS", "").split(",") if d.strip()]
+        allow_all = os.environ.get("AUTH_ALLOW_ALL", "1").strip().lower() in ("1", "true", "yes") or "*" in allowed_emails or not (allowed_emails or allowed_domains)
         if not owner:
             # first user becomes owner
             _accounts.set_owner(email)
-        else:
+        elif not allow_all:
             is_allowed = (
                 email == owner
                 or email in allowed_emails
-                or (allowed_emails == [] and allowed_domains == [] and email == owner)
                 or any(email.endswith("@" + d) for d in allowed_domains)
-                or email in allowed_emails
             )
             if not is_allowed:
                 return {"_redirect": "/?auth_error=not_allowed"}
