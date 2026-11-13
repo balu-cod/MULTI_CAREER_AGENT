@@ -105,7 +105,7 @@
   async function runOAuthVerificationStepperAnimation(methodLabel) {
     var st = $('oauth-stepper-status');
     for (var i = 1; i <= 4; i++) setOAuthStepState(i, 'idle');
-    if (st) { st.className = 'text-sky-400 font-mono'; st.textContent = 'Step 1/4: Verifying ' + methodLabel + '...'; }
+    if (st) { st.className = 'text-blue-400 font-mono'; st.textContent = 'Step 1/4: Verifying ' + methodLabel + '...'; }
     setOAuthStepState(1, 'active');
     await new Promise(function (r) { setTimeout(r, 120); });
     setOAuthStepState(1, 'done');
@@ -361,8 +361,8 @@
       el.appendChild(oauthBtn);
     } else if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       var localBadge = document.createElement('div');
-      localBadge.className = 'text-[11px] text-cyan-400 text-center mt-2 flex items-center justify-center gap-2';
-      localBadge.innerHTML = '<span>Cloud Frontend Active &bull; <a href="http://localhost:8000" target="_blank" class="underline hover:text-cyan-300">Open Local Server: http://localhost:8000</a></span>';
+      localBadge.className = 'text-[11px] text-[#00f59b] text-center mt-2 flex items-center justify-center gap-2';
+      localBadge.innerHTML = '<span>Cloud Frontend Active &bull; <a href="http://localhost:8000" target="_blank" class="underline hover:text-[#00f59b]">Open Local Server: http://localhost:8000</a></span>';
       el.appendChild(localBadge);
     }
 
@@ -377,7 +377,7 @@
   window.runAiProfileAudit = async function () {
     var btn = $('btn-run-profile-audit');
     busy(btn, true, 'Running LLM Audit...');
-    log('[Profile Intel] Launching deep LLM audit for skills, certifications & drawbacks...', 'text-sky-400 font-semibold');
+    log('[Profile Intel] Launching deep LLM audit for skills, certifications & drawbacks...', 'text-blue-400 font-semibold');
     toast('Running deep LLM profile diagnostic...', 'info');
 
     var r = await api('/api/analyze-profile', {});
@@ -386,7 +386,7 @@
     if (r.ok && r.data && r.data.analysis) {
       var a = r.data.analysis;
       log('[Profile Intel] Audit complete! ' + (a.drawbacks ? a.drawbacks.length : 0) + ' critical drawbacks analyzed.', 'text-emerald-400 font-bold');
-      if (a.strategic_advice) log('[Strategic Advice] ' + a.strategic_advice, 'text-purple-400');
+      if (a.strategic_advice) log('[Strategic Advice] ' + a.strategic_advice, 'text-blue-400');
 
       var box = $('ai-audit-results-card');
       if (box) box.classList.remove('hidden');
@@ -401,7 +401,7 @@
       var drawEl = $('ai-audit-drawbacks-list');
       if (drawEl && a.drawbacks) {
         drawEl.innerHTML = a.drawbacks.map(function (d) {
-          return '<li class="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed"><i data-lucide="alert-triangle" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i><span>' + d + '</span></li>';
+          return '<li class="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed"><i data-lucide="alert-triangle" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i><span>' + d + '</span></li>';
         }).join('');
       }
 
@@ -429,9 +429,9 @@
       tbody.innerHTML = r.data.ledger.map(function (row) {
         var catClass = 'bg-blue-500/10 text-blue-400 border-blue-500/30';
         if (row.category === 'USER_AUTH') catClass = 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30';
-        else if (row.category === 'GMAIL_SENT') catClass = 'bg-purple-500/10 text-purple-400 border-purple-500/30';
-        else if (row.category === 'PORTAL_SCRAPE') catClass = 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30';
-        else if (row.category === 'RESUME_TAILORED') catClass = 'bg-amber-500/10 text-amber-400 border-amber-500/30';
+        else if (row.category === 'GMAIL_SENT') catClass = 'bg-blue-500/10 text-blue-400 border-blue-500/30';
+        else if (row.category === 'PORTAL_SCRAPE') catClass = 'bg-blue-500/10 text-[#00f59b] border-blue-500/30';
+        else if (row.category === 'RESUME_TAILORED') catClass = 'bg-blue-500/10 text-[#00f59b] border-emerald-500/30';
 
         var timeOnly = String(row.timestamp || '').split('T')[1] ? String(row.timestamp).split('T')[1].split('+')[0] : row.timestamp;
         return '<tr class="border-b border-slate-100 dark:border-slate-800/60 hover:bg-slate-50/50 dark:hover:bg-slate-800/20">' +
@@ -448,7 +448,7 @@
 
   // ---------- Timing-Based Scheduler Trigger
   window.triggerSchedulerMode = async function (mode) {
-    log('[Scheduler] Initiating scheduled dispatch: ' + mode + '...', 'text-sky-400');
+    log('[Scheduler] Initiating scheduled dispatch: ' + mode + '...', 'text-blue-400');
     toast('Triggering ' + mode + ' dispatch...', 'info');
     var r = await api('/api/scheduler', { action: 'trigger', mode: mode });
     if (r.ok) {
@@ -501,9 +501,9 @@
     var sourcesHtml = '';
     if (r.data && Array.isArray(r.data.web_sources) && r.data.web_sources.length > 0) {
       sourcesHtml = '<div class="mt-2 pt-2 border-t border-slate-200 dark:border-slate-700/60 text-[11px] text-slate-400 font-medium space-y-1">' +
-        '<div class="text-[10px] text-sky-400 font-bold uppercase tracking-wider flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3"></i> Web Sources Grounding</div>' +
+        '<div class="text-[10px] text-blue-400 font-bold uppercase tracking-wider flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3"></i> Web Sources Grounding</div>' +
         r.data.web_sources.map(function (s) {
-          return '<a href="' + s.url + '" target="_blank" rel="noopener noreferrer" class="block text-sky-500 hover:underline truncate">↗ ' + s.title + '</a>';
+          return '<a href="' + s.url + '" target="_blank" rel="noopener noreferrer" class="block text-blue-500 hover:underline truncate">↗ ' + s.title + '</a>';
         }).join('') +
       '</div>';
     }
@@ -531,13 +531,13 @@
     var origHtml = btn ? btn.innerHTML : '';
     if (btn) {
       btn.disabled = true;
-      btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin text-amber-300"></i><span>Generating AI Tailored Resume with LLM...</span>';
+      btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin text-[#00f59b]"></i><span>Generating AI Tailored Resume with LLM...</span>';
       if (window.lucide) try { lucide.createIcons(); } catch (e) {}
     }
     var title = ($('jd-target-title')?.value || '').trim() || 'AI & Software Engineer Intern';
     var jobText = ($('jd-paste-input')?.value || '').trim();
 
-    log('[AI Resume] Requesting LLM tailored resume using authenticated profile...', 'text-sky-400 font-semibold');
+    log('[AI Resume] Requesting LLM tailored resume using authenticated profile...', 'text-blue-400 font-semibold');
     toast('Generating AI tailored resume for ' + title + '...', 'info');
 
     try {
@@ -648,7 +648,7 @@
       'I look forward to discussing how my background aligns with your team\'s goals.\n\n' +
       'Best regards,\n' + candidateName + '\n' + (currentProfile.phone ? currentProfile.phone + '\n' : '') + senderEmail;
 
-    log('[Gmail Outreach] Delivering cold email from ' + senderEmail + ' to ' + recEmail + ' via Gmail SMTP...', 'text-sky-400 font-semibold');
+    log('[Gmail Outreach] Delivering cold email from ' + senderEmail + ' to ' + recEmail + ' via Gmail SMTP...', 'text-blue-400 font-semibold');
     toast('Sending cold email via Gmail SMTP to ' + recEmail + '...', 'info');
 
     try {
@@ -685,7 +685,7 @@
     var badge = $('header-auth-badge'); if (badge) badge.innerText = short + ' (' + session.method + ')';
     var m = $('metric-auth-email'); if (m) m.innerText = currentProfile.email;
     log('[Authentication] Signed in as ' + currentProfile.email + ' via ' + session.method + '.', 'text-emerald-400');
-    log('[Inbox Intelligence] Synced inbox messages and loaded profile for ' + currentProfile.name + '.', 'text-purple-400 font-semibold');
+    log('[Inbox Intelligence] Synced inbox messages and loaded profile for ' + currentProfile.name + '.', 'text-blue-400 font-semibold');
 
     // Update profile in all views
     if (typeof window.renderProfileSection === 'function') window.renderProfileSection();
@@ -716,17 +716,17 @@
           var skillsBadges = (c.skills || []).slice(0, 3).map(function (sk) {
             return '<span class="neo-pill-cyan text-[10px] px-2 py-0.5">' + sk + '</span>';
           }).join(' ');
-          return '<div class="neo-card p-4 flex flex-col justify-between space-y-3 border border-cyan-500/20 hover:border-cyan-400/50 transition-all">' +
+          return '<div class="neo-card p-4 flex flex-col justify-between space-y-3 border border-blue-500/20 hover:border-[#00f59b]/50 transition-all">' +
             '<div class="space-y-2">' +
               '<div class="flex items-center justify-between gap-2">' +
-                '<span class="text-[11px] font-bold text-cyan-300 truncate max-w-[130px]">' + (c.provider || 'Verified') + '</span>' +
+                '<span class="text-[11px] font-bold text-[#00f59b] truncate max-w-[130px]">' + (c.provider || 'Verified') + '</span>' +
                 '<span class="neo-pill-emerald text-[10px] font-bold px-2 py-0.5">' + (c.match_pct || 95) + '% Match</span>' +
               '</div>' +
               '<h4 class="text-xs font-bold text-white line-clamp-2" title="' + (c.title || '').replace(/"/g, '&quot;') + '">' + (c.title || 'Course') + '</h4>' +
-              (c.recommendation_reason ? '<p class="text-[11px] text-amber-300/90 leading-tight bg-amber-950/40 border border-amber-500/20 rounded p-1.5 font-medium">' + c.recommendation_reason + '</p>' : '') +
+              (c.recommendation_reason ? '<p class="text-[11px] text-[#00f59b]/90 leading-tight bg-blue-950/40 border border-emerald-500/20 rounded p-1.5 font-medium">' + c.recommendation_reason + '</p>' : '') +
               '<div class="flex flex-wrap gap-1 pt-1">' + skillsBadges + '</div>' +
             '</div>' +
-            '<div class="pt-2 border-t border-cyan-500/15 flex items-center justify-between gap-2">' +
+            '<div class="pt-2 border-t border-blue-500/15 flex items-center justify-between gap-2">' +
               '<span class="text-[11px] font-semibold text-emerald-400">' + (c.cost || '100% Free') + '</span>' +
               '<a href="' + (c.url || '#') + '" target="_blank" rel="noopener noreferrer" class="btn-primary py-1.5 px-3 text-[11px] font-semibold no-underline flex items-center gap-1"><span>Start Free</span> &rarr;</a>' +
             '</div>' +
@@ -743,7 +743,7 @@
   window.syncCandidateInbox = async function () {
     var email = currentProfile.email || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_LOGGED_IN_EMAIL') : '') || '';
     var code = currentProfile.appCode || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_APP_PASSWORD') : '') || '';
-    log('[Recruiter Inbox Scanner] Scanning candidate inbox (' + (email || 'candidate') + ') for interview invites & recruiter status updates...', 'text-sky-400 font-semibold');
+    log('[Recruiter Inbox Scanner] Scanning candidate inbox (' + (email || 'candidate') + ') for interview invites & recruiter status updates...', 'text-blue-400 font-semibold');
     toast('Scanning candidate inbox for recruiter replies...', 'info');
 
     try {
@@ -756,7 +756,7 @@
         if (updates.length > 0) {
           log('[Recruiter Inbox Scanner] ✓ Found ' + updates.length + ' recruiter response(s)! Updating application tracker...', 'text-emerald-400 font-bold');
           updates.forEach(function (up) {
-            log('  ↳ ' + up.company + ': ' + up.new_status + ' (' + up.reason + ')', 'text-cyan-300');
+            log('  ↳ ' + up.company + ': ' + up.new_status + ' (' + up.reason + ')', 'text-[#00f59b]');
             if (typeof TRACKER_ITEMS !== 'undefined' && Array.isArray(TRACKER_ITEMS)) {
               var found = TRACKER_ITEMS.find(function (t) {
                 return (t.company && t.company.toLowerCase() === up.company.toLowerCase()) || (up.app_id && t.id === up.app_id);
@@ -794,7 +794,7 @@
   window.rescanInboxIntelligence = async function () {
     var btn = $('btn-rescan-inbox');
     busy(btn, true, 'Analyzing Inbox...');
-    log('[Inbox Intelligence] Re-scanning inbox and extracting user signals...', 'text-sky-400');
+    log('[Inbox Intelligence] Re-scanning inbox and extracting user signals...', 'text-blue-400');
     toast('Re-scanning inbox and extracting account signals...', 'info');
     try {
       var r = await api('/api/inbox-summary', { email: currentProfile.email });
@@ -854,7 +854,7 @@
       var ints = currentProfile.detectedInterests || currentProfile.skills || [];
       if (ints.length > 0) {
         intBox.innerHTML = ints.slice(0, 8).map(function (it) {
-          return '<span class="pill-shape bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800"><i data-lucide="tag" class="w-3 h-3"></i><span>' + it + '</span></span>';
+          return '<span class="pill-shape bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800"><i data-lucide="tag" class="w-3 h-3"></i><span>' + it + '</span></span>';
         }).join('');
       } else {
         intBox.innerHTML = '<span class="text-slate-400 text-xs italic">No interests detected yet.</span>';
@@ -869,7 +869,7 @@
     try { isAuthenticated = false; } catch (e) {}
     try { if (window.google && google.accounts && google.accounts.id) google.accounts.id.disableAutoSelect(); } catch (e) {}
     for (var sIdx = 1; sIdx <= 4; sIdx++) setOAuthStepState(sIdx, 'idle');
-    var st = $('oauth-stepper-status'); if (st) { st.className = 'text-amber-400 font-mono'; st.textContent = 'Awaiting Login'; }
+    var st = $('oauth-stepper-status'); if (st) { st.className = 'text-[#00f59b] font-mono'; st.textContent = 'Awaiting Login'; }
     var v = $('view-signin'); if (v) v.classList.remove('hidden');
     toast('Signed out.', 'info');
   };
@@ -890,7 +890,7 @@
       return;
     }
 
-    log('[LLM Settings] Saving ' + provider + ' into .env/secrets.env...', 'text-sky-400 font-semibold');
+    log('[LLM Settings] Saving ' + provider + ' into .env/secrets.env...', 'text-blue-400 font-semibold');
     toast('Saving ' + provider + '...', 'info');
 
     var r = await api('/api/llm-gateway', { action: 'configure', env_key: provider, api_key: key, model: modelVal });
@@ -913,11 +913,11 @@
     var feedbacks = [$('llm-test-feedback'), $('vault-llm-test-feedback')].filter(Boolean);
     var pills = [$('llm-active-pill'), $('vault-llm-active-pill')].filter(Boolean);
     feedbacks.forEach(function (fb) {
-      fb.innerHTML = '<span class="text-sky-500 flex items-center gap-1"><i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Testing LLM connection...</span>';
+      fb.innerHTML = '<span class="text-blue-500 flex items-center gap-1"><i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Testing LLM connection...</span>';
     });
     if (window.lucide) try { lucide.createIcons(); } catch (e) {}
 
-    log('[LLM Diagnostic] Sending live prompt to configured LLM gateway...', 'text-sky-400');
+    log('[LLM Diagnostic] Sending live prompt to configured LLM gateway...', 'text-blue-400');
 
     try {
       var r = await api('/api/test-llm', {});
@@ -935,13 +935,13 @@
         toast('LLM connected to ' + prov + ' (' + lat + 'ms)', 'success');
       } else {
         var rep = (r.data && (r.data.reply || r.data.error)) || 'No active response from LLM API.';
-        log('[LLM Diagnostic] ✗ ' + rep, 'text-amber-400');
+        log('[LLM Diagnostic] ✗ ' + rep, 'text-[#00f59b]');
         feedbacks.forEach(function (fb) {
-          fb.innerHTML = '<span class="text-amber-600 dark:text-amber-400 font-medium">⚠️ ' + rep + '</span>';
+          fb.innerHTML = '<span class="text-emerald-600 dark:text-[#00f59b] font-medium">⚠️ ' + rep + '</span>';
         });
         pills.forEach(function (pill) {
-          pill.className = 'pill-shape bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300 border border-amber-200 dark:border-amber-800 text-xs flex items-center gap-1.5';
-          pill.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-500"></span><span>Local RAG Fallback Active</span>';
+          pill.className = 'pill-shape bg-blue-50 text-emerald-700 dark:bg-blue-950 dark:text-[#00f59b] border border-emerald-200 dark:border-emerald-800 text-xs flex items-center gap-1.5';
+          pill.innerHTML = '<span class="w-2 h-2 rounded-full bg-blue-500"></span><span>Local RAG Fallback Active</span>';
         });
       }
     } catch (e) {
@@ -954,9 +954,9 @@
 
   window.testLlmGatewayLive = async function () {
     var fb = $('llm-test-feedback');
-    if (fb) fb.innerHTML = '<span class="text-sky-500 flex items-center gap-1.5"><i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Testing Unified LLM Gateway & Personalization Memory...</span>';
+    if (fb) fb.innerHTML = '<span class="text-blue-500 flex items-center gap-1.5"><i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Testing Unified LLM Gateway & Personalization Memory...</span>';
     if (window.lucide) try { lucide.createIcons(); } catch (e) {}
-    log('[LLM Gateway] Testing multi-provider gateway with personalization memory context...', 'text-sky-400');
+    log('[LLM Gateway] Testing multi-provider gateway with personalization memory context...', 'text-blue-400');
     var r = await api('/api/llm-gateway', { action: 'test' });
     if ((r.ok && r.data) || (window.__CANVAS_DEMO_MODE__ && r.network)) {
       var gw = (r.data && r.data.gateway) || {};
@@ -1009,7 +1009,7 @@
     var comp = ($('outreach-company')?.value || '').trim() || 'Target Company';
     var role = ($('outreach-role')?.value || '').trim() || 'Software Engineer Intern';
     var bodyEl = $('outreach-body');
-    log('[LLM Pitch Drafter] Generating personalized recruiter outreach for ' + role + ' at ' + comp + '...', 'text-sky-400');
+    log('[LLM Pitch Drafter] Generating personalized recruiter outreach for ' + role + ' at ' + comp + '...', 'text-blue-400');
     toast('Drafting personalized pitch with LLM...', 'info');
 
     try {
@@ -1048,7 +1048,7 @@
       return;
     }
 
-    log('[Gmail Outreach] Delivering application from ' + (currentProfile.email || 'verified Gmail') + ' to ' + to + ' via Gmail SMTP...', 'text-sky-400 font-semibold');
+    log('[Gmail Outreach] Delivering application from ' + (currentProfile.email || 'verified Gmail') + ' to ' + to + ' via Gmail SMTP...', 'text-blue-400 font-semibold');
     toast('Delivering outreach email via Gmail SMTP to ' + to + '...', 'info');
 
     try {
@@ -1130,7 +1130,7 @@
             counter.textContent = '16 Letters/Digits';
           } else if (clean.length < 16) {
             var diff = 16 - clean.length;
-            counter.className = 'text-[11px] text-amber-400 font-mono font-bold';
+            counter.className = 'text-[11px] text-[#00f59b] font-mono font-bold';
             counter.textContent = clean.length + '/16 letters (' + diff + ' missing)';
           } else {
             var extra = clean.length - 16;

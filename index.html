@@ -22,25 +22,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@0.395.0/dist/umd/lucide.min.js"></script>
-  <link rel="stylesheet" href="css/neoglass.css?v=20261113_02" />
-  <script src="assets/pipeline_core.js?v=20261113_02"></script>
+  <link rel="stylesheet" href="css/neoglass.css?v=20261113_cryptix" />
+  <script src="assets/pipeline_core.js?v=20261113_cryptix"></script>
   <style>
 /* ==========================================================================
-   NEO-GLASS DESIGN SYSTEM: Glassmorphism + Neumorphism Fusion
-   Translucent frosted-glass refraction + tactile soft dual-shadow extrusion
+   CRYPTIX TRADING DESIGN SYSTEM: PURE BLUE & NEON GREEN
+   Inspired by CryptiX Trading Landing Page
+   Ultra-deep obsidian canvas, electric cyber-blue architecture,
+   and high-voltage neon mint green actions & yields.
    ========================================================================== */
 :root, .dark {
-  --bg-canvas: #08121e;
-  --bg-surface: rgba(13, 27, 42, 0.78);
-  --bg-subtle: rgba(7, 16, 27, 0.88);
-  --border-light: rgba(6, 182, 212, 0.22);
-  --border-input: rgba(6, 182, 212, 0.25);
-  --text-main: #f0fdfa;
+  --bg-canvas: #070a12;
+  --bg-surface: rgba(13, 19, 34, 0.84);
+  --bg-subtle: #050811;
+  --border-light: rgba(37, 99, 235, 0.22);
+  --border-input: rgba(37, 99, 235, 0.22);
+  --text-main: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --accent: #06b6d4;
-  --accent-hover: #0891b2;
-  --accent-soft: rgba(6, 182, 212, 0.16);
+  --accent: #00f59b;
+  --accent-hover: #05df85;
+  --accent-soft: rgba(0, 245, 155, 0.14);
+  --accent-blue: #2563eb;
+  --accent-blue-light: #60a5fa;
   --header-height: 60px;
   --sidebar-width: 275px;
   --radius-outer: 18px;
@@ -58,17 +62,19 @@ html, body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-canvas);
   background-image: 
-    radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.22) 0px, transparent 55%),
-    radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.18) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, rgba(14, 116, 144, 0.22) 0px, transparent 60%),
-    radial-gradient(at 80% 50%, rgba(20, 184, 166, 0.16) 0px, transparent 45%);
+    radial-gradient(circle at 12% 15%, rgba(37, 99, 235, 0.16) 0%, transparent 48%),
+    radial-gradient(circle at 88% 20%, rgba(0, 245, 155, 0.13) 0%, transparent 44%),
+    radial-gradient(circle at 50% 85%, rgba(30, 58, 138, 0.18) 0%, transparent 56%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
   background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Neumorphic Inset Form Controls */
+/* CryptiX Inset Form Controls */
 input[type="text"],
 input[type="search"],
 input[type="email"],
@@ -79,33 +85,34 @@ select {
   font-family: inherit;
   font-size: 13px;
   line-height: 1.45;
-  color: var(--text-main);
-  background-color: rgba(7, 16, 27, 0.88);
-  border: 1px solid rgba(6, 182, 212, 0.18);
+  color: #f8fafc;
+  background-color: #050811;
+  border: 1px solid rgba(37, 99, 235, 0.22);
   border-radius: var(--radius-control);
   padding: 9px 13px;
   width: 100%;
-  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.75), inset -2px -2px 6px rgba(6, 182, 212, 0.05);
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.85), inset -1px -1px 3px rgba(37, 99, 235, 0.05);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: #06b6d4;
-  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(6, 182, 212, 0.4);
+  border-color: #00f59b;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 245, 155, 0.35);
 }
 
-/* Glassmorphism Card (Floating Translucent Aurora Slab) */
+/* CryptiX High-Precision Trading Card */
 .studio-card, .mission-card {
   background: var(--bg-surface);
-  backdrop-filter: blur(24px) saturate(190%);
-  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--border-light);
-  border-top: 1px solid rgba(6, 182, 212, 0.48);
+  border-top: 1px solid rgba(0, 245, 155, 0.3);
   border-radius: var(--radius-outer);
-  box-shadow: 0 20px 45px -10px rgba(2, 6, 14, 0.75), inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.85), inset 0 1px 1px 0 rgba(255, 255, 255, 0.08);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .studio-card::before, .mission-card::before {
@@ -113,23 +120,22 @@ input:focus, textarea:focus, select:focus {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 245, 155, 0.5), rgba(37, 99, 235, 0.5), transparent);
   pointer-events: none;
 }
 
 .studio-subcard {
-  background: rgba(7, 16, 27, 0.85);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(6, 182, 212, 0.14);
+  background: #050811;
+  border: 1px solid rgba(37, 99, 235, 0.2);
   border-radius: var(--radius-inner);
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6), inset -1px -1px 3px rgba(6, 182, 212, 0.06);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.7), inset -1px -1px 3px rgba(37, 99, 235, 0.05);
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .studio-card-hover:hover {
-  border-color: rgba(6, 182, 212, 0.65);
-  box-shadow: 0 25px 50px -10px rgba(2, 6, 14, 0.8), 0 0 24px rgba(6, 182, 212, 0.35);
-  transform: translateY(-2.5px);
+  border-color: rgba(0, 245, 155, 0.45);
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 245, 155, 0.18);
+  transform: translateY(-2px);
 }
 
 .icon-shape {
@@ -140,9 +146,10 @@ input:focus, textarea:focus, select:focus {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(6, 182, 212, 0.25);
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), inset 1px 1px 1px rgba(255, 255, 255, 0.25);
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  color: #00f59b;
 }
 
 .pill-shape, .terminal-pill {
@@ -154,69 +161,69 @@ input:focus, textarea:focus, select:focus {
   align-items: center;
   gap: 5px;
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(6, 182, 212, 0.25);
-  background: rgba(6, 182, 212, 0.12);
-  color: #22d3ee;
+  border: 1px solid rgba(0, 245, 155, 0.35);
+  background: rgba(0, 245, 155, 0.12);
+  color: #00f59b;
 }
 
-/* Radiant Aurora Primary Hero Buttons */
+/* CryptiX High-Voltage Neon Mint Primary Hero Button */
 .btn-primary, .btn-mint-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
-  background: linear-gradient(135deg, #0d9488 0%, #06b6d4 50%, #0284c7 100%);
-  color: #FFFFFF !important;
+  background: linear-gradient(135deg, #00f59b 0%, #05df85 100%);
+  color: #050b14 !important;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 8px 16px;
   border-radius: var(--radius-control);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 25px -4px rgba(6, 182, 212, 0.6), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
+  border: none;
+  box-shadow: 0 8px 24px -2px rgba(0, 245, 155, 0.45), inset 0 1px 1px 0 rgba(255, 255, 255, 0.6);
   cursor: pointer;
   transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-primary:hover, .btn-mint-primary:hover {
   transform: translateY(-1.5px);
-  box-shadow: 0 14px 30px -4px rgba(6, 182, 212, 0.75), 0 0 22px rgba(16, 185, 129, 0.45);
+  box-shadow: 0 12px 28px -2px rgba(0, 245, 155, 0.65), 0 0 24px rgba(0, 245, 155, 0.55);
+  filter: brightness(1.05);
 }
 
 .btn-primary:active, .btn-mint-primary:active {
   transform: translateY(1px);
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(6, 182, 212, 0.4);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4), 0 4px 10px rgba(0, 245, 155, 0.3);
 }
 
-/* Tactile Sculpted Navy Neumorphic Buttons */
+/* CryptiX Sleek Cyber-Blue Secondary Buttons */
 .btn-secondary, .btn-terminal-secondary, .btn-navy-dark, .btn-blue-indigo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
-  background: linear-gradient(145deg, rgba(16, 32, 54, 0.92), rgba(9, 20, 36, 0.98));
+  background: linear-gradient(145deg, rgba(14, 22, 38, 0.95), rgba(8, 14, 26, 0.98));
   color: #e2e8f0;
   font-size: 12px;
   font-weight: 600;
   padding: 8px 15px;
   border-radius: var(--radius-control);
-  border: 1px solid rgba(6, 182, 212, 0.22);
-  border-top: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.55), -3px -3px 8px rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6), -2px -2px 6px rgba(37, 99, 235, 0.06);
   cursor: pointer;
   transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-secondary:hover, .btn-terminal-secondary:hover, .btn-navy-dark:hover, .btn-blue-indigo:hover {
   transform: translateY(-1.5px);
-  border-color: rgba(6, 182, 212, 0.55);
-  color: #22d3ee;
-  box-shadow: 7px 7px 18px rgba(0, 0, 0, 0.65), 0 0 18px rgba(6, 182, 212, 0.35);
+  border-color: #00f59b;
+  color: #00f59b;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.7), 0 0 16px rgba(0, 245, 155, 0.28);
 }
 
 .btn-secondary:active, .btn-terminal-secondary:active, .btn-navy-dark:active, .btn-blue-indigo:active {
   transform: translateY(1px);
-  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.75), inset -2px -2px 5px rgba(6, 182, 212, 0.08);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -1px -1px 3px rgba(37, 99, 235, 0.08);
 }
 
 /* Fluid Adaptive Grids */
@@ -259,22 +266,22 @@ input:focus, textarea:focus, select:focus {
   gap: 0.75rem;
 }
 
-/* Exclusive Sidebar Navigation Drawer */
+/* CryptiX Sidebar Navigation */
 #app-sidebar {
   position: fixed;
   top: var(--header-height);
   left: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  background: rgba(11, 15, 25, 0.88) !important;
+  background: rgba(7, 10, 18, 0.94) !important;
   backdrop-filter: blur(28px) saturate(200%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
   color: #E2E8F0;
-  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-right: 1px solid rgba(37, 99, 235, 0.22) !important;
   z-index: 60;
   transform: translateX(0);
   transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.7) !important;
 }
 
 body.sidebar-closed #app-sidebar {
@@ -285,7 +292,7 @@ body.sidebar-closed #app-sidebar {
   position: fixed;
   inset: 0;
   top: var(--header-height);
-  background-color: rgba(7, 10, 18, 0.6);
+  background-color: rgba(5, 8, 16, 0.7);
   backdrop-filter: blur(4px);
   z-index: 50;
   opacity: 0;
@@ -297,538 +304,6 @@ body:not(.sidebar-closed) #sidebar-backdrop {
   opacity: 1;
   pointer-events: auto;
 }
-
-.nav-item-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 9px 12px;
-  border-radius: 11px;
-  font-size: 12.5px;
-  font-weight: 500;
-  color: #94A3B8;
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.16s ease;
-}
-
-.nav-item-btn:hover {
-  background: rgba(255, 255, 255, 0.06);
-  color: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-.nav-item-btn.active {
-  background: linear-gradient(145deg, rgba(30, 39, 60, 0.85), rgba(15, 22, 38, 0.95)) !important;
-  color: #FFFFFF;
-  font-weight: 600;
-  border: 1px solid rgba(99, 102, 241, 0.4) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 0 4px 12px -2px rgba(99, 102, 241, 0.3) !important;
-}
-
-/* Preset & Memory Surfaces */
-.preset-card-btn {
-  border: 1.5px solid var(--border-light);
-  background-color: var(--bg-surface);
-  border-radius: 12px;
-  padding: 12px;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.preset-card-btn:hover,
-.preset-card-btn.active {
-  border-color: var(--accent);
-  background-color: var(--accent-soft);
-  transform: translateY(-1px);
-}
-
-.agent-newer-panel {
-  border-top: 3px solid #10B981;
-}
-
-.agent-archive-panel {
-  border-top: 3px solid #F59E0B;
-}
-
-.media-16-9 {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.ats-pill-high {
-  background-color: #ECFDF5;
-  color: #047857;
-  border: 1px solid #A7F3D0;
-}
-
-.dark .ats-pill-high {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: #34D399;
-  border-color: rgba(16, 185, 129, 0.3);
-}
-
-#resume-printable-sheet {
-  aspect-ratio: 1 / 1.414;
-  background-color: #FFFFFF;
-  color: #0F172A;
-  border: 1px solid #CBD5E1;
-  border-radius: 12px;
-  padding: 26px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
-}
-
-#terminal-console-box {
-  background-color: #090D16;
-  color: #E2E8F0;
-  border: 1px solid #1E293B;
-  border-radius: 12px;
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
-}
-
-@media (max-width: 1024px) {
-  .adaptive-golden-grid,
-  .adaptive-golden-reverse {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media print {
-  header, aside, .no-print, #toast-container {
-    display: none !important;
-  }
-  #resume-printable-sheet {
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
-  }
-}
-
-
-/* ==========================================================================
-   Clean Balanced Design System - Regular Theme & Standard Loading Animations
-   ========================================================================== */
-
-/* Regular Loading Animations */
-@keyframes regularSpin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.regular-spinner {
-  width: 44px;
-  height: 44px;
-  border: 3.5px solid var(--border-light);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: regularSpin 0.75s linear infinite;
-  margin: 0 auto;
-}
-
-@keyframes regularPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.45; }
-}
-.skeleton-pulse {
-  animation: regularPulse 1.6s ease-in-out infinite;
-  background-color: var(--border-light);
-  border-radius: 6px;
-}
-
-@keyframes regularShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-.regular-progress-bar, .phosphor-progress {
-  background: linear-gradient(90deg, #2563EB 0%, #3B82F6 50%, #2563EB 100%);
-  background-size: 200% 100%;
-  animation: regularShimmer 1.8s infinite linear;
-}
-
-.radar-pulse {
-  animation: none;
-}
-
-.skeleton-shimmer, .skeleton-phosphor {
-  background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
-  background-size: 200% 100%;
-  animation: regularShimmer 1.5s infinite;
-}
-.dark .skeleton-shimmer, .dark .skeleton-phosphor {
-  background: linear-gradient(90deg, #1E293B 25%, #334155 50%, #1E293B 75%);
-  background-size: 200% 100%;
-  animation: regularShimmer 1.5s infinite;
-}
-
-/* Regular Slide-Over Drawer */
-.slide-drawer-right {
-  transform: translateX(100%);
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  background-color: var(--bg-surface);
-  border-left: 1px solid var(--border-light);
-  color: var(--text-main);
-}
-.slide-drawer-right.open {
-  transform: translateX(0);
-}
-
-/* Opportunity Slides Carousel */
-.opportunity-slide {
-  display: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-.opportunity-slide.active-slide {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Compatibility classes styled with regular neutral colors */
-.mission-card {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-outer);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
-  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
-}
-.mission-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.12);
-  transform: translateY(-2px);
-}
-
-.btn-mint-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background-color: var(--accent);
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 8px 14px;
-  border-radius: var(--radius-control);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-}
-.btn-mint-primary:hover {
-  background-color: var(--accent-hover);
-}
-
-.btn-terminal-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background-color: var(--bg-surface);
-  color: var(--text-main);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 8px 13px;
-  border-radius: var(--radius-control);
-  border: 1px solid var(--border-input);
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.btn-terminal-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background-color: var(--accent-soft);
-}
-
-.terminal-pill {
-  border-radius: 9999px;
-  padding: 3px 10px;
-  font-size: 11px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background-color: var(--bg-subtle);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-light);
-}
-
-.gyro-ring-outer, .gyro-ring-inner {
-  display: none;
-}
-
-
-/* ==========================================================================
-   Option 5 (Kanban Pipeline Board) + Option 8 (Ribbon & Portal Matrix) Theme
-   ========================================================================== */
-:root {
-  --bg-canvas: #F7F7F5;
-  --bg-surface: #FFFFFF;
-  --bg-subtle: #F1F5F9;
-  --border-light: #E2E8F0;
-  --border-input: #CBD5E1;
-  --text-main: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
-  --accent: #2563EB;
-  --accent-hover: #1D4ED8;
-  --accent-soft: #EFF6FF;
-}
-
-/* Top Ribbon Navigation (Option 8) */
-.ribbon-tab-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 13px;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  border-bottom: 2.5px solid transparent;
-  transition: all 0.15s ease;
-  white-space: nowrap;
-  cursor: pointer;
-  background: transparent;
-}
-.ribbon-tab-btn:hover {
-  color: var(--text-main);
-  background-color: rgba(37, 99, 235, 0.04);
-}
-.ribbon-tab-btn.active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
-  background-color: rgba(37, 99, 235, 0.06);
-}
-
-/* 4-Column Kanban Stage Board (Option 5) */
-.kanban-board-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(265px, 1fr));
-  gap: 1rem;
-  align-items: start;
-  overflow-x: auto;
-  padding-bottom: 6px;
-}
-@media (max-width: 1200px) {
-  .kanban-board-grid {
-    grid-template-columns: repeat(2, minmax(265px, 1fr));
-  }
-}
-@media (max-width: 680px) {
-  .kanban-board-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.kanban-column {
-  background: rgba(14, 20, 32, 0.72) !important;
-  backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 18px !important;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-height: 440px;
-  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5) !important;
-}
-
-.kanban-job-card {
-  background: rgba(22, 30, 48, 0.85) !important;
-  backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.28) !important;
-  border-radius: 14px !important;
-  padding: 15px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.35), -2px -2px 6px rgba(255, 255, 255, 0.05) !important;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease !important;
-}
-
-.kanban-job-card:hover {
-  transform: translateY(-3px) scale(1.01) !important;
-  border-color: rgba(99, 102, 241, 0.6) !important;
-  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.6), 0 0 18px rgba(99, 102, 241, 0.3) !important;
-}
-
-.company-logo-avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  color: #FFFFFF;
-  flex-shrink: 0;
-}
-
-/* Portal Scraper Matrix Table (Option 8) */
-.portal-filter-pill {
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.portal-filter-pill:hover {
-  background-color: var(--bg-subtle);
-  color: var(--text-main);
-}
-.portal-filter-pill.active {
-  background-color: #FFFFFF;
-  color: var(--text-main);
-  border-color: var(--border-input);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
-}
-.dark .portal-filter-pill.active {
-  background-color: #1E293B;
-  color: #FFFFFF;
-  border-color: #475569;
-}
-
-.matrix-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-.matrix-table th {
-  text-align: left;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border-light);
-  background-color: #F8FAFC;
-}
-.dark .matrix-table th {
-  background-color: #0F172A;
-}
-.matrix-table td {
-  padding: 11px 14px;
-  font-size: 12.5px;
-  border-bottom: 1px solid var(--border-light);
-  vertical-align: middle;
-}
-.matrix-table tr:hover td {
-  background-color: rgba(37, 99, 235, 0.025);
-}
-
-.btn-navy-dark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background-color: #0F172A;
-  color: #FFFFFF;
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 7px;
-  border: 1px solid #0F172A;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.btn-navy-dark:hover {
-  background-color: #1E3A8A;
-  border-color: #1E3A8A;
-}
-
-.btn-blue-indigo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background-color: #1E293B;
-  color: #FFFFFF;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 6px 11px;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-}
-.btn-blue-indigo:hover {
-  background-color: #2563EB;
-}
-
-
-/* 5-Stage Pipeline Stepper Sub-Header Bar */
-.pipeline-stage-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 11px;
-  border-radius: 8px;
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  white-space: nowrap;
-}
-.pipeline-stage-pill:hover {
-  background-color: var(--bg-subtle);
-  color: var(--text-main);
-}
-.pipeline-stage-pill.active {
-  background-color: var(--accent-soft);
-  color: var(--accent);
-  border-color: rgba(37, 99, 235, 0.25);
-}
-.pipeline-stage-num {
-  width: 18px;
-  height: 18px;
-  border-radius: 9999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: 700;
-  background-color: var(--bg-subtle);
-  color: var(--text-secondary);
-}
-.pipeline-stage-pill.active .pipeline-stage-num {
-  background-color: var(--accent);
-  color: #FFFFFF;
-}
-
-/* Glassmorphism Header, Navbar & Signin Modal - Option B Midnight Aurora */
-header {
-  background: rgba(13, 27, 42, 0.85) !important;
-  backdrop-filter: blur(24px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
-  border-bottom: 1px solid rgba(6, 182, 212, 0.22) !important;
-  box-shadow: 0 8px 24px rgba(2, 6, 14, 0.6) !important;
-}
-
-#view-signin {
-  background: radial-gradient(circle at 50% 30%, rgba(6, 182, 212, 0.18), transparent 60%),
-              radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.14), transparent 50%) !important;
-}
-
-#view-signin > div {
-  background: rgba(13, 27, 42, 0.88) !important;
-  backdrop-filter: blur(28px) saturate(200%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
-  border: 1px solid rgba(6, 182, 212, 0.3) !important;
-  border-top: 1px solid rgba(6, 182, 212, 0.55) !important;
-  box-shadow: 0 25px 60px -15px rgba(2, 6, 14, 0.85), inset 0 1px 1px 0 rgba(255, 255, 255, 0.25) !important;
-  border-radius: 24px !important;
-}
-
 </style>
 </head>
 <body class="sidebar-closed min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
@@ -968,11 +443,11 @@ header {
       </div>
       <div class="hidden lg:flex items-center gap-2.5 text-[11px] text-slate-600 dark:text-slate-400">
         <button type="button" onclick="switchTab('user-data-engine')" class="hover:text-blue-600 dark:hover:text-blue-400 font-semibold inline-flex items-center gap-1">
-          <i data-lucide="database" class="w-3 h-3 text-teal-600"></i><span>SQLite Engine</span>
+          <i data-lucide="database" class="w-3 h-3 text-emerald-600"></i><span>SQLite Engine</span>
         </button>
         <span>•</span>
         <button type="button" onclick="switchTab('rag-engine')" class="hover:text-blue-600 dark:hover:text-blue-400 font-semibold inline-flex items-center gap-1">
-          <i data-lucide="sparkles" class="w-3 h-3 text-indigo-600"></i><span>RAG Engine</span>
+          <i data-lucide="sparkles" class="w-3 h-3 text-blue-600"></i><span>RAG Engine</span>
         </button>
         <span>•</span>
         <button type="button" onclick="switchTab('feeds')" class="hover:text-blue-600 dark:hover:text-blue-400 font-semibold inline-flex items-center gap-1">
@@ -1006,16 +481,16 @@ header {
       <div class="space-y-1">
         <div class="px-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Stage 1 • Profile &amp; Memory</div>
         <button type="button" data-tab="profile" onclick="switchTab('profile')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="brain-circuit" class="w-4 h-4 text-purple-400"></i><span>Profile, Memory &amp; LLM Gateway</span></span>
-          <span class="pill-shape bg-purple-500/20 text-purple-300">Gateway</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="brain-circuit" class="w-4 h-4 text-blue-400"></i><span>Profile, Memory &amp; LLM Gateway</span></span>
+          <span class="pill-shape bg-blue-500/20 text-blue-300">Gateway</span>
         </button>
         <button type="button" data-tab="user-hub" onclick="switchTab('user-hub')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-sky-400"></i><span>Time Presets &amp; Run Memory</span></span>
-          <span class="pill-shape bg-sky-500/20 text-sky-300">1h–All</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-blue-400"></i><span>Time Presets &amp; Run Memory</span></span>
+          <span class="pill-shape bg-blue-500/20 text-blue-300">1h–All</span>
         </button>
         <button type="button" data-tab="user-data-engine" onclick="switchTab('user-data-engine')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="database" class="w-4 h-4 text-teal-400"></i><span>SQLite User Data &amp; Contacts</span></span>
-          <span class="pill-shape bg-teal-500/20 text-teal-300">SQLite</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="database" class="w-4 h-4 text-[#00f59b]"></i><span>SQLite User Data &amp; Contacts</span></span>
+          <span class="pill-shape bg-emerald-500/20 text-[#00f59b]">SQLite</span>
         </button>
       </div>
 
@@ -1023,12 +498,12 @@ header {
       <div class="space-y-1 pt-2 border-t border-slate-800/80">
         <div class="px-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Stage 2 • Agents &amp; RAG Engine</div>
         <button type="button" data-tab="agents" onclick="switchTab('agents')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="cpu" class="w-4 h-4 text-amber-400"></i><span>9 Specified Tool Agents Hub</span></span>
-          <span id="nav-agents-badge" class="pill-shape bg-amber-500/20 text-amber-300">9</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="cpu" class="w-4 h-4 text-[#00f59b]"></i><span>9 Specified Tool Agents Hub</span></span>
+          <span id="nav-agents-badge" class="pill-shape bg-blue-500/20 text-[#00f59b]">9</span>
         </button>
         <button type="button" data-tab="rag-engine" onclick="switchTab('rag-engine')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i><span>Semantic RAG &amp; LLM Decisions</span></span>
-          <span class="pill-shape bg-indigo-500/20 text-indigo-300">RAG</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="sparkles" class="w-4 h-4 text-blue-400"></i><span>Semantic RAG &amp; LLM Decisions</span></span>
+          <span class="pill-shape bg-blue-500/20 text-blue-300">RAG</span>
         </button>
       </div>
 
@@ -1044,16 +519,16 @@ header {
           <span id="nav-certs-badge" class="pill-shape bg-blue-500/20 text-blue-300">8</span>
         </button>
         <button type="button" data-tab="contests" onclick="switchTab('contests')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i><span>Kaggle &amp; Hackathons</span></span>
-          <span id="nav-contests-badge" class="pill-shape bg-amber-500/20 text-amber-300">8</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="trophy" class="w-4 h-4 text-[#00f59b]"></i><span>Kaggle &amp; Hackathons</span></span>
+          <span id="nav-contests-badge" class="pill-shape bg-blue-500/20 text-[#00f59b]">8</span>
         </button>
         <button type="button" data-tab="feeds" onclick="switchTab('feeds')" class="nav-item-btn">
           <span class="flex items-center gap-2.5"><i data-lucide="tv" class="w-4 h-4 text-rose-400"></i><span>AI News &amp; YouTube Videos</span></span>
           <span class="pill-shape bg-rose-500/20 text-rose-300">16</span>
         </button>
         <button type="button" data-tab="materials" onclick="switchTab('materials')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="book-open" class="w-4 h-4 text-cyan-400"></i><span>System Design &amp; Study Guides</span></span>
-          <span class="pill-shape bg-cyan-500/20 text-cyan-300">8</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="book-open" class="w-4 h-4 text-[#00f59b]"></i><span>System Design &amp; Study Guides</span></span>
+          <span class="pill-shape bg-blue-500/20 text-[#00f59b]">8</span>
         </button>
         <button type="button" data-tab="tech-updates" onclick="switchTab('tech-updates')" class="nav-item-btn">
           <span class="flex items-center gap-2.5"><i data-lucide="key" class="w-4 h-4 text-lime-400"></i><span>Free Developer APIs &amp; Projects</span></span>
@@ -1065,12 +540,12 @@ header {
       <div class="space-y-1 pt-2 border-t border-slate-800/80">
         <div class="px-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Stage 4 • Resume &amp; Auto-Apply</div>
         <button type="button" data-tab="resume" onclick="switchTab('resume')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="file-check-2" class="w-4 h-4 text-sky-400"></i><span>AIHawk Resume Tailor</span></span>
-          <span class="pill-shape bg-sky-500/20 text-sky-300">YAML/PDF</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="file-check-2" class="w-4 h-4 text-blue-400"></i><span>AIHawk Resume Tailor</span></span>
+          <span class="pill-shape bg-blue-500/20 text-blue-300">YAML/PDF</span>
         </button>
         <button type="button" data-tab="direct-apply" onclick="switchTab('direct-apply')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="zap" class="w-4 h-4 text-amber-400"></i><span>Direct Job Auto-Applier</span></span>
-          <span class="pill-shape bg-amber-500/20 text-amber-300">Batch</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="zap" class="w-4 h-4 text-[#00f59b]"></i><span>Direct Job Auto-Applier</span></span>
+          <span class="pill-shape bg-blue-500/20 text-[#00f59b]">Batch</span>
         </button>
       </div>
 
@@ -1085,12 +560,12 @@ header {
           <span class="pill-shape bg-emerald-500/20 text-emerald-300">SMTP</span>
         </button>
         <button type="button" data-tab="gmail-inbox" onclick="switchTab('gmail-inbox')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-sky-400"></i><span>Real Gmail IMAP Inbox</span></span>
+          <span class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-blue-400"></i><span>Real Gmail IMAP Inbox</span></span>
           <span id="nav-gmail-badge" class="pill-shape bg-emerald-500/20 text-emerald-300">4</span>
         </button>
         <button type="button" data-tab="tracker" onclick="switchTab('tracker')" class="nav-item-btn">
-          <span class="flex items-center gap-2.5"><i data-lucide="check-square" class="w-4 h-4 text-indigo-400"></i><span>Application Funnel Tracker</span></span>
-          <span id="nav-tracker-badge" class="pill-shape bg-indigo-500/20 text-indigo-300">5</span>
+          <span class="flex items-center gap-2.5"><i data-lucide="check-square" class="w-4 h-4 text-blue-400"></i><span>Application Funnel Tracker</span></span>
+          <span id="nav-tracker-badge" class="pill-shape bg-blue-500/20 text-blue-300">5</span>
         </button>
         <button type="button" data-tab="terminal" onclick="switchTab('terminal')" class="nav-item-btn">
           <span class="flex items-center gap-2.5"><i data-lucide="terminal-square" class="w-4 h-4 text-emerald-400"></i><span>Execution Logs &amp; Ledger</span></span>
@@ -1130,7 +605,7 @@ header {
       <div id="oauth-verification-stepper" class="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800 space-y-2">
         <div class="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-400">
           <span>Live Authentication &amp; Scope Verification</span>
-          <span id="oauth-stepper-status" class="text-amber-400 font-mono">Awaiting Login</span>
+          <span id="oauth-stepper-status" class="text-[#00f59b] font-mono">Awaiting Login</span>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
           <div id="oauth-step-1" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-[11px] flex items-center gap-1.5 text-slate-400">
@@ -1251,15 +726,15 @@ header {
           </div>
           <div class="studio-card p-4">
             <div class="text-xs text-slate-500 font-medium">Offers &amp; Credentials</div>
-            <div id="gmail-stat-offers" class="text-2xl font-bold text-purple-500 mt-1">1</div>
-            <div class="text-[11px] text-purple-600 dark:text-purple-400 font-medium mt-1 flex items-center gap-1">
+            <div id="gmail-stat-offers" class="text-2xl font-bold text-blue-500 mt-1">1</div>
+            <div class="text-[11px] text-blue-600 dark:text-blue-400 font-medium mt-1 flex items-center gap-1">
               <i data-lucide="award" class="w-3 h-3"></i> Letter of Recommendation
             </div>
           </div>
           <div class="studio-card p-4">
             <div class="text-xs text-slate-500 font-medium">Recruiter Outreach</div>
-            <div id="gmail-stat-outreach" class="text-2xl font-bold text-amber-500 mt-1">1</div>
-            <div class="text-[11px] text-amber-600 dark:text-amber-400 font-medium mt-1 flex items-center gap-1">
+            <div id="gmail-stat-outreach" class="text-2xl font-bold text-emerald-500 mt-1">1</div>
+            <div class="text-[11px] text-emerald-600 dark:text-[#00f59b] font-medium mt-1 flex items-center gap-1">
               <i data-lucide="user-check" class="w-3 h-3"></i> Direct Talent Screening
             </div>
           </div>
@@ -1407,7 +882,7 @@ header {
           <!-- Database Table Telemetry & Quick Exports -->
           <div class="studio-card p-5 space-y-4">
             <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
-              <i data-lucide="database" class="w-4 h-4 text-purple-500"></i>
+              <i data-lucide="database" class="w-4 h-4 text-blue-500"></i>
               <h3 class="text-sm font-bold text-slate-900 dark:text-white">SQLite Schema Telemetry</h3>
             </div>
 
@@ -1422,15 +897,15 @@ header {
               </div>
               <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
                 <span class="font-mono text-slate-600 dark:text-slate-300">user_applications</span>
-                <span id="udb-count-apps" class="pill-shape bg-purple-500/20 text-purple-400">2 Tracked</span>
+                <span id="udb-count-apps" class="pill-shape bg-blue-500/20 text-blue-400">2 Tracked</span>
               </div>
               <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
                 <span class="font-mono text-slate-600 dark:text-slate-300">hiring_contacts</span>
-                <span id="udb-count-contacts" class="pill-shape bg-amber-500/20 text-amber-400">2 Verified</span>
+                <span id="udb-count-contacts" class="pill-shape bg-blue-500/20 text-[#00f59b]">2 Verified</span>
               </div>
               <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-800">
                 <span class="font-mono text-slate-600 dark:text-slate-300">oauth_sessions</span>
-                <span id="udb-count-oauth" class="pill-shape bg-teal-500/20 text-teal-400">1 Session</span>
+                <span id="udb-count-oauth" class="pill-shape bg-emerald-500/20 text-[#00f59b]">1 Session</span>
               </div>
             </div>
 
@@ -1534,7 +1009,7 @@ header {
               </div>
               <div class="text-xs text-slate-500 truncate" id="metric-auth-email">project143gh@gmail.com</div>
             </div>
-            <div class="icon-shape bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+            <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
               <i data-lucide="send" class="w-5 h-5"></i>
             </div>
           </div>
@@ -1747,7 +1222,7 @@ header {
         <div class="studio-card p-6 space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-purple-500/10 text-purple-500 border border-purple-500/30">
+              <div class="icon-shape bg-blue-500/10 text-blue-500 border border-blue-500/30">
                 <i data-lucide="palette" class="w-5 h-5"></i>
               </div>
               <div>
@@ -1755,8 +1230,8 @@ header {
                 <p class="text-xs text-slate-500">Live interactive theme switcher — select any theme to instantly re-skin the entire application</p>
               </div>
             </div>
-            <div id="current-active-theme-badge" class="pill-shape bg-purple-500/20 text-purple-300 font-mono text-xs flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+            <div id="current-active-theme-badge" class="pill-shape bg-blue-500/20 text-blue-300 font-mono text-xs flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
               <span id="active-theme-badge-name">Obsidian Linear Active</span>
             </div>
           </div>
@@ -1914,7 +1389,7 @@ header {
           <div id="theme-card-sapphire" onclick="applyTheme('sapphire')" class="theme-showcase-card studio-card p-5 space-y-4 rounded-2xl border border-[#f59e0b]/40 bg-[#0a1128] text-[#f8fafc]">
             <div class="flex items-center justify-between">
               <span class="pill-shape bg-[#f59e0b]/20 text-[#fbbf24] border border-[#f59e0b]/50 text-[10px] font-bold">Executive Fintech &amp; Gold</span>
-              <span class="text-xs text-amber-400/60 font-mono">Dark Mode</span>
+              <span class="text-xs text-[#00f59b]/60 font-mono">Dark Mode</span>
             </div>
             <div>
               <h3 class="text-sm font-bold text-white flex items-center gap-2">
@@ -1935,7 +1410,7 @@ header {
               </div>
             </div>
             <!-- Mini Live Preview Box -->
-            <div class="p-3.5 rounded-xl bg-[#101c42] border border-amber-500/30 space-y-2">
+            <div class="p-3.5 rounded-xl bg-[#101c42] border border-emerald-500/30 space-y-2">
               <div class="flex justify-between items-center text-xs">
                 <span class="font-bold text-white">Executive Recruiter Direct Pitch</span>
                 <span class="text-[10px] bg-[#f59e0b]/20 text-[#fbbf24] px-2 py-0.5 rounded-full font-bold">EXECUTIVE</span>
@@ -2108,7 +1583,7 @@ header {
         <div class="studio-card p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                 <i data-lucide="sparkles" class="w-5 h-5"></i>
               </div>
               <div>
@@ -2180,10 +1655,10 @@ header {
             <div class="studio-card p-5 agent-archive-panel space-y-3">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
-                  <i data-lucide="archive" class="w-4 h-4 text-amber-600"></i>
+                  <i data-lucide="archive" class="w-4 h-4 text-emerald-600"></i>
                   <h2 class="text-sm font-bold text-slate-900 dark:text-white">Older Memory Archive</h2>
                 </div>
-                <span id="user-hub-older-count" class="pill-shape bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300">0</span>
+                <span id="user-hub-older-count" class="pill-shape bg-blue-50 dark:bg-blue-950 text-emerald-700 dark:text-[#00f59b]">0</span>
               </div>
               <div id="user-hub-older-list" class="space-y-2.5 max-h-96 overflow-y-auto pr-1"></div>
             </div>
@@ -2269,10 +1744,10 @@ header {
              =============================================================== -->
         <div class="adaptive-golden-grid">
           <!-- Left: User Personalization Memory Store -->
-          <div id="personalization-memory-card" class="studio-card p-5 space-y-4 border border-purple-500/20">
+          <div id="personalization-memory-card" class="studio-card p-5 space-y-4 border border-blue-500/20">
             <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
               <div class="flex items-center gap-2.5">
-                <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                   <i data-lucide="brain-circuit" class="w-4 h-4"></i>
                 </div>
                 <div>
@@ -2280,7 +1755,7 @@ header {
                   <p class="text-[11px] text-slate-500">Persistent candidate rules, stack preferences &amp; project proof automatically injected into every LLM &amp; agent run</p>
                 </div>
               </div>
-              <span id="personalization-memory-count" class="pill-shape bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300 text-xs">4 Active Facts</span>
+              <span id="personalization-memory-count" class="pill-shape bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 text-xs">4 Active Facts</span>
             </div>
 
             <!-- Add New Personalization Fact -->
@@ -2424,11 +1899,11 @@ header {
             </div>
 
             <!-- LLM Execution Interrupt & Guardrail Panel -->
-            <div id="llm-interrupt-guardrail-panel" class="p-3.5 rounded-xl bg-amber-500/5 border border-amber-500/25 space-y-2.5">
+            <div id="llm-interrupt-guardrail-panel" class="p-3.5 rounded-xl bg-blue-500/5 border border-emerald-500/25 space-y-2.5">
               <div class="flex flex-wrap items-center justify-between gap-2">
                 <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
-                  <span class="text-xs font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wide">LLM Execution Guardrail &amp; Interrupt Engine</span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                  <span class="text-xs font-bold text-emerald-700 dark:text-[#00f59b] uppercase tracking-wide">LLM Execution Guardrail &amp; Interrupt Engine</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <select id="llm-interrupt-mode-select" onchange="changeLlmInterruptMode(this.value)" class="text-[11px] py-1 px-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
@@ -2448,7 +1923,7 @@ header {
         </div>
 
         <!-- Inbox Intelligence & Account Activity Summary -->
-        <div class="studio-card p-5 space-y-4 border border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.02] to-teal-500/[0.04]">
+        <div class="studio-card p-5 space-y-4 border border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.02] to-emerald-500/[0.04]">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
             <div class="flex items-center gap-2.5">
               <div class="icon-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
@@ -2489,7 +1964,7 @@ header {
 
               <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 space-y-2">
                 <div class="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
-                  <i data-lucide="compass" class="w-4 h-4 text-purple-500"></i>
+                  <i data-lucide="compass" class="w-4 h-4 text-blue-500"></i>
                   <span>Detected Technical Interests</span>
                 </div>
                 <div id="inbox-detected-interests" class="flex flex-wrap gap-1.5 text-xs">
@@ -2501,10 +1976,10 @@ header {
         </div>
 
         <!-- AI Profile Diagnostic: Skills, Certifications & Drawbacks Audit -->
-        <div class="studio-card p-5 space-y-4 border border-blue-500/20 bg-gradient-to-br from-blue-500/[0.02] to-indigo-500/[0.04]">
+        <div class="studio-card p-5 space-y-4 border border-blue-500/20 bg-gradient-to-br from-blue-500/[0.02] to-blue-500/[0.04]">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
             <div class="flex items-center gap-2.5">
-              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                 <i data-lucide="sparkles" class="w-4 h-4"></i>
               </div>
               <div>
@@ -2519,8 +1994,8 @@ header {
           </div>
 
           <div id="ai-audit-results-card" class="space-y-4">
-            <div class="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs text-purple-900 dark:text-purple-200 leading-relaxed">
-              <strong class="font-bold text-purple-600 dark:text-purple-400">Strategic Recruiter Directive:</strong>
+            <div class="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-900 dark:text-blue-200 leading-relaxed">
+              <strong class="font-bold text-blue-600 dark:text-blue-400">Strategic Recruiter Directive:</strong>
               <div id="ai-audit-advice-text" class="mt-1">Click "Run LLM Profile & Gap Audit" to evaluate your verified skills, technical drawbacks, and receive personalized strategic recruiter recommendations.</div>
             </div>
 
@@ -2538,16 +2013,16 @@ header {
                 </ul>
               </div>
 
-              <div class="p-4 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-500/20 space-y-2">
-                <div class="text-xs font-bold text-amber-700 dark:text-amber-400 flex items-center gap-1.5">
+              <div class="p-4 rounded-xl bg-blue-50/50 dark:bg-blue-950/20 border border-emerald-500/20 space-y-2">
+                <div class="text-xs font-bold text-emerald-700 dark:text-[#00f59b] flex items-center gap-1.5">
                   <i data-lucide="alert-triangle" class="w-4 h-4"></i>
                   <span>Critical Drawbacks &amp; Technical Gaps</span>
                 </div>
                 <ul id="ai-audit-drawbacks-list" class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
-                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>TypeScript: Enterprise frontend/full-stack roles require strict type safety.</span></li>
-                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>Kubernetes &amp; Cloud Scaling: Lacking production container orchestration experience.</span></li>
-                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>Distributed In-Memory Caching (Redis): Required for high-concurrency microservices.</span></li>
-                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i><span>System Design: Needs formal proof of high-throughput distributed architectures.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>TypeScript: Enterprise frontend/full-stack roles require strict type safety.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Kubernetes &amp; Cloud Scaling: Lacking production container orchestration experience.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>Distributed In-Memory Caching (Redis): Required for high-concurrency microservices.</span></li>
+                  <li class="flex items-start gap-2 leading-relaxed"><i data-lucide="x" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i><span>System Design: Needs formal proof of high-throughput distributed architectures.</span></li>
                 </ul>
               </div>
             </div>
@@ -2555,7 +2030,7 @@ header {
             <div class="flex items-center justify-between pt-2">
               <span class="text-[11px] text-slate-400">Certifications matching your gaps are updated automatically.</span>
               <button type="button" onclick="switchTab('certs')" class="btn-secondary text-xs py-1.5 px-3 flex items-center gap-1.5">
-                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500"></i>
+                <i data-lucide="award" class="w-3.5 h-3.5 text-emerald-500"></i>
                 <span>View Matching Certifications</span>
               </button>
             </div>
@@ -2571,7 +2046,7 @@ header {
         <div class="studio-card p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-emerald-600 dark:text-[#00f59b]">
                 <i data-lucide="cpu" class="w-5 h-5"></i>
               </div>
               <div>
@@ -2625,10 +2100,10 @@ header {
             <div class="studio-card p-5 agent-archive-panel space-y-3">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
-                  <i data-lucide="history" class="w-4 h-4 text-amber-600"></i>
+                  <i data-lucide="history" class="w-4 h-4 text-emerald-600"></i>
                   <h2 class="text-sm font-bold text-slate-900 dark:text-white">Saved Memory Archive</h2>
                 </div>
-                <span id="single-agent-older-badge" class="pill-shape bg-amber-50 text-amber-700">0</span>
+                <span id="single-agent-older-badge" class="pill-shape bg-blue-50 text-emerald-700">0</span>
               </div>
               <div id="single-agent-older-list" class="space-y-2.5 max-h-[440px] overflow-y-auto pr-1"></div>
             </div>
@@ -2688,7 +2163,7 @@ header {
         <div class="studio-card p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-emerald-600 dark:text-[#00f59b]">
                 <i data-lucide="trophy" class="w-5 h-5"></i>
               </div>
               <div>
@@ -2745,22 +2220,22 @@ header {
           </div>
 
           <!-- Dynamic AI Course & Certification Recommender Hub -->
-          <div class="neo-card p-5 space-y-4 border border-cyan-500/30">
-            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-cyan-500/20 pb-3">
+          <div class="neo-card p-5 space-y-4 border border-blue-500/30">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-blue-500/20 pb-3">
               <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 text-slate-950 flex items-center justify-center font-bold shadow-md shadow-cyan-500/20">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-500 text-slate-950 flex items-center justify-center font-bold shadow-md shadow-emerald-500/20">
                   <i data-lucide="sparkles" class="w-4 h-4"></i>
                 </div>
                 <div>
                   <h2 class="text-sm font-bold text-white flex items-center gap-2">
                     <span>AI Personalized Course &amp; Certification Pathway</span>
-                    <span class="neo-pill-cyan text-[10px] px-2 py-0.5">Profile &amp; Drawback Matched</span>
+                    <span class="neo-pill-emerald text-[10px] px-2 py-0.5">Profile &amp; Drawback Matched</span>
                   </h2>
                   <p class="text-xs text-slate-400">Directly addresses candidate profile gaps &amp; strengthens target roles with verified free certifications</p>
                 </div>
               </div>
-              <button type="button" onclick="window.fetchRecommendedCerts()" class="neo-btn py-1.5 px-3 text-xs text-cyan-300 font-semibold flex items-center gap-1.5">
-                <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <button type="button" onclick="window.fetchRecommendedCerts()" class="neo-btn py-1.5 px-3 text-xs text-[#00f59b] font-semibold flex items-center gap-1.5">
+                <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-[#00f59b]"></i>
                 <span>Re-Analyze Profile &amp; Remediate</span>
               </button>
             </div>
@@ -2836,7 +2311,7 @@ header {
         <div class="studio-card p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                 <i data-lucide="book-open" class="w-5 h-5"></i>
               </div>
               <div>
@@ -2862,7 +2337,7 @@ header {
           <div class="studio-card p-5 space-y-4 no-print">
             <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
               <div class="flex items-center gap-2.5">
-                <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+                <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                   <i data-lucide="file-check-2" class="w-4 h-4"></i>
                 </div>
                 <h1 class="text-sm font-bold text-slate-900 dark:text-white">Resume Tailor</h1>
@@ -2882,8 +2357,8 @@ header {
 
             <!-- AI Tailoring Actions -->
             <div class="space-y-2">
-              <button id="btn-ai-generate-resume" type="button" onclick="generateAiTailoredResumeWithProfile()" class="btn-primary w-full py-2.5 px-4 text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl transition">
-                <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i>
+              <button id="btn-ai-generate-resume" type="button" onclick="generateAiTailoredResumeWithProfile()" class="btn-primary w-full py-2.5 px-4 text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white rounded-xl transition">
+                <i data-lucide="sparkles" class="w-4 h-4 text-[#00f59b]"></i>
                 <span>Generate AI Tailored Resume for Logged-In User</span>
               </button>
               
@@ -2901,17 +2376,17 @@ header {
             </div>
 
             <!-- Autonomous Company Intelligence & Strategy Dossier -->
-            <div id="company-research-card" class="hidden pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2 bg-indigo-50/50 dark:bg-indigo-950/30 p-3 rounded-xl border border-indigo-100 dark:border-indigo-900/60">
+            <div id="company-research-card" class="hidden pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2 bg-blue-50/50 dark:bg-blue-950/30 p-3 rounded-xl border border-blue-100 dark:border-blue-900/60">
               <div class="flex items-center justify-between">
-                <div class="flex items-center gap-1.5 text-xs font-bold text-indigo-700 dark:text-indigo-300">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-blue-700 dark:text-blue-300">
                   <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
                   <span id="comp-intel-company">Target Company Dossier</span>
                 </div>
-                <span id="comp-intel-domain" class="text-[10px] px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-bold uppercase">Software</span>
+                <span id="comp-intel-domain" class="text-[10px] px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-bold uppercase">Software</span>
               </div>
               <div id="comp-intel-mission" class="text-[11px] text-slate-600 dark:text-slate-300 leading-snug"></div>
               <div class="text-[11px] text-slate-500 dark:text-slate-400">
-                <span class="font-bold text-indigo-900 dark:text-indigo-200">Tailoring Strategy:</span> <span id="comp-intel-angle"></span>
+                <span class="font-bold text-blue-900 dark:text-blue-200">Tailoring Strategy:</span> <span id="comp-intel-angle"></span>
               </div>
               <div class="flex flex-wrap gap-1 pt-1" id="comp-intel-tech"></div>
             </div>
@@ -2999,7 +2474,7 @@ header {
         <div class="studio-card p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
             <div class="flex items-center gap-3">
-              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                 <i data-lucide="kanban" class="w-5 h-5"></i>
               </div>
               <div>
@@ -3020,8 +2495,8 @@ header {
                 <i data-lucide="plus" class="w-3.5 h-3.5"></i>
                 <span>Add</span>
               </button>
-              <button type="button" onclick="window.syncCandidateInbox()" class="neo-btn py-1.5 px-3 text-xs text-cyan-300 font-semibold flex items-center gap-1.5" title="Scan logged-in candidate inbox and automatically update application stages from recruiter emails">
-                <i data-lucide="mail-check" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <button type="button" onclick="window.syncCandidateInbox()" class="neo-btn py-1.5 px-3 text-xs text-[#00f59b] font-semibold flex items-center gap-1.5" title="Scan logged-in candidate inbox and automatically update application stages from recruiter emails">
+                <i data-lucide="mail-check" class="w-3.5 h-3.5 text-[#00f59b]"></i>
                 <span>Sync Recruiter Replies</span>
               </button>
             </div>
@@ -3155,7 +2630,7 @@ header {
               <span>Sync Backend</span>
             </button>
             <button onclick="runLocalServerMode('daily-news')" class="btn-secondary text-xs">
-              <i data-lucide="sunrise" class="w-3.5 h-3.5 text-amber-600"></i>
+              <i data-lucide="sunrise" class="w-3.5 h-3.5 text-emerald-600"></i>
               <span>Send 6:00 AM News Briefing</span>
             </button>
             <button onclick="runLocalServerMode('evening-review')" class="btn-secondary text-xs">
@@ -3166,10 +2641,10 @@ header {
         </div>
       
         <!-- LLM Setup & Live Connection Verification Card (Smart Auto-Recognize + Local Model Discovery) -->
-        <div class="studio-card p-5 space-y-4 border border-purple-500/20 bg-gradient-to-br from-purple-500/[0.02] to-blue-500/[0.04]">
+        <div class="studio-card p-5 space-y-4 border border-blue-500/20 bg-gradient-to-br from-blue-500/[0.02] to-blue-500/[0.04]">
           <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-3">
             <div class="flex items-center gap-2.5">
-              <div class="icon-shape bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+              <div class="icon-shape bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
                 <i data-lucide="cpu" class="w-4 h-4"></i>
               </div>
               <div>
@@ -3223,26 +2698,26 @@ header {
             </div>
           </div>
 
-          <div id="vault-llm-auto-details-strip" class="p-2.5 rounded-xl bg-purple-50/60 dark:bg-slate-900/80 border border-purple-200/70 dark:border-slate-800 text-[11px] flex flex-wrap items-center justify-between gap-2">
+          <div id="vault-llm-auto-details-strip" class="p-2.5 rounded-xl bg-blue-50/60 dark:bg-slate-900/80 border border-blue-200/70 dark:border-slate-800 text-[11px] flex flex-wrap items-center justify-between gap-2">
             <div class="flex flex-wrap items-center gap-1.5">
-              <span class="px-2 py-0.5 rounded-md bg-purple-600 text-white font-semibold text-[10px]" id="vault-llm-det-badge">Ready for Paste</span>
+              <span class="px-2 py-0.5 rounded-md bg-blue-600 text-white font-semibold text-[10px]" id="vault-llm-det-badge">Ready for Paste</span>
               <span class="text-slate-700 dark:text-slate-300 font-mono" id="vault-llm-det-env">KEY: OPENROUTER_API_KEY</span>
               <span class="text-slate-400">•</span>
               <span class="text-slate-600 dark:text-slate-400" id="vault-llm-det-auth">Auth: Bearer Token</span>
               <span class="text-slate-400">•</span>
               <span class="text-slate-600 dark:text-slate-400" id="vault-llm-det-proto">OpenAI v1 (128K ctx)</span>
             </div>
-            <button type="button" onclick="scanLocalLlmModels('vault')" class="text-[11px] font-semibold text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-1">
+            <button type="button" onclick="scanLocalLlmModels('vault')" class="text-[11px] font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
               <i data-lucide="radar" class="w-3 h-3"></i>
               <span>Scan Local Models</span>
             </button>
           </div>
 
           <div id="vault-llm-local-models-bar" class="flex flex-wrap gap-1.5">
-            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder:7b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama Engine', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🦙 qwen2.5-coder:7b (Ollama)</button>
-            <button type="button" onclick="selectDiscoveredLocalModel('llama3.2:3b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama (8GB Fast)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">⚡ llama3.2:3b (Ollama)</button>
-            <button type="button" onclick="selectDiscoveredLocalModel('gemma4-e2b-uncensored.gguf', 'LOCAL_LLM_URL', 'http://localhost:8080/v1/chat/completions', 'llama-server / GGUF (:8080)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🔥 gemma4-e2b-uncensored.gguf (:8080)</button>
-            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder-7b-instruct-q4_k_m.gguf', 'LOCAL_LLM_URL', 'http://localhost:1234/v1/chat/completions', 'LM Studio Local (:1234)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-purple-500">🖥️ LM Studio (:1234)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder:7b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama Engine', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🦙 qwen2.5-coder:7b (Ollama)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('llama3.2:3b', 'OLLAMA_MODEL', 'http://localhost:11434/api/generate', 'Local Ollama (8GB Fast)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">⚡ llama3.2:3b (Ollama)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('gemma4-e2b-uncensored.gguf', 'LOCAL_LLM_URL', 'http://localhost:8080/v1/chat/completions', 'llama-server / GGUF (:8080)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🔥 gemma4-e2b-uncensored.gguf (:8080)</button>
+            <button type="button" onclick="selectDiscoveredLocalModel('qwen2.5-coder-7b-instruct-q4_k_m.gguf', 'LOCAL_LLM_URL', 'http://localhost:1234/v1/chat/completions', 'LM Studio Local (:1234)', 'vault')" class="px-2 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-[10px] font-mono text-slate-700 dark:text-slate-200 hover:border-blue-500">🖥️ LM Studio (:1234)</button>
           </div>
 
           <div class="flex flex-wrap items-center gap-2 pt-1">
@@ -3297,7 +2772,7 @@ header {
               <div id="oauth-scopes-badges" class="flex flex-wrap items-center gap-1.5 py-1.5">
                 <span class="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-mono text-[10px]">openid</span>
                 <span class="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono text-[10px]">gmail.readonly</span>
-                <span class="px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 font-mono text-[10px]">gmail.send</span>
+                <span class="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono text-[10px]">gmail.send</span>
               </div>
             </div>
           </div>
@@ -3621,7 +3096,7 @@ header {
       const ansBox = document.getElementById('rag-answer-box');
       if (!ansBox) return;
 
-      logLine(`[LLM RAG Engine] Searching vector space for query: "${q}"...`, 'text-sky-400');
+      logLine(`[LLM RAG Engine] Searching vector space for query: "${q}"...`, 'text-blue-400');
 
       // Attempt backend API POST /api/rag first
       const base = getBackendBaseUrl();
@@ -3755,7 +3230,7 @@ header {
         });
       } catch (e) {}
 
-      logLine(`[LLM Pipeline] Connecting LLM with scraping agents for autonomous decision-making and RAG ingestion...`, 'text-sky-400');
+      logLine(`[LLM Pipeline] Connecting LLM with scraping agents for autonomous decision-making and RAG ingestion...`, 'text-blue-400');
 
       buildRagKnowledgeBase();
       renderAllViews();
@@ -4000,7 +3475,7 @@ header {
       if (!job) return;
       loadJobIntoResumeTailor(jobId);
       saveJobToTracker(jobId);
-      logLine(`[LLM Auto-Apply] Requesting backend POST /api/apply for ${job.title} at ${job.company}...`, 'text-sky-400');
+      logLine(`[LLM Auto-Apply] Requesting backend POST /api/apply for ${job.title} at ${job.company}...`, 'text-blue-400');
 
       const base = getBackendBaseUrl();
       let backendApplied = false;
@@ -4027,7 +3502,7 @@ header {
       } catch (e) {}
 
       if (typeof window.sendRecruiterEmail === 'function' && job.hiringEmail) {
-        logLine(`[Gmail Auto-Sender] Sending tailored outreach email directly from user's verified Gmail to ${job.hiringEmail}...`, 'text-purple-400');
+        logLine(`[Gmail Auto-Sender] Sending tailored outreach email directly from user's verified Gmail to ${job.hiringEmail}...`, 'text-blue-400');
         await window.sendRecruiterEmail(job.id, job.company, job.hiringEmail, job.title);
       } else {
         window.open(job.url, '_blank', 'noopener');
@@ -4075,7 +3550,7 @@ header {
               </div>
             </div>
             <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center gap-2">
-              <button onclick="sendRecruiterEmail('${job.id}', '${job.company}', '${job.hiringEmail}', '${job.title}')" class="btn-primary flex-1 text-xs py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md flex items-center justify-center gap-1.5">
+              <button onclick="sendRecruiterEmail('${job.id}', '${job.company}', '${job.hiringEmail}', '${job.title}')" class="btn-primary flex-1 text-xs py-2 bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white shadow-md flex items-center justify-center gap-1.5">
                 <i data-lucide="mail" class="w-3.5 h-3.5"></i>
                 <span>Send Gmail to Recruiter</span>
               </button>
@@ -4084,7 +3559,7 @@ header {
                 <span>Portal</span>
               </button>
               <button onclick="loadJobIntoResumeTailor('${job.id}')" class="btn-secondary py-2 px-2.5 text-xs" title="Tailor Resume">
-                <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-purple-600"></i>
+                <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-blue-600"></i>
               </button>
             </div>
           </div>
@@ -4267,8 +3742,8 @@ header {
       const catBadgeColors = {
         stack_preference: 'bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300',
         production_proof: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300',
-        location_preference: 'bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300',
-        outreach_style: 'bg-purple-50 text-purple-700 dark:bg-purple-950/60 dark:text-purple-300',
+        location_preference: 'bg-blue-50 text-emerald-700 dark:bg-blue-950/60 dark:text-[#00f59b]',
+        outreach_style: 'bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300',
         preference: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
       };
       listEl.innerHTML = PERSONALIZATION_MEMORY_FACTS.map(item => {
@@ -4327,7 +3802,7 @@ header {
           }
         }
       } catch (e) {}
-      logLine(`[Personalization Memory] Saved rule (${category}): "${fact}"`, 'text-purple-400 font-semibold');
+      logLine(`[Personalization Memory] Saved rule (${category}): "${fact}"`, 'text-blue-400 font-semibold');
       showToast('Personalization rule saved to Vault memory!', 'success');
     }
     window.addPersonalizationMemoryFact = addPersonalizationMemoryFact;
@@ -4416,7 +3891,7 @@ header {
       if (sideNav) {
         sideNav.innerHTML = AGENTS_CONFIG.map(ag => `
           <button data-agent-nav="${ag.id}" onclick="openSingleAgentPage('${ag.id}')" class="nav-item-btn py-1.5 text-xs ${activeTabKey === 'single-agent' && activeSingleAgentId === ag.id ? 'active' : ''}">
-            <span class="flex items-center gap-2 truncate"><i data-lucide="${ag.icon}" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i><span class="truncate">${ag.name}</span></span>
+            <span class="flex items-center gap-2 truncate"><i data-lucide="${ag.icon}" class="w-3.5 h-3.5 text-[#00f59b] shrink-0"></i><span class="truncate">${ag.name}</span></span>
             <span class="text-[10px] text-slate-400">${(AGENT_MEMORY_STORE[ag.id]?.newer || []).length}</span>
           </button>
         `).join('');
@@ -4555,7 +4030,7 @@ header {
       const primarySkill = (topSkills[0] || 'python').toLowerCase();
 
       if (!silentMode) {
-        logLine(`[${ag.name}] Initiating live online fetch for ${currentProfile.name || 'Candidate'} (Skills: ${topSkills.join(', ')})...`, 'text-sky-400');
+        logLine(`[${ag.name}] Initiating live online fetch for ${currentProfile.name || 'Candidate'} (Skills: ${topSkills.join(', ')})...`, 'text-blue-400');
       }
 
       if (store.newer.length > 0) {
@@ -4866,7 +4341,7 @@ header {
         }
       } catch (err) {
         if (!silentMode) {
-          logLine(`[${ag.name}] Online fetch note at ${ts}: ${err.message}`, 'text-amber-300');
+          logLine(`[${ag.name}] Online fetch note at ${ts}: ${err.message}`, 'text-[#00f59b]');
           renderAllViews();
         }
       }
@@ -4883,7 +4358,7 @@ header {
       }
 
       showGlobalLoader('RUNNING 22-AGENT LIVE ONLINE PIPELINE', 'Fetching fresh postings & repos from Greenhouse, Ashby, Remotive, Arbeitnow, GitHub & Hacker News...');
-      logLine(`[22-Agent Live Orchestrator] Starting genuine online multi-portal scrape for ${currentProfile.name || 'Candidate'}...`, 'text-sky-400 font-bold');
+      logLine(`[22-Agent Live Orchestrator] Starting genuine online multi-portal scrape for ${currentProfile.name || 'Candidate'}...`, 'text-blue-400 font-bold');
 
       try {
         const liveAgentIds = ['jobspy', 'jobglove', 'classcentral', 'aihawk', 'browser_use', 'imap_smtp_mime', 'github_api', 'hackernews_api', 'kaggle_datasets'];
@@ -4990,7 +4465,7 @@ header {
         renderAllViews();
         showToast(`Synced ${JOBS_DATA.length} live roles & ${totalFetchedItems} resources!`, 'success');
       } catch (err) {
-        logLine(`[Agent Sync] Error: ${err.message}`, 'text-amber-400');
+        logLine(`[Agent Sync] Error: ${err.message}`, 'text-[#00f59b]');
       } finally {
         if (syncBtn) syncBtn.classList.remove('animate-spin');
       }
@@ -5033,7 +4508,7 @@ header {
               </div>
               <div class="flex flex-wrap gap-1.5">
                 ${sc.matched.map(s => `<span class="pill-shape bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300"><i data-lucide="check" class="w-3 h-3"></i>${s}</span>`).join('')}
-                ${sc.missing.map(s => `<span class="pill-shape bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300"><i data-lucide="plus" class="w-3 h-3"></i>${s}</span>`).join('')}
+                ${sc.missing.map(s => `<span class="pill-shape bg-blue-50 dark:bg-blue-950/60 text-emerald-700 dark:text-[#00f59b]"><i data-lucide="plus" class="w-3 h-3"></i>${s}</span>`).join('')}
               </div>
               <div class="pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
                 <div class="flex items-center gap-2">
@@ -5101,7 +4576,7 @@ header {
         <div class="studio-card studio-card-hover p-5 flex flex-col justify-between space-y-4">
           <div class="space-y-2.5">
             <div class="flex items-center justify-between">
-              <span class="pill-shape bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300">${c.platform}</span>
+              <span class="pill-shape bg-blue-50 dark:bg-blue-950 text-emerald-700 dark:text-[#00f59b]">${c.platform}</span>
               <span class="text-xs font-semibold text-emerald-600">${c.deadline}</span>
             </div>
             <div class="text-sm font-bold text-slate-900 dark:text-white">${c.title}</div>
@@ -5152,7 +4627,7 @@ header {
         <div class="studio-card studio-card-hover p-5 flex flex-col justify-between space-y-4">
           <div class="space-y-2.5">
             <div class="flex items-center justify-between">
-              <span class="pill-shape bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${m.category}</span>
+              <span class="pill-shape bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300">${m.category}</span>
               <span class="text-xs font-medium text-slate-500">${m.author}</span>
             </div>
             <div class="text-sm font-bold text-slate-900 dark:text-white">${m.title}</div>
@@ -5565,7 +5040,7 @@ header {
 
     async function runLocalServerMode(modeName) {
       const base = getBackendBaseUrl();
-      logLine(`Triggering ${modeName} for ${currentProfile.name}...`, 'text-sky-400');
+      logLine(`Triggering ${modeName} for ${currentProfile.name}...`, 'text-blue-400');
       try {
         const runUrl = base + '/api/run';
         const resp = await fetch(runUrl, {
@@ -5586,7 +5061,7 @@ header {
       const origHtml = btn ? btn.innerHTML : '';
       if (btn) {
         btn.disabled = true;
-        btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin text-amber-300"></i><span>Researching Target Company & Tailoring Resume...</span>';
+        btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin text-[#00f59b]"></i><span>Researching Target Company & Tailoring Resume...</span>';
         if (window.lucide) try { lucide.createIcons(); } catch (e) {}
       }
       try {
@@ -5609,7 +5084,7 @@ header {
         }
 
         const base = getBackendBaseUrl();
-        logLine(`[AI Tailor] Researching company "${company || 'Target'}" & generating tailored resume...`, 'text-indigo-400');
+        logLine(`[AI Tailor] Researching company "${company || 'Target'}" & generating tailored resume...`, 'text-blue-400');
         showToast('Conducting company intelligence research...', 'info');
 
         const resp = await fetch(base + '/api/resume', {
@@ -5679,7 +5154,7 @@ header {
                 if (angEl) angEl.innerText = cr.tailoring_angle || '';
                 const techBox = document.getElementById('comp-intel-tech');
                 if (techBox && Array.isArray(cr.tech_stack)) {
-                  techBox.innerHTML = cr.tech_stack.map(t => `<span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100/70 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 font-medium">${t}</span>`).join('');
+                  techBox.innerHTML = cr.tech_stack.map(t => `<span class="text-[10px] px-1.5 py-0.5 rounded bg-blue-100/70 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800 font-medium">${t}</span>`).join('');
                 }
               }
             }
@@ -5716,7 +5191,7 @@ header {
       const jobText = (document.getElementById('jd-paste-input')?.value || '').trim();
       const titleText = (document.getElementById('jd-target-title')?.value || '').trim();
       const base = getBackendBaseUrl();
-      logLine(`[Resume API] POST /api/resume for "${titleText}"...`, 'text-sky-400');
+      logLine(`[Resume API] POST /api/resume for "${titleText}"...`, 'text-blue-400');
       try {
         const resp = await fetch(base + '/api/resume', {
           method: 'POST',
@@ -6272,7 +5747,7 @@ header {
 
     async function testLlmConnection(sourcePrefix) {
       const fbs = [document.getElementById('llm-test-feedback'), document.getElementById('vault-llm-test-feedback')].filter(Boolean);
-      fbs.forEach(fb => { fb.innerHTML = '<span class="text-sky-500 animate-pulse">Testing LLM Gateway &amp; verifying model endpoint...</span>'; });
+      fbs.forEach(fb => { fb.innerHTML = '<span class="text-blue-500 animate-pulse">Testing LLM Gateway &amp; verifying model endpoint...</span>'; });
       const isVault = sourcePrefix === 'vault';
       const rawInput = (document.getElementById(isVault ? 'vault-llm-key-input' : 'llm-key-input')?.value || '').trim();
       const sel = document.getElementById(isVault ? 'vault-llm-provider-select' : 'llm-provider-select')?.value || 'OPENROUTER_API_KEY';
@@ -6322,17 +5797,17 @@ header {
             return;
           }
           listEl.innerHTML = pending.map(item => `
-            <div class="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/30 flex flex-col gap-1.5">
+            <div class="p-2.5 rounded-lg bg-blue-500/10 border border-emerald-500/30 flex flex-col gap-1.5">
               <div class="flex items-center justify-between">
-                <span class="font-bold text-amber-800 dark:text-amber-300 uppercase text-[10px] tracking-wider">⚠️ Interrupt: ${item.agent_name} ➔ ${item.action}</span>
-                <span class="pill-shape bg-amber-500/20 text-amber-700 dark:text-amber-200 text-[10px]">Confidence: ${item.confidence}%</span>
+                <span class="font-bold text-emerald-800 dark:text-[#00f59b] uppercase text-[10px] tracking-wider">⚠️ Interrupt: ${item.agent_name} ➔ ${item.action}</span>
+                <span class="pill-shape bg-blue-500/20 text-emerald-700 dark:text-emerald-200 text-[10px]">Confidence: ${item.confidence}%</span>
               </div>
               <div class="text-[11px] text-slate-700 dark:text-slate-200"><strong>Trigger:</strong> ${item.reason}</div>
               <div class="text-[11px] text-slate-600 dark:text-slate-300"><strong>LLM Assessment:</strong> ${item.rationale}</div>
               ${item.optimization ? `<div class="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono bg-emerald-500/10 p-1.5 rounded">💡 Suggestion: ${item.optimization}</div>` : ''}
-              <div class="flex items-center justify-end gap-2 pt-1 border-t border-amber-500/20">
+              <div class="flex items-center justify-end gap-2 pt-1 border-t border-emerald-500/20">
                 <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'reject')" class="px-2.5 py-1 rounded-md bg-rose-600/20 text-rose-700 dark:text-rose-300 hover:bg-rose-600/30 text-[11px] font-semibold">Reject</button>
-                <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'modify')" class="px-2.5 py-1 rounded-md bg-purple-600/20 text-purple-700 dark:text-purple-300 hover:bg-purple-600/30 text-[11px] font-semibold">LLM Optimize</button>
+                <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'modify')" class="px-2.5 py-1 rounded-md bg-blue-600/20 text-blue-700 dark:text-blue-300 hover:bg-blue-600/30 text-[11px] font-semibold">LLM Optimize</button>
                 <button type="button" onclick="resolveExecutionInterrupt('${item.id}', 'approve')" class="px-2.5 py-1 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 text-[11px] font-semibold">Approve &amp; Resume</button>
               </div>
             </div>
@@ -6498,7 +5973,7 @@ header {
     async function syncGmailViaOAuthApi() {
       const base = getBackendBaseUrl();
       const fbEl = document.getElementById('oauth2-gmail-feedback');
-      if (fbEl) fbEl.innerHTML = '<span class="text-sky-500 animate-pulse">Syncing Gmail via OAuth 2.0 REST API...</span>';
+      if (fbEl) fbEl.innerHTML = '<span class="text-blue-500 animate-pulse">Syncing Gmail via OAuth 2.0 REST API...</span>';
       try {
         const resp = await fetch(base + '/api/userdata/gmail/sync', {
           method: 'POST',
@@ -6511,12 +5986,12 @@ header {
           showToast(`Gmail synced: ${data.new_messages || 0} new messages!`, 'success');
           return;
         } else {
-          if (fbEl) fbEl.innerHTML = `<span class="text-amber-500">⚠️ ${data.error || 'Connect Google OAuth 2.0 or IMAP first'}</span>`;
+          if (fbEl) fbEl.innerHTML = `<span class="text-emerald-500">⚠️ ${data.error || 'Connect Google OAuth 2.0 or IMAP first'}</span>`;
           showToast(data.error || 'Connect Google OAuth 2.0 first.', 'info');
           return;
         }
       } catch (e) {}
-      if (fbEl) fbEl.innerHTML = '<span class="text-amber-500">⚠️ Local server offline — showing cached inbox messages</span>';
+      if (fbEl) fbEl.innerHTML = '<span class="text-emerald-500">⚠️ Local server offline — showing cached inbox messages</span>';
     }
     window.syncGmailViaOAuthApi = syncGmailViaOAuthApi;
 
@@ -6588,8 +6063,8 @@ header {
 
       const columns = [
         { key: 'scraped', title: 'Scraped from Portals', sub: 'Greenhouse, Ashby, Unstop', badgeClass: 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300' },
-        { key: 'matched', title: 'ATS Matched & Scored', sub: '85%+ Profile Fit', badgeClass: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300' },
-        { key: 'ready', title: 'Resume & Cold Email Ready', sub: 'Tailored PDF & SMTP Pitch', badgeClass: 'bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300' },
+        { key: 'matched', title: 'ATS Matched & Scored', sub: '85%+ Profile Fit', badgeClass: 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300' },
+        { key: 'ready', title: 'Resume & Cold Email Ready', sub: 'Tailored PDF & SMTP Pitch', badgeClass: 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300' },
         { key: 'applied', title: 'Auto-Applied & Follow-Up', sub: 'Dispatched & Tracked', badgeClass: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' }
       ];
 
@@ -6696,17 +6171,17 @@ header {
 
       const portalBadgeColors = {
         greenhouse: 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800',
-        ashby: 'bg-indigo-50 text-indigo-700 border-indigo-200 dark:bg-indigo-950/60 dark:text-indigo-300 dark:border-indigo-800',
-        remotive: 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:border-amber-800',
-        unstop: 'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-950/60 dark:text-purple-300 dark:border-purple-800',
-        wellfound: 'bg-sky-50 text-sky-700 border-sky-200 dark:bg-sky-950/60 dark:text-sky-300 dark:border-sky-800'
+        ashby: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-800',
+        remotive: 'bg-blue-50 text-emerald-700 border-emerald-200 dark:bg-blue-950/60 dark:text-[#00f59b] dark:border-emerald-800',
+        unstop: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-800',
+        wellfound: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-800'
       };
 
       tbody.innerHTML = filtered.map(j => {
         const sc = scoreJob(j);
         const pKey = (j.source || 'portal').toLowerCase();
         const pBadge = portalBadgeColors[pKey] || 'bg-slate-100 text-slate-700 border-slate-200';
-        const barColor = sc.pct >= 85 ? 'bg-emerald-500' : (sc.pct >= 75 ? 'bg-blue-600' : 'bg-amber-500');
+        const barColor = sc.pct >= 85 ? 'bg-emerald-500' : (sc.pct >= 75 ? 'bg-blue-600' : 'bg-blue-500');
         const qualityHtml = sc.pct >= 85
           ? `<span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 dark:text-emerald-400"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>High Fit</span>`
           : `<span class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Verified</span>`;
@@ -6804,7 +6279,7 @@ header {
         banner.className = 'p-3 rounded-xl bg-blue-50/80 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/80 flex flex-wrap items-center justify-between gap-2 text-xs';
         badge.innerText = `✓ Validated Corporate Format: ${email} (Ready for Gmail SMTP TLS delivery)`;
       } else {
-        banner.className = 'p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 flex flex-wrap items-center justify-between gap-2 text-xs';
+        banner.className = 'p-3 rounded-xl bg-blue-50/80 dark:bg-blue-950/40 border border-emerald-200 dark:border-emerald-800/80 flex flex-wrap items-center justify-between gap-2 text-xs';
         badge.innerText = `⚠️ Enter a valid corporate recruiter email (e.g., jobs@razorpay.com)`;
       }
     }
@@ -7061,8 +6536,8 @@ header {
       container.innerHTML = filtered.map(m => {
         let catColor = 'bg-blue-500/20 text-blue-400';
         if (m.category === 'INTERVIEW') catColor = 'bg-emerald-500/20 text-emerald-400';
-        if (m.category === 'OFFER') catColor = 'bg-purple-500/20 text-purple-400';
-        if (m.category === 'OUTREACH') catColor = 'bg-amber-500/20 text-amber-400';
+        if (m.category === 'OFFER') catColor = 'bg-blue-500/20 text-blue-400';
+        if (m.category === 'OUTREACH') catColor = 'bg-blue-500/20 text-[#00f59b]';
         if (m.category === 'REJECTION') catColor = 'bg-slate-500/20 text-slate-400';
 
         return `
@@ -7236,7 +6711,7 @@ header {
       }
       const toEmail = currentActiveEmail.sender_email || 'jobs@razorpay.com';
       const subj = currentActiveEmail.subject.startsWith('Re:') ? currentActiveEmail.subject : `Re: ${currentActiveEmail.subject}`;
-      logLine(`[Gmail SMTP Reply] Sending reply to ${toEmail} (${subj})...`, 'text-sky-400');
+      logLine(`[Gmail SMTP Reply] Sending reply to ${toEmail} (${subj})...`, 'text-blue-400');
 
       try {
         const base = getBackendBaseUrl();
@@ -7715,7 +7190,7 @@ header {
       });
 
       closeThemeGalleryModal();
-      logLine(`[Theme Studio] Applied ${THEME_NAMES[themeKey]} visual design system across entire application.`, 'text-purple-400 font-semibold');
+      logLine(`[Theme Studio] Applied ${THEME_NAMES[themeKey]} visual design system across entire application.`, 'text-blue-400 font-semibold');
       showToast(`Activated ${THEME_NAMES[themeKey]} theme!`, 'success');
       refreshLucideIcons();
     }
@@ -7915,7 +7390,7 @@ header {
     window.showGlobalLoader = showGlobalLoader;
 
 </script>
-  <script src="js/auth.js?v=20261113_02"></script>
+  <script src="js/auth.js?v=20261113_cryptix"></script>
 
   <!-- Floating Online Web-Connected Career Chatbot Trigger -->
   <button id="chatbot-toggle-btn" type="button" onclick="toggleChatbotDrawer()" class="fixed bottom-14 right-6 z-40 flex items-center gap-2.5 px-4 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-xl shadow-blue-600/30 transition-all hover:scale-105 active:scale-95">
@@ -7952,7 +7427,7 @@ header {
     <div class="px-4 py-2 bg-slate-50 dark:bg-slate-950/60 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-500">
       <label class="flex items-center gap-1.5 cursor-pointer">
         <input type="checkbox" id="chatbot-web-toggle" checked class="rounded text-blue-600 border-slate-300 dark:border-slate-700" />
-        <span class="font-medium text-slate-700 dark:text-slate-300 flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3 text-sky-500"></i> Live Web Search Grounding</span>
+        <span class="font-medium text-slate-700 dark:text-slate-300 flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3 text-blue-500"></i> Live Web Search Grounding</span>
       </label>
       <span class="text-[10px] text-slate-400">OpenRouter / Gemini / Claude</span>
     </div>
@@ -7994,8 +7469,8 @@ header {
       </button>
 
       <div class="flex items-start gap-3.5 pr-8">
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20 portal-pulse-indicator">
-          <i data-lucide="sparkles" class="w-6 h-6 text-amber-300"></i>
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-600 text-white flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20 portal-pulse-indicator">
+          <i data-lucide="sparkles" class="w-6 h-6 text-[#00f59b]"></i>
         </div>
         <div class="min-w-0">
           <div class="flex items-center gap-2">
@@ -8122,7 +7597,7 @@ header {
     <div class="studio-card max-w-2xl w-full p-6 space-y-4 shadow-2xl border border-slate-700/60 bg-slate-900 text-slate-100 relative">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <div class="flex items-center gap-2.5">
-          <div class="icon-shape bg-purple-500/20 text-purple-400">
+          <div class="icon-shape bg-blue-500/20 text-blue-400">
             <i data-lucide="palette" class="w-4 h-4"></i>
           </div>
           <div>
@@ -8180,12 +7655,12 @@ header {
           <span class="text-[11px] text-[#ec4899] font-semibold">Select ↗</span>
         </div>
 
-        <div onclick="applyTheme('sapphire')" class="theme-quick-btn p-3.5 rounded-xl border border-amber-900/40 bg-[#0a1128] hover:border-[#f59e0b] cursor-pointer transition flex items-center justify-between sm:col-span-2">
+        <div onclick="applyTheme('sapphire')" class="theme-quick-btn p-3.5 rounded-xl border border-emerald-900/40 bg-[#0a1128] hover:border-[#f59e0b] cursor-pointer transition flex items-center justify-between sm:col-span-2">
           <div class="flex items-center gap-3">
             <div class="w-4 h-4 rounded-full bg-[#f59e0b]"></div>
             <div>
               <div class="text-xs font-bold text-white">Royal Sapphire &amp; Gold</div>
-              <div class="text-[10px] text-amber-400/60">Executive suite with champagne accents</div>
+              <div class="text-[10px] text-[#00f59b]/60">Executive suite with champagne accents</div>
             </div>
           </div>
           <span class="text-[11px] text-[#f59e0b] font-semibold">Select ↗</span>
