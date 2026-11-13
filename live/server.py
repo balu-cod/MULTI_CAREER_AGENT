@@ -409,19 +409,154 @@ def _audit_profile_with_llm(vault, ask_llm_fn=None, log=print):
     udb.record_ledger_action("PROFILE_ANALYSIS", "LLM_PROFILE_AUDIT", f"Identified {len(analysis.get('drawbacks', []))} drawbacks for {cand_name}", actor="PROFILE_INTEL")
     return analysis
 
+def _get_session_email_from_headers(headers):
+    if not headers:
+        return None
+    auth = headers.get("Authorization") or headers.get("authorization") or ""
+    if auth.startswith("Bearer "):
+        token = auth[7:].strip()
+        try:
+            with udb._LOCK, udb._connect() as con:
+                row = con.execute("SELECT user_id FROM sessions WHERE token=? AND expires_at > datetime('now')", (token,)).fetchone()
+                if row:
+                    return row[0]
+        except Exception:
+            pass
+    return None
+
+
+def _rank_personalized_certifications(p, drawbacks=None):
+    skills = p.get("technical_skills") or []
+    roles = p.get("target_roles") or []
+    skills_lower = {str(s).lower() for s in skills}
+    roles_lower = {str(r).lower() for r in roles}
+    gaps_lower = {str(d).lower() for d in (drawbacks or [])}
+
+    catalog = list(POPULAR_CERTS_CATALOG)
+    cat_file = ROOT / "live" / "cert_catalog.json"
+    if cat_file.exists():
+        try:
+            extra = json.loads(cat_file.read_text("utf-8"))
+            for item in extra:
+                catalog.append({
+                    "id": re.sub(r"\W+", "-", item.get("name", "").lower()),
+                    "title": item.get("name"),
+                    "provider": item.get("provider", "Verified Academy"),
+                    "url": item.get("url", "#"),
+                    "category": "Recommended Courses",
+                    "skills": item.get("tags", []),
+                    "cost": item.get("free_claim", "100% Free Course"),
+                    "addresses_gap": f"Builds core proficiencies in {', '.join(item.get('tags', [])[:3])}"
+                })
+        except Exception:
+            pass
+
+    ranked = []
+    seen_titles = set()
+    for c in catalog:
+        title = c.get("title") or c.get("name")
+        if not title or title in seen_titles:
+            continue
+        seen_titles.add(title)
+        
+        c_skills = [str(s).lower() for s in c.get("skills", [])]
+        skill_overlap = sum(2 for sk in c_skills if sk in skills_lower)
+        role_overlap = sum(3 for sk in c_skills if any(r in sk or sk in r for r in roles_lower))
+        gap_remedy = sum(4 for sk in c_skills if any(g in sk or sk in g for g in gaps_lower))
+        
+        raw_score = 55 + (skill_overlap * 5) + (role_overlap * 6) + (gap_remedy * 8)
+        match_pct = min(99, max(68, raw_score))
+        
+        reason = ""
+        if gap_remedy > 0:
+            reason = f"Remediates gap: {c.get('addresses_gap')}"
+        elif role_overlap > 0:
+            reason = f"Target role match: covers {', '.join(c.get('skills', [])[:3])}"
+        else:
+            reason = f"Strengthens profile: {', '.join(c.get('skills', [])[:3])}"
+
+        ranked.append({
+            "id": c.get("id"),
+            "title": title,
+            "provider": c.get("provider", "Verified Academy"),
+            "url": c.get("url", "#"),
+            "category": c.get("category", "Professional Development"),
+            "skills": c.get("skills", []),
+            "cost": c.get("cost", "100% Free"),
+            "match_pct": match_pct,
+            "recommendation_reason": reason
+        })
+
+    ranked.sort(key=lambda x: x["match_pct"], reverse=True)
+    return ranked[:8]
+
+
+def _scan_and_update_recruiter_replies(vault, user_email, log=print):
+    updates = []
+    if not user_email:
+        return updates
+    apps = vault.load_artifact("live_applications_v1.json", agent_name=LIVE_AGENT) or {}
+    try:
+        with udb._LOCK, udb._connect() as con:
+            rows = con.execute(
+                "SELECT sender, sender_email, subject, snippet, received_at FROM gmail_messages WHERE owner=? ORDER BY received_at DESC LIMIT 60",
+                (user_email.lower(),)
+            ).fetchall()
+            
+            keywords_interview = ("interview", "round", "schedule", "call", "discussion", "chat")
+            keywords_assessment = ("assessment", "test", "hackerrank", "codesignal", "challenge", "task")
+            keywords_offer = ("offer", "congratulations", "letter", "selected")
+
+            for r in rows:
+                sender_name, sender_addr, subject, snippet, r_date = r
+                text_corpus = f"{subject} {snippet}".lower()
+                
+                matched_app_id = None
+                for app_id, app in apps.items():
+                    comp = (app.get("company") or "").lower()
+                    if comp and (comp in text_corpus or comp in (sender_addr or "").lower() or comp in (sender_name or "").lower()):
+                        matched_app_id = app_id
+                        break
+                
+                status_to_set = None
+                if any(k in text_corpus for k in keywords_offer):
+                    status_to_set = "Offer Received"
+                elif any(k in text_corpus for k in keywords_interview):
+                    status_to_set = "Interview Scheduled"
+                elif any(k in text_corpus for k in keywords_assessment):
+                    status_to_set = "Assessment Pending"
+                
+                if status_to_set and matched_app_id:
+                    if apps[matched_app_id].get("status") != status_to_set:
+                        apps[matched_app_id]["status"] = status_to_set
+                        apps[matched_app_id]["recruiter_update"] = {
+                            "from": sender_name or sender_addr,
+                            "subject": subject,
+                            "date": r_date,
+                            "snippet": snippet[:160]
+                        }
+                        updates.append({
+                            "company": apps[matched_app_id].get("company"),
+                            "status": status_to_set,
+                            "subject": subject
+                        })
+                        udb.record_ledger_action("INBOX_INTEL", "RECRUITER_REPLY", f"{status_to_set} from {apps[matched_app_id].get('company')}: {subject[:80]}", actor="INBOX_SCANNER")
+                        
+            if updates:
+                vault.save_artifact("live_applications_v1.json", apps, "application/json", ["tracker"], LIVE_AGENT, agent_name=LIVE_AGENT)
+                log(f"[Inbox Intel] Identified {len(updates)} recruiter status updates for {user_email}.")
+    except Exception as e:
+        log(f"[Inbox Intel] Recruiter scan note: {e}")
+    return updates
+
+
 def _fetch_matching_improvements(vault, drawbacks=None, log=print):
     roadmap = {}
     try: roadmap = vault.load_artifact("skill_roadmap_v1.json") or {}
     except Exception: pass
+    p = merged_profile(vault)
     gaps = drawbacks or roadmap.get("skill_gaps") or ["typescript", "kubernetes", "cloud"]
-    gaps_lower = {str(g).lower() for g in gaps}
-
-    matched_certs = []
-    for c in POPULAR_CERTS_CATALOG:
-        rel = sum(1 for sk in c["skills"] if sk.lower() in gaps_lower or any(g in sk.lower() for g in gaps_lower))
-        matched_certs.append({**c, "relevance_score": rel + (2 if "Free" in c["cost"] else 0)})
-
-    matched_certs.sort(key=lambda x: x["relevance_score"], reverse=True)
+    matched_certs = _rank_personalized_certifications(p, drawbacks=gaps)
     return {
         "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
         "targeted_drawbacks": gaps,
@@ -1009,7 +1144,7 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             "profile_context": profile_context
         }
 
-    # 3. POST /api/apply — Auto-Apply Simulation / Action Execution
+    # 3. POST /api/apply — Auto-Apply Action Execution with Dynamic User Email Dispatch
     if path == "/api/apply":
         job = payload.get("job") or {}
         role = str(job.get("title") or "Software Engineer Intern")
@@ -1017,23 +1152,27 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
         hiring_email = str(job.get("hiringEmail") or job.get("hiring_email") or f"jobs@{company.lower().replace(' ', '')}.com")
 
         p = merged_profile(vault)
+        cand_name = p.get("full_name") or p.get("name") or "Candidate"
+        
+        # Determine sender email dynamically from logged-in session, payload, or active candidate profile
+        sender_email = (
+            payload.get("sender_email")
+            or payload.get("user_email")
+            or _get_session_email_from_headers(headers)
+            or p.get("email")
+            or p.get("contact_email")
+            or os.environ.get("GMAIL_ADDRESS")
+            or "candidate@gmail.com"
+        ).strip().lower()
+
+        sender_code = (payload.get("app_password") or payload.get("user_code") or os.environ.get("GMAIL_APP_PASSWORD") or "").replace(" ", "")
+
         runtime.discover()
         data = R.build(p, {"id": "custom", "title": role, "company": company, "desc": str(job.get("desc") or "")})
         out_dir = ROOT / "private" / "resumes"
         out_dir.mkdir(parents=True, exist_ok=True)
         stem = f"auto_{company.lower().replace(' ', '_')}"
         info = R.render_pdf(data, out_dir / f"{stem}.pdf")
-
-        apps = vault.load_artifact("live_applications_v1.json", agent_name=LIVE_AGENT) or {}
-        app_id = f"app-{company.lower().replace(' ', '-')}-{int(dt.datetime.now().timestamp())}"
-        apps[app_id] = {
-            "company": company,
-            "title": role,
-            "status": "Applied",
-            "url": str(job.get("url") or "#"),
-            "ats_score": data.get("ats", 92),
-            "at": dt.datetime.now().isoformat(timespec="seconds")
-        }
 
         outreach_note = (
             f"Dear {company} Hiring Team,\n\n"
@@ -1042,22 +1181,139 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             f"reducing manual tracking latency by 42%.\n\n"
             f"My technical skillset matches your requirements: {', '.join((data.get('matched') or p.get('technical_skills', []))[:5])}.\n"
             f"Attached is my tailored resume (ATS {data.get('ats', 94)}% Match).\n\n"
-            f"Best regards,\n{p.get('full_name') or ''}\n{p.get('contact_email') or ''} | {p.get('contact_phone') or ''}"
+            f"Best regards,\n{cand_name}\n{sender_email} | {p.get('contact_phone') or p.get('phone') or ''}"
         )
 
+        email_sent = False
+        dispatch_method = "simulation_prepared"
+        try:
+            if sender_email and sender_code:
+                from .mailer import Mailer
+                m = Mailer(sender_email, sender_code, vault)
+                email_sent = m.send_application(
+                    to_email=hiring_email,
+                    candidate_name=cand_name,
+                    role_title=role,
+                    company=company,
+                    resume_pdf=out_dir / f"{stem}.pdf",
+                    custom_note=outreach_note
+                )
+                dispatch_method = "live_smtp_dispatch" if email_sent else "smtp_failed"
+            elif sender_email:
+                from . import gmail_api
+                res_g = gmail_api.send_message(
+                    sender_email,
+                    to=hiring_email,
+                    subject=f"Application for {role} - {cand_name}",
+                    body=outreach_note,
+                    attachments=[out_dir / f"{stem}.pdf"],
+                    sender_name=cand_name
+                )
+                if res_g.get("status") == "sent":
+                    email_sent = True
+                    dispatch_method = "gmail_api_dispatch"
+        except Exception as e_send:
+            log(f"[Apply API] Email dispatch note: {e_send}")
+            dispatch_method = f"dispatch_deferred ({e_send})"
+
+        apps = vault.load_artifact("live_applications_v1.json", agent_name=LIVE_AGENT) or {}
+        app_id = f"app-{company.lower().replace(' ', '-')}-{int(dt.datetime.now().timestamp())}"
+        apps[app_id] = {
+            "company": company,
+            "title": role,
+            "status": "Applied" if email_sent else "Applied (Tracked)",
+            "sender_email": sender_email,
+            "hiring_email": hiring_email,
+            "dispatch_method": dispatch_method,
+            "url": str(job.get("url") or "#"),
+            "ats_score": data.get("ats", 92),
+            "at": dt.datetime.now().isoformat(timespec="seconds")
+        }
+
         vault.save_artifact("live_applications_v1.json", apps, "application/json", ["tracker"], LIVE_AGENT, ["All"], ["All"], agent_name=LIVE_AGENT)
-        udb.save_user_application({"id": app_id, "job_title": role, "company": company, "hiring_email": hiring_email, "source_portal": "Auto-Applier", "status": "Applied", "ats_score": data.get("ats", 92), "resume_path": f"/private/resumes/{stem}.pdf", "outreach_note": outreach_note})
-        udb.record_ledger_action("APPLICATION_TRACKED", "AUTO_APPLY", f"Applied to {company} ({role}) with ATS {data.get('ats', 92)}% resume.", actor="AUTO_APPLIER")
-        log(f"[Apply API] Auto-applied to {company} ({hiring_email}) with tailored resume ({info['pages']} page).")
+        udb.save_user_application({
+            "id": app_id,
+            "job_title": role,
+            "company": company,
+            "hiring_email": hiring_email,
+            "source_portal": "Auto-Applier",
+            "status": "Applied",
+            "ats_score": data.get("ats", 92),
+            "resume_path": f"/private/resumes/{stem}.pdf",
+            "outreach_note": outreach_note
+        })
+        udb.record_ledger_action("APPLICATION_TRACKED", "AUTO_APPLY", f"Applied to {company} ({role}) from {sender_email} (ATS {data.get('ats', 92)}%).", actor=sender_email)
+        log(f"[Apply API] Application sent from {sender_email} to {company} ({hiring_email}) via {dispatch_method}.")
         return {
             "ok": True,
             "role": role,
             "company": company,
+            "sender_email": sender_email,
             "hiring_email": hiring_email,
+            "dispatch_method": dispatch_method,
+            "email_sent": email_sent,
             "ats": data.get("ats", 92),
             "pdf_url": f"/private/resumes/{stem}.pdf",
             "outreach_note": outreach_note,
             "tracker_id": app_id,
+            "status": build_api_status(vault)
+        }
+
+    # 3b. POST /api/sync-inbox — Pull Logged-in Candidate Inbox & Update Application Status
+    if path == "/api/sync-inbox":
+        p = merged_profile(vault)
+        user_email = (
+            payload.get("email")
+            or payload.get("user_email")
+            or _get_session_email_from_headers(headers)
+            or p.get("email")
+            or os.environ.get("GMAIL_ADDRESS")
+        )
+        user_code = payload.get("code") or payload.get("app_password") or os.environ.get("GMAIL_APP_PASSWORD")
+        synced_count = 0
+        sync_note = None
+
+        if user_email and user_code:
+            try:
+                sync_res = udb.sync_gmail(user_email, user_code, limit=50)
+                synced_count = sync_res.get("new_messages", 0) or sync_res.get("total_stored", 0)
+            except Exception as e:
+                sync_note = str(e)
+        elif user_email:
+            try:
+                from . import gmail_api
+                sync_res = gmail_api.sync_messages(user_email, limit=50)
+                synced_count = sync_res.get("new_messages", 0) or sync_res.get("total_stored", 0)
+            except Exception as e:
+                sync_note = str(e)
+
+        recruiter_updates = _scan_and_update_recruiter_replies(vault, user_email, log=log)
+        apps = vault.load_artifact("live_applications_v1.json", agent_name=LIVE_AGENT) or {}
+        return {
+            "ok": True,
+            "user_email": user_email,
+            "messages_synced": synced_count,
+            "recruiter_updates": recruiter_updates,
+            "applications": apps,
+            "sync_note": sync_note,
+            "status": build_api_status(vault)
+        }
+
+    # 3c. POST /api/recommend-certs — Smart Course & Certification Recommender
+    if path == "/api/recommend-certs":
+        p = merged_profile(vault)
+        analysis = {}
+        try:
+            analysis = _audit_profile_with_llm(vault, ask_llm_fn=runtime.TOOLS.get("ask_llm"), log=log)
+        except Exception:
+            pass
+        drawbacks = analysis.get("drawbacks", [])
+        recommendations = _rank_personalized_certifications(p, drawbacks=drawbacks)
+        return {
+            "ok": True,
+            "candidate": p.get("full_name") or "Candidate",
+            "drawbacks": drawbacks,
+            "recommendations": recommendations,
             "status": build_api_status(vault)
         }
 
@@ -1427,7 +1683,19 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
         attach_resume = payload.get("attach_resume", True)
 
         p = merged_profile(vault)
-        sender_email = p.get("contact_email") or os.environ.get("GMAIL_ADDRESS") or os.environ.get("GMAIL_SMTP_USER")
+        sender_email = (
+            payload.get("sender_email")
+            or _get_session_email_from_headers(headers)
+            or p.get("contact_email")
+            or os.environ.get("GMAIL_ADDRESS")
+            or os.environ.get("GMAIL_SMTP_USER")
+        )
+        sender_password = (
+            payload.get("app_password")
+            or payload.get("password")
+            or os.environ.get("GMAIL_SMTP_APP_PASSWORD")
+            or os.environ.get("GMAIL_APP_PASSWORD")
+        )
 
         if not to or "@" not in to:
             return {"ok": False, "error": f"Invalid recipient recruiter email address: '{to}'"}
@@ -1486,9 +1754,16 @@ def handle_api_post(path, payload, vault, log=print, headers=None):
             + "</div></div></body></html>"
         )
 
-        mailer = Mailer.from_env(vault, sender_name=cand_name)
+        mailer = None
+        if sender_email and sender_password:
+            try:
+                mailer = Mailer(sender_email, sender_password, vault, sender_name=cand_name)
+            except Exception:
+                mailer = None
         if not mailer:
-            return {"ok": False, "error": "Gmail SMTP credentials not configured in .env. Enter your App Password first."}
+            mailer = Mailer.from_env(vault, sender_name=cand_name)
+        if not mailer:
+            return {"ok": False, "error": f"Gmail SMTP credentials not available for {sender_email}. Please sign in with your App Password."}
 
         try:
             send_res = mailer.send(clean_to, subject, body, html_body=html_body, attachments=attachments, kind="recruiter_outreach")

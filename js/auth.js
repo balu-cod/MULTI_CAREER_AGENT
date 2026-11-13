@@ -167,8 +167,11 @@
     currentProfile.inboxSummary = p.inbox_summary || '';
     currentProfile.loggedPlatforms = p.logged_platforms || [];
     currentProfile.detectedInterests = p.detected_interests || [];
-    currentProfile.appCode = '';
     currentProfile.authMethod = method;
+
+    try {
+      if (data.email) sessionStorage.setItem('CAS_LOGGED_IN_EMAIL', data.email);
+    } catch (e) {}
 
     window.isAuthenticated = true;
     try { isAuthenticated = true; } catch (e) {}
@@ -191,6 +194,10 @@
     }
     if (!/^[A-Za-z0-9]{16}$/.test(code)) return showError('The App Password must contain only letters and digits.');
     showError('');
+
+    currentProfile.appCode = code;
+    try { sessionStorage.setItem('CAS_APP_PASSWORD', code); } catch (e) {}
+
     var btn = document.querySelector('#view-signin button[onclick*="handleSignInWithAppCode"]');
     busy(btn, true, 'Checking with Gmail...');
     var r = await api('/api/auth', { email: email, code: code });
@@ -630,7 +637,8 @@
       return;
     }
 
-    var senderEmail = currentProfile.email || 'your verified Gmail';
+    var senderEmail = currentProfile.email || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_LOGGED_IN_EMAIL') : '') || 'your verified Gmail';
+    var senderPassword = currentProfile.appCode || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_APP_PASSWORD') : '') || '';
     var candidateName = currentProfile.name || 'Candidate';
 
     var subject = 'Application for ' + jobTitle + ' — ' + candidateName;
@@ -650,7 +658,9 @@
         body: body,
         job_id: jobId,
         company: compName,
-        attach_resume: true
+        attach_resume: true,
+        sender_email: senderEmail,
+        app_password: senderPassword
       });
 
       if (r.ok && r.data && r.data.ok) {
@@ -685,7 +695,100 @@
     if (typeof buildRagKnowledgeBase === 'function') buildRagKnowledgeBase();
     if (typeof renderAllViews === 'function') renderAllViews();
     if (typeof runAllLiveAgentsFromInternet === 'function') runAllLiveAgentsFromInternet();
-    toast('Welcome, ' + currentProfile.name + '! Profile synchronized.', 'success');
+    if (typeof window.fetchRecommendedCerts === 'function') window.fetchRecommendedCerts();
+    if (typeof window.syncCandidateInbox === 'function') window.syncCandidateInbox();
+    toast('Welcome, ' + currentProfile.name + '! Dynamic candidate session initialized.', 'success');
+  };
+
+  // ---------- AI Course & Certification Recommendations Engine
+  window.fetchRecommendedCerts = async function () {
+    var container = $('recommended-certs-list');
+    if (!container) return;
+    try {
+      var r = await api('/api/recommend-certs', {});
+      if (r.ok && r.data && Array.isArray(r.data.recommendations)) {
+        var recs = r.data.recommendations;
+        if (recs.length === 0) {
+          container.innerHTML = '<div class="p-6 text-center text-xs text-slate-400 col-span-full">No drawbacks detected! Your profile skills strongly match target roles.</div>';
+          return;
+        }
+        container.innerHTML = recs.map(function (c) {
+          var skillsBadges = (c.skills || []).slice(0, 3).map(function (sk) {
+            return '<span class="neo-pill-cyan text-[10px] px-2 py-0.5">' + sk + '</span>';
+          }).join(' ');
+          return '<div class="neo-card p-4 flex flex-col justify-between space-y-3 border border-cyan-500/20 hover:border-cyan-400/50 transition-all">' +
+            '<div class="space-y-2">' +
+              '<div class="flex items-center justify-between gap-2">' +
+                '<span class="text-[11px] font-bold text-cyan-300 truncate max-w-[130px]">' + (c.provider || 'Verified') + '</span>' +
+                '<span class="neo-pill-emerald text-[10px] font-bold px-2 py-0.5">' + (c.match_pct || 95) + '% Match</span>' +
+              '</div>' +
+              '<h4 class="text-xs font-bold text-white line-clamp-2" title="' + (c.title || '').replace(/"/g, '&quot;') + '">' + (c.title || 'Course') + '</h4>' +
+              (c.recommendation_reason ? '<p class="text-[11px] text-amber-300/90 leading-tight bg-amber-950/40 border border-amber-500/20 rounded p-1.5 font-medium">' + c.recommendation_reason + '</p>' : '') +
+              '<div class="flex flex-wrap gap-1 pt-1">' + skillsBadges + '</div>' +
+            '</div>' +
+            '<div class="pt-2 border-t border-cyan-500/15 flex items-center justify-between gap-2">' +
+              '<span class="text-[11px] font-semibold text-emerald-400">' + (c.cost || '100% Free') + '</span>' +
+              '<a href="' + (c.url || '#') + '" target="_blank" rel="noopener noreferrer" class="btn-primary py-1.5 px-3 text-[11px] font-semibold no-underline flex items-center gap-1"><span>Start Free</span> &rarr;</a>' +
+            '</div>' +
+          '</div>';
+        }).join('');
+        if (window.lucide) try { lucide.createIcons(); } catch (e) {}
+      }
+    } catch (e) {
+      console.warn('Could not fetch recommended certs:', e);
+    }
+  };
+
+  // ---------- Recruiter Inbox Synchronization Engine
+  window.syncCandidateInbox = async function () {
+    var email = currentProfile.email || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_LOGGED_IN_EMAIL') : '') || '';
+    var code = currentProfile.appCode || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_APP_PASSWORD') : '') || '';
+    log('[Recruiter Inbox Scanner] Scanning candidate inbox (' + (email || 'candidate') + ') for interview invites & recruiter status updates...', 'text-sky-400 font-semibold');
+    toast('Scanning candidate inbox for recruiter replies...', 'info');
+
+    try {
+      var r = await api('/api/sync-inbox', { email: email, code: code });
+      if (r.ok && r.data) {
+        var data = r.data;
+        var updates = data.recruiter_updates || [];
+        var msgCount = data.messages_synced || 0;
+        
+        if (updates.length > 0) {
+          log('[Recruiter Inbox Scanner] ✓ Found ' + updates.length + ' recruiter response(s)! Updating application tracker...', 'text-emerald-400 font-bold');
+          updates.forEach(function (up) {
+            log('  ↳ ' + up.company + ': ' + up.new_status + ' (' + up.reason + ')', 'text-cyan-300');
+            if (typeof TRACKER_ITEMS !== 'undefined' && Array.isArray(TRACKER_ITEMS)) {
+              var found = TRACKER_ITEMS.find(function (t) {
+                return (t.company && t.company.toLowerCase() === up.company.toLowerCase()) || (up.app_id && t.id === up.app_id);
+              });
+              if (found) {
+                found.stage = up.new_status;
+                found.updated = 'Inbox response';
+              } else {
+                TRACKER_ITEMS.unshift({
+                  id: up.app_id || ('tr-' + Date.now()),
+                  company: up.company,
+                  role: up.job_title || 'Role',
+                  stage: up.new_status,
+                  updated: 'Inbox response'
+                });
+              }
+            }
+          });
+          if (typeof renderTrackerKanban === 'function') renderTrackerKanban();
+          toast('Inbox synced: ' + updates.length + ' recruiter status update(s) detected!', 'success');
+        } else {
+          log('[Recruiter Inbox Scanner] Checked ' + (msgCount || 'recent') + ' emails; all application statuses are synchronized.', 'text-slate-400');
+          toast('Inbox scanned (' + msgCount + ' emails); statuses up-to-date.', 'info');
+        }
+        if (typeof window.loadLedgerData === 'function') window.loadLedgerData();
+      } else {
+        var err = (r.data && r.data.error) || 'Inbox sync unavailable';
+        toast(err, 'info');
+      }
+    } catch (e) {
+      console.warn('Sync inbox error:', e);
+    }
   };
 
   window.rescanInboxIntelligence = async function () {
@@ -955,7 +1058,9 @@
         subject: subj,
         body: body,
         attach_resume: attachResume,
-        job_id: 'dispatch_' + Date.now()
+        job_id: 'dispatch_' + Date.now(),
+        sender_email: currentProfile.email || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_LOGGED_IN_EMAIL') : '') || '',
+        app_password: currentProfile.appCode || (typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('CAS_APP_PASSWORD') : '') || ''
       });
       if ((r.ok && r.data && r.data.ok) || (window.__CANVAS_DEMO_MODE__ && r.network)) {
         if (window.OUTREACH_DELIVERY_LOG && Array.isArray(window.OUTREACH_DELIVERY_LOG)) {
